@@ -1,0 +1,897 @@
+{
+  "type": 114,
+  "path_id": 2209524265319833232,
+  "version": [
+    6000,
+    3,
+    18,
+    1
+  ],
+  "byte_size": 3252,
+  "container": "4d3ba42735f58f24a8eef183780ce02d",
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": null,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "name": "PlayerSearchSmallTableFactory",
+  "type_tree": {
+    "m_GameObject": {
+      "m_PathID": 0,
+      "m_FileID": null
+    },
+    "m_Enabled": null,
+    "m_Script": {
+      "m_PathID": 4923226484593632650,
+      "m_FileID": null
+    },
+    "m_Name": "PlayerSearchSmallTableFactory",
+    "m_parameters": [
+      {
+        "m_serialisedType": 1145176065,
+        "name": "binding",
+        "type": {
+          "id": 1145176065
+        },
+        "isOptional": null,
+        "defaultValue": {
+          "m_kind": null,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": null
+          }
+        }
+      }
+    ],
+    "m_emitIndexBinding": null,
+    "m_contextMenuBindingPath": {
+      "m_path": null
+    },
+    "m_rowData": [
+      {
+        "m_id": "inf",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": null
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.PlayerStatusSortOrderForRecruitment"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 40.0,
+        "m_minimumWidth": 40.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "person",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "8d8c83eb89e8aab439d231ca88d14953",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "name",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3166
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": -1
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.surname"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 240.0,
+        "m_minimumWidth": 240.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "person",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "person",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "5f403be990d3dd840aec2a522bbba26a",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "nationality",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3167
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.nation.name"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 75.0,
+        "m_minimumWidth": 75.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "4aedb43948875b5438a4d6c7bc4ff1f6",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "club",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3168
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.club.name"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 196.0,
+        "m_minimumWidth": 196.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "5f948282cbcd2724cac6219e68cc720f",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "position",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3169
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.bestpositionshortstring"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 100.0,
+        "m_minimumWidth": 100.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "275b95704dc858346bf8acb33d0dd6ac",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "age",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3170
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.age"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 50.0,
+        "m_minimumWidth": 50.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "275b95704dc858346bf8acb33d0dd6ac",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "current-ability-stars",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3171
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.currentabilitystarrange.maxvalue"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 100.0,
+        "m_minimumWidth": 100.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "starrating",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "starrating",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "c5fda52569f99184eba5ce172aedb8d7",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "potential-ability-stars",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3172
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.currentabilitystarrange.maxvalue"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 50.0,
+        "m_minimumWidth": 50.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "starrating",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "starrating",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "c5fda52569f99184eba5ce172aedb8d7",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "transfer-value",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3173
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.transfervaluerange.sortvalue"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 100.0,
+        "m_minimumWidth": 100.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "275b95704dc858346bf8acb33d0dd6ac",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "wage",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 3174
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding.fullcontract.wage.sortvalue"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 100.0,
+        "m_minimumWidth": 100.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "275b95704dc858346bf8acb33d0dd6ac",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "recommendation",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 4926
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 196.0,
+        "m_minimumWidth": 196.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          },
+          {
+            "m_serialisedType": null,
+            "from": "human",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          },
+          {
+            "m_serialisedType": null,
+            "from": "human",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "38a08792563a4f24f902c3b049a8fdea",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      },
+      {
+        "m_id": "short-recommendation",
+        "m_headerLabelBinding": {
+          "m_path": null
+        },
+        "m_hintLabelBinding": {
+          "m_path": null
+        },
+        "m_translationID": {
+          "GameID": 4926
+        },
+        "m_translationArgs": [],
+        "m_hintID": {
+          "GameID": null
+        },
+        "m_hintArgs": [],
+        "m_sortBinding": {
+          "m_path": "binding"
+        },
+        "m_sortBindingPlugin": null,
+        "m_sortAscending": null,
+        "m_defaultWidth": 80.0,
+        "m_minimumWidth": 80.0,
+        "m_allowWidthAutoResizing": null,
+        "m_autoSizeCellPadding": 0.0,
+        "m_cellClass": null,
+        "m_valueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_headerValueBindings": [],
+        "m_enableFooter": null,
+        "m_footerValueBindings": [
+          {
+            "m_serialisedType": null,
+            "from": "binding",
+            "to": {
+              "m_path": null
+            },
+            "type": {
+              "id": null
+            }
+          }
+        ],
+        "m_uxmlRef": {
+          "m_AssetGUID": "6a9bdc810331b1e4d8cb89daa8b1dcfe",
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_headerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        },
+        "m_footerUxmlRef": {
+          "m_AssetGUID": null,
+          "m_SubObjectName": null,
+          "m_SubObjectType": null
+        }
+      }
+    ],
+    "m_allowFooter": null,
+    "m_footerParameters": []
+  }
+}

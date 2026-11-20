@@ -1,0 +1,52 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "portraits": [
+    {
+      "template": "TacticsPositionDetailed",
+      "old": 35,
+      "new": 42.0
+    },
+    {
+      "template": "TacticsPositionCombined",
+      "old": 34,
+      "new": 40.79999923706055
+    }
+  ],
+  "condition_formula": "clamp((raw-5000)/50,0,100)%",
+  "ui_formula": "clamp((player.Condition-50)*2,0,100)%",
+  "examples": {
+    "5000": "0%",
+    "7500": "50%",
+    "10000": "100%"
+  },
+  "private_cell_guid": "48ee712ad3785c4a92b20314e4dac8be",
+  "factory": "TacticTeamSelectionTableFactory",
+  "original_sort_binding_preserved": true,
+  "original_condition_cells_preserved": true,
+  "changed_objects": {
+    "ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": [
+      -8273082868742719783,
+      2634629132035585753,
+      3127595210179668386,
+      1320523011556632994,
+      -970000000001000,
+      -970000000001001,
+      1
+    ],
+    "ui-tablefactories_assets_all.bundle": [
+      -7014073910555419620
+    ]
+  },
+  "percent_cases_checked": 154,
+  "after_sha256": {
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "644b409dcbf952decb8b5a3e853cb9e3136e3c5ef63c2024127f0bab8b868d6b",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-tablefactories_assets_all.bundle": "b98e3c46e305a85e64d77df1c01a1cbef0e072b043892c6ea73c0a4c2863fb7c",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "644b409dcbf952decb8b5a3e853cb9e3136e3c5ef63c2024127f0bab8b868d6b",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-tablefactories_assets_all.bundle": "b98e3c46e305a85e64d77df1c01a1cbef0e072b043892c6ea73c0a4c2863fb7c",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.bin": "39b4740d22148371b78056b97d9e2558a640e5bf6b8997659a544cacdc11db24",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.hash": "f802433c506b6ad33c93ca2ee74d97c2bdded5fccf6021d205efa2b1c41be8f6",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\catalog.bin": "39b4740d22148371b78056b97d9e2558a640e5bf6b8997659a544cacdc11db24"
+  },
+  "installed_verified": true
+}

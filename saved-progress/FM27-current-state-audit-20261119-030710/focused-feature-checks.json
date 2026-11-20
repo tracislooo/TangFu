@@ -1,0 +1,980 @@
+[
+  {
+    "mode": "game",
+    "feature": "提供合同页面模板覆盖路径",
+    "status": "需核查",
+    "evidence": {
+      "total": 66,
+      "uniquely_resolved": 38,
+      "ambiguous_due_to_duplicate_template_guid": 28,
+      "guid": "e98daeab386b5479a8f9170b9aa2ad64",
+      "template": "OutsideMatchSquare_SpeakToSidePanel"
+    },
+    "limit": "28条路径因同一GUID有两个VTA候选而无法唯一解析；不能直接推断28条控件ID错误或页面必然空白。"
+  },
+  {
+    "mode": "game",
+    "feature": "数据库总览+隐藏",
+    "status": "文件检查通过",
+    "evidence": {
+      "columns": [
+        "inf-recruitment",
+        "portrait-name",
+        "nation-small-player-search",
+        "nation-flag-small",
+        "club-player-search",
+        "club-icon-only-small",
+        "scouted-best-position-and-role",
+        "scouted-best-position",
+        "age",
+        "hidden-current-ability",
+        "hidden-current-ability",
+        "hidden-potential-ability",
+        "hidden-potential-ability",
+        "tactical-effectiveness-gauge-no-sort",
+        "transfer-value",
+        "transfer-value",
+        "context-contract-weekly-wage",
+        "recommendation-short-text",
+        "recommendation-grade-only",
+        "knowledge",
+        "average-rating"
+      ],
+      "guid_registered": {
+        "new_view_guid": true,
+        "new_row_guid": true
+      }
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "game",
+    "feature": "球员概览各版本页面对象",
+    "status": "文件检查通过",
+    "evidence": [
+      {
+        "pid": -950000000000162,
+        "title": "左边版FC卡面+隐藏（旧版）",
+        "index": "current-old-left-fc-hidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewThirdLeftFCCardAndHidden",
+        "nodes": 499,
+        "component_elements": 6,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001010,
+        "title": "左边大头像+隐藏（旧版）",
+        "index": "current-old-left-portrait-hidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewLeftLargePortraitHidden",
+        "nodes": 433,
+        "component_elements": 6,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -940000000012000,
+        "title": "左边大头像+无隐藏（旧版）",
+        "index": "current-old-left-portrait-nonhidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewFourthLeftLargePortraitNoHidden",
+        "nodes": 550,
+        "component_elements": 8,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001020,
+        "title": "左边版大头像+隐藏",
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "OverviewLeftTestPortraitHidden",
+        "nodes": 2018,
+        "component_elements": 10,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001060,
+        "title": "左边版FC卡面+隐藏",
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "OverviewLeftFCHiddenApproved",
+        "nodes": 2073,
+        "component_elements": 10,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001080,
+        "title": null,
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "ApprovedPortraitLowerSeasonRadar",
+        "nodes": 189,
+        "component_elements": 1,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001100,
+        "title": "左边版大头像+无隐藏",
+        "index": "current-approved-left-portrait-nonhidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewLeftPortraitNonhiddenApproved",
+        "nodes": 1944,
+        "component_elements": 11,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -930000000001001,
+        "title": "中间版FC卡面+隐藏",
+        "index": "current-middle-player-overview-layout.json",
+        "present": true,
+        "actual_name": "OverviewToggle_FullOverview",
+        "nodes": 1961,
+        "component_elements": 7,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001000,
+        "title": "中间版大头像+隐藏",
+        "index": "current-middle-portrait-hidden-layout.json",
+        "present": true,
+        "actual_name": "OverviewMiddleLargePortraitHidden",
+        "nodes": 1895,
+        "component_elements": 7,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -930000000001003,
+        "title": "中间版大头像+非隐藏",
+        "index": "current-middle-portrait-nonhidden-layout.json",
+        "present": true,
+        "actual_name": "OverviewToggle_PortraitAttributes",
+        "nodes": 1821,
+        "component_elements": 8,
+        "radar_node_count": 0
+      }
+    ],
+    "limit": "页面存在不证明选择器、数据上下文及画面全部正确；逐版游戏内确认仍待完成"
+  },
+  {
+    "mode": "game",
+    "feature": "球员昵称快捷按钮",
+    "status": "文件检查通过",
+    "evidence": {
+      "nodes": [
+        {
+          "uxmlAssetId": 2099417893,
+          "name": "PlayerTouchbarNickname",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "23461237760028345adfc0d8d53a3f7b",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "Person"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1295398490,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 1,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 1,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 1,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 1,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 1,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 1,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "game",
+    "feature": "继续按钮偏好键修复",
+    "status": "文件检查通过",
+    "evidence": {
+      "node_rid": 1146,
+      "value_variables": [
+        {
+          "m_name": "name",
+          "m_scopeValue": {
+            "m_serializedData": "String|continue_button_cycle_messages|"
+          }
+        }
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "game",
+    "feature": "顶部导航与度假快捷区",
+    "status": "文件检查通过",
+    "evidence": {
+      "node_names": [
+        "MainNav",
+        "NavThemeStyleSetter",
+        "Gradients",
+        "NavForegroundStyleSetter",
+        "PrimaryNavigationBarClubColours",
+        "BackForwardVisible",
+        "BindingSetter_NavHistoryIcon",
+        "MessagesShortcutRemapper",
+        "MainNavigationBar",
+        "NavHistoryBindingExpect",
+        "BindableSwitchElement_Employment",
+        "SIVisible_HasClubAndNationJobs",
+        "MessagesShortcut",
+        "GlobalNavigationTutorialAnchor",
+        "RightAlignedContainer",
+        "BackButtonWidget",
+        "ForwardButtonWidget",
+        "Employed",
+        "Unemployed",
+        "BindingRemapper_CurrentTeamRemap",
+        "MenuBar",
+        "NonDiegeticContainer",
+        "IsNation",
+        "UnemployedSIStyleSetter",
+        "BindingExpect_HumanTeam",
+        "NonDiageticMenu",
+        "ActiveManagerVisible",
+        "Nation",
+        "Club",
+        "PersonPictureWidget",
+        "BindableSwitchElement_IsClub",
+        "GlobalSearchTutorialAnchor",
+        "FMPediaTutorialAchor",
+        "YourWorldDropdown",
+        "ige-vars",
+        "ShowFMMenuDropdownSwitch",
+        "CurrentDayTutorialAnchor",
+        "ContinueButtonTutorialAnchor",
+        "NationBadgeStyleSetter",
+        "ClubBadgeStyleSetter",
+        "SIButton_JobSwitchToClub",
+        "SIButton_JobSwitchToNation",
+        "SearchButton",
+        "FMpediaButton",
+        "PhoneSwitch",
+        "IGEVisible",
+        "FMButton",
+        "FMMenuDropdown",
+        "LowResOrHiResDashboard",
+        "CurrentDayWidget",
+        "ContinueButton",
+        "ClubIcon",
+        "NonPhoneWorldIcon",
+        "PhoneWorldIcon",
+        "ManagerDropdown",
+        "game-concepts-transfer_small",
+        "SwitchToClubLabel",
+        "game-concepts-transfer_small",
+        "SwitchToNationLabel",
+        "IGESetter",
+        "EditButton",
+        "image",
+        "HeaderHolidayShortcutVisible",
+        "HeaderHolidayShortcut",
+        "HeaderHolidayDefaults",
+        "HeaderHolidayShortcutRows",
+        "HeaderHolidayDate",
+        "HeaderConfirmHoliday",
+        "HeaderHolidayCanConfirm",
+        "HeaderHolidayCustomDate"
+      ],
+      "holiday_classes": [
+        "fm27-header-holiday-shortcut",
+        "fm27-holiday-confirm",
+        "fm27-holiday-confirm-enabled",
+        "fm27-holiday-custom-date",
+        "fm27-holiday-date",
+        "fm27-holiday-rows"
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "game",
+    "feature": "球队/球员指令恢复新版原生",
+    "status": "文件检查通过",
+    "evidence": [
+      {
+        "name": "PlayerInstructionGroupPassingStrategyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileTemplate_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossFromTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingDirectionTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileListItem_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTacklingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxDepthTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTileBase_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupFreedomOfMovementTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupHoldUpBallTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxSideTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupHoldUpBallTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingFrequencyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupMarkingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingDirectionTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTileBase_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupShootingTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingRiskTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossingStrategyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxSideTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingFrequencyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupShootingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupFreedomOfMovementTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackingWidthTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupForwardRunsTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileTemplate_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxDepthTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTriggerPressTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupMarkingTargetTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingStrategyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingRiskTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "InstructionTileBaseTemplate",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossFromTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossingStrategyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupForwardRunsTile_2x2",
+        "status": "same_serialized_fields"
+      }
+    ],
+    "limit": "存在性及字段比较；独立皮肤架构不同或后续底色修改会造成差异，差异不等于丢失"
+  },
+  {
+    "mode": "game",
+    "feature": "自定义纹理内容与最新登记源",
+    "status": "文件检查通过",
+    "evidence": {
+      "checked": 214,
+      "mismatches": []
+    },
+    "limit": "比较Texture2D对象字节；不代替外置图片包或界面关联核对"
+  },
+  {
+    "mode": "skin",
+    "feature": "提供合同页面模板覆盖路径",
+    "status": "需核查",
+    "evidence": {
+      "total": 66,
+      "uniquely_resolved": 38,
+      "ambiguous_due_to_duplicate_template_guid": 28,
+      "guid": "e98daeab386b5479a8f9170b9aa2ad64",
+      "template": "OutsideMatchSquare_SpeakToSidePanel"
+    },
+    "limit": "28条路径因同一GUID有两个VTA候选而无法唯一解析；不能直接推断28条控件ID错误或页面必然空白。"
+  },
+  {
+    "mode": "skin",
+    "feature": "数据库总览+隐藏",
+    "status": "文件检查通过",
+    "evidence": {
+      "columns": [
+        "inf-recruitment",
+        "portrait-name",
+        "nation-small-player-search",
+        "nation-flag-small",
+        "club-player-search",
+        "club-icon-only-small",
+        "scouted-best-position-and-role",
+        "scouted-best-position",
+        "age",
+        "hidden-current-ability",
+        "hidden-current-ability",
+        "hidden-potential-ability",
+        "hidden-potential-ability",
+        "tactical-effectiveness-gauge-no-sort",
+        "transfer-value",
+        "transfer-value",
+        "context-contract-weekly-wage",
+        "recommendation-short-text",
+        "recommendation-grade-only",
+        "knowledge",
+        "average-rating"
+      ],
+      "guid_registered": {
+        "new_view_guid": true,
+        "new_row_guid": true
+      }
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "skin",
+    "feature": "球员概览各版本页面对象",
+    "status": "文件检查通过",
+    "evidence": [
+      {
+        "pid": -950000000000162,
+        "title": "左边版FC卡面+隐藏（旧版）",
+        "index": "current-old-left-fc-hidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewThirdLeftFCCardAndHidden",
+        "nodes": 499,
+        "component_elements": 6,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001010,
+        "title": "左边大头像+隐藏（旧版）",
+        "index": "current-old-left-portrait-hidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewLeftLargePortraitHidden",
+        "nodes": 433,
+        "component_elements": 6,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -940000000012000,
+        "title": "左边大头像+无隐藏（旧版）",
+        "index": "current-old-left-portrait-nonhidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewFourthLeftLargePortraitNoHidden",
+        "nodes": 550,
+        "component_elements": 8,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001020,
+        "title": "左边版大头像+隐藏",
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "OverviewLeftTestPortraitHidden",
+        "nodes": 2018,
+        "component_elements": 10,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001060,
+        "title": "左边版FC卡面+隐藏",
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "OverviewLeftFCHiddenApproved",
+        "nodes": 2073,
+        "component_elements": 10,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001080,
+        "title": null,
+        "index": "current-player-overview-approved-hidden-variants.json",
+        "present": true,
+        "actual_name": "ApprovedPortraitLowerSeasonRadar",
+        "nodes": 189,
+        "component_elements": 1,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001100,
+        "title": "左边版大头像+无隐藏",
+        "index": "current-approved-left-portrait-nonhidden-overview.json",
+        "present": true,
+        "actual_name": "OverviewLeftPortraitNonhiddenApproved",
+        "nodes": 1944,
+        "component_elements": 11,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -930000000001001,
+        "title": "中间版FC卡面+隐藏",
+        "index": "current-middle-player-overview-layout.json",
+        "present": true,
+        "actual_name": "OverviewToggle_FullOverview",
+        "nodes": 1961,
+        "component_elements": 7,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -941100000001000,
+        "title": "中间版大头像+隐藏",
+        "index": "current-middle-portrait-hidden-layout.json",
+        "present": true,
+        "actual_name": "OverviewMiddleLargePortraitHidden",
+        "nodes": 1895,
+        "component_elements": 7,
+        "radar_node_count": 0
+      },
+      {
+        "pid": -930000000001003,
+        "title": "中间版大头像+非隐藏",
+        "index": "current-middle-portrait-nonhidden-layout.json",
+        "present": true,
+        "actual_name": "OverviewToggle_PortraitAttributes",
+        "nodes": 1821,
+        "component_elements": 8,
+        "radar_node_count": 0
+      }
+    ],
+    "limit": "页面存在不证明选择器、数据上下文及画面全部正确；逐版游戏内确认仍待完成"
+  },
+  {
+    "mode": "skin",
+    "feature": "球员昵称快捷按钮",
+    "status": "文件检查通过",
+    "evidence": {
+      "nodes": [
+        {
+          "uxmlAssetId": 2099417893,
+          "name": "PlayerTouchbarNickname",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "23461237760028345adfc0d8d53a3f7b",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "Person"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1295398490,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 1,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 1,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 1,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 1,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 1,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 1,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "skin",
+    "feature": "继续按钮偏好键修复",
+    "status": "文件检查通过",
+    "evidence": {
+      "node_rid": 1146,
+      "value_variables": [
+        {
+          "m_name": "name",
+          "m_scopeValue": {
+            "m_serializedData": "String|continue_button_cycle_messages|"
+          }
+        }
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "skin",
+    "feature": "顶部导航与度假快捷区",
+    "status": "文件检查通过",
+    "evidence": {
+      "node_names": [
+        "MainNav",
+        "NavThemeStyleSetter",
+        "Gradients",
+        "NavForegroundStyleSetter",
+        "PrimaryNavigationBarClubColours",
+        "BackForwardVisible",
+        "BindingSetter_NavHistoryIcon",
+        "MessagesShortcutRemapper",
+        "MainNavigationBar",
+        "NavHistoryBindingExpect",
+        "BindableSwitchElement_Employment",
+        "SIVisible_HasClubAndNationJobs",
+        "MessagesShortcut",
+        "GlobalNavigationTutorialAnchor",
+        "RightAlignedContainer",
+        "BackButtonWidget",
+        "ForwardButtonWidget",
+        "Employed",
+        "Unemployed",
+        "BindingRemapper_CurrentTeamRemap",
+        "MenuBar",
+        "NonDiegeticContainer",
+        "IsNation",
+        "UnemployedSIStyleSetter",
+        "BindingExpect_HumanTeam",
+        "NonDiageticMenu",
+        "ActiveManagerVisible",
+        "Nation",
+        "Club",
+        "PersonPictureWidget",
+        "BindableSwitchElement_IsClub",
+        "GlobalSearchTutorialAnchor",
+        "FMPediaTutorialAchor",
+        "YourWorldDropdown",
+        "ige-vars",
+        "ShowFMMenuDropdownSwitch",
+        "CurrentDayTutorialAnchor",
+        "ContinueButtonTutorialAnchor",
+        "NationBadgeStyleSetter",
+        "ClubBadgeStyleSetter",
+        "SIButton_JobSwitchToClub",
+        "SIButton_JobSwitchToNation",
+        "SearchButton",
+        "FMpediaButton",
+        "PhoneSwitch",
+        "IGEVisible",
+        "FMButton",
+        "FMMenuDropdown",
+        "LowResOrHiResDashboard",
+        "CurrentDayWidget",
+        "ContinueButton",
+        "ClubIcon",
+        "NonPhoneWorldIcon",
+        "PhoneWorldIcon",
+        "ManagerDropdown",
+        "game-concepts-transfer_small",
+        "SwitchToClubLabel",
+        "game-concepts-transfer_small",
+        "SwitchToNationLabel",
+        "IGESetter",
+        "EditButton",
+        "image",
+        "HeaderHolidayShortcutVisible",
+        "HeaderHolidayShortcut",
+        "HeaderHolidayDefaults",
+        "HeaderHolidayShortcutRows",
+        "HeaderHolidayDate",
+        "HeaderConfirmHoliday",
+        "HeaderHolidayCanConfirm",
+        "HeaderHolidayCustomDate"
+      ],
+      "holiday_classes": [
+        "fm27-header-holiday-shortcut",
+        "fm27-holiday-confirm",
+        "fm27-holiday-confirm-enabled",
+        "fm27-holiday-custom-date",
+        "fm27-holiday-date",
+        "fm27-holiday-rows"
+      ]
+    },
+    "limit": "仅检查文件结构，未验证游戏内显示及交互"
+  },
+  {
+    "mode": "skin",
+    "feature": "球队/球员指令恢复新版原生",
+    "status": "部分核实，架构或字段差异待核",
+    "evidence": [
+      {
+        "name": "PlayerInstructionGroupPassingStrategyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileTemplate_2x1",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossFromTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingDirectionTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileListItem_2x2",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupTacklingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxDepthTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTileBase_2x1",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupFreedomOfMovementTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupHoldUpBallTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxSideTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupHoldUpBallTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingFrequencyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupMarkingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingDirectionTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTileBase_2x2",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupShootingTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingRiskTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossingStrategyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxSideTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupDribblingFrequencyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupShootingTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupFreedomOfMovementTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackingWidthTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupForwardRunsTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "TeamInstructionTileTemplate_2x2",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupAttackBoxDepthTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupTriggerPressTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupMarkingTargetTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingStrategyTile_2x2",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupPassingRiskTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "InstructionTileBaseTemplate",
+        "status": "different_or_schema_changed"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossFromTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupCrossingStrategyTile_2x1",
+        "status": "same_serialized_fields"
+      },
+      {
+        "name": "PlayerInstructionGroupForwardRunsTile_2x2",
+        "status": "same_serialized_fields"
+      }
+    ],
+    "limit": "存在性及字段比较；独立皮肤架构不同或后续底色修改会造成差异，差异不等于丢失"
+  },
+  {
+    "mode": "skin",
+    "feature": "自定义纹理内容与最新登记源",
+    "status": "文件检查通过",
+    "evidence": {
+      "checked": 214,
+      "mismatches": []
+    },
+    "limit": "比较Texture2D对象字节；不代替外置图片包或界面关联核对"
+  }
+]

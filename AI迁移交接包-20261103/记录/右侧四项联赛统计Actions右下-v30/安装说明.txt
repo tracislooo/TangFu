@@ -1,0 +1,22 @@
+﻿report-player-banner-max 右侧联赛统计 v30
+
+退出游戏，把本包 global bundle 替换到之前的位置，再启动游戏。
+本次只需替换 ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle。
+
+右侧顶部四列从左到右：
+Expected Goals/90 Mins；Expected Assists/90 Mins；Passes Completed/90 Mins；Tackles Won per Game。
+每列上方是游戏原生、随游戏语言翻译的标题，下方是当前球员数值。
+沿用原生两位小数格式，不使用示例数字。
+
+取数沿用 CoachReportBlock_16x7 的联赛绑定组件：
+competition = person.Division
+seasonStats = person.SeasonStats.SeasonStatsSelectedCompetitionsData
+四项字段分别为 ExpectedGoalsPer90、ExpectedAssistsPer90、PassCompletedPer90、TacklesCompletedPer90。
+最后一项沿用游戏标题 Tackles Won per Game；其原生字段名是 TacklesCompletedPer90。
+
+右侧中间保留考察/能力潜力与合同信息，改为并排；Actions 按钮位于最下方靠右。
+栏目185px、左侧、中间头像及卡面、背景层级保持v29原值。
+
+已重读验证组件绑定、四项标题和格式化参数、父子层级、按钮末行以及无关资源字节。
+游戏内实时数值和实际排版仍需在运行游戏中确认。
+原始packages、游戏安装目录及v29成品未覆盖。

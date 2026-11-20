@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle').Hash.ToLower() -ne '71504e45939d82d6a99bda14adb3820dae1f8eec3eeba9869b65e0714d0ffc65') { throw 'Target changed since preparation.' }
+if ((Get-FileHash -LiteralPath 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle').Hash.ToLower() -ne 'e47adaa7def8d7fca1a1365c708fd9edfd88c89008c9f9cb4443919dea5ac423') { throw 'Target changed since preparation.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-stars-outline-black-20261102-095602\output-game\ui-styles_assets_default.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-stars-outline-black-20261102-095602\output-skin\ui-styles_assets_default.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle' -Force

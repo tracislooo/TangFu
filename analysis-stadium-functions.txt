@@ -1,0 +1,467 @@
+FUNCTION 3221504515355017843 DatabaseObjectWithColourReplacementFallback
+SIImage_HandleRefreshSubscription {"m_name": "HandleRefreshSubscription", "m_id": {"m_idBytes": [14, 160, 148, 28, 63, 46, 23, 76, 136, 8, 177, 75, 73, 129, 134, 134]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 1741.27685546875, "y": -164.90838623046875}, "m_execInExecInput": {"m_id": {"m_idBytes": [149, 214, 197, 66, 117, 43, 221, 70, 180, 255, 24, 56, 26, 44, 129, 10]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [213, 250, 211, 63, 161, 30, 162, 69, 179, 218, 7, 150, 114, 72, 44, 98]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}}, "m_target": {"m_id": {"m_idBytes": [38, 66, 30, 198, 126, 69, 209, 65, 128, 137, 64, 52, 222, 114, 128, 200]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [103, 50, 43, 225, 24, 36, 2, 68, 175, 130, 183, 207, 171, 242, 197, 127]}, "m_defaultSocketValue": {}}, "m_dataInShouldSubscribe": {"m_id": {"m_idBytes": [40, 154, 177, 76, 197, 143, 93, 68, 153, 132, 173, 253, 147, 86, 16, 168]}, "m_name": "should Subscribe", "m_sourceID": {"m_idBytes": [67, 40, 169, 98, 240, 162, 141, 65, 146, 15, 214, 9, 246, 237, 234, 104]}, "m_defaultSocketValue": {"m_value": 0}}}
+DatabaseObjectImageHelpers_RequiresRecolouring_DynamicReference_ {"m_name": "RequiresRecolouring(DynamicReference)", "m_id": {"m_idBytes": [64, 122, 216, 196, 77, 216, 72, 72, 136, 205, 127, 155, 236, 189, 61, 172]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 484.0753479003906, "y": -330.53369140625}, "m_execInExecInput": {"m_id": {"m_idBytes": [223, 108, 79, 202, 246, 73, 19, 74, 174, 132, 154, 102, 180, 164, 200, 135]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [22, 119, 12, 216, 110, 216, 126, 67, 187, 246, 249, 47, 93, 212, 234, 34]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [249, 93, 44, 220, 50, 73, 71, 73, 141, 50, 147, 125, 106, 31, 163, 253]}}, "m_dataInDynRef": {"m_id": {"m_idBytes": [169, 166, 188, 77, 138, 215, 248, 75, 131, 124, 135, 118, 212, 66, 116, 164]}, "m_name": "dyn Ref", "m_sourceID": {"m_idBytes": [103, 4, 247, 86, 100, 3, 11, 69, 157, 218, 23, 232, 245, 101, 93, 74]}, "m_defaultSocketValue": {"m_value": {}}}, "m_dataOutBoolean": {"m_id": {"m_idBytes": [184, 243, 37, 151, 134, 183, 144, 79, 184, 89, 231, 145, 174, 59, 33, 161]}, "m_name": "Boolean"}}
+EntryNode {"m_name": "Entry", "m_id": {"m_idBytes": [203, 173, 131, 37, 217, 229, 218, 64, 156, 122, 73, 131, 115, 154, 221, 63]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": -613.0520629882812, "y": -317.3077697753906}, "m_dataSockets": [{"m_id": {"m_idBytes": [59, 150, 81, 104, 42, 65, 89, 78, 159, 181, 173, 110, 226, 54, 68, 52]}, "m_name": "BindingBag", "m_dataID": {"m_idBytes": [179, 35, 125, 156, 104, 131, 47, 66, 146, 144, 242, 25, 153, 117, 156, 104]}}, {"m_id": {"m_idBytes": [30, 142, 174, 165, 43, 179, 100, 75, 186, 229, 186, 152, 169, 210, 248, 92]}, "m_name": "Element", "m_dataID": {"m_idBytes": [131, 29, 145, 30, 112, 21, 97, 72, 176, 201, 185, 45, 242, 69, 150, 81]}}, {"m_id": {"m_idBytes": [201, 184, 94, 102, 120, 202, 50, 67, 184, 158, 32, 195, 66, 202, 186, 163]}, "m_name": "ObjectData", "m_dataID": {"m_idBytes": [11, 65, 85, 254, 26, 110, 125, 65, 137, 81, 59, 81, 78, 158, 2, 170]}}, {"m_id": {"m_idBytes": [133, 147, 101, 148, 68, 219, 93, 74, 143, 23, 62, 17, 114, 223, 244, 214]}, "m_name": "RedReplacement", "m_dataID": {"m_idBytes": [157, 118, 126, 221, 141, 137, 226, 71, 180, 48, 171, 15, 171, 146, 175, 170]}}, {"m_id": {"m_idBytes": [141, 236, 184, 169, 79, 220, 50, 65, 141, 220, 56, 117, 242, 4, 83, 189]}, "m_name": "GreenReplacement", "m_dataID": {"m_idBytes": [237, 227, 145, 208, 17, 150, 179, 73, 165, 196, 145, 62, 70, 178, 131, 72]}}, {"m_id": {"m_idBytes": [69, 53, 90, 88, 126, 35, 212, 68, 146, 187, 184, 6, 16, 229, 88, 85]}, "m_name": "BlueReplacement", "m_dataID": {"m_idBytes": [141, 201, 172, 96, 225, 118, 186, 78, 178, 178, 56, 152, 56, 89, 205, 109]}}, {"m_id": {"m_idBytes": [189, 30, 86, 35, 126, 98, 255, 78, 139, 231, 171, 10, 206, 206, 211, 10]}, "m_name": "ResourceType", "m_dataID": {"m_idBytes": [229, 172, 42, 225, 180, 116, 58, 71, 158, 85, 12, 74, 189, 233, 4, 57]}}, {"m_id": {"m_idBytes": [236, 101, 180, 145, 18, 24, 90, 67, 183, 249, 191, 108, 23, 18, 116, 250]}, "m_name": "KitType", "m_dataID": {"m_idBytes": [97, 128, 31, 28, 121, 238, 167, 77, 128, 229, 239, 37, 85, 198, 131, 152]}}], "m_outputExecSocket": {"m_id": {"m_idBytes": [170, 21, 94, 34, 154, 45, 177, 76, 179, 197, 143, 177, 208, 183, 183, 217]}, "m_name": "", "m_destinationID": {"m_idBytes": [192, 213, 53, 37, 153, 17, 90, 68, 135, 239, 83, 241, 172, 12, 141, 242]}}}
+DatabaseObjectImageHelpers_ConvertDynamicReferenceToAddressableID {"m_name": "ConvertDynamicReferenceToAddressableID", "m_id": {"m_idBytes": [170, 236, 120, 172, 174, 69, 231, 64, 172, 98, 161, 96, 165, 116, 10, 83]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 179.4434814453125, "y": -317.42474365234375}, "m_execInExecInput": {"m_id": {"m_idBytes": [29, 242, 250, 127, 84, 47, 20, 69, 163, 105, 7, 234, 197, 63, 29, 193]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [244, 120, 85, 181, 69, 34, 136, 74, 180, 244, 219, 192, 158, 7, 2, 72]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [223, 108, 79, 202, 246, 73, 19, 74, 174, 132, 154, 102, 180, 164, 200, 135]}}, "m_dataInDynRef": {"m_id": {"m_idBytes": [4, 122, 24, 32, 231, 107, 11, 79, 168, 202, 156, 60, 107, 243, 68, 32]}, "m_name": "dyn Ref", "m_sourceID": {"m_idBytes": [103, 4, 247, 86, 100, 3, 11, 69, 157, 218, 23, 232, 245, 101, 93, 74]}, "m_defaultSocketValue": {"m_value": {}}}, "m_dataInType": {"m_id": {"m_idBytes": [88, 99, 46, 244, 218, 123, 194, 67, 181, 229, 32, 48, 219, 255, 69, 26]}, "m_name": "type", "m_sourceID": {"m_idBytes": [9, 64, 186, 27, 95, 6, 210, 78, 128, 146, 145, 242, 113, 88, 128, 161]}, "m_defaultSocketValue": {"m_value": 0}}, "m_dataInKitType": {"m_id": {"m_idBytes": [144, 225, 54, 188, 110, 80, 211, 68, 137, 114, 185, 94, 43, 174, 81, 70]}, "m_name": "kit Type", "m_sourceID": {"m_idBytes": [187, 68, 247, 128, 227, 56, 163, 68, 129, 207, 75, 150, 218, 121, 76, 55]}, "m_defaultSocketValue": {"m_value": ""}}, "m_dataInUseDefaultPicture": {"m_id": {"m_idBytes": [42, 45, 47, 69, 231, 172, 79, 72, 150, 30, 13, 196, 99, 121, 10, 16]}, "m_name": "use Default Picture", "m_sourceID": {"m_idBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "m_defaultSocketValue": {"m_value": 0}}, "m_dataOutString": {"m_id": {"m_idBytes": [92, 142, 136, 48, 76, 178, 117, 68, 151, 195, 97, 91, 108, 114, 48, 26]}, "m_name": "String"}, "m_dataOutResourceGenerationData": {"m_id": {"m_idBytes": [245, 14, 252, 250, 105, 153, 61, 70, 152, 117, 62, 59, 152, 186, 181, 119]}, "m_name": "resource Generation Data"}}
+GeneralVisualFunction_Branch {"m_name": "Branch", "m_id": {"m_idBytes": [59, 170, 155, 228, 249, 136, 167, 64, 179, 173, 192, 67, 99, 110, 14, 129]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 29.421218872070312, "y": -316.99127197265625}, "m_execInExecInput": {"m_id": {"m_idBytes": [4, 241, 187, 46, 248, 110, 36, 71, 141, 60, 83, 100, 227, 82, 185, 184]}, "m_name": "Exec Input"}, "m_execOutTrue": {"m_id": {"m_idBytes": [48, 52, 174, 200, 37, 174, 5, 74, 177, 107, 64, 145, 151, 171, 40, 87]}, "m_name": "True", "m_destinationID": {"m_idBytes": [90, 162, 100, 204, 45, 217, 186, 72, 185, 13, 59, 182, 103, 149, 38, 31]}}, "m_execOutFalse": {"m_id": {"m_idBytes": [36, 135, 5, 88, 208, 199, 88, 67, 177, 111, 3, 7, 180, 142, 207, 215]}, "m_name": "False", "m_destinationID": {"m_idBytes": [29, 242, 250, 127, 84, 47, 20, 69, 163, 105, 7, 234, 197, 63, 29, 193]}}, "m_dataInCondition": {"m_id": {"m_idBytes": [250, 121, 135, 208, 98, 251, 27, 78, 141, 119, 104, 234, 112, 28, 119, 79]}, "m_name": "condition", "m_sourceID": {"m_idBytes": [155, 213, 82, 173, 49, 142, 49, 73, 157, 26, 136, 109, 10, 67, 148, 92]}, "m_defaultSocketValue": {"m_value": 0}}}
+SIImage_ClearImage {"m_name": "ClearImage", "m_id": {"m_idBytes": [49, 31, 52, 248, 36, 240, 138, 79, 130, 38, 249, 222, 153, 126, 51, 96]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 182.0008087158203, "y": -432.8915710449219}, "m_execInExecInput": {"m_id": {"m_idBytes": [90, 162, 100, 204, 45, 217, 186, 72, 185, 13, 59, 182, 103, 149, 38, 31]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [25, 237, 235, 171, 57, 52, 255, 69, 157, 192, 195, 244, 15, 190, 36, 118]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [92, 38, 2, 4, 54, 92, 146, 68, 172, 183, 49, 86, 244, 79, 210, 61]}}, "m_target": {"m_id": {"m_idBytes": [84, 238, 188, 115, 67, 217, 213, 70, 128, 214, 111, 200, 158, 30, 50, 176]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [182, 176, 180, 143, 181, 0, 151, 77, 159, 245, 24, 113, 37, 118, 78, 196]}, "m_defaultSocketValue": {}}}
+VisualDataGetterNode {"m_name": "Get -", "m_id": {"m_idBytes": [190, 99, 39, 170, 236, 121, 15, 78, 154, 229, 238, 44, 12, 38, 110, 42]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 270.93994140625, "y": -369.1552429199219}, "m_dataSocket": {"m_id": {"m_idBytes": [182, 176, 180, 143, 181, 0, 151, 77, 159, 245, 24, 113, 37, 118, 78, 196]}, "m_name": "Element", "m_dataID": {"m_idBytes": [131, 29, 145, 30, 112, 21, 97, 72, 176, 201, 185, 45, 242, 69, 150, 81]}}}
+SIImage_HandleRefreshSubscription {"m_name": "HandleRefreshSubscription", "m_id": {"m_idBytes": [118, 23, 149, 19, 120, 8, 231, 73, 141, 145, 185, 22, 51, 62, 142, 29]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 390.12615966796875, "y": -432.5309753417969}, "m_execInExecInput": {"m_id": {"m_idBytes": [92, 38, 2, 4, 54, 92, 146, 68, 172, 183, 49, 86, 244, 79, 210, 61]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [124, 206, 63, 166, 17, 127, 216, 78, 152, 26, 72, 214, 130, 166, 162, 178]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}}, "m_target": {"m_id": {"m_idBytes": [54, 142, 232, 255, 39, 194, 20, 69, 160, 63, 164, 53, 222, 160, 6, 212]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [182, 176, 180, 143, 181, 0, 151, 77, 159, 245, 24, 113, 37, 118, 78, 196]}, "m_defaultSocketValue": {}}, "m_dataInShouldSubscribe": {"m_id": {"m_idBytes": [101, 117, 245, 95, 181, 230, 176, 79, 156, 98, 172, 53, 169, 71, 9, 27]}, "m_name": "should Subscribe", "m_sourceID": {"m_idBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "m_defaultSocketValue": {"m_value": 0}}}
+VisualBindings_Is_Null_Reference {"m_name": "IsNullReference", "m_id": {"m_idBytes": [234, 134, 146, 12, 40, 32, 132, 74, 169, 31, 248, 36, 248, 22, 210, 137]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": -158.5464324951172, "y": -220.76219177246094}, "m_dataInReference": {"m_id": {"m_idBytes": [139, 87, 60, 64, 115, 78, 162, 68, 154, 134, 252, 158, 86, 112, 195, 127]}, "m_name": "reference", "m_sourceID": {"m_idBytes": [233, 88, 10, 206, 232, 165, 85, 67, 185, 19, 49, 132, 19, 171, 20, 69]}, "m_defaultSocketValue": {}}, "m_dataOutBoolean": {"m_id": {"m_idBytes": [155, 213, 82, 173, 49, 142, 49, 73, 157, 26, 136, 109, 10, 67, 148, 92]}, "m_name": "Boolean"}}
+VisualDataGetterNode {"m_name": "Get -", "m_id": {"m_idBytes": [156, 224, 110, 184, 241, 17, 162, 78, 145, 241, 226, 22, 215, 12, 109, 58]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 41.617313385009766, "y": -241.86178588867188}, "m_dataSocket": {"m_id": {"m_idBytes": [9, 64, 186, 27, 95, 6, 210, 78, 128, 146, 145, 242, 113, 88, 128, 161]}, "m_name": "ResourceType", "m_dataID": {"m_idBytes": [229, 172, 42, 225, 180, 116, 58, 71, 158, 85, 12, 74, 189, 233, 4, 57]}}}
+VisualDataGetterNode {"m_name": "Get -", "m_id": {"m_idBytes": [42, 25, 73, 6, 31, 12, 1, 66, 131, 185, 172, 33, 78, 30, 136, 146]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 79.65110778808594, "y": -218.64781188964844}, "m_dataSocket": {"m_id": {"m_idBytes": [187, 68, 247, 128, 227, 56, 163, 68, 129, 207, 75, 150, 218, 121, 76, 55]}, "m_name": "KitType", "m_dataID": {"m_idBytes": [97, 128, 31, 28, 121, 238, 167, 77, 128, 229, 239, 37, 85, 198, 131, 152]}}}
+TypedValueVisualFunctionLibrary_GetRGBTypedValuesAsColor32 {"m_name": "GetRGBTypedValuesAsColor32", "m_id": {"m_idBytes": [70, 248, 199, 116, 229, 185, 234, 69, 160, 225, 167, 116, 138, 125, 199, 180]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 212.6821746826172, "y": -165.23922729492188}, "m_dataInRedReplacemnt": {"m_id": {"m_idBytes": [159, 199, 252, 13, 140, 55, 235, 68, 187, 212, 27, 43, 68, 227, 103, 146]}, "m_name": "red Replacemnt", "m_sourceID": {"m_idBytes": [136, 212, 163, 219, 17, 37, 73, 74, 171, 224, 145, 9, 34, 32, 51, 55]}, "m_defaultSocketValue": {}}, "m_dataInBlueReplacemnt": {"m_id": {"m_idBytes": [235, 145, 227, 182, 127, 7, 148, 77, 165, 254, 49, 209, 206, 133, 8, 103]}, "m_name": "blue Replacemnt", "m_sourceID": {"m_idBytes": [213, 98, 149, 149, 28, 7, 242, 67, 148, 234, 88, 88, 75, 248, 238, 46]}, "m_defaultSocketValue": {}}, "m_dataInGreenReplacemnt": {"m_id": {"m_idBytes": [64, 12, 100, 176, 232, 254, 8, 68, 186, 201, 91, 104, 109, 232, 225, 69]}, "m_name": "green Replacemnt", "m_sourceID": {"m_idBytes": [248, 174, 127, 88, 84, 194, 5, 76, 158, 6, 204, 193, 201, 136, 145, 165]}, "m_defaultSocketValue": {}}, "m_dataOutRedColor32": {"m_id": {"m_idBytes": [84, 107, 95, 196, 246, 182, 206, 70, 164, 90, 84, 184, 203, 158, 91, 94]}, "m_name": "red Color32"}, "m_dataOutBlueColor32": {"m_id": {"m_idBytes": [127, 232, 38, 47, 98, 200, 99, 71, 168, 54, 2, 179, 119, 15, 15, 41]}, "m_name": "blue Color32"}, "m_dataOutGreenColor32": {"m_id": {"m_idBytes": [186, 228, 77, 116, 72, 30, 25, 67, 132, 183, 66, 57, 27, 100, 6, 63]}, "m_name": "green Color32"}}
+DatabaseObjectImageHelpers_ShouldSubscribeToNewgenRefreshEvent {"m_name": "ShouldSubscribeToNewgenRefreshEvent", "m_id": {"m_idBytes": [93, 35, 89, 225, 69, 63, 70, 77, 164, 69, 14, 202, 138, 24, 138, 77]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 1450.31689453125, "y": -165.38687133789062}, "m_execInExecInput": {"m_id": {"m_idBytes": [8, 191, 55, 217, 237, 107, 80, 68, 172, 120, 112, 60, 75, 243, 28, 198]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [214, 79, 90, 44, 208, 227, 124, 68, 157, 224, 215, 168, 197, 145, 132, 20]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [149, 214, 197, 66, 117, 43, 221, 70, 180, 255, 24, 56, 26, 44, 129, 10]}}, "m_dataInDynRef": {"m_id": {"m_idBytes": [223, 27, 218, 231, 67, 55, 94, 70, 182, 51, 180, 169, 183, 121, 162, 171]}, "m_name": "dyn Ref", "m_sourceID": {"m_idBytes": [103, 4, 247, 86, 100, 3, 11, 69, 157, 218, 23, 232, 245, 101, 93, 74]}, "m_defaultSocketValue": {"m_value": {}}}, "m_dataOutBoolean": {"m_id": {"m_idBytes": [67, 40, 169, 98, 240, 162, 141, 65, 146, 15, 214, 9, 246, 237, 234, 104]}, "m_name": "Boolean"}}
+BindNode {"m_name": "Bind", "m_id": {"m_idBytes": [223, 224, 182, 206, 197, 28, 58, 77, 146, 199, 187, 115, 127, 250, 29, 100]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": -481.7337341308594, "y": -316.8591613769531}, "m_inputExecSocket": {"m_id": {"m_idBytes": [192, 213, 53, 37, 153, 17, 90, 68, 135, 239, 83, 241, 172, 12, 141, 242]}, "m_name": ""}, "m_bindingBagDataInputSocket": {"m_id": {"m_idBytes": [45, 42, 126, 142, 170, 127, 188, 67, 147, 176, 181, 142, 46, 31, 25, 57]}, "m_name": "bag", "m_sourceID": {"m_idBytes": [59, 150, 81, 104, 42, 65, 89, 78, 159, 181, 173, 110, 226, 54, 68, 52]}, "m_defaultSocketValue": {}}, "m_componentDataInputSocket": {"m_id": {"m_idBytes": [215, 154, 31, 192, 125, 240, 201, 77, 139, 140, 101, 34, 177, 240, 64, 72]}, "m_name": "component", "m_sourceID": {"m_idBytes": [30, 142, 174, 165, 43, 179, 100, 75, 186, 229, 186, 152, 169, 210, 248, 92]}, "m_defaultSocketValue": {}}, "m_dynamicDataInputSockets": [{"m_id": {"m_idBytes": [127, 63, 75, 18, 153, 185, 144, 79, 174, 97, 44, 127, 94, 17, 8, 123]}, "m_name": "ObjectData", "m_sourceID": {"m_idBytes": [201, 184, 94, 102, 120, 202, 50, 67, 184, 158, 32, 195, 66, 202, 186, 163]}, "m_dataID": {"m_idBytes": [11, 65, 85, 254, 26, 110, 125, 65, 137, 81, 59, 81, 78, 158, 2, 170]}, "m_defaultSocketValue": {"m_variant": 0, "m_serializedValue": ""}, "m_mutable": 0}, {"m_id": {"m_idBytes": [34, 3, 244, 90, 62, 84, 19, 64, 147, 89, 193, 157, 249, 10, 146, 17]}, "m_name": "RedReplacement", "m_sourceID": {"m_idBytes": [133, 147, 101, 148, 68, 219, 93, 74, 143, 23, 62, 17, 114, 223, 244, 214]}, "m_dataID": {"m_idBytes": [157, 118, 126, 221, 141, 137, 226, 71, 180, 48, 171, 15, 171, 146, 175, 170]}, "m_defaultSocketValue": {"m_variant": 0, "m_serializedValue": ""}, "m_mutable": 0}, {"m_id": {"m_idBytes": [111, 151, 3, 47, 24, 149, 47, 73, 169, 110, 55, 241, 204, 104, 204, 249]}, "m_name": "GreenReplacement", "m_sourceID": {"m_idBytes": [141, 236, 184, 169, 79, 220, 50, 65, 141, 220, 56, 117, 242, 4, 83, 189]}, "m_dataID": {"m_idBytes": [237, 227, 145, 208, 17, 150, 179, 73, 165, 196, 145, 62, 70, 178, 131, 72]}, "m_defaultSocketValue": {"m_variant": 0, "m_serializedValue": ""}, "m_mutable": 0}, {"m_id": {"m_idBytes": [177, 115, 79, 184, 69, 83, 246, 77, 177, 76, 73, 126, 35, 65, 80, 40]}, "m_name": "BlueReplacement", "m_sourceID": {"m_idBytes": [69, 53, 90, 88, 126, 35, 212, 68, 146, 187, 184, 6, 16, 229, 88, 85]}, "m_dataID": {"m_idBytes": [141, 201, 172, 96, 225, 118, 186, 78, 178, 178, 56, 152, 56, 89, 205, 109]}, "m_defaultSocketValue": {"m_variant": 0, "m_serializedValue": ""}, "m_mutable": 0}], "m_outputAsyncExecSocket": {"m_id": {"m_idBytes": [124, 111, 172, 53, 103, 114, 205, 76, 152, 53, 17, 18, 205, 117, 253, 14]}, "m_name": "Ready", "m_destinationID": {"m_idBytes": [4, 241, 187, 46, 248, 110, 36, 71, 141, 60, 83, 100, 227, 82, 185, 184]}, "m_dataOutputSockets": [{"m_id": {"m_idBytes": [233, 88, 10, 206, 232, 165, 85, 67, 185, 19, 49, 132, 19, 171, 20, 69]}, "m_name": "ObjectData", "m_dataID": {"m_idBytes": [11, 65, 85, 254, 26, 110, 125, 65, 137, 81, 59, 81, 78, 158, 2, 170]}, "m_type": {"m_typeString": "SI.Core.TypedValue, SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"}}, {"m_id": {"m_idBytes": [136, 212, 163, 219, 17, 37, 73, 74, 171, 224, 145, 9, 34, 32, 51, 55]}, "m_name": "RedReplacement", "m_dataID": {"m_idBytes": [157, 118, 126, 221, 141, 137, 226, 71, 180, 48, 171, 
+BindableWidgetUtils_GetDynamicReference_SI_Bindable_DynamicReference_SI_Core_TypedValue {"m_name": "Get DynamicReference", "m_id": {"m_idBytes": [147, 95, 9, 117, 28, 189, 215, 76, 143, 13, 232, 231, 52, 96, 250, 69]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 258.0656433105469, "y": -38.47743225097656}, "m_dataInTypedValue": {"m_id": {"m_idBytes": [180, 55, 177, 197, 199, 178, 26, 64, 190, 253, 128, 180, 169, 86, 66, 163]}, "m_name": "typed Value", "m_sourceID": {"m_idBytes": [233, 88, 10, 206, 232, 165, 85, 67, 185, 19, 49, 132, 19, 171, 20, 69]}, "m_defaultSocketValue": {}}, "m_dataOutDynamicReference": {"m_id": {"m_idBytes": [103, 4, 247, 86, 100, 3, 11, 69, 157, 218, 23, 232, 245, 101, 93, 74]}, "m_name": "DynamicReference"}}
+GeneralVisualFunction_Branch {"m_name": "Branch", "m_id": {"m_idBytes": [82, 112, 202, 157, 76, 239, 13, 79, 148, 6, 184, 162, 110, 7, 129, 248]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 745.6410522460938, "y": -331.0912170410156}, "m_execInExecInput": {"m_id": {"m_idBytes": [249, 93, 44, 220, 50, 73, 71, 73, 141, 50, 147, 125, 106, 31, 163, 253]}, "m_name": "Exec Input"}, "m_execOutTrue": {"m_id": {"m_idBytes": [208, 66, 152, 243, 93, 210, 219, 78, 168, 121, 11, 13, 213, 182, 83, 145]}, "m_name": "True", "m_destinationID": {"m_idBytes": [203, 185, 249, 88, 109, 140, 130, 75, 151, 127, 187, 5, 127, 69, 163, 142]}}, "m_execOutFalse": {"m_id": {"m_idBytes": [89, 91, 122, 233, 242, 182, 232, 77, 170, 237, 83, 129, 160, 138, 83, 249]}, "m_name": "False", "m_destinationID": {"m_idBytes": [110, 159, 38, 179, 97, 55, 54, 70, 147, 34, 128, 90, 100, 251, 127, 134]}}, "m_dataInCondition": {"m_id": {"m_idBytes": [251, 72, 27, 12, 98, 252, 85, 66, 164, 214, 83, 187, 185, 242, 116, 61]}, "m_name": "condition", "m_sourceID": {"m_idBytes": [184, 243, 37, 151, 134, 183, 144, 79, 184, 89, 231, 145, 174, 59, 33, 161]}, "m_defaultSocketValue": {"m_value": 0}}}
+SIImage_SetupRecolouring {"m_name": "SetupRecolouring", "m_id": {"m_idBytes": [201, 167, 13, 7, 135, 28, 22, 79, 165, 17, 189, 29, 24, 175, 44, 202]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 916.7980346679688, "y": -331.0159912109375}, "m_execInExecInput": {"m_id": {"m_idBytes": [203, 185, 249, 88, 109, 140, 130, 75, 151, 127, 187, 5, 127, 69, 163, 142]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [18, 40, 62, 245, 252, 1, 44, 67, 179, 4, 77, 75, 91, 85, 97, 109]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [230, 107, 249, 81, 57, 73, 53, 68, 167, 202, 93, 182, 142, 211, 217, 154]}}, "m_target": {"m_id": {"m_idBytes": [200, 247, 107, 31, 196, 242, 92, 76, 157, 239, 252, 245, 37, 150, 67, 157]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [103, 50, 43, 225, 24, 36, 2, 68, 175, 130, 183, 207, 171, 242, 197, 127]}, "m_defaultSocketValue": {}}, "m_dataInRedReplacement": {"m_id": {"m_idBytes": [163, 87, 88, 251, 192, 140, 134, 74, 177, 226, 96, 65, 57, 241, 67, 178]}, "m_name": "red Replacement", "m_sourceID": {"m_idBytes": [84, 107, 95, 196, 246, 182, 206, 70, 164, 90, 84, 184, 203, 158, 91, 94]}, "m_defaultSocketValue": {"m_value": {"rgba": 0}}}, "m_dataInGreenReplacement": {"m_id": {"m_idBytes": [129, 57, 119, 204, 41, 103, 19, 72, 162, 204, 115, 3, 202, 91, 8, 229]}, "m_name": "green Replacement", "m_sourceID": {"m_idBytes": [127, 232, 38, 47, 98, 200, 99, 71, 168, 54, 2, 179, 119, 15, 15, 41]}, "m_defaultSocketValue": {"m_value": {"rgba": 0}}}, "m_dataInBlueReplacement": {"m_id": {"m_idBytes": [13, 34, 109, 89, 67, 240, 54, 64, 146, 146, 153, 192, 163, 83, 3, 123]}, "m_name": "blue Replacement", "m_sourceID": {"m_idBytes": [186, 228, 77, 116, 72, 30, 25, 67, 132, 183, 66, 57, 27, 100, 6, 63]}, "m_defaultSocketValue": {"m_value": {"rgba": 0}}}}
+VisualDataGetterNode {"m_name": "Get -", "m_id": {"m_idBytes": [205, 150, 16, 216, 151, 240, 25, 79, 137, 65, 97, 208, 111, 249, 198, 0]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 1628.476806640625, "y": -64.57748413085938}, "m_dataSocket": {"m_id": {"m_idBytes": [103, 50, 43, 225, 24, 36, 2, 68, 175, 130, 183, 207, 171, 242, 197, 127]}, "m_name": "Element", "m_dataID": {"m_idBytes": [131, 29, 145, 30, 112, 21, 97, 72, 176, 201, 185, 45, 242, 69, 150, 81]}}}
+SIImage_ClearRecolouring {"m_name": "ClearRecolouring", "m_id": {"m_idBytes": [116, 222, 27, 5, 233, 230, 198, 69, 177, 134, 163, 229, 180, 114, 68, 249]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 948.7933959960938, "y": -164.85983276367188}, "m_execInExecInput": {"m_id": {"m_idBytes": [110, 159, 38, 179, 97, 55, 54, 70, 147, 34, 128, 90, 100, 251, 127, 134]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [182, 238, 222, 11, 22, 239, 138, 73, 140, 172, 229, 152, 141, 177, 160, 198]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [230, 107, 249, 81, 57, 73, 53, 68, 167, 202, 93, 182, 142, 211, 217, 154]}}, "m_target": {"m_id": {"m_idBytes": [134, 222, 102, 145, 56, 137, 232, 67, 128, 23, 67, 70, 21, 38, 40, 239]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [103, 50, 43, 225, 24, 36, 2, 68, 175, 130, 183, 207, 171, 242, 197, 127]}, "m_defaultSocketValue": {}}}
+SIImage_SetImage {"m_name": "SetImage", "m_id": {"m_idBytes": [141, 134, 106, 192, 184, 213, 14, 69, 155, 116, 115, 19, 167, 140, 121, 93]}, "m_parentID": {"m_idBytes": [238, 178, 3, 32, 170, 206, 239, 70, 183, 164, 183, 147, 56, 255, 84, 19]}, "m_position": {"x": 1166.499267578125, "y": -164.593994140625}, "m_execInExecInput": {"m_id": {"m_idBytes": [230, 107, 249, 81, 57, 73, 53, 68, 167, 202, 93, 182, 142, 211, 217, 154]}, "m_name": "Exec Input"}, "m_execOutExecOutput": {"m_id": {"m_idBytes": [147, 51, 138, 254, 169, 248, 188, 79, 144, 13, 231, 149, 213, 131, 53, 189]}, "m_name": "Exec Output", "m_destinationID": {"m_idBytes": [8, 191, 55, 217, 237, 107, 80, 68, 172, 120, 112, 60, 75, 243, 28, 198]}}, "m_target": {"m_id": {"m_idBytes": [28, 230, 223, 216, 14, 66, 126, 79, 143, 52, 248, 134, 190, 133, 216, 19]}, "m_name": "Target", "m_sourceID": {"m_idBytes": [103, 50, 43, 225, 24, 36, 2, 68, 175, 130, 183, 207, 171, 242, 197, 127]}, "m_defaultSocketValue": {}}, "m_dataInAddressableID": {"m_id": {"m_idBytes": [1, 93, 70, 66, 9, 69, 41, 66, 158, 197, 17, 19, 212, 75, 191, 213]}, "m_name": "addressableID", "m_sourceID": {"m_idBytes": [92, 142, 136, 48, 76, 178, 117, 68, 151, 195, 97, 91, 108, 114, 48, 26]}, "m_defaultSocketValue": {"m_value": ""}}, "m_dataInResourceGenerationData": {"m_id": {"m_idBytes": [112, 126, 51, 64, 147, 66, 250, 75, 191, 121, 243, 0, 181, 50, 141, 123]}, "m_name": "resource Generation Data", "m_sourceID": {"m_idBytes": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, "m_defaultSocketValue": {}}}
+TYPE 429 FM.UI.CompStadiumCapacityReference fields 4294967295 0 methods 4127 13
+TYPE 430 FM.UI.CompStadiumReference fields 4294967295 0 methods 4140 13
+TYPE 521 FM.UI.DbSummaryStadiumReference fields 4294967295 0 methods 5362 16
+TYPE 852 FM.UI.PlannedStadiumWorkReference fields 4294967295 0 methods 9767 13
+TYPE 1071 FM.UI.StadiumReference fields 4294967295 0 methods 12724 17
+TYPE 1864 .StadiumData fields 5091 3 methods 19223 16
+ FIELD 5091 m_kitReceiver
+ FIELD 5092 m_group
+ FIELD 5093 Changed
+ METHOD 19224 get_TeamUniqueID
+ METHOD 19225 get_IsClub
+ METHOD 19226 get_LogoUniqueID
+ METHOD 19230 get_StadiumEnvironment
+ METHOD 19231 get_Kit
+TYPE 1868 FM.UI.GameBackgroundStadiumBindings fields 5108 8 methods 19248 9
+ FIELD 5108 m_teamUniqueID
+ FIELD 5109 m_logoUniqueID
+ FIELD 5110 m_primaryColourProperty
+ FIELD 5111 m_secondaryColourProperty
+ FIELD 5112 m_tertiaryColourProperty
+ FIELD 5113 m_stadiumEnvironmentProperty
+ FIELD 5114 m_kit
+ FIELD 5115 m_isClub
+ METHOD 19248 get_TeamUniqueIDProperty
+ METHOD 19249 get_LogoUniqueIDProperty
+ METHOD 19253 get_StadiumEnvironmentProperty
+ METHOD 19254 get_Kit
+ METHOD 19255 get_IsClubProperty
+TYPE 10769 .ResourceType fields 49722 17 methods 4294967295 0
+ FIELD 49722 value__
+ FIELD 49723 Club
+ FIELD 49724 Comp
+ FIELD 49725 Team
+ FIELD 49726 Nation
+ FIELD 49727 Person
+ FIELD 49728 Kit
+ FIELD 49729 Kit2DOutfield
+ FIELD 49730 Kit2DFront
+ FIELD 49731 Kit2DGK
+ FIELD 49732 DBSummaryPerson
+ FIELD 49733 NewGen
+ FIELD 49734 Continent
+ FIELD 49735 Unsupported
+ FIELD 49736 Kit2DSocks
+ FIELD 49737 Kit2DShorts
+ FIELD 49738 Flag
+TYPE 10771 FM.Graphics.GraphicsUtils fields 4294967295 0 methods 86791 3
+ METHOD 86791 ResolveResourceID
+ METHOD 86792 ResolveKitResourceID
+TYPE 10843 FM.Graphics.StadiumBuilder.StadiumSeats fields 50188 15 methods 87306 5
+ FIELD 50188 LineNormalRotationTolerance
+ FIELD 50189 PointComparisonTolerance
+ FIELD 50190 PrimarySeatingLocatorName
+ FIELD 50191 SecondarySeatingLocatorName
+ FIELD 50192 StandingSeatingLocatorName
+ FIELD 50193 DisableSeatingLocatorName
+ FIELD 50194 DisabledSeatingLocatorName
+ FIELD 50195 CornerStandNameIndicator
+ FIELD 50196 LeftNameIndicator
+ FIELD 50197 EndCapNameIndicator
+ FIELD 50198 NoCornerNameIndicator
+ FIELD 50199 m_primary
+ FIELD 50200 m_secondary
+ FIELD 50201 m_standing
+ FIELD 50202 m_disabled
+TYPE 10856 FM.Graphics.StadiumBuilder.Stadium fields 50335 79 methods 87399 129
+ FIELD 50335 StadiumFinished
+ FIELD 50336 <CornerXZ>k__BackingField
+ FIELD 50337 <CornerX>k__BackingField
+ FIELD 50338 <CornerZ>k__BackingField
+ FIELD 50339 <Corner>k__BackingField
+ FIELD 50340 <PitchRoot>k__BackingField
+ FIELD 50341 <VarInstance>k__BackingField
+ FIELD 50342 <GoalNetGenerator>k__BackingField
+ FIELD 50343 PitchHeight
+ FIELD 50344 TarmacHeight
+ FIELD 50345 TarmacScale
+ FIELD 50346 DugoutDistanceFromEdge
+ FIELD 50347 GapToDugout
+ FIELD 50348 s_aoShaderID
+ FIELD 50349 FMSimpleShaderName
+ FIELD 50350 FMLayerShaderName
+ FIELD 50351 FMUberShaderName
+ FIELD 50352 m_fieldSize
+ FIELD 50353 m_pitchSize
+ FIELD 50354 m_gapToStands
+ FIELD 50355 m_buildFloor
+ FIELD 50356 m_buildVar
+ FIELD 50357 m_useDigitalAdhoardings
+ FIELD 50358 m_tarmacReference
+ FIELD 50359 m_groundReference
+ FIELD 50360 m_virtualAssistantReference
+ FIELD 50361 m_cornerReference
+ FIELD 50362 m_goalNetsReference
+ FIELD 50363 m_topStand
+ FIELD 50364 m_bottomStand
+ FIELD 50365 m_rightStand
+ FIELD 50366 m_leftStand
+ FIELD 50367 m_topLeftStand
+ FIELD 50368 m_topRightStand
+ FIELD 50369 m_bottomLeftStand
+ FIELD 50370 m_bottomRightStand
+ FIELD 50371 m_primaryRecolourMaterials
+ FIELD 50372 m_secondaryRecolourMaterials
+ FIELD 50373 m_pitchRoot
+ FIELD 50374 m_leftStandsRoot
+ FIELD 50375 m_topLeftStandsRoot
+ FIELD 50376 m_topStandsRoot
+ FIELD 50377 m_topRightStandsRoot
+ FIELD 50378 m_rightStandsRoot
+ FIELD 50379 m_bottomRightStandsRoot
+ FIELD 50380 m_bottomStandsRoot
+ FIELD 50381 m_bottomLeftStandsRoot
+ FIELD 50382 m_cornersRoot
+ FIELD 50383 m_surroundsRoot
+ FIELD 50384 m_crowdController
+ FIELD 50385 m_adboards
+ FIELD 50386 m_dynamicPitch
+ FIELD 50387 m_primaryMaterialInstances
+ FIELD 50388 m_secondaryMaterialInstances
+ FIELD 50389 m_standResourceHandles
+ FIELD 50390 m_ambientOcclusionMapHandles
+ FIELD 50391 m_createdStands
+ FIELD 50392 m_pendingLoads
+ FIELD 50393 s_errorShader
+ FIELD 50394 m_standsHandle
+ FIELD 50395 m_configurationSubsystem
+ FIELD 50396 <IsInitialised>k__BackingField
+ FIELD 50397 <PitchType>k__BackingField
+ FIELD 50398 <PitchCondition>k__BackingField
+ FIELD 50399 <PitchPrecipitation>k__BackingField
+ FIELD 50400 <PitchPattern>k__BackingField
+ FIELD 50401 <PrecipitationIntensity>k__BackingField
+ FIELD 50402 <HasUnderSoilHeating>k__BackingField
+ FIELD 50403 <IsEnclosed>k__BackingField
+ FIELD 50404 <TopStandPrefab>k__BackingField
+ FIELD 50405 <TopRightStandPrefab>k__BackingField
+ FIELD 50406 <RightStandPrefab>k__BackingField
+ FIELD 50407 <BottomRightStandPrefab>k__BackingField
+ FIELD 50408 <BottomStandPrefab>k__BackingField
+ FIELD 50409 <BottomLeftStandPrefab>k__BackingField
+ FIELD 50410 <LeftStandPrefab>k__BackingField
+ FIELD 50411 <TopLeftStandPrefab>k__BackingField
+ FIELD 50412 <DugoutPrefab>k__BackingField
+ FIELD 50413 <StadiumID>k__BackingField
+ METHOD 87399 add_StadiumFinished
+ METHOD 87400 remove_StadiumFinished
+ METHOD 87480 get_StadiumID
+ METHOD 87481 set_StadiumID
+ METHOD 87484 ClearAndBuildStadium
+ METHOD 87488 ClearStadium
+ METHOD 87523 ClearStandResourceHandles
+TYPE 10859 FM.Graphics.StadiumBuilder.StadiumBuilder fields 50432 26 methods 87553 43
+ FIELD 50432 m_useDisabledStands
+ FIELD 50433 m_stadium
+ FIELD 50434 m_dugoutSelectors
+ FIELD 50435 m_stadiumID
+ FIELD 50436 m_stadiumCapacity
+ FIELD 50437 m_pitchSize
+ FIELD 50438 m_fieldSize
+ FIELD 50439 m_gapToStands
+ FIELD 50440 m_corporateFacilityProbability
+ FIELD 50441 m_topStand
+ FIELD 50442 m_bottomStand
+ FIELD 50443 m_rightStand
+ FIELD 50444 m_leftStand
+ FIELD 50445 m_topLeftStand
+ FIELD 50446 m_topRightStand
+ FIELD 50447 m_bottomLeftStand
+ FIELD 50448 m_bottomRightStand
+ FIELD 50449 CapacityPenalty
+ FIELD 50450 NoPatternId
+ FIELD 50451 HorizontalPatternId
+ FIELD 50452 CheckeredPatternId
+ FIELD 50453 m_random
+ FIELD 50454 m_standsLoadHandle
+ FIELD 50455 m_hasDestroyed
+ FIELD 50456 m_isEnclosed
+ FIELD 50457 m_stadiumAge
+ METHOD 87555 get_StadiumID
+ METHOD 87556 set_StadiumID
+ METHOD 87567 get_StadiumSeed
+ METHOD 87568 get_StadiumCapacity
+ METHOD 87577 get_StadiumInstance
+ METHOD 87580 ClearAndBuildStadium
+ METHOD 87584 CopyToStadium
+TYPE 10860 FM.Graphics.StadiumBuilder.StadiumStand fields 50471 84 methods 87614 33
+ FIELD 50471 m_roof
+ FIELD 50472 m_roofCornerEndCapLeft
+ FIELD 50473 m_roofCornerEndCapRight
+ FIELD 50474 m_roofNoCornerEndCapLeft
+ FIELD 50475 m_roofNoCornerEndCapRight
+ FIELD 50476 m_endCornerCapLeft
+ FIELD 50477 m_endCornerCapRight
+ FIELD 50478 m_endNoCornerCapLeft
+ FIELD 50479 m_endNoCornerCapRight
+ FIELD 50480 m_standBase
+ FIELD 50481 m_standCorporateFacilities
+ FIELD 50482 m_standTunnel
+ FIELD 50483 m_standTunnelCorporateFacilties
+ FIELD 50484 m_surferFlagReference
+ FIELD 50485 m_baseProps
+ FIELD 50486 m_tunnelProps
+ FIELD 50487 m_tunnelCorpProps
+ FIELD 50488 m_corpProps
+ FIELD 50489 m_endCapLeftProps
+ FIELD 50490 m_endCapRightProps
+ FIELD 50491 m_noCornerEndCapLeftProps
+ FIELD 50492 m_noCornerEndCapRightProps
+ FIELD 50493 m_roofEndCapLeftProps
+ FIELD 50494 m_roofEndCapRightProps
+ FIELD 50495 m_noCornerRoofEndCapLeftProps
+ FIELD 50496 m_noCornerRoofEndCapRightProps
+ FIELD 50497 m_roofProps
+ FIELD 50498 m_adHoardingsParent
+ FIELD 50499 m_adHoardingsTunnelParent
+ FIELD 50500 m_adHoardingsCorpParent
+ FIELD 50501 m_adHoardingsTunnelCorpParent
+ FIELD 50502 m_roofAdsParent
+ FIELD 50503 s_baseTunnelKeywords
+ FIELD 50504 s_baseTunnelKeywordsExc
+ FIELD 50505 s_baseCorpKeywords
+ FIELD 50506 s_baseCorpKeywordsExc
+ FIELD 50507 s_baseTunnelCorpKeywords
+ FIELD 50508 s_baseTunnelCorpKeywordsExc
+ FIELD 50509 s_cornerEndCapLeftKeywords
+ FIELD 50510 s_cornerEndCapLeftKeywordsExc
+ FIELD 50511 s_cornerEndCapRightKeywords
+ FIELD 50512 s_cornerEndCapRightKeywordsExc
+ FIELD 50513 s_noCornerEndCapLeftKeywords
+ FIELD 50514 s_noCornerEndCapLeftKeywordsExc
+ FIELD 50515 s_noCornerEndCapRightKeywords
+ FIELD 50516 s_noCornerEndCapRightKeywordsExc
+ FIELD 50517 s_roofCornerEndCapLeftKeywords
+ FIELD 50518 s_roofCornerEndCapLeftKeywordsExc
+ FIELD 50519 s_roofCornerEndCapRightKeywords
+ FIELD 50520 s_roofCornerEndCapRightKeywordsExc
+ FIELD 50521 s_roofNoCornerEndCapLeftKeywords
+ FIELD 50522 s_roofNoCornerEndCapLeftKeywordsExc
+ FIELD 50523 s_roofNoCornerEndCapRightKeywords
+ FIELD 50524 s_roofNoCornerEndCapRightKeywordsExc
+ FIELD 50525 s_baseTunnelPropsKeywords
+ FIELD 50526 s_baseTunnelPropsKeywordsExc
+ FIELD 50527 s_baseCorpPropsKeywords
+ FIELD 50528 s_baseCorpPropsKeywordsExc
+ FIELD 50529 s_baseTunnelCorpPropsKeywords
+ FIELD 50530 s_basePropsKeywords
+ FIELD 50531 s_basePropsKeywordsExc
+ FIELD 50532 s_roofPropsKeywords
+ FIELD 50533 s_roofEndCapLeftPropsKeywords
+ FIELD 50534 s_roofEndCapLeftPropsKeywordsExc
+ FIELD 50535 s_roofEndCapRightPropsKeywords
+ FIELD 50536 s_roofEndCapRightPropsKeywordsExc
+ FIELD 50537 s_roofNoCornerEndCapLeftPropsKeywords
+ FIELD 50538 s_roofNoCornerEndCapRightPropsKeywords
+ FIELD 50539 s_endCapLeftPropsKeywords
+ FIELD 50540 s_endCapLeftPropsKeywordsExc
+ FIELD 50541 s_endCapRightPropsKeywords
+ FIELD 50542 s_endCapRightPropsKeywordsExc
+ FIELD 50543 s_noCornerEndCapLeftPropsKeywords
+ FIELD 50544 s_noCornerEndCapLeftPropsKeywordsExc
+ FIELD 50545 s_noCornerEndCapRightPropsKeywords
+ FIELD 50546 s_noCornerEndCapRightPropsKeywordsExc
+ FIELD 50547 m_inactiveGameObjects
+ FIELD 50548 <SmallEndCapOnLeft>k__BackingField
+ FIELD 50549 <SmallEndCapOnRight>k__BackingField
+ FIELD 50550 <LargeEndCapOnLeft>k__BackingField
+ FIELD 50551 <LargeEndCapOnRight>k__BackingField
+ FIELD 50552 <RenderersToCull>k__BackingField
+ FIELD 50553 <FloodlightUpdatersToCull>k__BackingField
+ FIELD 50554 <CullingModeMapping>k__BackingField
+TYPE 10861 FM.Graphics.StadiumBuilder.StadiumSizeGroup fields 50555 16 methods 4294967295 0
+ FIELD 50555 value__
+ FIELD 50556 Undefined
+ FIELD 50557 ZeroToFiveK
+ FIELD 50558 FiveToTenK
+ FIELD 50559 TenToTwentyK
+ FIELD 50560 TwentyToThirtyK
+ FIELD 50561 ThirtyToFortyK
+ FIELD 50562 FortyToFiftyK
+ FIELD 50563 FiftyToSeventyFiveK
+ FIELD 50564 SeventyFiveK
+ FIELD 50565 EmptySmall
+ FIELD 50566 EmptyMedium
+ FIELD 50567 EmptyLarge
+ FIELD 50568 RenovationSmall
+ FIELD 50569 RenovationMedium
+ FIELD 50570 RenovationLarge
+TYPE 10862 FM.Graphics.StadiumBuilder.StadiumDateGroup fields 50571 5 methods 4294967295 0
+ FIELD 50571 value__
+ FIELD 50572 Undefined
+ FIELD 50573 PreNineties
+ FIELD 50574 NinetiesToTens
+ FIELD 50575 TensToPresent
+TYPE 10899 FM.Graphics.Props.StadiumColourable fields 50762 5 methods 87803 6
+ FIELD 50762 m_materialsToRecolour
+ FIELD 50763 s_primerColorID
+ FIELD 50764 m_instancedMaterialsToRecolour
+ FIELD 50765 m_renderers
+ FIELD 50766 m_instantiatedMaterials
+TYPE 10980 FM.Graphics.EnvironmentBuilder.StadiumLocation fields 51486 2 methods 88322 5
+ FIELD 51486 <FieldBounds>k__BackingField
+ FIELD 51487 <StadiumStands>k__BackingField
+ METHOD 88324 get_StadiumStands
+ METHOD 88325 set_StadiumStands
+TYPE 10981 FM.Graphics.EnvironmentBuilder.StadiumPlacementConfig fields 51488 2 methods 88327 3
+ FIELD 51488 m_minHighwayDistance
+ FIELD 51489 m_safeZoneMeters
+TYPE 10987 FM.Graphics.EnvironmentBuilder.StadiumBoundsData fields 51503 1 methods 88342 3
+ FIELD 51503 <FieldBounds>k__BackingField
+TYPE 10997 FM.Graphics.EnvironmentBuilder.StadiumPlacementStep fields 51534 6 methods 88368 6
+ FIELD 51534 m_context
+ FIELD 51535 m_globalRoadConfig
+ FIELD 51536 m_placementConfig
+ FIELD 51537 m_locationConfig
+ FIELD 51538 m_random
+ FIELD 51539 m_debugFieldBoundsExtents
+TYPE 11000 FM.Graphics.EnvironmentBuilder.StadiumBoundsCalculator fields 51548 1 methods 88386 4
+ FIELD 51548 s_standBoundsData
+TYPE 11006 FM.Graphics.EnvironmentBuilder.StadiumPlacementStep_StadiumPlacementStep fields 51580 8 methods 88434 14
+ FIELD 51580 m_execInExecInput
+ FIELD 51581 m_execOutExecOutput
+ FIELD 51582 m_dataInContext
+ FIELD 51583 m_outputExecutes
+ FIELD 51584 m_asyncExecutes
+ FIELD 51585 m_outputDelegates
+ FIELD 51586 m_dataInputs
+ FIELD 51587 m_dataOutputs
+TYPE 11037 FM.Graphics.Environment.StadiumEnvironmentState fields 51742 6 methods 4294967295 0
+ FIELD 51742 value__
+ FIELD 51743 NotSet
+ FIELD 51744 Basic
+ FIELD 51745 Standard
+ FIELD 51746 HighEnd
+ FIELD 51747 StateOfArt
+TYPE 11051 FM.Graphics.Environment.StadiumRecolouring fields 51748 11 methods 88635 20
+ FIELD 51748 m_primaryColour
+ FIELD 51749 m_secondaryColour
+ FIELD 51750 m_teams
+ FIELD 51751 m_winningIndex
+ FIELD 51752 m_competitionLogo
+ FIELD 51753 m_competitionBackgroundColour
+ FIELD 51754 m_competitionForegroundColour
+ FIELD 51755 m_competitionOutlineColour
+ FIELD 51756 s_instance
+ FIELD 51757 s_colourA
+ FIELD 51758 s_colourB
+ METHOD 88649 AddStadiumColourable
+TYPE 12308 FM.Match.Team fields 58669 4 methods 98274 2
+ FIELD 58669 m_teamKit
+ FIELD 58670 <Players>k__BackingField
+ FIELD 58671 <ID>k__BackingField
+ FIELD 58672 <CrowdKits>k__BackingField
+TYPE 12312 FM.Match.Stadium.StadiumAPI fields 58680 16 methods 98289 34
+ FIELD 58680 m_stadiumBuilder
+ FIELD 58681 m_crowdController
+ FIELD 58682 m_detailedGrassController
+ FIELD 58683 m_adboards
+ FIELD 58684 m_surferFlagPrefab
+ FIELD 58685 CutscenePlaybackSpeed
+ FIELD 58686 s_snowAmountProperty
+ FIELD 58687 s_seasonIndexProperty
+ FIELD 58688 m_adboardController
+ FIELD 58689 m_surferFlagController
+ FIELD 58690 m_hasInitialised
+ FIELD 58691 m_scene
+ FIELD 58692 m_timeChanged
+ FIELD 58693 m_currentSpeed
+ FIELD 58694 m_isPlaying
+ FIELD 58695 m_isCutscenePlaying
+ METHOD 98291 get_StadiumSeed
+ METHOD 98308 ClampStandLimitsByStadiumCapacity
+ METHOD 98311 StadiumBuilderCoroutine
+ METHOD 98312 OnStadiumBuild
+ METHOD 98322 <StadiumBuilderCoroutine>b__42_0
+TYPE 12313 FM.Match.Stadium.Testing.StadiumBuilderTest_Gameplay fields 58700 1 methods 98329 2
+ FIELD 58700 m_stadiumBuilder
+TYPE 12373 FM.Match.Cutscene.StadiumTrait fields 58923 3 methods 4294967295 0
+ FIELD 58923 value__
+ FIELD 58924 Tunnel
+ FIELD 58925 NoTunnel
+TYPE 12444 FM.Match.Camera.StadiumSafeZoneClamp fields 59174 1 methods 98907 5
+ FIELD 59174 m_safeZoneHalfSize
+TYPE 19141 SI.Match.StadiumSetupInfo fields 88743 23 methods 4294967295 0
+ FIELD 88743 stadiumCapacity
+ FIELD 88744 stadiumID
+ FIELD 88745 attendance
+ FIELD 88746 HomeFansCount
+ FIELD 88747 AwayFansCount
+ FIELD 88748 stadiumAge
+ FIELD 88749 HomeFansKitPercentage
+ FIELD 88750 AwayFansKitPercentage
+ FIELD 88751 gapToStands
+ FIELD 88752 usesSeatsOnly
+ FIELD 88753 hasDigitalAdHoardings
+ FIELD 88754 hasVirtualAssistantRefereeStand
+ FIELD 88755 isEnclosed
+ FIELD 88756 topStandSetupInfo
+ FIELD 88757 botStandSetupInfo
+ FIELD 88758 rightStandSetupInfo
+ FIELD 88759 leftStandSetupInfo
+ FIELD 88760 topLeftStandSetupInfo
+ FIELD 88761 topRightStandSetupInfo
+ FIELD 88762 bottomLeftStandSetupInfo
+ FIELD 88763 bottomRightStandSetupInfo
+ FIELD 88764 primarySeatColor
+ FIELD 88765 secondarySeatColor
+TYPE 19142 SI.Match.MatchStadiumSetup fields 88766 2 methods 4294967295 0
+ FIELD 88766 pitchSetupInfo
+ FIELD 88767 stadiumSetupInfo
+TYPE 19143 SI.Match.MatchStadiumLocationSetup fields 88768 5 methods 4294967295 0
+ FIELD 88768 longitude
+ FIELD 88769 latitude
+ FIELD 88770 orientation
+ FIELD 88771 altitude
+ FIELD 88772 timeZone
+TYPE 19145 SI.Match.StadiumColouringData fields 88783 22 methods 4294967295 0
+ FIELD 88783 HomeTeamUniqueID
+ FIELD 88784 HomeTeamContainerUniqueID
+ FIELD 88785 HomeTeamLogoNumber
+ FIELD 88786 HomeTeamBackgroundColour
+ FIELD 88787 HomeTeamForegroundColour
+ FIELD 88788 HomeTeamOutlineColour
+ FIELD 88789 HomeTeamTitleBackgroundColour
+ FIELD 88790 HomeTeamTitleForegroundColour
+ FIELD 88791 AwayTeamUniqueID
+ FIELD 88792 AwayTeamContainerUniqueID
+ FIELD 88793 AwayTeamLogoNumber
+ FIELD 88794 AwayTeamBackgroundColour
+ FIELD 88795 AwayTeamForegroundColour
+ FIELD 88796 AwayTeamOutlineColour
+ FIELD 88797 AwayTeamTitleBackgroundColour
+ FIELD 88798 AwayTeamTitleForegroundColour
+ FIELD 88799 StadiumPrimaryColour
+ FIELD 88800 StadiumSecondaryColour
+ FIELD 88801 CompetitionID
+ FIELD 88802 CompetitionPrimaryColour
+ FIELD 88803 CompetitionSecondaryColour
+ FIELD 88804 CompetitionTertiaryColour
+TYPE 19433 .StadiumData fields 89748 6 methods 140883 3
+ FIELD 89748 StadiumCapacity
+ FIELD 89749 Attendance
+ FIELD 89750 HasDigitalAdHoardings
+ FIELD 89751 HasVirtualAssistantRefereeStand
+ FIELD 89752 IsEnclosed
+ FIELD 89753 Roofs

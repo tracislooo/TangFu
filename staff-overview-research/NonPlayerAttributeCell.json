@@ -1,0 +1,1462 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 11995
+  },
+  "m_Name": "NonPlayerAttributeCell",
+  "m_ImportedWithErrors": 0,
+  "m_HasEditorElements": 0,
+  "m_HasUpdatedUrls": 0,
+  "m_ImportedWithWarnings": 0,
+  "m_Usings": [],
+  "inlineSheet": {
+    "m_FileID": 0,
+    "m_PathID": 4158096434647117680
+  },
+  "m_VisualTree": {
+    "rid": 1000
+  },
+  "m_AssetEntries": [],
+  "m_Slots": [],
+  "m_ContentContainerId": 0,
+  "m_ContentHash": -1786951073,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": -2,
+        "type": {
+          "class": "",
+          "ns": "",
+          "asm": ""
+        }
+      },
+      {
+        "rid": 1000,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.UXML",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1969273441,
+          "m_Parent": {
+            "rid": -2
+          },
+          "m_Children": [
+            {
+              "rid": 1001
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": -2
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1001,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingExpect",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 622237192,
+          "m_Parent": {
+            "rid": 1000
+          },
+          "m_Children": [
+            {
+              "rid": 1002
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1003
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1002,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIStyleSetter",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1692613530,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [
+            {
+              "rid": 1004
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 0,
+          "m_Classes": [
+            "row-direction-normal"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1005
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1003,
+        "type": {
+          "class": "BindingExpect/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 622237192,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "Parameters": [
+            {
+              "m_serialisedType": 0,
+              "name": "attributebind",
+              "type": {
+                "id": 2035378511
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            }
+          ],
+          "Parameters_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1004,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.VisualElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1241855573,
+          "m_Parent": {
+            "rid": 1002
+          },
+          "m_Children": [
+            {
+              "rid": 1006
+            },
+            {
+              "rid": 1007
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 1,
+          "m_Classes": [
+            "row-direction-normal",
+            "padding-horizontal-global-padding-regular",
+            "align-items-center",
+            "justify-content-space-between"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1008
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1005,
+        "type": {
+          "class": "SIStyleSetter/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 1692613530,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "BindFunction": {
+            "m_target": {
+              "m_guid": "ccad53b4192c2ed41ad18bae0726dbe4"
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": [
+                  5,
+                  33,
+                  0,
+                  0,
+                  0,
+                  32,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  78,
+                  117,
+                  108,
+                  108,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  80,
+                  0,
+                  0,
+                  0,
+                  42,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  65,
+                  115,
+                  115,
+                  101,
+                  116,
+                  82,
+                  101,
+                  102,
+                  101,
+                  114,
+                  101,
+                  110,
+                  99,
+                  101,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  32,
+                  53,
+                  98,
+                  50,
+                  56,
+                  51,
+                  52,
+                  101,
+                  97,
+                  50,
+                  97,
+                  52,
+                  102,
+                  101,
+                  53,
+                  100,
+                  52,
+                  55,
+                  98,
+                  48,
+                  101,
+                  102,
+                  49,
+                  98,
+                  101,
+                  56,
+                  48,
+                  51,
+                  51,
+                  55,
+                  48,
+                  54,
+                  50,
+                  1,
+                  0,
+                  1,
+                  0,
+                  47,
+                  0,
+                  0,
+                  0,
+                  34,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  83,
+                  116,
+                  114,
+                  105,
+                  110,
+                  103,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  1,
+                  10,
+                  83,
+                  116,
+                  121,
+                  108,
+                  101,
+                  67,
+                  108,
+                  97,
+                  115,
+                  115,
+                  37,
+                  0,
+                  0,
+                  0,
+                  35,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  66,
+                  111,
+                  111,
+                  108,
+                  101,
+                  97,
+                  110,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  1,
+                  105,
+                  0,
+                  0,
+                  0,
+                  62,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  71,
+                  101,
+                  110,
+                  101,
+                  114,
+                  105,
+                  99,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  96,
+                  49,
+                  91,
+                  83,
+                  73,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  97,
+                  98,
+                  108,
+                  101,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103,
+                  80,
+                  97,
+                  116,
+                  104,
+                  93,
+                  1,
+                  40,
+                  97,
+                  116,
+                  116,
+                  114,
+                  105,
+                  98,
+                  117,
+                  116,
+                  101,
+                  98,
+                  105,
+                  110,
+                  100,
+                  46,
+                  65,
+                  116,
+                  116,
+                  114,
+                  105,
+                  98,
+                  117,
+                  116,
+                  101,
+                  72,
+                  105,
+                  103,
+                  104,
+                  108,
+                  105,
+                  103,
+                  104,
+                  116,
+                  67,
+                  97,
+                  116,
+                  101,
+                  103,
+                  111,
+                  114,
+                  121
+                ]
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          },
+          "PrimaryColorDataLink": {
+            "m_path": ""
+          },
+          "SecondaryColorDataLink": {
+            "m_path": ""
+          },
+          "EditorPreview": 0,
+          "BindFunction_UxmlAttributeFlags": 1,
+          "PrimaryColorDataLink_UxmlAttributeFlags": 0,
+          "SecondaryColorDataLink_UxmlAttributeFlags": 0,
+          "EditorPreview_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1006,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.VisualElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -730036679,
+          "m_Parent": {
+            "rid": 1004
+          },
+          "m_Children": [
+            {
+              "rid": 1009
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "small-horizontal-container-center-all",
+            "global-text-secondary"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1010
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1007,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIStyleSetter",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 522662027,
+          "m_Parent": {
+            "rid": 1004
+          },
+          "m_Children": [
+            {
+              "rid": 1011
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1012
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1008,
+        "type": {
+          "class": "VisualElement/UxmlSerializedData",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "uxmlAssetId": 1241855573,
+          "name": "container",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1009,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIText",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 71904070,
+          "m_Parent": {
+            "rid": 1006
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "content-no-wrap",
+            "content-ellipsis",
+            "global-text-primary",
+            "body-md"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1013
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1010,
+        "type": {
+          "class": "VisualElement/UxmlSerializedData",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "uxmlAssetId": -730036679,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1011,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIText",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1717665814,
+          "m_Parent": {
+            "rid": 1007
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "content-no-wrap",
+            "content-ellipsis",
+            "data_display-coaching_ratings-small",
+            "body-md"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1014
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1012,
+        "type": {
+          "class": "SIStyleSetter/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 522662027,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "BindFunction": {
+            "m_target": {
+              "m_guid": "ccad53b4192c2ed41ad18bae0726dbe4"
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": [
+                  5,
+                  33,
+                  0,
+                  0,
+                  0,
+                  32,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  78,
+                  117,
+                  108,
+                  108,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  80,
+                  0,
+                  0,
+                  0,
+                  42,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  65,
+                  115,
+                  115,
+                  101,
+                  116,
+                  82,
+                  101,
+                  102,
+                  101,
+                  114,
+                  101,
+                  110,
+                  99,
+                  101,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  32,
+                  54,
+                  99,
+                  97,
+                  52,
+                  57,
+                  100,
+                  53,
+                  55,
+                  100,
+                  51,
+                  55,
+                  55,
+                  51,
+                  54,
+                  56,
+                  52,
+                  52,
+                  98,
+                  102,
+                  53,
+                  49,
+                  53,
+                  48,
+                  48,
+                  101,
+                  97,
+                  52,
+                  54,
+                  53,
+                  99,
+                  99,
+                  97,
+                  1,
+                  0,
+                  1,
+                  0,
+                  48,
+                  0,
+                  0,
+                  0,
+                  34,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  83,
+                  116,
+                  114,
+                  105,
+                  110,
+                  103,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  1,
+                  11,
+                  83,
+                  116,
+                  121,
+                  108,
+                  101,
+                  67,
+                  111,
+                  108,
+                  117,
+                  109,
+                  110,
+                  37,
+                  0,
+                  0,
+                  0,
+                  35,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  66,
+                  111,
+                  111,
+                  108,
+                  101,
+                  97,
+                  110,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  1,
+                  92,
+                  0,
+                  0,
+                  0,
+                  62,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  71,
+                  101,
+                  110,
+                  101,
+                  114,
+                  105,
+                  99,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  96,
+                  49,
+                  91,
+                  83,
+                  73,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  97,
+                  98,
+                  108,
+                  101,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103,
+                  80,
+                  97,
+                  116,
+                  104,
+                  93,
+                  1,
+                  27,
+                  97,
+                  116,
+                  116,
+                  114,
+                  105,
+                  98,
+                  117,
+                  116,
+                  101,
+                  98,
+                  105,
+                  110,
+                  100,
+                  46,
+                  80,
+                  114,
+                  111,
+                  112,
+                  101,
+                  114,
+                  116,
+                  121,
+                  86,
+                  97,
+                  108,
+                  117,
+                  101
+                ]
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          },
+          "PrimaryColorDataLink": {
+            "m_path": ""
+          },
+          "SecondaryColorDataLink": {
+            "m_path": ""
+          },
+          "EditorPreview": 0,
+          "BindFunction_UxmlAttributeFlags": 1,
+          "PrimaryColorDataLink_UxmlAttributeFlags": 0,
+          "SecondaryColorDataLink_UxmlAttributeFlags": 0,
+          "EditorPreview_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1013,
+        "type": {
+          "class": "SIText/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 71904070,
+          "name": "attribute-name",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "bindingPath": "",
+          "bindingPath_UxmlAttributeFlags": 0,
+          "text": "",
+          "text_UxmlAttributeFlags": 0,
+          "enableRichText": 0,
+          "enableRichText_UxmlAttributeFlags": 0,
+          "emojiFallbackSupport": 0,
+          "emojiFallbackSupport_UxmlAttributeFlags": 0,
+          "parseEscapeSequences": 0,
+          "parseEscapeSequences_UxmlAttributeFlags": 0,
+          "isSelectable": 0,
+          "isSelectable_UxmlAttributeFlags": 0,
+          "doubleClickSelectsWord": 0,
+          "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+          "tripleClickSelectsLine": 0,
+          "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+          "displayTooltipWhenElided": 0,
+          "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "TextCase": 0,
+          "DebugDisplay": "Attribute",
+          "TextBinding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "attributebind.Name"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "IgnoreEmbeddedDataStyling": 0,
+          "EnableEmbeddedLinks": 0,
+          "DisableLinkStyling": 0,
+          "DisplayTooltipWhenElided": 0,
+          "DisableContextMenu": 0,
+          "TextCase_UxmlAttributeFlags": 0,
+          "DebugDisplay_UxmlAttributeFlags": 1,
+          "TextBinding_UxmlAttributeFlags": 1,
+          "IgnoreEmbeddedDataStyling_UxmlAttributeFlags": 0,
+          "EnableEmbeddedLinks_UxmlAttributeFlags": 0,
+          "DisableLinkStyling_UxmlAttributeFlags": 0,
+          "DisplayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "DisableContextMenu_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1014,
+        "type": {
+          "class": "SIText/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -1717665814,
+          "name": "attribute-value",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "bindingPath": "",
+          "bindingPath_UxmlAttributeFlags": 0,
+          "text": "",
+          "text_UxmlAttributeFlags": 0,
+          "enableRichText": 0,
+          "enableRichText_UxmlAttributeFlags": 0,
+          "emojiFallbackSupport": 0,
+          "emojiFallbackSupport_UxmlAttributeFlags": 0,
+          "parseEscapeSequences": 0,
+          "parseEscapeSequences_UxmlAttributeFlags": 0,
+          "isSelectable": 0,
+          "isSelectable_UxmlAttributeFlags": 0,
+          "doubleClickSelectsWord": 0,
+          "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+          "tripleClickSelectsLine": 0,
+          "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+          "displayTooltipWhenElided": 0,
+          "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "TextCase": 0,
+          "DebugDisplay": "Value",
+          "TextBinding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "attributebind.DisplayString"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "IgnoreEmbeddedDataStyling": 0,
+          "EnableEmbeddedLinks": 0,
+          "DisableLinkStyling": 0,
+          "DisplayTooltipWhenElided": 0,
+          "DisableContextMenu": 0,
+          "TextCase_UxmlAttributeFlags": 0,
+          "DebugDisplay_UxmlAttributeFlags": 1,
+          "TextBinding_UxmlAttributeFlags": 1,
+          "IgnoreEmbeddedDataStyling_UxmlAttributeFlags": 0,
+          "EnableEmbeddedLinks_UxmlAttributeFlags": 1,
+          "DisableLinkStyling_UxmlAttributeFlags": 0,
+          "DisplayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "DisableContextMenu_UxmlAttributeFlags": 0
+        }
+      }
+    ]
+  }
+}

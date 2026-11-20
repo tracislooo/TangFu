@@ -1,0 +1,2355 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 11995
+  },
+  "m_Name": "IGENationQuickActionsBlock",
+  "m_ImportedWithErrors": 0,
+  "m_HasEditorElements": 0,
+  "m_HasUpdatedUrls": 0,
+  "m_ImportedWithWarnings": 0,
+  "m_Usings": [],
+  "inlineSheet": {
+    "m_FileID": 0,
+    "m_PathID": -1786445329349085623
+  },
+  "m_VisualTree": {
+    "rid": 1000
+  },
+  "m_AssetEntries": [],
+  "m_Slots": [],
+  "m_ContentContainerId": 0,
+  "m_ContentHash": -138794177,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": -2,
+        "type": {
+          "class": "",
+          "ns": "",
+          "asm": ""
+        }
+      },
+      {
+        "rid": 1000,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.UXML",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -321116545,
+          "m_Parent": {
+            "rid": -2
+          },
+          "m_Children": [
+            {
+              "rid": 1001
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": -2
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1001,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.UI.ComponentElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -2024573208,
+          "m_Parent": {
+            "rid": 1000
+          },
+          "m_Children": [
+            {
+              "rid": 1002
+            },
+            {
+              "rid": 1003
+            },
+            {
+              "rid": 1004
+            },
+            {
+              "rid": 1005
+            },
+            {
+              "rid": 1006
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "flex-grow-class"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1007
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1002,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.VisualElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -954196870,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [
+            {
+              "rid": 1008
+            },
+            {
+              "rid": 1009
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "flex-grow-class",
+            "align-self-stretch-class"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1010
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1003,
+        "type": {
+          "class": "UxmlObjectAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingExpectComponent",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 745893775,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [
+            {
+              "name": "params",
+              "value": "isonmainscreen:invalid:True,nation:nation:False,gender:invalid:False"
+            }
+          ],
+          "m_ParentId": -2024573208,
+          "m_OrderInDocument": 0,
+          "m_IsField": 0
+        }
+      },
+      {
+        "rid": 1004,
+        "type": {
+          "class": "UxmlObjectAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingSetterComponent",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -775240520,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [
+            {
+              "name": "bind-funcs",
+              "value": "{\"Func\":\"5f43cf9f1373dc0468ec5f2b285ed495\"&#44;\"In\":[{\"$type\":\"SI.VisualScripting.GenericVisualArg`1[[SI.Bindable.BindingPath&#44; SI.Bindable]]&#44; SI.VisualScripting\"&#44;\"m_value\":\"nation.MainMenTeamContainer.MainTeam\"}&#44;{\"$type\":\"SI.VisualScripting.GenericVisualArg`1[[SI.Bindable.BindingPath&#44; SI.Bindable]]&#44; SI.VisualScripting\"&#44;\"m_value\":\"nation.MainWomanTeamContainer.MainTeam\"}&#44;{\"$type\":\"SI.VisualScripting.GenericVisualArg`1[[SI.Bindable.BindingPath&#44; SI.Bindable]]&#44; SI.VisualScripting\"&#44;\"m_value\":\"team\"}&#44;{\"$type\":\"SI.VisualScripting.BooleanVisualArg&#44; SI.VisualScripting\"&#44;\"m_value\":true}&#44;{\"$type\":\"SI.VisualScripting.StructListVisualArg`1[[SI.Bindable.BooleanArg&#44; SI.Bindable]]&#44; SI.VisualScripting\"&#44;\"m_value\":{\"$type\":\"SI.Core.StructList`1[[SI.Bindable.BooleanArg&#44; SI.Bindable]]&#44; SI.Core\"&#44;\"$values\":[{\"$type\":\"SI.Bindable.BooleanArg&#44; SI.Bindable\"&#44;\"Binding\":\"gender\"&#44;\"Invert\":true}]}}&#44;{\"$type\":\"SI.VisualScripting.EnumVisualArg`1[[SI.VisualScripting.VisibleFunctions+LogicOperator&#44; SI.Bindable]]&#44; SI.VisualScripting\"&#44;\"m_value\":0}]}"
+            },
+            {
+              "name": "reference-vars",
+              "value": "team:team:True"
+            }
+          ],
+          "m_ParentId": -2024573208,
+          "m_OrderInDocument": 0,
+          "m_IsField": 0
+        }
+      },
+      {
+        "rid": 1005,
+        "type": {
+          "class": "UxmlObjectAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingVariablesComponent",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1998592481,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [
+            {
+              "name": "value-vars",
+              "value": "{tabgroupoption}{Int|0|}"
+            }
+          ],
+          "m_ParentId": -2024573208,
+          "m_OrderInDocument": 0,
+          "m_IsField": 0
+        }
+      },
+      {
+        "rid": 1006,
+        "type": {
+          "class": "UxmlObjectAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.AlternateStyleContainerComponent",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 477458186,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_ParentId": -2024573208,
+          "m_OrderInDocument": 0,
+          "m_IsField": 0
+        }
+      },
+      {
+        "rid": 1007,
+        "type": {
+          "class": "ComponentElement/UxmlSerializedData",
+          "ns": "SI.UI",
+          "asm": "SI.UI"
+        },
+        "data": {
+          "uxmlAssetId": -2024573208,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "m_components": [
+            {
+              "rid": 1011
+            },
+            {
+              "rid": 1012
+            },
+            {
+              "rid": 1013
+            },
+            {
+              "rid": 1014
+            }
+          ],
+          "m_components_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1008,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIVisible",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1404954827,
+          "m_Parent": {
+            "rid": 1002
+          },
+          "m_Children": [
+            {
+              "rid": 1015
+            },
+            {
+              "rid": 1016
+            },
+            {
+              "rid": 1017
+            },
+            {
+              "rid": 1018
+            },
+            {
+              "rid": 1019
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1020
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1009,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIVisible",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1941826005,
+          "m_Parent": {
+            "rid": 1002
+          },
+          "m_Children": [
+            {
+              "rid": 1021
+            },
+            {
+              "rid": 1022
+            },
+            {
+              "rid": 1023
+            },
+            {
+              "rid": 1024
+            },
+            {
+              "rid": 1025
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1026
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1010,
+        "type": {
+          "class": "VisualElement/UxmlSerializedData",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "uxmlAssetId": -954196870,
+          "name": "IGENationActions",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1011,
+        "type": {
+          "class": "BindingExpectComponent/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 745893775,
+          "Parameters": [
+            {
+              "m_serialisedType": 0,
+              "name": "isonmainscreen",
+              "type": {
+                "id": 0
+              },
+              "isOptional": 1,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "nation",
+              "type": {
+                "id": 1145176074
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "gender",
+              "type": {
+                "id": 0
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            }
+          ],
+          "Parameters_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1012,
+        "type": {
+          "class": "BindingSetterComponent/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -775240520,
+          "ValueVariables": [],
+          "ReferenceVariables": [
+            {
+              "m_type": {
+                "id": 1145176088
+              },
+              "m_initToNull": 1,
+              "m_name": "team"
+            }
+          ],
+          "ValueVariables_UxmlAttributeFlags": 0,
+          "ReferenceVariables_UxmlAttributeFlags": 1,
+          "BindFunction": [
+            {
+              "m_target": {
+                "m_guid": "5f43cf9f1373dc0468ec5f2b285ed495"
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": [
+                    6,
+                    101,
+                    0,
+                    0,
+                    0,
+                    62,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    71,
+                    101,
+                    110,
+                    101,
+                    114,
+                    105,
+                    99,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    96,
+                    49,
+                    91,
+                    83,
+                    73,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    97,
+                    98,
+                    108,
+                    101,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    105,
+                    110,
+                    103,
+                    80,
+                    97,
+                    116,
+                    104,
+                    93,
+                    1,
+                    36,
+                    110,
+                    97,
+                    116,
+                    105,
+                    111,
+                    110,
+                    46,
+                    77,
+                    97,
+                    105,
+                    110,
+                    77,
+                    101,
+                    110,
+                    84,
+                    101,
+                    97,
+                    109,
+                    67,
+                    111,
+                    110,
+                    116,
+                    97,
+                    105,
+                    110,
+                    101,
+                    114,
+                    46,
+                    77,
+                    97,
+                    105,
+                    110,
+                    84,
+                    101,
+                    97,
+                    109,
+                    103,
+                    0,
+                    0,
+                    0,
+                    62,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    71,
+                    101,
+                    110,
+                    101,
+                    114,
+                    105,
+                    99,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    96,
+                    49,
+                    91,
+                    83,
+                    73,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    97,
+                    98,
+                    108,
+                    101,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    105,
+                    110,
+                    103,
+                    80,
+                    97,
+                    116,
+                    104,
+                    93,
+                    1,
+                    38,
+                    110,
+                    97,
+                    116,
+                    105,
+                    111,
+                    110,
+                    46,
+                    77,
+                    97,
+                    105,
+                    110,
+                    87,
+                    111,
+                    109,
+                    97,
+                    110,
+                    84,
+                    101,
+                    97,
+                    109,
+                    67,
+                    111,
+                    110,
+                    116,
+                    97,
+                    105,
+                    110,
+                    101,
+                    114,
+                    46,
+                    77,
+                    97,
+                    105,
+                    110,
+                    84,
+                    101,
+                    97,
+                    109,
+                    69,
+                    0,
+                    0,
+                    0,
+                    62,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    71,
+                    101,
+                    110,
+                    101,
+                    114,
+                    105,
+                    99,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    96,
+                    49,
+                    91,
+                    83,
+                    73,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    97,
+                    98,
+                    108,
+                    101,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    105,
+                    110,
+                    103,
+                    80,
+                    97,
+                    116,
+                    104,
+                    93,
+                    1,
+                    4,
+                    116,
+                    101,
+                    97,
+                    109,
+                    37,
+                    0,
+                    0,
+                    0,
+                    35,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    66,
+                    111,
+                    111,
+                    108,
+                    101,
+                    97,
+                    110,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    1,
+                    75,
+                    0,
+                    0,
+                    0,
+                    64,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    83,
+                    116,
+                    114,
+                    117,
+                    99,
+                    116,
+                    76,
+                    105,
+                    115,
+                    116,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    96,
+                    49,
+                    91,
+                    83,
+                    73,
+                    46,
+                    66,
+                    105,
+                    110,
+                    100,
+                    97,
+                    98,
+                    108,
+                    101,
+                    46,
+                    66,
+                    111,
+                    111,
+                    108,
+                    101,
+                    97,
+                    110,
+                    65,
+                    114,
+                    103,
+                    93,
+                    1,
+                    1,
+                    6,
+                    103,
+                    101,
+                    110,
+                    100,
+                    101,
+                    114,
+                    1,
+                    90,
+                    0,
+                    0,
+                    0,
+                    85,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    69,
+                    110,
+                    117,
+                    109,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    65,
+                    114,
+                    103,
+                    96,
+                    49,
+                    91,
+                    83,
+                    73,
+                    46,
+                    86,
+                    105,
+                    115,
+                    117,
+                    97,
+                    108,
+                    83,
+                    99,
+                    114,
+                    105,
+                    112,
+                    116,
+                    105,
+                    110,
+                    103,
+                    46,
+                    86,
+                    105,
+                    115,
+                    105,
+                    98,
+                    108,
+                    101,
+                    70,
+                    117,
+                    110,
+                    99,
+                    116,
+                    105,
+                    111,
+                    110,
+                    115,
+                    43,
+                    76,
+                    111,
+                    103,
+                    105,
+                    99,
+                    79,
+                    112,
+                    101,
+                    114,
+                    97,
+                    116,
+                    111,
+                    114,
+                    93,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          ],
+          "BindFunction_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1013,
+        "type": {
+          "class": "BindingVariablesComponent/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 1998592481,
+          "ValueVariables": [
+            {
+              "m_name": "tabgroupoption",
+              "m_scopeValue": {
+                "m_serializedData": "Int|0|"
+              }
+            }
+          ],
+          "ReferenceVariables": [],
+          "ValueVariables_UxmlAttributeFlags": 1,
+          "ReferenceVariables_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1014,
+        "type": {
+          "class": "AlternateStyleContainerComponent/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "Assembly-CSharp"
+        },
+        "data": {
+          "uxmlAssetId": 477458186
+        }
+      },
+      {
+        "rid": 1015,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 918120217,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1027
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1016,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -603014078,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1028
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1017,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -2124148373,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1029
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1018,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 649684628,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1030
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1019,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -871449667,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1031
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1020,
+        "type": {
+          "class": "SIVisible/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -1404954827,
+          "name": "mensactions",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "AlwaysInstantiate": 0,
+          "AlwaysInstantiate_UxmlAttributeFlags": 0,
+          "InvertDirectBinding": 1,
+          "AcceptNumbers": 0,
+          "Binding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "gender"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "PreviewVisibilityToggle": 0,
+          "VisibilityType": 0,
+          "FadedOpacityValue": 0.0,
+          "AlwaysBindChildren": 0,
+          "StyleClassToApplyOnVisible": "",
+          "StyleClassBindingToApplyOnVisible": {
+            "m_path": ""
+          },
+          "InvertDirectBinding_UxmlAttributeFlags": 1,
+          "AcceptNumbers_UxmlAttributeFlags": 0,
+          "Binding_UxmlAttributeFlags": 1,
+          "PreviewVisibilityToggle_UxmlAttributeFlags": 0,
+          "VisibilityType_UxmlAttributeFlags": 0,
+          "FadedOpacityValue_UxmlAttributeFlags": 0,
+          "AlwaysBindChildren_UxmlAttributeFlags": 0,
+          "StyleClassToApplyOnVisible_UxmlAttributeFlags": 0,
+          "StyleClassBindingToApplyOnVisible_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1021,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -155622139,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1032
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1022,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1676756434,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1033
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1023,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1097076567,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 0,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1034
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1024,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -424057728,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1035
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1025,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.FMActionButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1945192023,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "custom-alternate__item"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1036
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1026,
+        "type": {
+          "class": "SIVisible/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -1941826005,
+          "name": "womensactions",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "AlwaysInstantiate": 0,
+          "AlwaysInstantiate_UxmlAttributeFlags": 0,
+          "InvertDirectBinding": 0,
+          "AcceptNumbers": 0,
+          "Binding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "gender"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "PreviewVisibilityToggle": 0,
+          "VisibilityType": 0,
+          "FadedOpacityValue": 0.0,
+          "AlwaysBindChildren": 0,
+          "StyleClassToApplyOnVisible": "",
+          "StyleClassBindingToApplyOnVisible": {
+            "m_path": ""
+          },
+          "InvertDirectBinding_UxmlAttributeFlags": 0,
+          "AcceptNumbers_UxmlAttributeFlags": 0,
+          "Binding_UxmlAttributeFlags": 1,
+          "PreviewVisibilityToggle_UxmlAttributeFlags": 0,
+          "VisibilityType_UxmlAttributeFlags": 0,
+          "FadedOpacityValue_UxmlAttributeFlags": 0,
+          "AlwaysBindChildren_UxmlAttributeFlags": 0,
+          "StyleClassToApplyOnVisible_UxmlAttributeFlags": 0,
+          "StyleClassBindingToApplyOnVisible_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1027,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": 918120217,
+          "name": "FMActionButtonMaximiseTacticalUnderstanding",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainMenTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1431582056,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1028,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -603014078,
+          "name": "FMActionButtonTeamCohesion",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainMenTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1714639460,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1029,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -2124148373,
+          "name": "FMActionButtonRemoveAllBans",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainMenTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 909134161,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1030,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": 649684628,
+          "name": "FMActionButtonRemoveAllInjuries",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainMenTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1297509697,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1031,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -871449667,
+          "name": "FMActionButtonChangeAllMorale",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainMenTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1131305292,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1032,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -155622139,
+          "name": "FMActionButtonMaximiseTacticalUnderstanding",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainWomanTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1431582056,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1033,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -1676756434,
+          "name": "FMActionButtonTeamCohesion",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainWomanTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1714639460,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1034,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": 1097076567,
+          "name": "FMActionButtonRemoveAllBans",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainWomanTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 909134161,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1035,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -424057728,
+          "name": "FMActionButtonRemoveAllInjuries",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainWomanTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1297509697,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1036,
+        "type": {
+          "class": "FMActionButton/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": -1945192023,
+          "name": "FMActionButtonChangeAllMorale",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ActionsListWidget": {
+            "m_AssetGUID": "7d4e6392420727c4c8131a78cd0af2e8",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "RecordsBinding": {
+            "m_path": "nation.MainWomanTeamContainer.MainTeam"
+          },
+          "ActionIdBinding": {
+            "m_path": ""
+          },
+          "ActionId": 1131305292,
+          "SkipInstantiationWhenActionIsNull": 1,
+          "ShowOnlyFirstButton": 0,
+          "StyleAsPrimaryButton": 0,
+          "StyleAsCheckbox": 0,
+          "GrowToWidth": 0,
+          "ButtonListDirection": 0,
+          "ActionsListWidget_UxmlAttributeFlags": 1,
+          "RecordsBinding_UxmlAttributeFlags": 1,
+          "ActionIdBinding_UxmlAttributeFlags": 0,
+          "ActionId_UxmlAttributeFlags": 1,
+          "SkipInstantiationWhenActionIsNull_UxmlAttributeFlags": 1,
+          "ShowOnlyFirstButton_UxmlAttributeFlags": 0,
+          "StyleAsPrimaryButton_UxmlAttributeFlags": 0,
+          "StyleAsCheckbox_UxmlAttributeFlags": 0,
+          "GrowToWidth_UxmlAttributeFlags": 0,
+          "ButtonListDirection_UxmlAttributeFlags": 0
+        }
+      }
+    ]
+  }
+}

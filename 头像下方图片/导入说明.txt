@@ -1,0 +1,20 @@
+将本包的两个 JSON 导入 CAB-db5c0b8ab967d8aedf4e50ce6cea36d7 中对应的资源：
+
+report-player-banner-max：PathID -4194025542157271532
+inlineStyle：PathID 8045407476604796436
+
+图片引用：
+目标 CAB：CAB-787be361157b246e30d1ff121b0849d1
+Texture2D PathID：98980767289610141
+截图中的 Externals 列表编号：2
+写入资源引用的 m_FileID：3（列表编号加 1）
+
+新增 PlayerAbilityBadge 图片节点，位于 PersonPictureFrame 内、原头像所在的 PictureTeamRemapper 后面。
+PersonPictureFrame 改为上下排列，头像上、新图片下。
+新图片宽 180、高 40、上方间距 8，居中，采用 scale-to-fit 完整适配显示。
+头像及原有信息绑定保持不变。本包不包含 PersonPicture 或其样式，因此不会覆盖用户调好的 0.75 头像图片缩放。
+
+图片通过序列化资源引用访问，不按 Container 名称加载。本次不要求新纹理有 Container 名称；目标图片 bundle 仍须可被游戏加载。
+当前只显示固定图片，尚未加入根据球员能力切换图片的逻辑。
+
+已检查节点引用、父子关系、样式索引、64 位 PathID 精度和 JSON 读写一致性；尚未进行游戏内验证。

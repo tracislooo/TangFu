@@ -1,0 +1,21 @@
+﻿函数版本报错修复 v34
+
+修复 Player.log 的 Boolean -> BindingPath 参数类型错误。
+上一版从 G:/Doc/skins/27_01 恢复的函数包，与当前游戏实际使用的函数版本不一致。
+例如 BindAttributePositionColour：当前界面要求 BindingPath + 两个 Boolean 参数，
+该恢复包却要求多个 BindingPath 参数，导致战术界面 SIStyleSetter 读取失败。
+
+本文件从 v32 的修改前快照恢复 SetSIRenderTextureImage 原始函数；
+删除我们新增的 95 个节点、10 张贴图及对应预加载记录和 Texture2D 类型。
+其余函数保留修改前实际使用的内容，没有导入旧版本的其他函数。
+校验：397 个原有对象完整保留；除已撤销修改的函数和元数据外，其他对象二进制内容不变。
+重新压缩后文件 SHA256 与旧文件可能不同，已校验对象内容。
+
+已自动替换当前游戏安装目录里的 ui-visualfunctions_assets_all.bundle。
+本包只含此函数文件，不需要重新安装 global/gameworld/backgrounds。
+手动安装：退出游戏，把同名文件覆盖至：
+F:/Steam/steamapps/common/Project Taco/fm_Data/StreamingAssets/aa/StandaloneWindows64/
+
+四项统计的 global 仍是 v33 检测版：图文 75%，固定中性图片，i 标记用于读取类型检测。
+此修复不代表最终分档图片已完成；游戏运行结果仍需重启验证。
+请勿再次使用 v33 包内旧版本的 visualfunctions 文件。

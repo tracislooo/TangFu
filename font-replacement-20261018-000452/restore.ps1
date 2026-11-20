@@ -1,0 +1,3 @@
+﻿$ErrorActionPreference = "Stop"
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\font-replacement-20261018-000452\backup-game\ui-fonts_assets_production.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-fonts_assets_production.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\font-replacement-20261018-000452\backup-game\ui-fonts_assets_fmuniverse.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-fonts_assets_fmuniverse.bundle' -Force

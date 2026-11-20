@@ -1,0 +1,238 @@
+{
+  "record_date": "2026-11-18",
+  "installed": true,
+  "patch": "G:\\Doc\\ChatGPT\\New project\\primary-competitions-youth-staff-20261031-120056",
+  "rebuild_script": "G:\\Doc\\ChatGPT\\New project\\add-primary-competitions-youth-staff-shortcuts.py",
+  "order": [
+    "Messages",
+    "Competitions",
+    "Fixture Schedule",
+    "Data Hub",
+    "Medical Centre",
+    "Youth",
+    "Staff Recruitment"
+  ],
+  "routes": {
+    "Messages": [
+      "PortalScreen",
+      "PortalMessagesTool"
+    ],
+    "Competitions": [
+      "PortalScreen",
+      "CompetitionsOverviewTool"
+    ],
+    "Youth": [
+      "SquadScreen",
+      "SquadYouthSetupReport"
+    ],
+    "Staff Recruitment": [
+      "RecruitmentScreen",
+      "StaffSearchReport"
+    ],
+    "Fixture Schedule": [
+      "PortalScreen",
+      "CalendarToolFixturesTab"
+    ],
+    "Data Hub": [
+      "TacticalPlannerTool",
+      "Data Hub"
+    ],
+    "Medical Centre": [
+      "TrainingScreen",
+      "MedicalCentreCurrentInjuriesReport"
+    ]
+  },
+  "native_navigation_definitions": [
+    "PortalSubtabs",
+    "SquadSubtabs",
+    "ClubSubtabs"
+  ],
+  "labels": "Native TranslationID and native translation visual functions; no hard-coded display strings.",
+  "spacing": "Same native Club MainFrame classes, including padding-right-global-padding-large, applied to Messages and the three new shortcuts.",
+  "primary_tab_group_indices_preserved": true,
+  "holiday_width": 140,
+  "runtime_verified": false,
+  "no_desktop_or_game_control": true,
+  "installed_files": [
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Football Manager 27\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle",
+      "sha256": "1597e039527fa1706e551346a50ab80c198c58ea7163f8ee901f89e7a1ef59ad"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle",
+      "sha256": "453ead763879c496b123a19ef90eaddc0b00add4ad7df51cb134aefe9dd9d914"
+    },
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Football Manager 27\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "c264a89ff0608201f5a6144cf2bca16d05003c0730d685491c0b622054471ad6"
+    },
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Football Manager 27\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-styles_assets_default.bundle",
+      "sha256": "73ed49f68a5933473e1af8117df9ef988920a8e63351938b4973b11f64a17305"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "8e5656ada719d57ea9adeabba26407b8b9b3053238a5706019a8211e07b0bc92"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-styles_assets_default.bundle",
+      "sha256": "417d115d1eaf3fb8dd3c50c0092b761d2a3066e0191aae6901b6637fbc0c385a"
+    }
+  ],
+  "layout_fix_patch": "G:\\Doc\\ChatGPT\\New project\\primary-shortcuts-language-layout-fix-20261031-201911",
+  "layout_fix_script": "G:\\Doc\\ChatGPT\\New project\\fix-primary-shortcut-language-layout.py",
+  "layout_policy": {
+    "native_group_flex_grow": 0,
+    "native_group_flex_shrink": 0,
+    "native_group_width": "auto",
+    "flow": "row nowrap flex-start",
+    "remaining_space": "after Staff Recruitment",
+    "language_specific_positions": false
+  },
+  "hover_effect_enabled": "native",
+  "no_hover_patch": "G:\\Doc\\ChatGPT\\New project\\primary-shortcuts-no-hover-20261031-203924",
+  "no_hover_script": "G:\\Doc\\ChatGPT\\New project\\disable-primary-shortcuts-hover.py",
+  "staff_recruitment_patch": "G:\\Doc\\ChatGPT\\New project\\primary-staff-recruitment-database-20261031-213236",
+  "staff_recruitment_script": "G:\\Doc\\ChatGPT\\New project\\change-staff-shortcut-to-recruitment-database.py",
+  "staff_recruitment_label_game_id": 35789,
+  "staff_recruitment_target_parameters": {
+    "team": "human.Team",
+    "type": "const.Two",
+    "isplayerrecruitment": "const.False"
+  },
+  "fixture_schedule_patch": "G:\\Doc\\ChatGPT\\New project\\primary-fixture-schedule-20261101-095427",
+  "fixture_schedule_script": "G:\\Doc\\ChatGPT\\New project\\add-primary-fixture-schedule-shortcut.py",
+  "fixture_schedule_label_game_id": 39903,
+  "fixture_schedule_target_guid": "cc93f9746a2f0204d8d5a7bcb3fb316f",
+  "fixture_schedule_parameters": {
+    "calendartab": "const.Two",
+    "team": "human.Team"
+  },
+  "compact_font_and_badge_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-compact-fixture-badge-20261101-103219",
+  "compact_font_and_badge_script": "G:\\Doc\\ChatGPT\\New project\\compact-primary-nav-and-fixture-badge.py",
+  "navigation_font": {
+    "ratio": 1,
+    "current_px": "native thematic-md",
+    "scope": "native original and added title classes"
+  },
+  "current_day_opponent_badge": {
+    "node": "NextFixtureOpponentBadge",
+    "size_px": 16,
+    "placement": "before opponent name inside HasFixture",
+    "source": "native TeamLogo SIImage",
+    "binding": "teamrequestingreport.NextFixture.TeamOpponent",
+    "function_guid": "7a35874b5cb0acb4d846df3f46c3a872"
+  },
+  "font70_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-font70-20261101-112732",
+  "font70_script": "G:\\Doc\\ChatGPT\\New project\\set-primary-nav-font-70.py",
+  "data_medical_order_patch": "G:\\Doc\\ChatGPT\\New project\\primary-data-medical-fixture-order-20261101-112758",
+  "data_medical_order_script": "G:\\Doc\\ChatGPT\\New project\\add-primary-data-medical-and-reorder-fixtures.py",
+  "data_medical_native_routes": [
+    {
+      "title": "Data Hub",
+      "label_id": 35815,
+      "route": [
+        {
+          "name": "TacticalPlannerTool",
+          "guid": "a69d2d19d0ea8054b82d191ecfea01be",
+          "layer": "MenuBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            },
+            {
+              "name": "boolean",
+              "path": {
+                "m_path": "const.True"
+              },
+              "method": 0
+            },
+            {
+              "name": "tactic",
+              "path": {
+                "m_path": "human.team.Tactic"
+              },
+              "method": 2
+            },
+            {
+              "name": "speakto",
+              "path": {
+                "m_path": "human.team.Tactic.SpeakTo"
+              },
+              "method": 2
+            }
+          ]
+        },
+        {
+          "name": "Data Hub",
+          "guid": "18d422cf9dec91e4cbacb588c83d7a48",
+          "layer": "ReportBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Medical Centre",
+      "label_id": 35712,
+      "route": [
+        {
+          "name": "TrainingScreen",
+          "guid": "ceb0e5333c8c69c448f04279129fdb38",
+          "layer": "MenuBody",
+          "parameters": []
+        },
+        {
+          "name": "MedicalCentreCurrentInjuriesReport",
+          "guid": "441b97c2507a7674da333bd6ad56c0bd",
+          "layer": "ReportBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "font85_dividers_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-font85-dividers-20261102-094731",
+  "font85_dividers_script": "G:\\Doc\\ChatGPT\\New project\\set-primary-nav-font85-and-dividers.py",
+  "title_dividers": {
+    "enabled": false,
+    "reason": "User requested original navigation plus added shortcuts and holiday only"
+  },
+  "tight_spacing_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-tight-spacing-half-dropdown-20261102-095715",
+  "tight_spacing_script": "G:\\Doc\\ChatGPT\\New project\\tighten-primary-nav-spacing-and-dropdown.py",
+  "compact_spacing": {
+    "enabled": false,
+    "spacing": "native",
+    "dropdown": "native"
+  },
+  "native_palette_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-native-palette-20261117-234628",
+  "native_palette_script": "G:\\Doc\\ChatGPT\\New project\\restore-native-primary-nav-palette.py",
+  "primary_palette": {
+    "background": "fixed #E7E7E7 opaque; reference before navigation-background70-20261117-223345",
+    "custom_labels": "fixed black; no team-color following",
+    "runtime_verified": false
+  },
+  "native_header_rebuild_patch": "G:\\Doc\\ChatGPT\\New project\\native-header-plus-shortcuts-20261118-001947",
+  "native_header_rebuild_script": "G:\\Doc\\ChatGPT\\New project\\rebuild-native-header-with-shortcuts.py",
+  "color_following_rollback_patch": "G:\\Doc\\ChatGPT\\New project\\primary-nav-color-following-undone-20261118-064841",
+  "secondary_palette": "original opaque #263445",
+  "native_palette_superseded": true
+}

@@ -1,0 +1,3 @@
+﻿$ErrorActionPreference = "Stop"
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\font-replacement-20261029-122313\backup-game\ui-fonts_assets_production.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-fonts_assets_production.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\font-replacement-20261029-122313\backup-game\ui-fonts_assets_fmuniverse.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-fonts_assets_fmuniverse.bundle' -Force

@@ -1,0 +1,12 @@
+﻿中间三层缩放调整 v11
+
+CA000：115%（水平、垂直相同缩放）。
+PlayerTopBlueLight：185%（水平、垂直相同缩放）。
+球员头像：75%（原200×200正方形区域，缩放后150×150）。
+
+只修改这三个中间元素的scale属性。中心位置、图层顺序、容器尺寸、图片绑定、文字、栏目高度及其他所有资源均不变。
+备份皮肤packages中的ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle，使用本包同名文件替换，然后重新启动游戏。
+gameworld和backgrounds bundle不需要替换。
+
+已重新打开成品，验证三个缩放值及除inlineStyle外所有资源原始字节完全相同。
+源文件未覆盖，游戏内效果需确认。

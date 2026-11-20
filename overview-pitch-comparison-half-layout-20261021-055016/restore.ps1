@@ -1,0 +1,3 @@
+﻿$ErrorActionPreference = "Stop"
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\overview-pitch-comparison-half-layout-20261021-055016\backup-game\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\overview-pitch-comparison-half-layout-20261021-055016\backup-skin\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Force

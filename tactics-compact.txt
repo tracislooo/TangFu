@@ -1,0 +1,802 @@
+
+ASSET TacticsPositionOppositionInstructions -8789760316176122319 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131074, ['center'])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.BindingSetterComponent None  classes None
+   1006 FM.UI.FMTacticsShirt None  classes ['tactics-simplified-position-indicator-kit']
+   OutfieldKitDataBinding {'m_path': 'team.tactic.CurrentKit'}
+   GoalkeeperKitDataBinding {'m_path': 'team.tactic.CurrentKitGK'}
+   ShirtNumberBinding {'m_path': 'squadnumber'}
+   ShirtNameBinding {'m_path': ''}
+   PlayerIndexBinding {'m_path': ''}
+   HasSubBibBinding {'m_path': ''}
+   STYLE [(131074, ['center']), (131090, [{'unit': 1, 'value': -4.0}])]
+   1007 UnityEngine.UIElements.VisualElement None  classes []
+    1011 SI.Bindable.SIStyleSetter None  classes []
+     1020 UnityEngine.UIElements.VisualElement None  classes ['tactics-simplified-position-indicator-top']
+    1012 SI.Bindable.SIText None text classes ['body-xs-strong']
+    TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '0458ef1e3b94be24a9ba3c5bf4880ee1'}, 'm_inputs': 
+    STYLE [(131102, ['absolute']), (131104, [0.0]), (131089, [0.0]), (131080, [0.0]), (131103, [0.0]), (65546, ['middle-center'])]
+   1008 UnityEngine.UIElements.VisualElement None  classes ['tactics-simplified-position-indicator-bottom']
+    1014 SI.Bindable.SIText None text classes ['body-xs-strong', 'content-ellipsis']
+    TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.ShirtName'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_var
+    STYLE [(65546, ['middle-center']), (131105, [{'unit': 2, 'value': 100.0}]), (196609, ['ellipsis']), (65552, ['nowrap'])]
+
+ASSET TacticsPositionFilledMediumWithDrag -8610786720554890013 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.BindingSetterComponent None  classes None
+   1006 FM.UI.FMDraggableObject None  classes []
+   DragDropDataBinding {'m_path': 'position.position'}
+   DragDropKeyBinding {'m_path': 'dragdropkey'}
+   CanHandleDragDropBinding {'m_path': ''}
+   DragPanelDataBindingPath {'m_path': 'ghostdata'}
+   PluginTargetBinding {'m_path': 'tactic'}
+   PayloadBinding {'m_path': 'TacticTeamSelection'}
+   STYLE [(131083, ['column'])]
+    1008 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+     1014 FM.UI.FMTacticsShirt None  classes []
+     OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+     GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+     ShirtNumberBinding {'m_path': 'ghostnumber'}
+     ShirtNameBinding {'m_path': ''}
+     PlayerIndexBinding {'m_path': 'position.PlayerIndex'}
+     HasSubBibBinding {'m_path': ''}
+     STYLE [(131084, [1.0])]
+     1015 SI.Bindable.SIVisible None SwappedWingsVisible classes ['align-items-center', 'justify-content-center']
+     Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.PositionSwappedByTweak'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {
+     StyleClassBindingToApplyOnVisible {'m_path': ''}
+     STYLE [(131102, ['absolute']), (131104, [0.0]), (131103, [0.0]), (131080, [0.0]), (131089, [0.0])]
+      1018 UnityEngine.UIElements.VisualElement None SwappedWingsImage classes ['game-concepts-swapped-wings']
+
+ASSET TacticsPositionDetailed -8273082868742719783 USINGS [('PlayerUnavailableStatusFlagItem', 'da83e0ce29101b14b8963e209a112e6b'), ('PositionIndicatorDetails', 'ee36959e948443b4e9c0108cfcbff5f1'), ('PositionIndicatorDetailsTouch', 'ebe276f5fcfca1749927b4a267ffd609'), ('TacticsPlayerRoleMovementIcon', '310cf2258d443a944961548b9b0ab72c')]
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingRoot None  classes ['tactics-position-layout']
+   1002 SI.Bindable.BindingRemapper None TSIRemapper classes []
+    1004 SI.UI.ComponentElement None  classes []
+     1006 SI.Bindable.BindingSetterComponent None  classes None
+     1007 SI.Bindable.BindingVariablesComponent None  classes None
+     1008 FM.UI.ContextShortcutsElement None radial-shortcut classes []
+     OptionalEnabledBinding {'m_path': ''}
+      1010 FM.UI.FMDraggableObject None tactics-draggable classes ['tactics-position__draggable']
+      DragDropDataBinding {'m_path': 'position.position'}
+      DragDropKeyBinding {'m_path': 'dragdropkey'}
+      CanHandleDragDropBinding {'m_path': ''}
+      DragPanelDataBindingPath {'m_path': 'ghostdata'}
+      PluginTargetBinding {'m_path': 'tactic'}
+      PayloadBinding {'m_path': 'position'}
+       1014 UnityEngine.UIElements.VisualElement None ShirtAndIcons classes ['row-direction-normal', 'tactics-position__shirt-and-icons', 'align-items-stretch', 'justify-content-start']
+       STYLE [(131104, [{'unit': 1, 'value': -32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+        1017 SI.Bindable.SIVisible None SubOnVisible classes []
+        Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.IsSuggestedSub'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_varia
+        StyleClassBindingToApplyOnVisible {'m_path': ''}
+        STYLE [(131102, ['absolute']), (131074, ['flex-end'])]
+         1022 UnityEngine.UIElements.VisualElement None  classes ['game-concepts-sub-on_small']
+        1018 UnityEngine.UIElements.VisualElement None ShirtAndRoleMovements classes ['row-direction-normal', 'flex-grow-class', 'justify-content-center']
+         1024 SI.Bindable.BindingRemapper None IPRoleRemapper classes []
+         STYLE [(131074, ['flex-end']), (131102, ['absolute']), (131089, [{'unit': 1, 'value': 4.0}]), (131080, [{'unit': 1, 'value': 4.0}])]
+          1034  TacticsPlayerRoleMovementIcon  classes []
+         1025 FM.UI.FMTacticsShirt None  classes []
+         OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+         GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+         ShirtNumberBinding {'m_path': 'ghostsquadnumber'}
+         ShirtNameBinding {'m_path': ''}
+         PlayerIndexBinding {'m_path': 'position.PlayerIndex'}
+         HasSubBibBinding {'m_path': 'position.IsSuggestedSub'}
+         STYLE [(131096, [{'unit': 1, 'value': 35.0}]), (131094, [{'unit': 1, 'value': 35.0}]), (131095, [{'unit': 1, 'value': 35.0}]), (131097, [{'unit': 1, 'value': 35.0}]), (131104, [{'unit': 1, 'value': 3.0}])]
+          1036 SI.Bindable.SIVisible None not-fmc classes ['flex-grow-class']
+          Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'config.UseFMCTactics'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+          StyleClassBindingToApplyOnVisible {'m_path': ''}
+          STYLE [(131102, ['absolute']), (131104, [0.0]), (131103, [0.0]), (131080, [0.0]), (131089, [0.0])]
+           1048 SI.Bindable.SIButton None shirt-player-instruction-button classes ['fm-tactics-shirt-button']
+           AuditComponentBinding {'m_path': ''}
+           HoverBinding {'m_path': ''}
+          1037 SI.Bindable.SIVisible None SwappedWingsVisible classes ['align-items-center', 'justify-content-center']
+          Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.PositionSwappedByTweak'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {
+          StyleClassBindingToApplyOnVisible {'m_path': ''}
+          STYLE [(131102, ['absolute']), (131104, [0.0]), (131103, [0.0]), (131080, [0.0]), (131089, [0.0])]
+           1050 UnityEngine.UIElements.VisualElement None SwappedWingsImage classes ['game-concepts-swapped-wings']
+         1026 SI.Bindable.SIVisible None  classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.matchplayer'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+          1039 SI.Bindable.SIVisible None YellowCardVisible classes []
+          Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.matchplayer.YellowCardedInMatch'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_i
+          StyleClassBindingToApplyOnVisible {'m_path': ''}
+           1052 UnityEngine.UIElements.VisualElement None  classes ['game-concepts-yellow-card_small']
+           STYLE [(131074, ['center']), (131102, ['absolute'])]
+         1027 UnityEngine.UIElements.VisualElement None statusIcon classes ['tactics-statusicon_container']
+          1041 SI.Bindable.BindableSwitchElement None  classes ['flex-grow-class']
+          Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.MatchPlayer'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+           1054 SI.Bindable.SIVisible None  classes ['flex-grow-class', 'flex-no-shrink-class']
+           Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'has-player'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable': {'m_arg
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+            1061 SI.Bindable.BindingRemapper None  classes ['flex-grow-class', 'justify-content-center']
+             1065  PlayerUnavailableStatusFlagItem playerUnavailableFlag classes ['tactics-statusicon']
+           1055 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+            1063 SI.Bindable.SIImage None IncidentImage classes ['margin-horizontal-global-gap-small']
+            Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'a37b7d00db3ecdb4dbf4c3b70aa09c92'}, 'm_inputs': 
+            STYLE [(131105, [{'unit': 1, 'value': 16.0}]), (131087, [{'unit': 1, 'value': 16.0}]), (131074, ['center']), (131093, [0.0]), (131090, [0.0])]
+         1028 SI.Bindable.BindingRemapper None OOPRoleRemapper classes []
+         STYLE [(131074, ['flex-end']), (131102, ['absolute']), (131103, [{'unit': 1, 'value': 4.0}]), (131080, [{'unit': 1, 'value': 4.0}])]
+          1043  TacticsPlayerRoleMovementIcon  classes []
+       1015 SI.Bindable.SIStyleSetter None IsSuggestedSubBorder classes []
+        1020 SI.Bindable.BindableSwitchElement None  classes []
+        Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'config.UseTouchCompatibleTacticsPositionIndicators'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid':
+        STYLE [(131089, [{'unit': 1, 'value': 1.0}])]
+         1030  PositionIndicatorDetails  classes []
+         1031  PositionIndicatorDetailsTouch  classes []
+
+ASSET PlayerPortraitCell -4028782843705546248 USINGS [('PersonPicture', 'a3126e03e5bea6348ba86f23b5c5d7de')]
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingExpect None  classes []
+   1002 UnityEngine.UIElements.VisualElement None Bg1 classes ['thumbnails-alt-person-picture-property-1-person_picture_alt']
+   STYLE [(131084, [1.0]), (131105, [{'unit': 1, 'value': 40.0}]), (131087, [{'unit': 1, 'value': 40.0}]), (262153, ['stretch-to-fill'])]
+    1004 UnityEngine.UIElements.VisualElement None Bg2 classes ['thumbnails-person-picture-job-player-sex-male-player-1']
+    STYLE [(131084, [1.0])]
+     1007  PersonPicture  classes []
+    1005 FM.UI.PluginContextMenuBindings None RightClickMenuBinding classes []
+    STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (131102, ['absolute'])]
+
+ASSET TacticsPositionEmptySmall -4014135702882373994 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingRoot None  classes []
+   1002 UnityEngine.UIElements.VisualElement None  classes ['align-items-center']
+   STYLE [(131105, [{'unit': 1, 'value': 70.0}]), (131083, ['column-reverse'])]
+    1004 SI.Bindable.SIAspectRatioFitter None Shirt classes []
+    STYLE [(131105, [{'unit': 2, 'value': 20.0}]), (131090, [{'unit': 1, 'value': -4.0}]), (131087, [{'unit': 1, 'value': 28.0}])]
+     1006 SI.Bindable.SIImage None ShirtImage classes []
+     Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+     STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (458767, [0.5])]
+
+ASSET TacticsPositionFilledMedium -1084877429225355678 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.SIStyleSetter None  classes []
+   STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+    1006 SI.Bindable.BindingRemapper None  classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+     1010 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+     STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+      1012 SI.Bindable.BindingExpect None ShirtBindingExpect classes []
+      STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131084, [1.0])]
+       1014 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield classes ['data_display-tactics-kit-squad-outfield-size-medium', 'margin-right-global-gap-none']
+       STYLE [(131084, [1.0])]
+        1016 SI.Bindable.SIAspectRatioFitter None ShirtAspectRatioFitter classes ['justify-content-center']
+        STYLE [(131084, [1.0])]
+         1018 SI.Bindable.SIVisible None SIVisible_IsGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1021 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1025 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1031 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+           1026 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1033 SI.Bindable.SIText None  classes ['body-md', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+         1019 SI.Bindable.SIVisible None SIVisible_NotGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131084, [1.0]), (131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1023 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1028 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1035 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}]), (65552, ['nowrap'])]
+           1029 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1037 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+
+ASSET PlayerPortraitCell -799790568606686723 USINGS [('thumbnails-alt-person-picture', 'd894b159c6d0cba49bd51def7f05e85c')]
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+   1002 SI.Bindable.BindingExpectComponent None  classes None
+   1003 SI.Bindable.BindingSetterComponent None  classes None
+   1004 SI.Bindable.SIButton None CellButton classes ['data_display-table-cell-default-default-type-2--thumbnail-primary-and-secondary-thumbnail-and-player-space-regular-accent-false-orientation-horizontal-selected-false', 'margin-horizontal-global-gap-none']
+   AuditComponentBinding {'m_path': ''}
+   HoverBinding {'m_path': ''}
+   STYLE [(458752, [{'r': 0.7372549176216125, 'g': 0.7372549176216125, 'b': 0.7372549176216125, 'a': 0.0}]), (458761, [{'r': 0.5843137502670288, 'g': 0.5843137502670288, 'b': 0.5843137502670288, 'a': 0.0}]), (458762, [{'r': 0.5843137502670288, 'g': 0.5843137502670288, 'b': 0.5843137502670288, 'a': 0.0}]), (458763, [{'r': 0.5843137502670288, 'g': 0.5843137502670288, 'b': 0.5843137502670288, 'a': 0.0}]), (458758, [{'r': 0.5843137502670288, 'g': 0.5843137502670288, 'b': 0.5843137502670288, 'a': 0.0}]), (131093, [0.0]), (131090, [0.0])]
+    1006 SI.Bindable.BindingRemapper None  classes []
+     1010  thumbnails-alt-person-picture  classes ['thumbnails-alt-person-picture-property-1-variant2']
+
+ASSET TacticsPositionShirtAndAvgRatingTeamReport 853259992260592278 USINGS [('PlayerAverageRatingCell', 'a27fd21480e68b74b8116c0150031db0'), ('data_display-tactics-kit-squad-outfield-medium', '33d35825276e17f4b9235713930facd9')]
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes ['align-items-center']
+   1002 SI.Bindable.BindingExpectComponent None  classes None
+   1003 SI.Bindable.BindingRemapperComponent None  classes None
+   1004  data_display-tactics-kit-squad-outfield-medium  classes []
+   STYLE [(131105, [{'unit': 1, 'value': 24.0}]), (131087, [{'unit': 1, 'value': 24.0}])]
+   1005  PlayerAverageRatingCell  classes ['margin-bottom-global-gap-small']
+   STYLE [(131087, [{'unit': 1, 'value': 16.0}])]
+   1006 UnityEngine.UIElements.VisualElement None Frame classes ['row-direction-normal', 'align-items-center', 'justify-content-center']
+   STYLE [(131105, [{'m_ValueType': 1, 'valueIndex': 2}])]
+    1011 SI.Bindable.SIText None text classes ['tactics-body-xs', 'tactics-report-pitch-name']
+    TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.ShirtName'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_var
+    STYLE [(65546, ['middle-center']), (65539, [{'unit': 1, 'value': -1.0}, 0.0, 0.0, {'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}])]
+
+ASSET TacticsPositionTeamReport 1678168263059395277 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingRoot None BindingRoot classes []
+   1002 UnityEngine.UIElements.VisualElement None  classes ['align-items-center', 'justify-content-center']
+   STYLE [(131087, [{'m_ValueType': 1, 'valueIndex': 2}]), (131083, ['column']), (131084, [1.0]), (131085, [0.0])]
+    1004 SI.UI.ComponentElement None frame classes ['']
+    STYLE [(131085, [0.0])]
+     1008 SI.Bindable.BindingRemapperComponent None  classes None
+     1009 SI.UI.ComponentElement None PlayerImage classes []
+     STYLE [(131105, [{'unit': 1, 'value': 29.0}]), (131087, [{'unit': 1, 'value': 25.0}]), (458764, [{'unit': 1, 'value': 16.0}]), (458765, [{'unit': 1, 'value': 16.0}]), (458760, [{'unit': 1, 'value': 16.0}]), (458759, [{'unit': 1, 'value': 16.0}]), (458752, [{'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 0.11999999731779099}]), (131074, ['center'])]
+      1015 SI.Bindable.BindingExpectComponent None  classes None
+      1016 SI.Bindable.SIAspectRatioFitter None PersonRatioFitter classes []
+      STYLE [(131087, [{'unit': 1, 'value': 30.0}])]
+       1022 SI.Bindable.SIImage None PersonImage classes []
+       Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'fd76d979673356a4b899f1075077317f'}, 'm_inputs': 
+       STYLE [(262153, ['scale-and-crop'])]
+      1017 FM.UI.PluginContextMenuBindings None RightClickMenuBinding classes []
+      STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (131102, ['absolute'])]
+    1005 UnityEngine.UIElements.VisualElement None Frame classes ['row-direction-normal', 'align-items-center', 'justify-content-center']
+    STYLE [(131105, [{'m_ValueType': 1, 'valueIndex': 2}]), (131084, [1.0])]
+     1011 SI.Bindable.SIText None text classes ['tactics-body-xs', 'tactics-report-pitch-name']
+     TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.ShirtName'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_var
+     STYLE [(65546, ['middle-center']), (65539, [{'unit': 1, 'value': -1.0}, 0.0, 0.0, {'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}])]
+    1006 UnityEngine.UIElements.VisualElement None Frame classes ['row-direction-normal', 'align-items-center', 'justify-content-center']
+    STYLE [(131087, [{'m_ValueType': 1, 'valueIndex': 2}]), (262151, [{'unit': 1, 'value': 4.0}, 0.0]), (131085, [0.0]), (131101, [0.0]), (131098, [{'unit': 1, 'value': 4.0}])]
+     1013 SI.Bindable.SIText None text classes ['tactics-pitch-role-name', 'global-text-secondary', 'tactics-report-pitch-name']
+     TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '0458ef1e3b94be24a9ba3c5bf4880ee1'}, 'm_inputs': 
+     STYLE [(65539, [{'unit': 1, 'value': -1.0}, 0.0, 0.0, {'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (131084, [1.0])]
+
+ASSET TacticsPositionCombined 3127595210179668386 USINGS [('PlayerReportPreviewTooltip', '227dd12a280d2244c9ec015a4064c3a1'), ('PlayerUnavailableStatusFlagItem', 'da83e0ce29101b14b8963e209a112e6b'), ('TacticsPlayerRoleMovementIcon', '310cf2258d443a944961548b9b0ab72c'), ('layout-divider-solid-vertical', 'e06a1ab43169d1c44bc53c2c069f44e1')]
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingRoot None BindingRoot classes ['tactics-position-layout']
+   1002 SI.Bindable.BindingExpect None  classes []
+    1004 SI.Bindable.BindingRemapper None TSIRemapper classes []
+     1006 SI.UI.ComponentElement None  classes []
+      1008 SI.Bindable.BindingSetterComponent None  classes None
+      1009 SI.Bindable.BindingVariablesComponent None  classes None
+      1010 FM.UI.ContextShortcutsElement None player-shortcuts classes []
+      OptionalEnabledBinding {'m_path': ''}
+       1012 FM.UI.ContextShortcutsElement None swap-players-shortcut classes []
+       OptionalEnabledBinding {'m_path': ''}
+        1016 FM.UI.FMDraggableObject None tactics-draggable classes ['tactics-position__draggable']
+        DragDropDataBinding {'m_path': 'position.IPPosition'}
+        DragDropKeyBinding {'m_path': 'dragdropkey'}
+        CanHandleDragDropBinding {'m_path': ''}
+        DragPanelDataBindingPath {'m_path': 'ghostdata'}
+        PluginTargetBinding {'m_path': 'tactic'}
+        PayloadBinding {'m_path': 'DragPayload'}
+         1018 UnityEngine.UIElements.VisualElement None ShirtAndIcons classes ['row-direction-normal', 'tactics-position__shirt-and-icons', 'align-items-stretch', 'justify-content-start']
+         STYLE [(131087, [{'unit': 1, 'value': 32.0}]), (131104, [{'unit': 1, 'value': -32.0}])]
+          1021 UnityEngine.UIElements.VisualElement None ShirtAndRoleMovements classes ['row-direction-normal', 'flex-grow-class', 'justify-content-center']
+           1029 SI.Bindable.BindingRemapper None IPRoleRemapper classes []
+           STYLE [(131074, ['flex-end']), (131102, ['absolute']), (131089, [{'unit': 1, 'value': 4.0}]), (131080, [{'unit': 1, 'value': 4.0}])]
+            1044  TacticsPlayerRoleMovementIcon IPRoleMovementIcon classes []
+           1030 FM.UI.FMTacticsShirt None  classes []
+           OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+           GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+           ShirtNumberBinding {'m_path': 'ghostsquadnumber'}
+           ShirtNameBinding {'m_path': ''}
+           PlayerIndexBinding {'m_path': 'position.PlayerIndex'}
+           HasSubBibBinding {'m_path': 'const.false'}
+           STYLE [(131096, [{'unit': 1, 'value': 34.0}]), (131094, [{'unit': 1, 'value': 34.0}]), (131095, [{'unit': 1, 'value': 34.0}]), (131097, [{'unit': 1, 'value': 34.0}]), (131104, [{'unit': 1, 'value': 3.0}])]
+            1046 SI.Bindable.SIButton None shirt-player-instruction-button classes ['fm-tactics-shirt-button']
+            AuditComponentBinding {'m_path': ''}
+            HoverBinding {'m_path': ''}
+            1047 SI.Bindable.SIVisible None SwappedWingsVisible classes ['align-items-center', 'justify-content-center']
+            Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.PositionSwappedByTweak'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {
+            StyleClassBindingToApplyOnVisible {'m_path': ''}
+            STYLE [(131102, ['absolute']), (131104, [0.0]), (131103, [0.0]), (131080, [0.0]), (131089, [0.0])]
+             1067 UnityEngine.UIElements.VisualElement None SwappedWingsImage classes ['game-concepts-swapped-wings']
+           1031 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.matchplayer'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+            1049 SI.Bindable.SIVisible None YellowCardVisible classes []
+            Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.matchplayer.YellowCardedInMatch'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_i
+            StyleClassBindingToApplyOnVisible {'m_path': ''}
+             1069 UnityEngine.UIElements.VisualElement None  classes ['game-concepts-yellow-card_small']
+             STYLE [(131074, ['center']), (131102, ['absolute'])]
+           1032 UnityEngine.UIElements.VisualElement None statusIcon classes ['tactics-statusicon_container']
+            1051 SI.Bindable.BindableSwitchElement None  classes ['flex-grow-class']
+            Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.MatchPlayer'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+             1071 SI.Bindable.SIVisible None  classes ['flex-grow-class', 'flex-no-shrink-class']
+             Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'has-player'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable': {'m_arg
+             StyleClassBindingToApplyOnVisible {'m_path': ''}
+              1088 SI.Bindable.BindingRemapper None  classes ['flex-grow-class', 'justify-content-center']
+               1102  PlayerUnavailableStatusFlagItem playerUnavailableFlag classes ['tactics-statusicon']
+             1072 SI.Bindable.SIVisible None  classes []
+             Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+             StyleClassBindingToApplyOnVisible {'m_path': ''}
+              1090 SI.Bindable.SIImage None IncidentImage classes ['margin-horizontal-global-gap-small']
+              Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'a37b7d00db3ecdb4dbf4c3b70aa09c92'}, 'm_inputs': 
+              STYLE [(131105, [{'unit': 1, 'value': 16.0}]), (131087, [{'unit': 1, 'value': 16.0}]), (131074, ['center']), (131093, [0.0]), (131090, [0.0])]
+           1033 SI.Bindable.BindingRemapper None OOPRoleRemapper classes []
+           STYLE [(131074, ['flex-end']), (131102, ['absolute']), (131103, [{'unit': 1, 'value': 4.0}]), (131080, [{'unit': 1, 'value': 4.0}])]
+            1053  TacticsPlayerRoleMovementIcon OOPRoleMovementIcon classes []
+         1019 SI.UI.ComponentElement None details classes ['tactics-position-details-layout']
+          1023 SI.Bindable.BindingExpectComponent None  classes None
+          1024 SI.Bindable.BindingRemapperComponent None  classes None
+          1025 SI.Bindable.BindingSetterComponent None  classes None
+          1026 FM.UI.FMPitchPosition None  classes []
+          TeamSelectionIndexBindingPath {'m_path': 'teamselectionindex'}
+          InPossessionBindingPath {'m_path': ''}
+           1035 UnityEngine.UIElements.VisualElement None Roles classes ['row-direction-normal', 'flex-grow-class']
+           STYLE [(131087, [{'unit': 1, 'value': 16.0}])]
+            1055 SI.Bindable.BindingVariables None IP classes ['flex-grow-class']
+            STYLE [(131082, [{'unit': 2, 'value': 50.0}])]
+             1075 SI.Bindable.SIStyleSetter None PositionColour classes ['flex-grow-class']
+              1092 SI.Bindable.BindingRemapper None IPRoleButtonRemapper classes []
+              STYLE [(131084, [1.0])]
+               1105 SI.Bindable.SIButton None RoleButton classes ['flex-grow-class', 'margin-horizontal-global-gap-none', 'padding-horizontal-global-padding-none']
+               AuditComponentBinding {'m_path': ''}
+               HoverBinding {'m_path': ''}
+               STYLE [(131093, [0.0]), (131090, [0.0]), (131101, [0.0]), (131098, [0.0])]
+                1119 SI.Bindable.SIText None text classes ['body-xs-strong', 'flex-grow-class', 'margin-top-global-gap-extra-small', 'sitext-hover-cursor']
+                TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f97abdf5a74842647ba921d183f4a3eb'}, 'm_inputs': 
+                STYLE [(65546, ['middle-center'])]
+                1120 SI.Bindable.Tooltip None RoleNameTooltip classes []
+                 1138 SI.Bindable.SIText None RoleNameTooltipText classes ['body-sm', 'sitext-hover-cursor']
+                 TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f97abdf5a74842647ba921d183f4a3eb'}, 'm_inputs': 
+            1056  layout-divider-solid-vertical  classes ['midnight-background-colour']
+            1057 SI.Bindable.BindingVariables None OOP classes ['flex-grow-class']
+            STYLE [(131082, [{'unit': 2, 'value': 50.0}])]
+             1078 SI.Bindable.SIStyleSetter None PositionColour classes ['flex-grow-class']
+              1094 SI.Bindable.BindingRemapper None OOPRoleButtonRemapper classes []
+              STYLE [(131084, [1.0])]
+               1107 SI.Bindable.SIButton None RoleButton classes ['flex-grow-class', 'margin-horizontal-global-gap-none', 'padding-horizontal-global-padding-none']
+               AuditComponentBinding {'m_path': ''}
+               HoverBinding {'m_path': ''}
+               STYLE [(131093, [0.0]), (131090, [0.0]), (131101, [0.0]), (131098, [0.0])]
+                1122 SI.Bindable.SIText None text classes ['body-xs-strong', 'flex-grow-class', 'margin-top-global-gap-extra-small', 'sitext-hover-cursor']
+                TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f97abdf5a74842647ba921d183f4a3eb'}, 'm_inputs': 
+                STYLE [(65546, ['middle-center'])]
+                1123 SI.Bindable.Tooltip None RoleNameTooltip classes []
+                 1141 SI.Bindable.SIText None RoleNameTooltipText classes ['body-sm', 'sitext-hover-cursor']
+                 TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f97abdf5a74842647ba921d183f4a3eb'}, 'm_inputs': 
+           1036 UnityEngine.UIElements.VisualElement None Stars classes ['tactics-visualiser-player-role-ability']
+            1059 SI.Bindable.SIStyleSetter None BackgroundColour classes []
+             1080 SI.Bindable.SIVisible None StarsVisible classes []
+             Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+             StyleClassBindingToApplyOnVisible {'m_path': ''}
+              1096 SI.UI.ComponentElement None  classes ['align-items-center']
+               1109 SI.Bindable.BindingRemapperComponent None  classes None
+               1110 SI.Bindable.BindingExpectComponent None  classes None
+               1111 SI.Bindable.SIVisible None ValidRangeVisible classes []
+               Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '4a1becfc0a0d04816b13fd8f330a9207'}, 'm_inputs': 
+               StyleClassBindingToApplyOnVisible {'m_path': ''}
+                1125 SI.Bindable.SIVisible None ScoutedVisible classes []
+                Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+                StyleClassBindingToApplyOnVisible {'m_path': ''}
+                 1143 FM.UI.FMStarRatingTemp None  classes []
+                 MaxBinding {'m_path': 'starrating.maxvalue'}
+                 MinBinding {'m_path': 'starrating.minvalue'}
+                1126 SI.Bindable.SIVisible None ScoutingNeededVisible classes []
+                Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+                StyleClassBindingToApplyOnVisible {'m_path': ''}
+                 1145 SI.Bindable.SIText None  classes ['body-md', 'padding-horizontal-global-padding-none']
+                 TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+               1112 SI.Bindable.SIVisible None RangeInvalidVisible classes []
+               Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '4a1becfc0a0d04816b13fd8f330a9207'}, 'm_inputs': 
+               StyleClassBindingToApplyOnVisible {'m_path': ''}
+                1128 SI.Bindable.SIText None  classes ['body-md', 'padding-horizontal-global-padding-none']
+                TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+           1037 SI.Bindable.SIStyleSetter None  classes ['tactics-visualiser-player-bottom']
+            1061 SI.Bindable.BindingSetter None  classes []
+             1082 SI.Bindable.SIStyleSetter None unavilablePlayerStyle classes ['tactics-visualiser-player-bottom-unavailable']
+              1098 SI.Bindable.BindingRemapper None PlayerIndexRemapper classes ['row-direction-normal', 'flex-grow-class', 'justify-content-center']
+               1114 SI.Bindable.SIVisible None HasPlayer classes []
+               Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '2d473b69dbbbb21428a8b0dd90bb84d2'}, 'm_inputs': 
+               StyleClassBindingToApplyOnVisible {'m_path': ''}
+                1132 SI.Bindable.SIVisible None ShowPCReportTooltip classes []
+                Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'config.UseFMCTactics'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+                StyleClassBindingToApplyOnVisible {'m_path': ''}
+                STYLE [(131093, [{'unit': 1, 'value': 2.0}]), (458767, [0.5]), (131105, [{'unit': 1, 'value': 8.0}])]
+                 1148 SI.Bindable.BindingRemapper None  classes []
+                  1158  PlayerReportPreviewTooltip  classes ['flex-grow-class', 'padding-left-global-padding-extra-small', 'justify-content-center']
+                  STYLE [(131097, [{'unit': 1, 'value': 6.0}])]
+               1115 SI.Bindable.BindableSwitchElement None  classes ['flex-grow-class', 'margin-horizontal-global-gap-small', 'content-ellipsis']
+               Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'has-player'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable': {'m_arg
+                1134 UnityEngine.UIElements.VisualElement None None classes []
+                STYLE [(131084, [1.0])]
+                 1150 SI.Bindable.SIVisible None  classes []
+                 Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'config.UseFMCTactics'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+                 StyleClassBindingToApplyOnVisible {'m_path': ''}
+                 STYLE [(131102, ['absolute']), (131104, [0.0]), (131089, [0.0]), (131103, [0.0]), (131080, [0.0])]
+                  1160 SI.Bindable.SIButton None  classes ['margin-horizontal-global-gap-regular', 'padding-horizontal-global-padding-none']
+                  AuditComponentBinding {'m_path': ''}
+                  HoverBinding {'m_path': ''}
+                  STYLE [(131102, ['absolute']), (131104, [0.0]), (131089, [0.0]), (131080, [0.0]), (131103, [0.0]), (131093, [0.0]), (131090, [0.0]), (131101, [0.0]), (131098, [0.0]), (458752, [{'r': 1.0, 'g': 0.95686274766922, 'b': 0.95686274766922, 'a': 0.0}])]
+                 1151 SI.Bindable.SIText None  classes ['body-sm', 'padding-horizontal-global-padding-small', 'primary-text-colour']
+                 TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+                 STYLE [(65546, ['upper-center'])]
+                1135 SI.Bindable.SIText None PlayerNameText classes ['primary-text-colour', 'body-sm', 'padding-right-global-padding-regular']
+                TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'tactic.TacticIconName'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variabl
+                STYLE [(196609, ['ellipsis']), (458768, ['hidden']), (65546, ['middle-center'])]
+           1038 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'dc867bb515a0a9a42a86a00406d60999'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131102, ['absolute']), (131104, [0.0]), (131089, [0.0]), (131103, [0.0]), (131080, [0.0])]
+            1063 SI.Bindable.BindingRemapper None  classes []
+             1084 SI.Bindable.SIStyleSetter None  classes []
+              1100 UnityEngine.UIElements.VisualElement None frame-330 classes ['frame-330-tactics-visualiser-player-indicator']
+          1027 UnityEngine.UIElements.VisualElement None  classes ['layout-tile-interaction_border_tactics']
+          STYLE [(131087, [{'unit': 1, 'value': 44.0}]), (131105, [{'unit': 1, 'value': 80.0}]), (131104, [0.0]), (131089, [0.0])]
+
+ASSET TacticsPositionFilledLarge 3459218861556982842 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.SIStyleSetter None  classes []
+   STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+    1006 SI.Bindable.BindingRemapper None  classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+     1010 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+     STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+      1012 SI.Bindable.BindingExpect None ShirtBindingExpect classes []
+      STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+       1014 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield classes ['width-height-32px', 'flex-no-shrink-class']
+        1016 SI.Bindable.SIAspectRatioFitter None ShirtAspectRatioFitter classes ['justify-content-center']
+        STYLE [(131084, [1.0])]
+         1018 SI.Bindable.SIVisible None SIVisible_IsGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1021 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1025 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1031 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+           1026 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1033 SI.Bindable.SIText None  classes ['body-md', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+         1019 SI.Bindable.SIVisible None SIVisible_NotGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131084, [1.0]), (131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1023 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1028 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1035 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+           1029 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1037 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+
+ASSET TacticsPositionCombinedFilledMediumWithDrag 3801669038137311561 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.BindingSetterComponent None  classes None
+   1006 FM.UI.FMDraggableObject None  classes []
+   DragDropDataBinding {'m_path': 'position.position'}
+   DragDropKeyBinding {'m_path': 'dragdropkey'}
+   CanHandleDragDropBinding {'m_path': ''}
+   DragPanelDataBindingPath {'m_path': 'ghostdata'}
+   PluginTargetBinding {'m_path': 'tactic'}
+   PayloadBinding {'m_path': 'TacticTeamSelection'}
+   STYLE [(131083, ['column'])]
+    1008 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+     1014 FM.UI.FMTacticsShirt None  classes ['flex-grow-class']
+     OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+     GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+     ShirtNumberBinding {'m_path': 'ghostnumber'}
+     ShirtNameBinding {'m_path': ''}
+     PlayerIndexBinding {'m_path': 'position.PlayerIndex'}
+     HasSubBibBinding {'m_path': ''}
+     1015 SI.Bindable.SIVisible None SwappedWingsVisible classes ['align-items-center', 'justify-content-center']
+     Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'position.PositionSwappedByTweak'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {
+     StyleClassBindingToApplyOnVisible {'m_path': ''}
+     STYLE [(131102, ['absolute']), (131104, [0.0]), (131103, [0.0]), (131080, [0.0]), (131089, [0.0])]
+      1018 UnityEngine.UIElements.VisualElement None SwappedWingsImage classes ['game-concepts-swapped-wings']
+
+ASSET TacticsPositionCircle 4536372780266729924 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingRoot None  classes []
+   1002 SI.Bindable.SIStyleSetter None  classes []
+    1004 UnityEngine.UIElements.VisualElement None  classes ['ui-concepts-circle_filled']
+    STYLE [(131084, [1.0])]
+
+ASSET TacticsPositionFilledMediumForTacticsTile 5502019306032038401 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes ['flex-grow-class', 'align-items-center']
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.SIAspectRatioFitter None  classes []
+   STYLE [(131105, [{'unit': 1, 'value': 36.0}])]
+    1007 UnityEngine.UIElements.VisualElement None  classes []
+    STYLE [(131102, ['absolute']), (131104, [0.0]), (131089, [0.0]), (131080, [0.0]), (131103, [0.0])]
+     1013 SI.Bindable.SIStyleSetter None PlayerIndicatorBase classes ['tactic_icons-player_indicator-base', 'align-self-center-class']
+     STYLE [(131102, ['absolute']), (131080, [0.0])]
+    1008 FM.UI.FMTacticsShirt None  classes ['flex-grow-class', 'margin-bottom-4']
+    OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+    GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+    ShirtNumberBinding {'m_path': 'player.SquadNumberBlankIfInvalid'}
+    ShirtNameBinding {'m_path': ''}
+    PlayerIndexBinding {'m_path': 'position.PlayerIndex'}
+    HasSubBibBinding {'m_path': ''}
+
+ASSET TacticsPositionFilled 6060504072844285860 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.SIStyleSetter None  classes []
+    1008 FM.UI.FMDraggableObject None DragObject classes ['align-items-center']
+    DragDropDataBinding {'m_path': ''}
+    DragDropKeyBinding {'m_path': ''}
+    CanHandleDragDropBinding {'m_path': ''}
+    DragPanelDataBindingPath {'m_path': ''}
+    PluginTargetBinding {'m_path': ''}
+    PayloadBinding {'m_path': ''}
+    STYLE [(131105, [{'unit': 1, 'value': 140.0}]), (131083, ['column-reverse'])]
+     1014 SI.Bindable.SIButton None  classes ['margin-horizontal-global-gap-none', 'padding-horizontal-global-padding-none']
+     AuditComponentBinding {'m_path': ''}
+     HoverBinding {'m_path': ''}
+     STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (458752, [{'r': 0.0, 'g': 0.3019607961177826, 'b': 0.250980406999588, 'a': 1.0}]), (458763, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (458762, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (458758, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (458761, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (131079, [{'unit': 1, 'value': 1.0}]), (131078, [{'unit': 1, 'value': 1.0}]), (131076, [{'unit': 1, 'value': 1.0}]), (131077, [{'unit': 1, 'value': 1.0}]), (458764, [{'unit': 1, 'value': 8.0}]), (458765, [{'unit': 1, 'value': 8.0}]), (458760, [{'unit': 1, 'value': 8.0}]), (458759, [{'unit': 1, 'value': 8.0}]), (131085, [1.0]), (131093, [0.0]), (131090, [0.0]), (131101, [0.0]), (131098, [0.0])]
+      1017 SI.Bindable.SIImage None Position classes ['fm-club-primary-color', 'row-direction-normal', 'padding-horizontal-global-padding-small', 'justify-content-center']
+      Binding {'m_kind': 0, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable': {'m_argumentBytes
+      STYLE [(131087, [{'unit': 2, 'value': 50.0}]), (458752, [{'r': 0.6980392336845398, 'g': 0.12156862765550613, 'b': 0.12156862765550613, 'a': 1.0}]), (458765, [{'unit': 1, 'value': 7.0}]), (458764, [{'unit': 1, 'value': 7.0}]), (131101, [{'unit': 1, 'value': 4.0}]), (131098, [{'unit': 1, 'value': 4.0}])]
+       1025 SI.Bindable.SIText None PositionName classes ['body-sm-strong', 'sitext-hover-cursor']
+       TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '0458ef1e3b94be24a9ba3c5bf4880ee1'}, 'm_inputs': 
+       STYLE [(65546, ['middle-right'])]
+       1026 UnityEngine.UIElements.Label None  classes ['body-xs-strong', 'margin-horizontal-global-gap-extra-small', 'padding-horizontal-global-padding-none']
+       STYLE [(65546, ['middle-center']), (65536, [{'r': 1.0, 'g': 1.0, 'b': 1.0, 'a': 1.0}]), (131093, [0.0]), (131090, [0.0]), (131101, [0.0]), (131098, [0.0])]
+       1027 SI.Bindable.BindingVariables None  classes []
+        1039 SI.Bindable.SIText None RoleName classes ['body-sm-strong', 'sitext-hover-cursor']
+        TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f97abdf5a74842647ba921d183f4a3eb'}, 'm_inputs': 
+        STYLE [(65546, ['middle-left'])]
+      1018 UnityEngine.UIElements.VisualElement None  classes []
+      STYLE [(458752, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 1.0}]), (131087, [{'unit': 1, 'value': 1.0}])]
+      1019 UnityEngine.UIElements.VisualElement None Player classes ['row-direction-normal', 'padding-horizontal-global-padding-small', 'justify-content-center']
+      STYLE [(458759, [{'unit': 1, 'value': 7.0}]), (458760, [{'unit': 1, 'value': 7.0}]), (131084, [0.0]), (131087, [{'unit': 2, 'value': 50.0}]), (131101, [{'unit': 1, 'value': 4.0}]), (131098, [{'unit': 1, 'value': 4.0}])]
+       1030 SI.Bindable.SIText None Name classes ['body-xs-strong', 'padding-horizontal-global-padding-none', 'sitext-hover-cursor']
+       TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.Name'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable
+       STYLE [(65546, ['middle-center']), (65552, ['nowrap']), (131105, [{'unit': 2, 'value': 70.0}]), (131101, [0.0]), (131098, [0.0])]
+     1015 SI.Bindable.SIAspectRatioFitter None Shirt classes ['align-items-center']
+     STYLE [(131105, [{'unit': 2, 'value': 40.0}]), (131090, [{'unit': 1, 'value': -4.0}])]
+      1021 SI.Bindable.SIVisible None SIVisible_IsGK classes []
+      Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_
+      StyleClassBindingToApplyOnVisible {'m_path': ''}
+      STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (131102, ['absolute'])]
+       1032 SI.Bindable.SIImage None ShirtImage classes []
+       Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+       STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+      1022 SI.Bindable.SIVisible None SIVisible_NotGK classes []
+      Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_
+      StyleClassBindingToApplyOnVisible {'m_path': ''}
+      STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (131102, ['absolute'])]
+       1034 SI.Bindable.SIImage None ShirtImage classes []
+       Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+       STYLE [(131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+      1023 SI.Bindable.SIText None Number classes ['thematic-xl', 'sitext']
+      TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Position.Player.SquadNumber'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_v
+      STYLE [(131105, [{'unit': 2, 'value': 40.0}]), (131087, [{'unit': 2, 'value': 100.0}]), (65546, ['middle-center']), (65539, [{'unit': 1, 'value': 1.0}, {'unit': 1, 'value': 1.0}, 0.0, {'r': 0.24705882370471954, 'g': 0.24705882370471954, 'b': 0.24705882370471954, 'a': 1.0}]), (65552, ['nowrap']), (131102, ['absolute'])]
+   1006 SI.Bindable.SIButton None  classes ['sibutton', 'ui-concepts-view_small', 'padding-horizontal-global-padding-regular']
+   AuditComponentBinding {'m_path': ''}
+   HoverBinding {'m_path': ''}
+   STYLE [(131102, ['absolute']), (131101, [{'unit': 1, 'value': 4.0}]), (131098, [{'unit': 1, 'value': 4.0}])]
+
+ASSET TacticsPositionFilledSmall 6109754112916299680 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.SIStyleSetter None  classes []
+   STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+    1006 SI.Bindable.BindingRemapper None  classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+     1010 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+     STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+      1012 SI.Bindable.BindingExpect None ShirtBindingExpect classes []
+      STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+       1014 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield classes ['data_display-tactics-kit-squad-outfield-size-small', 'margin-right-global-gap-none']
+        1016 SI.Bindable.SIAspectRatioFitter None ShirtAspectRatioFitter classes ['justify-content-center']
+        STYLE [(131084, [1.0])]
+         1018 SI.Bindable.SIVisible None SIVisible_IsGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1021 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1025 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1031 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+           1026 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1033 SI.Bindable.SIText None  classes ['body-md', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+         1019 SI.Bindable.SIVisible None SIVisible_NotGK classes []
+         Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+         StyleClassBindingToApplyOnVisible {'m_path': ''}
+         STYLE [(131084, [1.0]), (131102, ['absolute']), (131105, [{'unit': 2, 'value': 100.0}]), (131087, [{'unit': 2, 'value': 100.0}])]
+          1023 SI.Bindable.SIImage None ShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+          Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+          STYLE [(131084, [1.0]), (131074, ['stretch'])]
+           1028 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE []
+            1035 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+           1029 SI.Bindable.SIVisible None  classes []
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'd52cf0b2ba55c764b9ecda52092aa257'}, 'm_inputs': 
+           StyleClassBindingToApplyOnVisible {'m_path': ''}
+           STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+            1037 SI.Bindable.SIText None  classes ['thematic-sm', 'tifo-text-neutral-black']
+            TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+            STYLE [(65546, ['upper-center'])]
+
+ASSET TacticsPositionGhost 6540450964851114974 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131089, [0.0]), (131104, [0.0]), (131103, [0.0]), (131080, [0.0])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingRemapperComponent None  classes None
+   1004 FM.UI.FMTacticsShirt None  classes []
+   OutfieldKitDataBinding {'m_path': 'tactic.CurrentKit'}
+   GoalkeeperKitDataBinding {'m_path': 'tactic.CurrentKitGK'}
+   ShirtNumberBinding {'m_path': 'squadnumber'}
+   ShirtNameBinding {'m_path': ''}
+   PlayerIndexBinding {'m_path': 'playerindex'}
+   HasSubBibBinding {'m_path': 'showbib'}
+   STYLE [(131087, [{'unit': 1, 'value': 38.0}]), (131105, [{'unit': 1, 'value': 38.0}])]
+
+ASSET TacticsPositionFilledMediumForSquadPlannerTile 6745303467236608391 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.SIStyleSetter None SIStyleSetter_Colours classes []
+   STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+    1006 SI.Bindable.BindingRemapper None  classes []
+    STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+     1010 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield--unpacked classes []
+     STYLE [(131105, [{'unit': 1, 'value': 32.0}]), (131087, [{'unit': 1, 'value': 32.0}])]
+      1012 SI.Bindable.BindingExpect None ShirtBindingExpect classes []
+      STYLE [(131105, [{'unit': 1, 'value': 32.0}])]
+       1014 SI.Bindable.SIStyleSetter None  classes []
+        1016 UnityEngine.UIElements.VisualElement None data_display-tactics-kit-squad-outfield classes ['data_display-tactics-kit-squad-outfield-size-medium', 'margin-right-global-gap-none']
+         1018 SI.Bindable.SIAspectRatioFitter None ShirtAspectRatioFitter classes ['justify-content-center']
+         STYLE [(131084, [1.0])]
+          1020 SI.Bindable.BindableSwitchElement None BindableSwitchElement_IsGK classes []
+          Binding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Player.IsGoalkeeper'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_variable'
+           1022 SI.Bindable.SIImage None RegularShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+           STYLE [(131084, [1.0]), (131074, ['stretch'])]
+            1025 SI.Bindable.BindableSwitchElement None BindableSwitchElement_HasSquadNumber classes []
+            Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '45ff404d74e03fa42b6a86df09674c74'}, 'm_inputs': 
+             1029 SI.Bindable.SIText None SquadNumber classes ['thematic-sm', 'sitext-hover-cursor', 'tifo-text-neutral-black']
+             TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+             STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+             1030 SI.Bindable.SIText None EmptyNumber classes ['body-md', 'sitext-hover-cursor', 'tifo-text-neutral-black']
+             TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+             STYLE [(65546, ['upper-center'])]
+           1023 SI.Bindable.SIImage None GKShirtImage classes ['kit-with-numbers-type-two-digits-size-default', 'align-items-center', 'justify-content-center']
+           Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '7a35874b5cb0acb4d846df3f46c3a872'}, 'm_inputs': 
+           STYLE [(131084, [1.0]), (131074, ['stretch'])]
+            1027 SI.Bindable.BindableSwitchElement None BindableSwitchElement_HasSquadNumber classes []
+            Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '45ff404d74e03fa42b6a86df09674c74'}, 'm_inputs': 
+             1032 SI.Bindable.SIText None GKSquadNumber classes ['thematic-sm', 'sitext-hover-cursor', 'tifo-text-neutral-black']
+             TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '55689def5cfbe4b4ba3e44ec51d8c310'}, 'm_inputs': 
+             STYLE [(65546, ['upper-center']), (65549, [{'r': 0.0, 'g': 0.0, 'b': 0.0, 'a': 0.0}])]
+             1033 SI.Bindable.SIText None EmptyNumber classes ['body-md', 'sitext-hover-cursor', 'tifo-text-neutral-black']
+             TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'eae2be944eee9e2449baef416111a087'}, 'm_inputs': 
+             STYLE [(65546, ['upper-center'])]
+
+ASSET TacticsPositionOverviewWidgetItem 7373763749054864657 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.UI.ComponentElement None  classes []
+  STYLE [(131084, [1.0]), (131085, [0.0])]
+   1002 SI.Bindable.BindingRootComponent None  classes None
+   1003 SI.Bindable.BindingExpectComponent None  classes None
+   1004 SI.Bindable.BindingRemapperComponent None  classes None
+   1005 SI.Bindable.BindingSetterComponent None  classes None
+   1006 SI.Bindable.BindingVariablesComponent None  classes None
+   1007 FM.UI.FMDraggableObject None DragObject classes ['row-direction-normal']
+   DragDropDataBinding {'m_path': 'binding.Player'}
+   DragDropKeyBinding {'m_path': 'dragdropkey'}
+   CanHandleDragDropBinding {'m_path': ''}
+   DragPanelDataBindingPath {'m_path': 'ghostdata'}
+   PluginTargetBinding {'m_path': 'tactic'}
+   PayloadBinding {'m_path': 'binding'}
+   STYLE [(131074, ['stretch']), (131084, [1.0])]
+    1009 SI.Bindable.SIStyleSetter None TeamOrSubStyle classes []
+     1016 SI.Bindable.SIButton None  classes ['tactic-position-overview-widget-item']
+     AuditComponentBinding {'m_path': ''}
+     HoverBinding {'m_path': ''}
+      1018 SI.Bindable.SIStyleSetter None unfilledbg classes []
+      1019 SI.Bindable.SIVisible None  classes []
+      Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'dc867bb515a0a9a42a86a00406d60999'}, 'm_inputs': 
+      StyleClassBindingToApplyOnVisible {'m_path': ''}
+      STYLE [(131104, [0.0]), (131102, ['absolute']), (131089, [0.0]), (131103, [0.0]), (131080, [0.0]), (131084, [1.0]), (131085, [0.0])]
+       1023 SI.UI.ComponentElement None  classes []
+       STYLE [(131084, [1.0]), (131085, [0.0])]
+        1028 SI.Bindable.BindingRemapperComponent None  classes None
+        1029 SI.Bindable.BindingVariablesComponent None  classes None
+        1030 SI.Bindable.SIStyleSetter None draghighlight classes []
+        STYLE [(131084, [1.0])]
+      1020 SI.Bindable.BindableSwitchElement None  classes []
+      Binding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'f6f314e9db56227459137669d87c44e9'}, 'm_inputs': 
+       1025 SI.Bindable.SIText None Sub classes ['body-sm', 'global-text-primary', 'sitext-hover-cursor']
+       TextBinding {'m_kind': 1, 'm_direct': {'Path': {'m_path': 'Tactic.SubstituteString'}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': ''}, 'm_inputs': {'m_varia
+       1026 SI.Bindable.SIText None RoleName classes ['body-sm', 'global-text-primary', 'sitext-hover-cursor']
+       TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': 'aeb3536b8c3b6e64b8690d740a14587c'}, 'm_inputs': 
+
+ASSET TacticsPositionSelectionDropdownRow 8916518873624585733 USINGS []
+ 1000 UnityEngine.UIElements.UXML None  classes []
+  1001 SI.Bindable.BindingExpect None  classes []
+   1002 UnityEngine.UIElements.VisualElement None  classes ['row-direction-normal', 'padding-left-global-padding-regular', 'padding-right-global-padding-regular', 'align-items-center', 'justify-content-space-between']
+   STYLE [(131087, [{'unit': 1, 'value': 30.0}]), (131074, ['stretch'])]
+    1004 UnityEngine.UIElements.VisualElement None  classes ['row-direction-normal', 'padding-horizontal-global-padding-none', 'align-items-center']
+    STYLE [(262149, [1.0, 0.0, 0.0]), (131101, [0.0]), (131098, [0.0])]
+     1006 UnityEngine.UIElements.VisualElement None ui-concepts-tick_small classes ['ui-concepts-tick_small', 'margin-right-global-gap-regular']
+     STYLE [(131081, [{'m_ValueType': 1, 'valueIndex': 6}])]
+     1007 SI.Bindable.SIText None text classes ['body-md', 'content-no-wrap', 'content-ellipsis']
+     TextBinding {'m_kind': 2, 'm_direct': {'Path': {'m_path': ''}, 'Nullable': 0}, 'm_visualFunction': {'m_target': {'m_guid': '0458ef1e3b94be24a9ba3c5bf4880ee1'}, 'm_inputs': 
+     STYLE [(131086, ['wrap'])]

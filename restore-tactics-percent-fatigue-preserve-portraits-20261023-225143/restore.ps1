@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\restore-tactics-percent-fatigue-preserve-portraits-20261023-225143\backup-game\ui-tablefactories_assets_all.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-tablefactories_assets_all.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\restore-tactics-percent-fatigue-preserve-portraits-20261023-225143\backup-game\ui-tableviews_assets_all.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-tableviews_assets_all.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\restore-tactics-percent-fatigue-preserve-portraits-20261023-225143\backup-skin\ui-tablefactories_assets_all.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-tablefactories_assets_all.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\restore-tactics-percent-fatigue-preserve-portraits-20261023-225143\backup-skin\ui-tableviews_assets_all.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-tableviews_assets_all.bundle' -Force

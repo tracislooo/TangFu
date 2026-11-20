@@ -1,0 +1,1784 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 11995
+  },
+  "m_Name": "QuickFlickForShuffleDraftPlayerReport",
+  "m_ImportedWithErrors": 0,
+  "m_HasEditorElements": 0,
+  "m_HasUpdatedUrls": 0,
+  "m_ImportedWithWarnings": 0,
+  "m_Usings": [],
+  "inlineSheet": {
+    "m_FileID": 0,
+    "m_PathID": -4057206241786181605
+  },
+  "m_VisualTree": {
+    "rid": 1000
+  },
+  "m_AssetEntries": [],
+  "m_Slots": [],
+  "m_ContentContainerId": 0,
+  "m_ContentHash": -818357829,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": -2,
+        "type": {
+          "class": "",
+          "ns": "",
+          "asm": ""
+        }
+      },
+      {
+        "rid": 1000,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.UXML",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1000680197,
+          "m_Parent": {
+            "rid": -2
+          },
+          "m_Children": [
+            {
+              "rid": 1001
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": -2
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1001,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingExpect",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1590830436,
+          "m_Parent": {
+            "rid": 1000
+          },
+          "m_Children": [
+            {
+              "rid": 1002
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1003
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1002,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingRemapper",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1633760522,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [
+            {
+              "rid": 1004
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1005
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1003,
+        "type": {
+          "class": "BindingExpect/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 1590830436,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "Parameters": [
+            {
+              "m_serialisedType": 0,
+              "name": "nextPerson",
+              "type": {
+                "id": 1145176065
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "previousPerson",
+              "type": {
+                "id": 1145176065
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "forceOriginalQuickFlick",
+              "type": {
+                "id": 0
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "team",
+              "type": {
+                "id": 1145176088
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            }
+          ],
+          "Parameters_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1004,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -2084518479,
+          "m_Parent": {
+            "rid": 1002
+          },
+          "m_Children": [
+            {
+              "rid": 1006
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "shortcut-fake-button"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1007
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1005,
+        "type": {
+          "class": "BindingRemapper/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -1633760522,
+          "name": "QuickFlick",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "Mappings": [
+            {
+              "m_serialisedType": 0,
+              "from": "nextsibling",
+              "to": {
+                "m_path": "nextPerson"
+              },
+              "type": {
+                "id": 1145176065
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "from": "previoussibling",
+              "to": {
+                "m_path": "previousPerson"
+              },
+              "type": {
+                "id": 1145176065
+              }
+            }
+          ],
+          "Mappings_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1006,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "FM.UI.ContextShortcutsElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 238556565,
+          "m_Parent": {
+            "rid": 1004
+          },
+          "m_Children": [
+            {
+              "rid": 1008
+            },
+            {
+              "rid": 1009
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1010
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1007,
+        "type": {
+          "class": "SIButton/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -2084518479,
+          "name": "ControllerNavigationBlocker",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "bindingPath": "",
+          "bindingPath_UxmlAttributeFlags": 0,
+          "text": "",
+          "text_UxmlAttributeFlags": 0,
+          "enableRichText": 0,
+          "enableRichText_UxmlAttributeFlags": 0,
+          "emojiFallbackSupport": 0,
+          "emojiFallbackSupport_UxmlAttributeFlags": 0,
+          "parseEscapeSequences": 0,
+          "parseEscapeSequences_UxmlAttributeFlags": 0,
+          "isSelectable": 0,
+          "isSelectable_UxmlAttributeFlags": 0,
+          "doubleClickSelectsWord": 0,
+          "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+          "tripleClickSelectsLine": 0,
+          "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+          "displayTooltipWhenElided": 0,
+          "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "iconImageReference": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "iconImageReference_UxmlAttributeFlags": 0,
+          "BindTextFunction": {
+            "m_target": {
+              "m_guid": ""
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          },
+          "RightClickEvents": {
+            "m_bytes": []
+          },
+          "Events": {
+            "m_bytes": []
+          },
+          "InputActionRef": {
+            "m_inputActionAsset": {
+              "m_AssetGUID": "",
+              "m_SubObjectName": "",
+              "m_SubObjectType": ""
+            },
+            "m_actionID": ""
+          },
+          "AuditComponentBinding": {
+            "m_path": ""
+          },
+          "StaticText": "",
+          "MigrateEventTemplate": "",
+          "HoverBinding": {
+            "m_path": ""
+          },
+          "OnlyAcceptsClickEvents": 0,
+          "ShortcutIconPlacement": 0,
+          "TriggerHoverBindingWhenFocused": 0,
+          "AllowsInsideElementsNavigation": 0,
+          "HasInitialFocus": 0,
+          "StopsEventPropagation": 0,
+          "OnlyAcceptsSubmitEvents": 0,
+          "AuditId": "",
+          "IgnoreMultiSelectEvents": 0,
+          "BindTextFunction_UxmlAttributeFlags": 0,
+          "RightClickEvents_UxmlAttributeFlags": 0,
+          "Events_UxmlAttributeFlags": 0,
+          "InputActionRef_UxmlAttributeFlags": 0,
+          "AuditComponentBinding_UxmlAttributeFlags": 0,
+          "StaticText_UxmlAttributeFlags": 0,
+          "MigrateEventTemplate_UxmlAttributeFlags": 0,
+          "HoverBinding_UxmlAttributeFlags": 0,
+          "OnlyAcceptsClickEvents_UxmlAttributeFlags": 0,
+          "ShortcutIconPlacement_UxmlAttributeFlags": 0,
+          "TriggerHoverBindingWhenFocused_UxmlAttributeFlags": 0,
+          "AllowsInsideElementsNavigation_UxmlAttributeFlags": 0,
+          "HasInitialFocus_UxmlAttributeFlags": 0,
+          "StopsEventPropagation_UxmlAttributeFlags": 0,
+          "OnlyAcceptsSubmitEvents_UxmlAttributeFlags": 0,
+          "AuditId_UxmlAttributeFlags": 0,
+          "IgnoreMultiSelectEvents_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1008,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIEnabled",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1040497314,
+          "m_Parent": {
+            "rid": 1006
+          },
+          "m_Children": [
+            {
+              "rid": 1011
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1012
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1009,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIEnabled",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 772061725,
+          "m_Parent": {
+            "rid": 1006
+          },
+          "m_Children": [
+            {
+              "rid": 1013
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1014
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1010,
+        "type": {
+          "class": "ContextShortcutsElement/UxmlSerializedData",
+          "ns": "FM.UI",
+          "asm": "FM.UI"
+        },
+        "data": {
+          "uxmlAssetId": 238556565,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "ShortcutEvent": {
+            "m_bytes": [
+              1,
+              1,
+              1,
+              2,
+              1,
+              35,
+              0,
+              0,
+              0,
+              142,
+              51,
+              82,
+              30,
+              1,
+              1,
+              12,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              85,
+              112,
+              1,
+              14,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              68,
+              111,
+              119,
+              110,
+              1,
+              5,
+              0,
+              0,
+              0,
+              72,
+              227,
+              186,
+              24,
+              2
+            ]
+          },
+          "InputActionRef": {
+            "m_inputActionAsset": {
+              "m_AssetGUID": "efcbfd779a1a45642b5326f323136c1e",
+              "m_SubObjectName": "",
+              "m_SubObjectType": ""
+            },
+            "m_actionID": "f7cd10ac-5f4a-4845-a193-ca0018879f8f"
+          },
+          "OptionalEnabledBinding": {
+            "m_path": ""
+          },
+          "MigrateShortcutEvent": "",
+          "InputPhase": 0,
+          "ShortcutIconPlacement": 4,
+          "ShortcutEvent_UxmlAttributeFlags": 1,
+          "InputActionRef_UxmlAttributeFlags": 1,
+          "OptionalEnabledBinding_UxmlAttributeFlags": 0,
+          "MigrateShortcutEvent_UxmlAttributeFlags": 0,
+          "InputPhase_UxmlAttributeFlags": 0,
+          "ShortcutIconPlacement_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1011,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 321303768,
+          "m_Parent": {
+            "rid": 1008
+          },
+          "m_Children": [
+            {
+              "rid": 1015
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "quick-flick-button"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1016
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1012,
+        "type": {
+          "class": "SIEnabled/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 1040497314,
+          "name": "QuickFlickUpEnabled",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 1,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "OnEnabledEvents": {
+            "m_bytes": []
+          },
+          "OnDisabledEvents": {
+            "m_bytes": []
+          },
+          "MigrateOnEnabledEvent": "",
+          "MigrateOnDisabledEvent": "",
+          "InvertDirectBinding": 0,
+          "Binding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "PreviousSibling"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "IgnoreDisabledOpacity": 0,
+          "OnEnabledEvents_UxmlAttributeFlags": 0,
+          "OnDisabledEvents_UxmlAttributeFlags": 0,
+          "MigrateOnEnabledEvent_UxmlAttributeFlags": 0,
+          "MigrateOnDisabledEvent_UxmlAttributeFlags": 0,
+          "InvertDirectBinding_UxmlAttributeFlags": 1,
+          "Binding_UxmlAttributeFlags": 1,
+          "IgnoreDisabledOpacity_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1013,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.SIButton",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -215567410,
+          "m_Parent": {
+            "rid": 1009
+          },
+          "m_Children": [
+            {
+              "rid": 1017
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "quick-flick-button"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1018
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1014,
+        "type": {
+          "class": "SIEnabled/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 772061725,
+          "name": "QuickFlickDownEnabled",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 1,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "OnEnabledEvents": {
+            "m_bytes": []
+          },
+          "OnDisabledEvents": {
+            "m_bytes": []
+          },
+          "MigrateOnEnabledEvent": "",
+          "MigrateOnDisabledEvent": "",
+          "InvertDirectBinding": 0,
+          "Binding": {
+            "m_kind": 1,
+            "m_direct": {
+              "Path": {
+                "m_path": "NextSibling"
+              },
+              "Nullable": 0
+            },
+            "m_visualFunction": {
+              "m_target": {
+                "m_guid": ""
+              },
+              "m_inputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              },
+              "m_outputs": {
+                "m_variable": {
+                  "m_argumentBytes": []
+                }
+              }
+            }
+          },
+          "IgnoreDisabledOpacity": 0,
+          "OnEnabledEvents_UxmlAttributeFlags": 0,
+          "OnDisabledEvents_UxmlAttributeFlags": 0,
+          "MigrateOnEnabledEvent_UxmlAttributeFlags": 0,
+          "MigrateOnDisabledEvent_UxmlAttributeFlags": 0,
+          "InvertDirectBinding_UxmlAttributeFlags": 1,
+          "Binding_UxmlAttributeFlags": 1,
+          "IgnoreDisabledOpacity_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1015,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.VisualElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1919024073,
+          "m_Parent": {
+            "rid": 1011
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 0,
+          "m_Classes": [
+            "ui-concepts-chevron-top_small"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1019
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1016,
+        "type": {
+          "class": "SIButton/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 321303768,
+          "name": "QuickFlickUp",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "bindingPath": "",
+          "bindingPath_UxmlAttributeFlags": 0,
+          "text": "",
+          "text_UxmlAttributeFlags": 0,
+          "enableRichText": 0,
+          "enableRichText_UxmlAttributeFlags": 0,
+          "emojiFallbackSupport": 0,
+          "emojiFallbackSupport_UxmlAttributeFlags": 0,
+          "parseEscapeSequences": 0,
+          "parseEscapeSequences_UxmlAttributeFlags": 0,
+          "isSelectable": 0,
+          "isSelectable_UxmlAttributeFlags": 0,
+          "doubleClickSelectsWord": 0,
+          "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+          "tripleClickSelectsLine": 0,
+          "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+          "displayTooltipWhenElided": 0,
+          "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "iconImageReference": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "iconImageReference_UxmlAttributeFlags": 0,
+          "BindTextFunction": {
+            "m_target": {
+              "m_guid": ""
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          },
+          "RightClickEvents": {
+            "m_bytes": []
+          },
+          "Events": {
+            "m_bytes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              196,
+              0,
+              0,
+              0,
+              211,
+              101,
+              102,
+              7,
+              2,
+              11,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              3,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              47,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              32,
+              49,
+              55,
+              50,
+              56,
+              98,
+              50,
+              99,
+              57,
+              49,
+              98,
+              53,
+              49,
+              99,
+              100,
+              51,
+              52,
+              56,
+              97,
+              48,
+              55,
+              99,
+              97,
+              54,
+              53,
+              50,
+              100,
+              57,
+              51,
+              55,
+              54,
+              102,
+              57,
+              1,
+              0,
+              3,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              3,
+              32,
+              0,
+              0,
+              0,
+              1,
+              1,
+              6,
+              112,
+              108,
+              97,
+              121,
+              101,
+              114,
+              18,
+              0,
+              0,
+              0,
+              1,
+              1,
+              15,
+              112,
+              114,
+              101,
+              118,
+              105,
+              111,
+              117,
+              115,
+              115,
+              105,
+              98,
+              108,
+              105,
+              110,
+              103,
+              0,
+              19,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4,
+              116,
+              101,
+              97,
+              109,
+              7,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4,
+              116,
+              101,
+              97,
+              109,
+              0,
+              57,
+              0,
+              0,
+              0,
+              1,
+              1,
+              23,
+              102,
+              111,
+              114,
+              99,
+              101,
+              79,
+              114,
+              105,
+              103,
+              105,
+              110,
+              97,
+              108,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              26,
+              0,
+              0,
+              0,
+              1,
+              1,
+              23,
+              102,
+              111,
+              114,
+              99,
+              101,
+              79,
+              114,
+              105,
+              103,
+              105,
+              110,
+              97,
+              108,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              0,
+              0,
+              0
+            ]
+          },
+          "InputActionRef": {
+            "m_inputActionAsset": {
+              "m_AssetGUID": "",
+              "m_SubObjectName": "",
+              "m_SubObjectType": ""
+            },
+            "m_actionID": ""
+          },
+          "AuditComponentBinding": {
+            "m_path": ""
+          },
+          "StaticText": "",
+          "MigrateEventTemplate": "",
+          "HoverBinding": {
+            "m_path": ""
+          },
+          "OnlyAcceptsClickEvents": 0,
+          "ShortcutIconPlacement": 0,
+          "TriggerHoverBindingWhenFocused": 0,
+          "AllowsInsideElementsNavigation": 0,
+          "HasInitialFocus": 0,
+          "StopsEventPropagation": 0,
+          "OnlyAcceptsSubmitEvents": 0,
+          "AuditId": "",
+          "IgnoreMultiSelectEvents": 0,
+          "BindTextFunction_UxmlAttributeFlags": 0,
+          "RightClickEvents_UxmlAttributeFlags": 0,
+          "Events_UxmlAttributeFlags": 1,
+          "InputActionRef_UxmlAttributeFlags": 0,
+          "AuditComponentBinding_UxmlAttributeFlags": 0,
+          "StaticText_UxmlAttributeFlags": 0,
+          "MigrateEventTemplate_UxmlAttributeFlags": 0,
+          "HoverBinding_UxmlAttributeFlags": 0,
+          "OnlyAcceptsClickEvents_UxmlAttributeFlags": 0,
+          "ShortcutIconPlacement_UxmlAttributeFlags": 0,
+          "TriggerHoverBindingWhenFocused_UxmlAttributeFlags": 0,
+          "AllowsInsideElementsNavigation_UxmlAttributeFlags": 0,
+          "HasInitialFocus_UxmlAttributeFlags": 0,
+          "StopsEventPropagation_UxmlAttributeFlags": 0,
+          "OnlyAcceptsSubmitEvents_UxmlAttributeFlags": 0,
+          "AuditId_UxmlAttributeFlags": 0,
+          "IgnoreMultiSelectEvents_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1017,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.VisualElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1570636456,
+          "m_Parent": {
+            "rid": 1013
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 1,
+          "m_Classes": [
+            "ui-concepts-chevron-down_small"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1020
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1018,
+        "type": {
+          "class": "SIButton/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -215567410,
+          "name": "QuickFlickDown",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "bindingPath": "",
+          "bindingPath_UxmlAttributeFlags": 0,
+          "text": "",
+          "text_UxmlAttributeFlags": 0,
+          "enableRichText": 0,
+          "enableRichText_UxmlAttributeFlags": 0,
+          "emojiFallbackSupport": 0,
+          "emojiFallbackSupport_UxmlAttributeFlags": 0,
+          "parseEscapeSequences": 0,
+          "parseEscapeSequences_UxmlAttributeFlags": 0,
+          "isSelectable": 0,
+          "isSelectable_UxmlAttributeFlags": 0,
+          "doubleClickSelectsWord": 0,
+          "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+          "tripleClickSelectsLine": 0,
+          "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+          "displayTooltipWhenElided": 0,
+          "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+          "iconImageReference": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "iconImageReference_UxmlAttributeFlags": 0,
+          "BindTextFunction": {
+            "m_target": {
+              "m_guid": ""
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          },
+          "RightClickEvents": {
+            "m_bytes": []
+          },
+          "Events": {
+            "m_bytes": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              192,
+              0,
+              0,
+              0,
+              211,
+              101,
+              102,
+              7,
+              2,
+              11,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              0,
+              3,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              47,
+              0,
+              0,
+              0,
+              1,
+              0,
+              1,
+              1,
+              1,
+              32,
+              49,
+              55,
+              50,
+              56,
+              98,
+              50,
+              99,
+              57,
+              49,
+              98,
+              53,
+              49,
+              99,
+              100,
+              51,
+              52,
+              56,
+              97,
+              48,
+              55,
+              99,
+              97,
+              54,
+              53,
+              50,
+              100,
+              57,
+              51,
+              55,
+              54,
+              102,
+              57,
+              1,
+              0,
+              3,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              1,
+              3,
+              28,
+              0,
+              0,
+              0,
+              1,
+              1,
+              6,
+              112,
+              108,
+              97,
+              121,
+              101,
+              114,
+              14,
+              0,
+              0,
+              0,
+              1,
+              1,
+              11,
+              110,
+              101,
+              120,
+              116,
+              115,
+              105,
+              98,
+              108,
+              105,
+              110,
+              103,
+              0,
+              19,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4,
+              116,
+              101,
+              97,
+              109,
+              7,
+              0,
+              0,
+              0,
+              1,
+              1,
+              4,
+              116,
+              101,
+              97,
+              109,
+              0,
+              57,
+              0,
+              0,
+              0,
+              1,
+              1,
+              23,
+              102,
+              111,
+              114,
+              99,
+              101,
+              79,
+              114,
+              105,
+              103,
+              105,
+              110,
+              97,
+              108,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              26,
+              0,
+              0,
+              0,
+              1,
+              1,
+              23,
+              102,
+              111,
+              114,
+              99,
+              101,
+              79,
+              114,
+              105,
+              103,
+              105,
+              110,
+              97,
+              108,
+              81,
+              117,
+              105,
+              99,
+              107,
+              70,
+              108,
+              105,
+              99,
+              107,
+              0,
+              0,
+              0
+            ]
+          },
+          "InputActionRef": {
+            "m_inputActionAsset": {
+              "m_AssetGUID": "",
+              "m_SubObjectName": "",
+              "m_SubObjectType": ""
+            },
+            "m_actionID": ""
+          },
+          "AuditComponentBinding": {
+            "m_path": ""
+          },
+          "StaticText": "",
+          "MigrateEventTemplate": "",
+          "HoverBinding": {
+            "m_path": ""
+          },
+          "OnlyAcceptsClickEvents": 0,
+          "ShortcutIconPlacement": 0,
+          "TriggerHoverBindingWhenFocused": 0,
+          "AllowsInsideElementsNavigation": 0,
+          "HasInitialFocus": 0,
+          "StopsEventPropagation": 0,
+          "OnlyAcceptsSubmitEvents": 0,
+          "AuditId": "",
+          "IgnoreMultiSelectEvents": 0,
+          "BindTextFunction_UxmlAttributeFlags": 0,
+          "RightClickEvents_UxmlAttributeFlags": 0,
+          "Events_UxmlAttributeFlags": 1,
+          "InputActionRef_UxmlAttributeFlags": 0,
+          "AuditComponentBinding_UxmlAttributeFlags": 0,
+          "StaticText_UxmlAttributeFlags": 0,
+          "MigrateEventTemplate_UxmlAttributeFlags": 0,
+          "HoverBinding_UxmlAttributeFlags": 0,
+          "OnlyAcceptsClickEvents_UxmlAttributeFlags": 0,
+          "ShortcutIconPlacement_UxmlAttributeFlags": 0,
+          "TriggerHoverBindingWhenFocused_UxmlAttributeFlags": 0,
+          "AllowsInsideElementsNavigation_UxmlAttributeFlags": 0,
+          "HasInitialFocus_UxmlAttributeFlags": 0,
+          "StopsEventPropagation_UxmlAttributeFlags": 0,
+          "OnlyAcceptsSubmitEvents_UxmlAttributeFlags": 0,
+          "AuditId_UxmlAttributeFlags": 0,
+          "IgnoreMultiSelectEvents_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1019,
+        "type": {
+          "class": "VisualElement/UxmlSerializedData",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "uxmlAssetId": -1919024073,
+          "name": "ui-concepts-chevron-top_small",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 1,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0
+        }
+      },
+      {
+        "rid": 1020,
+        "type": {
+          "class": "VisualElement/UxmlSerializedData",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "uxmlAssetId": 1570636456,
+          "name": "ui-concepts-chevron-down_small",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 1,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0
+        }
+      }
+    ]
+  }
+}

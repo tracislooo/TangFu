@@ -1,0 +1,8 @@
+﻿V56：替换 CA000、CA120、CA140、CA160、CA180，保留同名及原 Path ID；DXT5 保持原设置，存在正常压缩误差。
+删除 ATT/DEF/FED/KIK/SPD/SPT/TCN 各10张，共70张纹理及目录/预加载记录，700个旧样式引用清空。
+这70个名称和 Path ID 永久停用，不创建占位对象，不允许分配或重新恢复。当前有效自定义图片数为173，不再是243。
+55个卡面样式引用逐一验证直接解析到 backgrounds 中的新图，gameworld 没有旧卡面副本。
+同步更新游戏目录和皮肤工作目录的 backgrounds、gameworld。其余布局、绑定、global、catalog、visualfunctions 和 tileslayouts 保持不变。
+退出游戏后运行安装.ps1。回退.ps1只用于故障回退，含删除前原包；不可作为下次更新的图片来源。
+下次更新以本目录 backgrounds 和当前173张图片清单为准，结合永久保留禁止复用ID.json，不可再次从V53/V54/V55无筛选恢复243张。
+游戏内实际渲染待启动后确认。

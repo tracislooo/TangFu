@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-17",
+  "scope": "Opaque TF skin V1 page backgrounds; non-match module backgrounds at alpha 0.6",
+  "color": "#263445",
+  "opacity": 1.0,
+  "card_frame_images": true,
+  "script": "G:\\Doc\\ChatGPT\\New project\\apply-page-surfaces-theme.py",
+  "maintenance_owner": "UI palette chat; image maintenance handles image assets only",
+  "install_record": "G:\\Doc\\ChatGPT\\New project\\page-background-tf-v1-opaque-20261113-192156\\manifest.json",
+  "touchbar_opacity": 0.6,
+  "runtime_verified": false,
+  "saved_light_theme_archive": "G:\\Doc\\ChatGPT\\New project\\saved-progress\\FM27-light-theme-20261111-111410",
+  "nonmatch_module_backgrounds": {
+    "installed": true,
+    "background_opacity": 0.6,
+    "color": "preserve current RGB",
+    "condition": "game.IsDuringMatch == false",
+    "native_function": "d47d9f6bfe419344692270d5af16c5ef",
+    "install_record": "G:\\Doc\\ChatGPT\\New project\\page-backgrounds-module60-20261117-220912\\manifest.json",
+    "script": "G:\\Doc\\ChatGPT\\New project\\set-nonmatch-module-opacity.py",
+    "runtime_verified": false,
+    "includes": "native selectable tiles, blocks and module surfaces",
+    "page_card_frame_changed": false,
+    "text_icons_opacity_changed": false,
+    "counts": {
+      "game": 1011,
+      "skin": 1011
+    }
+  },
+  "page_backgrounds": {
+    "installed": true,
+    "default_texture": "TF skin V1",
+    "texture_path_id": -910000000000149,
+    "method": "opaque TF skin V1 image painted on existing Card-frame below content",
+    "page_shell_alpha": 1,
+    "module_background_alpha": 0.6,
+    "background_picker_preserved": true,
+    "install_record": "G:\\Doc\\ChatGPT\\New project\\page-background-tf-v1-opaque-20261113-192156\\manifest.json",
+    "script": "G:\\Doc\\ChatGPT\\New project\\apply-page-background-tf-v1-opaque.py",
+    "runtime_verified": false,
+    "additional_pages": [
+      "PortalScreen",
+      "SquadScreen",
+      "PlayerContractCard"
+    ],
+    "additional_pages_record": "G:\\Doc\\ChatGPT\\New project\\page-backgrounds-module60-20261117-220912\\manifest.json"
+  },
+  "navigation_backgrounds": {
+    "primary_opacity": 0.7,
+    "secondary_tab_opacity": 0.7,
+    "install_record": "G:\\Doc\\ChatGPT\\New project\\navigation-background70-20261117-223345\\manifest.json",
+    "runtime_verified": false,
+    "controls_paint_opacity": 0.7,
+    "icon_opacity": 0.7,
+    "text_opacity": 1,
+    "controls_install_record": "G:\\Doc\\ChatGPT\\New project\\navigation-controls70-20261117-224253\\manifest.json"
+  }
+}

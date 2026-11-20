@@ -1,0 +1,89 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "output": "G:\\Doc\\ChatGPT\\New project\\fitness-percent-rings-20261019-172755",
+  "panel_size": [
+    210,
+    238
+  ],
+  "row_box": [
+    0,
+    170,
+    210,
+    66
+  ],
+  "ring_size": [
+    34,
+    34
+  ],
+  "title_color": "#A0A0A0",
+  "number_color": "#FFFFFF",
+  "metrics": [
+    {
+      "key": "Condition",
+      "title": "体能",
+      "binding": "person.Condition",
+      "raw_scale": 1,
+      "minimum_exclusive": -1
+    },
+    {
+      "key": "Sharpness",
+      "title": "比赛状态",
+      "binding": "person.Sharpness",
+      "raw_scale": 1,
+      "minimum_exclusive": -1
+    },
+    {
+      "key": "Fatigue",
+      "title": "疲劳",
+      "binding": "person.Fatigue",
+      "raw_scale": 10,
+      "minimum_exclusive": -2147483648
+    }
+  ],
+  "fatigue_percent": "clamp(floor((raw+5)/10),0,100)",
+  "native_scale_evidence": {
+    "FatigueDataCollection": [
+      0,
+      399,
+      599,
+      799,
+      1000
+    ],
+    "SharpnessDataCollection": [
+      14,
+      29,
+      44,
+      54,
+      59,
+      60,
+      69,
+      72,
+      84,
+      100
+    ],
+    "RawConditionDataCollection": [
+      -1,
+      50,
+      65,
+      75,
+      85,
+      95,
+      100
+    ]
+  },
+  "added_texture_count": 101,
+  "source_values_verified": 5112,
+  "unchanged_ui_objects": 10308,
+  "unchanged_background_objects": 207,
+  "before_sha256": {
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "e8d220c41d7374aeabf30f1a79aee11b6345807d770f676da6f522860a2ff37b",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "e8d220c41d7374aeabf30f1a79aee11b6345807d770f676da6f522860a2ff37b",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-backgrounds_assets_common.bundle": "321b77fade2275e3381a2d6934473aae77b07ae09ec0f257815e284493edbbf7",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-backgrounds_assets_common.bundle": "321b77fade2275e3381a2d6934473aae77b07ae09ec0f257815e284493edbbf7"
+  },
+  "after_sha256": {
+    "ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "052e10b37e063171a27f7360e88fbce05c179972d73399bb61d5aba573e7790d",
+    "ui-backgrounds_assets_common.bundle": "21f9009e7f58a9a9e8bb2883bde54f7d27ae0562325a02cd3bcfea164c0604d0"
+  }
+}

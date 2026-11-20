@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle').Hash.ToLower() -ne 'a0428d9ac5e33b9cc1bf503d78fb63f7f2a14e8cf60befd264f2cf10801ac205') { throw 'Target changed since installation.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-pitch-horizontal-alignment-20261107-055054\backup-game\ui-styles_assets_default.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle' -Force
+if ((Get-FileHash -LiteralPath 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle').Hash.ToLower() -ne '8975498557ee1de28998f41f9d4329b602769207c109c3e810f3501fd5417c04') { throw 'Target changed since installation.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-pitch-horizontal-alignment-20261107-055054\backup-skin\ui-styles_assets_default.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle' -Force

@@ -1,0 +1,1 @@
+Restores pre-navigation-background70 appearance: opaque #E7E7E7 primary header, black menu labels, hidden team gradient and club colour decoration, opaque #263445 secondary tabs. Added shortcuts, localization, events, holiday, clock, Continue, typography and layout retained. All unrelated objects verified unchanged. No GUI or runtime validation. Backup and restore.ps1 included.

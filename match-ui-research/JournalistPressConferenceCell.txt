@@ -1,0 +1,36 @@
+gameworld JournalistPressConferenceCell PathID=-984407893858009820 Style=7186662493705125156
+USINGS [{'alias': 'BodyLanguageCell', 'path': '266d5de7b54a2e940aaef6368d0033d0', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'thumbnails-alt-person-picture', 'path': 'd894b159c6d0cba49bd51def7f05e85c', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.UI.ComponentElement CLASS=[] {"m_components": [{"rid": 1009}, {"rid": 1010}, {"rid": 1011}]}
+ STYLE []
+  1002 SI.Bindable.BindingRootComponent CLASS=None {}
+  STYLE []
+  1003 SI.Bindable.BindingRemapperComponent CLASS=None {}
+  STYLE []
+  1004 SI.Bindable.BindingSetterComponent CLASS=None {}
+  STYLE []
+  1005 SI.Bindable.SIStyleSetter CLASS=[] {"BindFunction": {"m_target": {"m_guid": "d47d9f6bfe419344692270d5af16c5ef"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "activeE", "\"SI.VisualScripting.StringVisualArg", " meeting-tiles--background-activeG", "\"SI.VisualScripting.StringVisualArg", "\"meeting-tiles--background-inactive%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+  STYLE [[131074, ["stretch"]]]
+   1007 UnityEngine.UIElements.VisualElement CLASS=['meeting-tiles-base', 'margin-horizontal-global-gap-small'] {}
+   STYLE [[131093, [{"unit": 1, "value": 4.0}]], [131090, [{"unit": 1, "value": 4.0}]]]
+    1012 SI.Bindable.SIStyleSetter CLASS=['justify-content-space-around'] {"BindFunction": {"m_target": {"m_guid": "d47d9f6bfe419344692270d5af16c5ef"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "activeO", "\"SI.VisualScripting.StringVisualArg", "*meeting-tiles-top-panel--background-activeQ", "\"SI.VisualScripting.StringVisualArg", ",meeting-tiles-top-panel--background-inactive%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+    STYLE [[131074, ["stretch"]], [131072, ["stretch"]]]
+     1015 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'press-conference-tiles-top-panel'] {"name": "TopBar"}
+     STYLE [[131090, [{"unit": 1, "value": 2.0}]], [131085, [0.0]]]
+      1021 UnityEngine.UIElements.VisualElement CLASS=[] {}
+      STYLE []
+      1022 SI.Bindable.BindingRemapper CLASS=[] {"Mappings": [{"m_serialisedType": 0, "from": "person", "to": {"m_path": "journalist"}, "type": {"id": 1145176065}}]}
+      STYLE []
+       1029 thumbnails-alt-person-picture CLASS=['margin-horizontal-global-gap-regular'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "thumbnails-alt-person-picture"}
+       STYLE [[131105, [{"unit": 1, "value": 29.0}]], [131087, [{"unit": 1, "value": 32.0}]]]
+    1013 UnityEngine.UIElements.VisualElement CLASS=['padding-horizontal-global-padding-regular', 'align-items-center'] {"name": "NonPlayerInfo"}
+    STYLE [[131074, ["stretch"]]]
+     1017 SI.Bindable.SIText CLASS=['body-sm-strong', 'global-text-secondary'] {"name": "Name", "DebugDisplay": "K. Van der San", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "journalist.Name"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+     STYLE [[131090, [{"unit": 1, "value": 2.0}]]]
+     1018 SI.Bindable.SIText CLASS=['global-text-secondary', 'body-sm'] {"name": "Publication", "DebugDisplay": "Teamtalk", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "journalist.NewsMediaSource.Name"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+     STYLE [[131090, [{"unit": 1, "value": 2.0}]]]
+     1019 SI.Bindable.BindingRemapper CLASS=[] {"Mappings": [{"m_serialisedType": 0, "from": "binding", "to": {"m_path": "bodylanguage"}, "type": {"id": 1716738678}}]}
+     STYLE []
+      1026 BodyLanguageCell CLASS=['align-items-center'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "BodyLanguageCell"}
+      STYLE [[131074, ["center"]], [131105, [{"unit": 1, "value": 83.0}]]]

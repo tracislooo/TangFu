@@ -1,0 +1,5 @@
+﻿$ErrorActionPreference='Stop'
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle').Hash.ToLower() -ne '71582a107e3338a0c2df0dc03dab9ffb03ea05d5ee89bc3668137ea037f7f651') { throw 'Later changes detected' }
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle').Hash.ToLower() -ne 'f0c924e0936d0fc56308f6baf5e7049e05ba3e2c1bfbf629bf1dfb58dc57752f') { throw 'Later changes detected' }
+& 'G:\Doc\ChatGPT\New project\game-retired-image-cleanup-20261111-195226\restore.ps1'
+& 'G:\Doc\ChatGPT\New project\game-retired-image-cleanup-20261111-195101\restore.ps1'

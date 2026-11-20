@@ -1,0 +1,3 @@
+﻿$ErrorActionPreference = "Stop"
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\first-overview-compact-roles-20261030-134705\backup-game\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\first-overview-compact-roles-20261030-134705\backup-skin\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle' -Force

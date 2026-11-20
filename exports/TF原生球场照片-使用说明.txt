@@ -1,0 +1,14 @@
+TF 原生球场照片设置（Windows）
+
+1. 安装已移除旧球场绝对路径登记的新版 TF 皮肤。不要继续使用旧的球场路径修复器。
+2. 把球场背景包解压到 FM27 用户目录内的 graphics 下。正常退出 FM27。
+3. 双击 TF-Native-Stadium-Setup.exe（无需安装 Python），核对 graphics 目录和球场包位置。
+   默认 graphics 来自当前 Windows 用户的「文档」位置，盘符不限。
+   如果球场包未自动找到，手动选含原包 config.xml 的球场背景包文件夹。
+4. 点击「设置球场照片」，成功后自行启动 FM27。
+
+工具根据球场包 config.xml 生成 graphics\TF Stadium Photos 中的原生球队图片配置及本地副本。
+不改游戏安装目录、原球场包和存档。未找到照片的球队使用占位图，不兼容的图片会转换为 RGB JPEG。
+更换或更新球场包后，可以重新运行。原 TF 生成目录会备份到 graphics 的上一级，避免重复加载。
+如果装过其他皮肤的球场槽位配置，工具会提示冲突位置，请先把旧配置移出 graphics。
+要撤销生成的图片，退出游戏后只把 graphics\TF Stadium Photos 移到 graphics 以外即可。

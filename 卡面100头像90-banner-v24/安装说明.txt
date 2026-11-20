@@ -1,0 +1,17 @@
+﻿卡面100%、头像最终90%，缩放设置在report-player-banner-max v24
+
+基于v23。替换global bundle后重启游戏；gameworld未变，随包提供以便保持版本一致。
+实际只修改global的report-player-banner-max内联样式8045407476604796436：
+- ReportMiddleCA000Layer：scale 110% → 100%，top仍为-15px。
+- PersonPictureFrame：在banner中新增scale 120%。
+
+PersonPicture内部原先已有75%缩放，本次严格保留其模板和样式。
+头像最终缩放为75% × 120% = 90%，新增缩放控制位于report-player-banner-max。
+如果外层直接填90%，与原75%相乘会变成67.5%，所以这里用120%补偿。
+以后仅在banner外层调整：外层scale = 期望最终比例 / 0.75。
+例如最终100%需外层133.333%，最终90%需120%。
+
+新CA000图片640×680、栏目185px、头像等比适配、BlueLight、国旗队徽与左右信息保持原值。
+所有PersonPicture资源和其他非目标资源字节已校验未改变。
+源packages与旧版成品没有覆盖，游戏内效果待确认。
+恢复本次修改可替换v23中的global文件。

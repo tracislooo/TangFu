@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\personal-info-radar-fullwidth-hidden-20261020-143445\backup-game\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\personal-info-radar-fullwidth-hidden-20261020-143445\backup-skin\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\personal-info-radar-fullwidth-hidden-20261020-143445\backup-game\catalog.bin' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\catalog.bin' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\personal-info-radar-fullwidth-hidden-20261020-143445\backup-game\catalog.hash' -Destination 'F:\Steam\steamapps\common\Project Taco\fm_Data\StreamingAssets\aa\catalog.hash' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\personal-info-radar-fullwidth-hidden-20261020-143445\backup-skin\catalog.bin' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\catalog.bin' -Force

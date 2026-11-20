@@ -1,0 +1,29 @@
+﻿PlayerReportHeader：俱乐部渐变 + PlayerTopBackground 球场背景 v7。
+
+推荐使用方式：
+备份皮肤 packages 内的 ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle，再用本目录同名 bundle 替换它。
+保留现有 ui-backgrounds_assets_common.bundle，其中已含新增图片。
+global bundle不需要替换，现有左中右布局、头像、国旗和队徽旋转均保留。
+
+图片：PlayerTopBackground，Texture2D Path ID -910000000000001。
+保留原有 teamcontainer.TitlebarBackgroundColour 的动态渐变绑定。
+该颜色由原游戏根据当前球队提供，原始渐变方式不变。
+球场图片以30%不透明度覆盖在渐变上方，信息内容位于图片上方且不受透明度影响。
+图片铺满头部，保持比例并居中裁剪；原图的蓝色会少量保留，不属于完全替换图片像素颜色。
+没有修改共享图片或栏目高度，也没有改动任何现有信息和操作绑定。
+
+手动导入JSON方式（与替换bundle二选一）：
+在gameworld bundle导入两份JSON：
+PlayerReportHeader Path ID 5775949770471550939
+inlineStyle Path ID -1940069326759809061
+并确保Externals中下列引用的m_FileID为8（若列表编号从0开始，则为7）：
+archive:/CAB-999dbe4fa4e66f3eb4b5f53d4512b8b8/CAB-999dbe4fa4e66f3eb4b5f53d4512b8b8
+GUID：00000000000000000000000000000000；Type：0。
+本包JSON使用m_FileID=8, m_PathID=-910000000000001。
+当前源bundle原有7项Externals，已在成品bundle中正确补入引用。
+
+资源说明：e73b49a20543e9ffade1770a3bbc8638.bundle是背景资源包标识；
+已实测新增纹理所在的序列化文件名为CAB-999dbe4fa4e66f3eb4b5f53d4512b8b8，跨文件引用使用这个实际名称。
+
+已重新打开生成的bundle，核对所有未修改资源字节完全一致、原绑定不变、背景引用正确。
+源packages文件未覆盖。尚未进入游戏验证实际显示效果。

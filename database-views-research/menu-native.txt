@@ -1,0 +1,48 @@
+
+OnEnable 0x181767a60
+0x181767a60 push rdi
+0x181767a62 sub rsp, 0x20
+0x181767a66 mov rdi, rcx
+0x181767a69 xor ecx, ecx
+0x181767a6b call 0x18207fa10
+0x181767a70 test al, al
+0x181767a72 je 0x181767b03
+0x181767a78 mov rcx, qword ptr [rip + 0x1bc4711]
+0x181767a7f mov qword ptr [rsp + 0x30], rbx
+0x181767a84 mov qword ptr [rsp + 0x38], rsi
+0x181767a89 call 0x1801deab0
+0x181767a8e mov rdx, qword ptr [rip + 0x1bb9143]
+0x181767a95 mov rcx, rax
+0x181767a98 mov rbx, rax
+0x181767a9b call 0x180e65740
+0x181767aa0 lea rcx, [rdi + 0x58]
+0x181767aa4 mov qword ptr [rdi + 0x58], rbx
+0x181767aa8 mov rdx, rbx
+0x181767aab call 0x1801ddc30
+0x181767ab0 mov rsi, qword ptr [rdi + 0x28]
+0x181767ab4 xor ebx, ebx
+0x181767ab6 test rsi, rsi
+0x181767ab9 je 0x181767b09
+0x181767abb nop dword ptr [rax + rax]
+0x181767ac0 cmp ebx, dword ptr [rsi + 0x18]
+0x181767ac3 jge 0x181767af9
+0x181767ac5 movsxd rdx, ebx
+0x181767ac8 xor r8d, r8d
+0x181767acb mov rcx, rdi
+0x181767ace mov rdx, qword ptr [rsi + rdx*8 + 0x20]
+0x181767ad3 call 0x181766850
+0x181767ad8 test rax, rax
+0x181767adb je 0x181767af5
+0x181767add mov rcx, qword ptr [rdi + 0x58]
+0x181767ae1 test rcx, rcx
+0x181767ae4 je 0x181767b09
+0x181767ae6 mov r8, qword ptr [rip + 0x1bb91e3]
+0x181767aed mov rdx, rax
+0x181767af0 call 0x1802b6f00
+0x181767af5 inc ebx
+0x181767af7 jmp 0x181767ac0
+0x181767af9 mov rbx, qword ptr [rsp + 0x30]
+0x181767afe mov rsi, qword ptr [rsp + 0x38]
+0x181767b03 add rsp, 0x20
+0x181767b07 pop rdi
+0x181767b08 ret 

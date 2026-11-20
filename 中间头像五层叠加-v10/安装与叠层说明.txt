@@ -1,0 +1,24 @@
+﻿中间头像五层叠加 v10
+
+本次修改的是 global bundle，请备份后替换本目录的同名文件：
+ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle
+重新启动游戏并加载皮肤。
+
+从下到上的顺序：
+1. 现有 PlayerTopBackground 和俱乐部动态渐变（保持 gameworld 的现有背景层）。
+2. 现有国旗与俱乐部队徽。
+3. PlayerTopBlueLight（-910000000000002），位于450×200的中间叠层区域，保持图片比例居中显示。
+4. CA000（-910000000000003），居中位于200×200的区域，卡片保持原图比例完整显示。
+5. 球员头像，200×200正方形区域、中心缩放80%，最终显示为160×160。
+
+球员头像使用此中间区域专用的正方形模板，保留原来的球员图片绑定与分支。
+只在专用模板中移除按图片比例调整容器的逻辑，图片保持比例并居中裁剪到正方形。
+原来的共享 PersonPicture 模板及其他页面头像保持不变。
+
+图片取自你提供的 ui-backgrounds_assets_common.bundle / CAB-999dbe4fa4e66f3eb4b5f53d4512b8b8。
+为避免手动导入JSON时漏掉Externals，成品global bundle直接内置两张图片，使用本地FileID=0。
+图片Path ID、名字、DXT5数据和透明度不变，并补齐预加载条目。
+
+无需替换 gameworld 或 backgrounds bundle。本次未修改头部高度、左右信息、状态区域及国旗和队徽的现有设置。
+源packages文件未覆盖；成品已重新加载，核对层级、绑定、预加载与全部未修改资源字节。
+实际显示效果需游戏内确认。

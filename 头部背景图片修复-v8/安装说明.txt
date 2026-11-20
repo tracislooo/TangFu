@@ -1,0 +1,16 @@
+﻿头部背景图片修复 v8
+
+上一版仅导入两份 JSON 后，样式引用了第 8 个外部文件，但当前 bundle 只有 7 个外部引用，图片无法解析。
+本版将 PlayerTopBackground 纹理直接内置到 gameworld bundle，样式使用本地 m_FileID=0，并补齐头部的纹理预加载。
+
+安装方法：
+1. 备份皮肤 packages 中的 ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle。
+2. 用本包同名 bundle 替换它。本版必须替换 bundle，不是只导入两份 JSON。
+3. 重新启动游戏并加载该皮肤。
+
+已在你当前 packages 文件的基础上修复，保留现有头部高度、信息位置、头像布局、国旗与队徽及原有俱乐部动态渐变。
+球场图片仍为 30% 不透明度，图片像素、尺寸、格式没有改变。
+global bundle 和 ui-backgrounds bundle 不需要替换。
+
+已重读生成的 bundle，验证本地图片引用、纹理解码、预加载，以及所有其他 UI 资源字节未变。
+尚未在游戏内验证显示效果。

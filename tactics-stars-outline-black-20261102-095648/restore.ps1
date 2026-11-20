@@ -1,0 +1,4 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-stars-outline-black-20261102-095648\backup-game\ui-styles_assets_default.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-stars-outline-black-20261102-095648\backup-skin\ui-styles_assets_default.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle' -Force

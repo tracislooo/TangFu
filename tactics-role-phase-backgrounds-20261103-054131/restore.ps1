@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-role-phase-backgrounds-20261103-054131\backup-game\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-role-phase-backgrounds-20261103-054131\backup-game\ui-styles_assets_default.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-role-phase-backgrounds-20261103-054131\backup-skin\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-role-phase-backgrounds-20261103-054131\backup-skin\ui-styles_assets_default.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle' -Force

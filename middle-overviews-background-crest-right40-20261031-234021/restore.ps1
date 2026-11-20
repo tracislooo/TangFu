@@ -1,0 +1,8 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit game first' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-game\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-game\catalog.bin' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\catalog.bin' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-game\catalog.hash' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\catalog.hash' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-skin\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-skin\catalog.bin' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\catalog.bin' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\middle-overviews-background-crest-right40-20261031-234021\backup-skin\catalog.hash' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\catalog.hash' -Force

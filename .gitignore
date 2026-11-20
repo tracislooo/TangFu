@@ -1,0 +1,39 @@
+# Local dependencies and caches
+.codex-deps/
+**/__pycache__/
+*.py[cod]
+**/node_modules/
+**/.venv/
+**/venv/
+.pytest_cache/
+
+# Generated game bundles, binary snapshots, and packaged exports
+*.bundle
+*.bin
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.bak
+*.dmp
+*.log
+
+# Compiled dependencies and distributables
+*.exe
+*.dll
+*.pyd
+*.so
+*.ttf
+*.otf
+
+# Local secrets and machine files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+Thumbs.db
+Desktop.ini
+.DS_Store

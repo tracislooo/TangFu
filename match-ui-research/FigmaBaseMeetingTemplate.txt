@@ -1,0 +1,28 @@
+global FigmaBaseMeetingTemplate PathID=3838194638172141561 Style=-2946346010715342855
+USINGS [{'alias': 'MeetingSpeakToContainer', 'path': '2cfae9f5f8c826b4a9442106a431ebd7', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 UnityEngine.UIElements.VisualElement CLASS=['simeeting-container', 'align-self-stretch'] {}
+ STYLE []
+  1002 UnityEngine.UIElements.VisualElement CLASS=['flex-grow-class'] {}
+  STYLE []
+   1004 SI.Bindable.BindingVariables CLASS=['flex-grow-class'] {"name": "SpeakToVariables", "ValueVariables": [{"m_name": "speaktoisontheright", "m_scopeValue": {"m_serializedData": "Bool|0|"}}, {"m_name": "use-header-dropdown-for-speakto", "m_scopeValue": {"m_serializedData": "Bool|0|"}}]}
+   STYLE []
+    1006 UnityEngine.UIElements.VisualElement CLASS=['flex-grow-class', 'row-direction-normal'] {}
+    STYLE []
+     1008 SI.Bindable.BindingVariables CLASS=['flex-grow-class', 'align-items-center'] {"ValueVariables": [{"m_name": "isonmainscreen", "m_scopeValue": {"m_serializedData": "Bool|0|"}}, {"m_name": "isfullscreencard", "m_scopeValue": {"m_serializedData": "Bool|0|"}}]}
+     STYLE []
+      1011 UnityEngine.UIElements.VisualElement CLASS=['flex-grow-class'] {"name": "layout-card-default-default"}
+      STYLE []
+       1014 UnityEngine.UIElements.VisualElement CLASS=['layout-card-default-default'] {"name": "layout-card-default-default"}
+       STYLE []
+        1016 SI.Bindable.BindingSetter CLASS=['flex-grow-class'] {"ValueVariables": [{"m_name": "useSmall", "m_scopeValue": {"m_serializedData": "Bool|0|"}}], "BindFunction": [{"m_target": {"m_guid": "b6e89d1f787dcc1418384a60680a7f5a"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["@SI.VisualScripting.StructListVisualArg`1[SI.Bindable.BooleanArg]", "app.GridBreakpointIsSmall", "\"app.GridBreakpointIsPhoneLandscape", "USI.VisualScripting.EnumVisualArg`1[SI.VisualScripting.VisibleFunctions+LogicOperator]", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "useSmall"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}]}
+        STYLE []
+         1018 SI.Bindable.SIStyleSetter CLASS=[] {"BindFunction": {"m_target": {"m_guid": "d47d9f6bfe419344692270d5af16c5ef"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "useSmall?", "\"SI.VisualScripting.StringVisualArg", "simeeting-visualizer-small9", "\"SI.VisualScripting.StringVisualArg", "simeeting-visualizer%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+         STYLE [[131084, [1.0]]]
+          1020 SI.Bindable.DynamicItem CLASS=['flex-grow-class'] {"name": "MeetingTypeDynamicItem", "VisualFuncBinding": {"m_target": {"m_guid": "c0f74129d4d01f04b9a6f91c47ad6eec"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["*SI.VisualScripting.AssetReferenceVisualArg 8cb9cfdf8b2c5f045bdbca34bc1c322d", "\"SI.VisualScripting.StringVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PreviewAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}}
+          STYLE []
+          1021 SI.Bindable.ScalableBindableGridLayoutElement CLASS=[] {"Bindings": {"m_gridCompositionSet": {"m_FileID": 0, "m_PathID": 0}, "m_nameBindings": [], "m_gridElementBindingData": [], "m_gridElementVisiblityFunctions": [], "m_displayNameBindingMethods": []}}
+          STYLE []
+     1009 MeetingSpeakToContainer CLASS=['flex-grow-class'] {"name": "SpeakToContainer", "pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "MeetingSpeakToContainer"}
+     STYLE []

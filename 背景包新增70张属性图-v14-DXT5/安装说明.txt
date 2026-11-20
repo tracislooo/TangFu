@@ -1,0 +1,17 @@
+﻿背景包新增70张属性图 v14
+
+按SPT、TCN、ATT、DEF、FED、KIK、SPD的顺序，每组01至10分配Path ID。
+新增ID从 -910000000000018 至 -910000000000087；详见资源ID对照文件。
+各图尺寸均为200×200，DXT5（格式12），1级Mip，保留源PNG透明通道。
+其他纹理设置沿用 -910000000000001（PlayerTopBackground）。
+序列化文件：CAB-999dbe4fa4e66f3eb4b5f53d4512b8b8。
+全部新增图片已登记资源名称和预加载。
+
+备份皮肤packages里的 ui-backgrounds_assets_common.bundle，用本目录同名文件替换。
+此前的CA、BlueLight、十张等级图和所有其他资源均保留。
+本次仅加入图片，未修改界面引用。界面使用时另行配置对应Path ID。
+
+验证：已重新打开成品bundle，70张图片均可解码；核对ID、尺寸、方向、Alpha和预加载。
+所有其他资源原始字节未变，源packages文件未覆盖。
+预览拼图来自成品bundle解码，仅用于查看；它合成在棋盘底色上，本身不带Alpha。
+纹理资源中仍保留原PNG的Alpha，DXT5有正常压缩误差。

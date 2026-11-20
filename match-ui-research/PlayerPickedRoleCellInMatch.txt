@@ -1,0 +1,38 @@
+gameworld PlayerPickedRoleCellInMatch PathID=8965859253198432150 Style=-3921916420937504874
+USINGS [{'alias': 'dropdown-base-no-background', 'path': '73a7dbf7cf9b6c7489db5583447a0d09', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.UI.ComponentElement CLASS=[] {"m_components": [{"rid": 1008}, {"rid": 1009}]}
+ STYLE [[131087, [{"unit": 1, "value": 36.0}]]]
+  1002 SI.Bindable.BindingExpectComponent CLASS=None {}
+  STYLE []
+  1003 SI.Bindable.BindingRemapperComponent CLASS=None {}
+  STYLE []
+  1004 SI.Bindable.SIVisible CLASS=[] {"Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "tactic.IsPlayerOnPitch"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+  STYLE [[131084, [1.0]]]
+   1006 SI.Bindable.BindingRemapper CLASS=[] {"Mappings": [{"m_serialisedType": 0, "from": "position", "to": {"m_path": "Tactic.PositionFromTeamSelectionIndex"}, "type": {"id": 910512747}}]}
+   STYLE []
+    1010 UnityEngine.UIElements.VisualElement CLASS=['buttons-hybrid-split-button', 'padding-global-padding-small'] {"name": "buttons-hybrid-split-button"}
+    STYLE []
+     1012 UnityEngine.UIElements.VisualElement CLASS=['justify-content-center'] {}
+     STYLE []
+      1015 SI.Bindable.SIStyleSetter CLASS=['flex-grow-class', 'justify-content-center'] {"BindFunction": {"m_target": {"m_guid": "ccad53b4192c2ed41ad18bae0726dbe4"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["SI.Bindable.BindingKeyVisualArg", "*SI.VisualScripting.AssetReferenceVisualArg 4e7f228c580c7864f83a2686d0a2e047", "\"SI.VisualScripting.StringVisualArg", "ColourOnly%", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", ".Tactic.PositionFromTeamSelectionIndex.Position"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+      STYLE []
+       1020 UnityEngine.UIElements.VisualElement CLASS=['border-radius-leading-extra-small'] {"pickingMode": 1}
+       STYLE []
+        1025 SI.Bindable.SIButton CLASS=['buttons-hybrid-split-button-left', 'content-no-wrap', 'text-regular', 'margin-global-gap-none', 'body-sm-strong', 'player-role-dropdown-left'] {"iconImageReference": {"m_FileID": 0, "m_PathID": 0}, "BindTextFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "RightClickEvents": {"m_bytes": []}, "Events": {"m_bytes": [" cd0953831aea5754c81293bc76db4ae7", "tactic", "tactic", "inpossession", "inpossession", "teamselectionindex", "teamselectionindex", "positionmask", "position.Position", "person", "binding.Person"]}, "InputActionRef": {"m_inputActionAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": ""}, "AuditComponentBinding": {"m_path": ""}, "HoverBinding": {"m_path": ""}}
+        STYLE []
+         1029 SI.Bindable.BindingVariables CLASS=['flex-grow-class'] {"name": "RoleVarSetup", "pickingMode": 1, "ValueVariables": [{"m_name": "roledata", "m_scopeValue": {"m_serializedData": "{\"$type\":\"SI.Bindable.DynamicReferenceScopeValue, SI.Bindable\",\"m_data\":[{\"PropertyID\":{\"id\":1349481322,\"ID\":1349481322},\"BindingPath\":\"position.positionrole\"},{\"PropertyID\":{\"id\":1265792339,\"ID\":1265792339},\"BindingPath\":\"position.isinpossession\"}]}"}}]}
+         STYLE [[131074, ["stretch"]]]
+          1033 SI.Bindable.SIText CLASS=['flex-grow-class', 'sitext-hover-cursor'] {"DebugDisplay": "BWM", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "f97abdf5a74842647ba921d183f4a3eb"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "[%tactical_role#1-short]c", "DSI.VisualScripting.StructListVisualArg`1[SI.Bindable.TranslationArg]", "roledata", "tactical_role"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+          STYLE [[131074, ["center"]]]
+     1013 SI.UI.ComponentElement CLASS=['justify-content-center'] {"pickingMode": 1, "m_components": [{"rid": 1024}]}
+     STYLE []
+      1017 SI.Bindable.BindingVariablesComponent CLASS=None {}
+      STYLE []
+      1018 SI.Bindable.SIStyleSetter CLASS=[] {"pickingMode": 1, "BindFunction": {"m_target": {"m_guid": "ccad53b4192c2ed41ad18bae0726dbe4"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["SI.Bindable.BindingKeyVisualArg", "*SI.VisualScripting.AssetReferenceVisualArg 4e7f228c580c7864f83a2686d0a2e047", "\"SI.VisualScripting.StringVisualArg", "ColourOnly%", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", ".Tactic.PositionFromTeamSelectionIndex.Position"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+      STYLE []
+       1022 UnityEngine.UIElements.VisualElement CLASS=['border-radius-trailing-extra-small'] {"pickingMode": 1}
+       STYLE []
+        1027 dropdown-base-no-background CLASS=['buttons-hybrid-split-button-right', 'navigatable', 'si-dropdown-no-border', 'player-role-dropdown-right'] {"name": "SIDropdown", "pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "dropdown-base-no-background"}
+        STYLE []

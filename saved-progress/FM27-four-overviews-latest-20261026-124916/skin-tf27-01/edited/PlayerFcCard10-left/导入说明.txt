@@ -1,0 +1,12 @@
+﻿导入说明
+
+1. 打开 ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle，选择 CAB-1ab8e16d7264cd64aba00192bdf91ea2。
+2. Tools → Asset Info → Externals：现有 0 - Resources/unity default resources 保留。新增下一条外部引用：
+archive:/CAB-787be361157b246e30d1ff121b0849d1/CAB-787be361157b246e30d1ff121b0849d1
+新增项应为 Externals 索引 1，对应 JSON m_FileID = 2。如果实际索引不是 1，请把 inlineStyle 的 assets.Array 新增图片项 m_FileID 改成实际索引加 1。JSON 导入本身不会新增 Externals。
+3. Path ID 5775949770471550939 导入本目录的 PlayerReportHeader JSON。
+4. Path ID -1940069326759809061 导入本目录的 inlineStyle JSON。
+5. 保存 bundle。图片所在的 ui-textures_assets_all.bundle 需包含 Texture2D 2022222151101，并已正确保存。
+
+布局：PlayerFcCard10 → 原 PersonPictureFrame → 原信息。图片栏宽 163、高 200，右间距 12，scale-to-fit。原头像和原信息内部顺序不变。未修改共享 PersonPicture。
+尚未在游戏中验证。

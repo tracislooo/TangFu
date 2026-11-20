@@ -1,0 +1,4 @@
+﻿V72：同名替换 TFWX 与 fm27-background-texture，各自名称、Path ID、CAB、资源目录和预加载保持不变。
+TFWX 使用 RGBA32 无损纹理，像素与源 PNG 完全一致。原生 fm27-background-texture 保留兼容纹理格式、源PNG尺寸和透明度，使用单级mipmap，DXT存在正常压缩误差。
+分别更新 common 与 ui-backgrounds_assets_.bundle，同步游戏和皮肤目录；其他资源对象、原生资源流、界面布局、引用、公式、catalog及其他原生覆盖不变。
+自定义图片数量不变；恢复清单新增此次原生背景覆盖记录，保留原有覆盖列表。含原包备份、安装/回退脚本。游戏内显示待重启确认。

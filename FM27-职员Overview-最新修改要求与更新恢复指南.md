@@ -1,0 +1,110 @@
+# FM27 职员 Overview：最新修改要求与游戏更新后恢复指南
+
+整理日期：2026-10-28（America/Denver）。
+
+范围：本聊天中最后一次职员 Staff → Overview 修改。依据 2026-10-26 安装记录整理；本文不表示已重新检查 10 月 28 日游戏文件或完成游戏内实测。
+
+## 1. 最终显示要求
+
+### 职员能力评价显示数值
+
+- 职员属性评价由“优秀”等文字等级改为原生 **1–20 数值**。
+- 显示真实属性数值，不把文字等级反算为分数，不改为百分比。
+- 保留原属性名称及翻译、评价颜色、关键属性标记、图标、排序和各职能分类切换。
+- 普通属性行与带图标属性行都要修改，避免部分分类仍显示文字。
+- 当前实现修改了两个共用的职员属性行模板，所以其他复用它们的提示框也会显示数值。
+- 这是属性评价的显示修改，不包含新增职员 CA/PA、隐藏属性、综合评分或修改游戏属性数据。
+
+### 职员头像与球员头像一样完整显示
+
+- 复用球员大头像的等比例完整显示组件 `ReportMiddleSquarePersonPicture`。
+- 照片保持原比例，完整显示，避免头部或肩部被裁切，不拉伸变形。
+- 头像框居中，基准宽高 **226 × 226px**，最大高度受顶部栏限制。
+- 去掉职员头像实例旧的缩略图尺寸类和底部对齐限制，内部映射容器及头像实例填满可用头像框。
+- 保留职员身份、球队映射和原组件的照片来源/回退逻辑；各图像分支均须使用 `scale-to-fit`。
+- 复用现有球员组件，不为这次职员页修改改动共享头像组件或四版球员页面。
+
+## 2. 已安装实现的定位依据
+
+修改包：`ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle`。
+
+下列编号来自本次安装版本，**游戏更新后须重新按名称、绑定和结构匹配，不能假设原生 Path ID 不变**。
+
+| 对象 | 本次版本 Path ID | 修改内容 |
+|---|---|---|
+| `NonPlayerAttributeCell` | `5904429056627683184` | 数值文字绑定从 `attributebind.DisplayString` 改为 `attributebind.PropertyValue` |
+| `NonPlayerAttributeWithIconCell` | `1142760536872937931` | 同样改为 `attributebind.PropertyValue` |
+| `NonPlayerReportHeader` | `-4246927470610052519` | 头像模板引用、头像框及内部容器样式 |
+| 上述 Header 的 `inlineSheet` | `960309779402361433` | 226px、居中及填充约束 |
+
+数值绑定只替换展示来源，原生颜色函数仍读取原属性值，保留其阈值与样式。若新版更换了字段或包装类型，应先核对新版数值源，再迁移等效绑定。
+
+复用的球员头像资源：
+
+| 项目 | 本次版本定位 |
+|---|---|
+| 资源名称 | `ReportMiddleSquarePersonPicture` |
+| GUID | `13f75dc8f7df868150944efb2b46036c` |
+| Path ID | `-910000000000101` |
+| 所属包 | 上述 gameworld VisualTreeAsset bundle |
+| Header 中模板别名 | `PersonPicture`，别名保留，实际指向球员完整头像资源 |
+
+本次 Header 中头像框为引用记录 1016，球队映射容器为 1019，头像模板实例为 1025；这些记录号同样只供定位参考。共享头像组件的四个图片分支当时为 1031、1035、1037、1046，均已核对 `scale-to-fit`。
+
+## 3. 游戏更新后的重做步骤
+
+1. 备份更新后的游戏资源、catalog、当前皮肤包及用户布局，以**新版原生资源**为基础迁移。本次旧 bundle 与回退包只供参考及故障回退，不直接覆盖更新后的整包。
+2. 重新定位两个职员属性行模板，核对新版显示文字字段及原始 1–20 数值字段。迁移数值绑定，保留名称、翻译、颜色函数、图标和关键属性标记；检查各职能分类是否仍使用这两个模板，若新版有新增等效模板，一并核对。
+3. 定位新版 `NonPlayerReportHeader` 的头像框、球队映射容器和头像实例。恢复居中、226px 基准尺寸及高度约束；清除会限制头像尺寸或裁切的旧缩略图类。
+4. 检查球员完整头像组件是否已迁移且可复用。若不存在，应从适用于新版的球员头像迁移实现中恢复等效组件，同时重建其依赖、样式和注册，不能只把职员 Header 指向一个不存在的旧 GUID。
+5. 核对头像组件各图像分支均为等比例完整显示，保留照片切换、默认照片及人物模型照片的原生逻辑。
+6. 检查实际使用的自定义 **VisualTreeAsset 和 VisualFunction**：GUID 已登记在游戏 catalog，资源类型正确，所属 bundle 中存在对应对象，目录依赖首项为所属 bundle，跨包依赖完整。仅有 PPtr 能解析不能证明 Addressables 能加载；如本次不需要改目录，应保留当前有效目录，不恢复旧 catalog。
+7. 校验类型树序列化回读、样式索引、引用及无关对象哈希；确认未改动其他新版原生资源、四版球员页、背景纹理及用户新增内容。
+8. 退出游戏后，将验证通过的修改同步到游戏安装目录和 `tf27-01` 皮肤包；启动游戏完成下节画面与数据检查。
+
+本任务不需要新增或恢复图片。若迁移过程涉及图片，必须先读取项目 `AGENTS.md`、`reserved-texture-ids.json` 和 `current-custom-textures.json`：70 张永久停用图片的名称及 ID 保持未占用，不能从历史包无筛选恢复背景；以最新有效图片清单为准。
+
+## 4. 恢复后检查
+
+- 管理、教练、球探、医疗等职能分类中的属性评价均显示正确数值，普通行和带图标行一致；切换职员后无旧数据残留。
+- 属性名、语言切换、颜色及关键属性标记保留；没有因字段类型变化出现空值、错误值或文字等级残留。
+- 有照片、无照片、默认照片及人物模型照片等实际可用情况显示正确，头肩完整、比例正常。
+- 不同 UI 缩放/顶部栏尺寸下，头像不越界、不压住姓名与合同资料、不出现零高度或裁切。
+- 四版球员页及其头像显示不受本次职员页修改影响。
+- 检查 `Player.log`，没有此次使用的模板或函数 GUID 加载失败。
+
+## 5. 路径、脚本与历史验证状态
+
+游戏资源目录：`F:/Steam/steamapps/common/Football Manager 27/fm_Data/StreamingAssets/aa/StandaloneWindows64`。
+
+皮肤目录：`G:/Doc/FM Skin Builder/skins/tf27-01/packages`。
+
+项目中的实现参考：`update-staff-overview-numbers-portrait.py`。它包含旧 Path ID、固定路径及旧版结构假设；更新后应先审查适配，不能直接无检查重跑。
+
+本次安装与回退记录：`staff-overview-numbers-full-portrait-20261026-131131/`，内有 `manifest.json`、`修改说明.md`、`install.ps1`、`restore.ps1` 和游戏/皮肤备份。旧 `restore.ps1` 用于回退该次补丁，不用于恢复到更新后的新版游戏。
+
+2026-10-26 记录显示：修改并同步了一个 bundle 内的四个对象，10,232 个其他对象通过哈希不变检查；序列化回读、样式/引用、安装后数值绑定及头像资源容器定位均通过。该次没有修改 catalog、背景包或球员页；**游戏内画面与交互实测尚未记录为通过**。不能将这份历史校验当作下一次游戏更新后的验证结果。
+
+## 6. 以后可直接使用的重做指令
+
+> 请按《FM27-职员Overview-最新修改要求与更新恢复指南.md》恢复职员 Staff → Overview：属性评价显示原生 1–20 数值，保留名称、颜色、图标及职能切换；职员头像使用球员同款等比例完整显示组件，居中，226px 基准并适配顶部栏高度。以更新后的原生资源为基础重新匹配字段、对象和 GUID，核对模板/函数 catalog 注册与依赖，保留其他现有修改及最新有效图片，遵守永久禁用图片规则。完成验证后同步游戏与皮肤包，并记录哪些静态及游戏内检查已通过。
+
+
+## 2026-11-03 职员弹窗头像高度修复
+
+NonPlayerReportHeader的PersonPictureFrame（1016）改为明确226×180px，min/max高度均180；PictureTeamRemapper（1019）和PersonPicture实例（1025）改为明确226×180px，取消flex伸缩。解决百分比最大高度及多层100%高度在弹窗头部可能折叠的问题；此处覆盖旧226×226且max-height100%的方案。照片仍等比完整显示，保留当前PersonPicture模板GUID、实际对象及四条图像／回退分支；职员姓名、合同、属性和球员共享头像模块不改。本次仅修改两边各一个职员头部样式对象，其他对象原始字节一致，目录有效；未进行游戏内显示验证。脚本fix-staff-header-portrait-height.py；记录staff-popup-portrait-height-fix-20261103-222320/manifest.json。
+
+
+## 2026-11-03 实际职员悬浮窗入口修复
+
+职员悬浮窗是独立NonPlayerReportPreviewTooltip（-1465827634544911600，样式-8026882932926063856），使用独立的PersonPicture实例1024；前次NonPlayerReportHeader高度修改针对主页面，不能代表弹窗已修复。本次将实际悬浮窗PersonPicture导入改为现有ReportMiddleSquarePersonPicture（沿用职员头部当前GUID及实际W对象），去掉旧thumbnails-alt-person-picture-player-report缩略图类，实例固定180×180，禁用flex伸缩、保留溢出可见。保留原生person/contract映射、职能切换及属性区，只改悬浮窗VTA与样式；共享头像组件及球员弹窗不改。四条等比图像分支和目录登记检查通过；运行显示尚未验证。脚本fix-actual-staff-hover-portrait.py；记录actual-staff-hover-portrait-20261103-225220/manifest.json。更新恢复必须分别核对职员主页面头部与实际职员悬浮窗。
+
+
+## 2026-11-03 最新职员头像：直接图片绑定
+
+前两次尺寸／模板修改经用户反馈仍未显示，不能视为有效修复。本次职员主页面头部及实际职员悬浮窗改为内联原生BindingVariables→图片框→SIImage三层，沿用personBind的UniqueId／Regenerated／性别／NewgenAppearanceDescription／日期及原生图片函数输入，避开复用球员模板外层的UseNonLicensedPicture、Person等可见性判断；图像明确白色tint alpha1、opacity1、scale1、ScaleToFit和固定尺寸。主页面226×180、弹窗180×180；姓名、合同、属性及共享头像模板不改。保留缺省头像加载路径。本轮只修改两份职员VTA及样式，其他包和catalog不变。脚本staff-direct-portrait-image.py；记录staff-direct-native-portrait-20261103-232126/manifest.json。文件读回检查通过；没有启动游戏或桌面控制，运行显示尚待确认。
+
+
+## 2026-11-10 职员头像压缩修复（最新）
+
+当前实际职员页已使用内嵌 StaffPortraitImage 图片控件，不能只检查未使用的共享 PersonPicture 模板。发现其基类 Image.scaleMode 和 SIImage.ScaleMode 均显式为 0（StretchToFill），导致226×180头像框内照片变形；本次仅把这两个字段改为2（ScaleToFit），属性标志保持启用。保持226×180框、原生照片资源绑定、属性数值和其他布局。游戏与独立皮肤分别基于最新包修改，其他对象字节不变。游戏根目录使用 current-game-location.json 的 Football Manager 27，旧 Project Taco 不得作为安装目标。更新后必须检查实际使用的图片控件两个ScaleMode字段，不能只凭USS中scale-to-fit判断。记录 staff-portrait-preserve-aspect-20261110-231053/manifest.json，回退restore.ps1有哈希保护。文件校验与安装校验通过，未启动游戏或操作桌面，实际显示待用户确认。

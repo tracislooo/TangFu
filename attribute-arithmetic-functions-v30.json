@@ -1,0 +1,3554 @@
+[
+  {
+    "info": {
+      "pid": 3488521912300835068,
+      "name": "BindMultipleBoolArgsAsSumToDestination",
+      "inputs": [
+        [
+          "BindingBag",
+          "SI.Bindable.BindingBag"
+        ],
+        [
+          "Target",
+          "SI.Bindable.IBindingSetter"
+        ],
+        [
+          "args",
+          "SI.Core.StructList`1[[SI.Bindable.BindingPath"
+        ],
+        [
+          "Destination",
+          "SI.Bindable.BindingPath"
+        ]
+      ],
+      "nodes": [
+        "VisualFunctionLibrary_SetBinding",
+        "VisualDataGetterNode",
+        "VisualDataGetterNode",
+        "BindNode",
+        "TypedValueVisualFunctionLibrary_IntToTypedValue",
+        "BindableWidgetUtils_Sum_Bool_Args",
+        "EntryNode"
+      ]
+    },
+    "tree": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -2918007912131347410
+      },
+      "m_Name": "BindMultipleBoolArgsAsSumToDestination",
+      "m_name": "BindMultipleBoolArgsAsSumToDestination",
+      "m_id": {
+        "m_idBytes": [
+          112,
+          41,
+          28,
+          228,
+          74,
+          14,
+          148,
+          74,
+          184,
+          244,
+          83,
+          150,
+          195,
+          6,
+          108,
+          65
+        ]
+      },
+      "m_description": "Returns the sum of the int args",
+      "m_isAsync": 0,
+      "m_inputs": [
+        {
+          "m_name": "BindingBag",
+          "m_id": {
+            "m_idBytes": [
+              31,
+              152,
+              200,
+              12,
+              91,
+              112,
+              121,
+              67,
+              183,
+              41,
+              37,
+              92,
+              81,
+              198,
+              136,
+              156
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.BindingBag, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "Target",
+          "m_id": {
+            "m_idBytes": [
+              251,
+              252,
+              230,
+              4,
+              67,
+              31,
+              81,
+              79,
+              152,
+              181,
+              169,
+              230,
+              226,
+              238,
+              9,
+              191
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.IBindingSetter, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "args",
+          "m_id": {
+            "m_idBytes": [
+              106,
+              76,
+              43,
+              65,
+              234,
+              221,
+              224,
+              79,
+              143,
+              215,
+              209,
+              9,
+              83,
+              75,
+              132,
+              73
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Core.StructList`1[[SI.Bindable.BindingPath, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "Destination",
+          "m_id": {
+            "m_idBytes": [
+              7,
+              97,
+              39,
+              210,
+              240,
+              52,
+              236,
+              66,
+              168,
+              18,
+              212,
+              183,
+              187,
+              56,
+              105,
+              213
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.BindingPath, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        }
+      ],
+      "m_outputs": [],
+      "m_variables": [],
+      "m_nodes": [
+        {
+          "rid": 8706297605596643331
+        },
+        {
+          "rid": 560572217662111903
+        },
+        {
+          "rid": 220077316214096483
+        },
+        {
+          "rid": 220077316214096486
+        },
+        {
+          "rid": 220077316214096487
+        },
+        {
+          "rid": 3500246279185498264
+        },
+        {
+          "rid": 7325470409126838585
+        }
+      ],
+      "references": {
+        "version": 2,
+        "RefIds": [
+          {
+            "rid": 220077316214096483,
+            "type": {
+              "class": "VisualFunctionLibrary_SetBinding",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "SetBinding",
+              "m_id": {
+                "m_idBytes": [
+                  22,
+                  239,
+                  53,
+                  14,
+                  103,
+                  4,
+                  208,
+                  68,
+                  179,
+                  81,
+                  84,
+                  121,
+                  221,
+                  83,
+                  177,
+                  76
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 659.7578735351562,
+                "y": 130.14520263671875
+              },
+              "m_execInExecInput": {
+                "m_id": {
+                  "m_idBytes": [
+                    198,
+                    177,
+                    148,
+                    86,
+                    247,
+                    37,
+                    225,
+                    73,
+                    179,
+                    19,
+                    254,
+                    35,
+                    12,
+                    67,
+                    105,
+                    34
+                  ]
+                },
+                "m_name": "Exec Input"
+              },
+              "m_execOutExecOutput": {
+                "m_id": {
+                  "m_idBytes": [
+                    6,
+                    14,
+                    99,
+                    116,
+                    120,
+                    238,
+                    232,
+                    72,
+                    142,
+                    246,
+                    88,
+                    142,
+                    167,
+                    190,
+                    84,
+                    190
+                  ]
+                },
+                "m_name": "Exec Output",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              "m_dataInTarget": {
+                "m_id": {
+                  "m_idBytes": [
+                    216,
+                    20,
+                    4,
+                    95,
+                    26,
+                    9,
+                    4,
+                    73,
+                    130,
+                    82,
+                    206,
+                    17,
+                    176,
+                    155,
+                    129,
+                    6
+                  ]
+                },
+                "m_name": "target",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    126,
+                    243,
+                    71,
+                    205,
+                    244,
+                    73,
+                    111,
+                    66,
+                    131,
+                    32,
+                    143,
+                    46,
+                    219,
+                    218,
+                    110,
+                    119
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dataInDest": {
+                "m_id": {
+                  "m_idBytes": [
+                    96,
+                    67,
+                    166,
+                    207,
+                    253,
+                    78,
+                    43,
+                    68,
+                    136,
+                    76,
+                    23,
+                    141,
+                    102,
+                    188,
+                    86,
+                    196
+                  ]
+                },
+                "m_name": "dest",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    147,
+                    216,
+                    74,
+                    93,
+                    45,
+                    64,
+                    200,
+                    79,
+                    137,
+                    247,
+                    176,
+                    78,
+                    47,
+                    11,
+                    177,
+                    174
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_path": ""
+                  }
+                }
+              },
+              "m_dataInValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    185,
+                    41,
+                    142,
+                    53,
+                    228,
+                    186,
+                    121,
+                    78,
+                    154,
+                    240,
+                    137,
+                    207,
+                    106,
+                    217,
+                    101,
+                    207
+                  ]
+                },
+                "m_name": "value",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    231,
+                    189,
+                    83,
+                    52,
+                    64,
+                    249,
+                    243,
+                    74,
+                    174,
+                    120,
+                    31,
+                    25,
+                    38,
+                    170,
+                    230,
+                    179
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dataInForceUpdate": {
+                "m_id": {
+                  "m_idBytes": [
+                    168,
+                    137,
+                    211,
+                    61,
+                    132,
+                    28,
+                    120,
+                    70,
+                    178,
+                    246,
+                    243,
+                    252,
+                    39,
+                    33,
+                    190,
+                    152
+                  ]
+                },
+                "m_name": "force Update",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": 0
+                }
+              }
+            }
+          },
+          {
+            "rid": 220077316214096486,
+            "type": {
+              "class": "VisualDataGetterNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Get -",
+              "m_id": {
+                "m_idBytes": [
+                  124,
+                  162,
+                  92,
+                  69,
+                  137,
+                  247,
+                  125,
+                  64,
+                  170,
+                  9,
+                  113,
+                  98,
+                  65,
+                  162,
+                  155,
+                  64
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 508.4153137207031,
+                "y": 220.34620666503906
+              },
+              "m_dataSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    126,
+                    243,
+                    71,
+                    205,
+                    244,
+                    73,
+                    111,
+                    66,
+                    131,
+                    32,
+                    143,
+                    46,
+                    219,
+                    218,
+                    110,
+                    119
+                  ]
+                },
+                "m_name": "Target",
+                "m_dataID": {
+                  "m_idBytes": [
+                    251,
+                    252,
+                    230,
+                    4,
+                    67,
+                    31,
+                    81,
+                    79,
+                    152,
+                    181,
+                    169,
+                    230,
+                    226,
+                    238,
+                    9,
+                    191
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "rid": 220077316214096487,
+            "type": {
+              "class": "VisualDataGetterNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Get -",
+              "m_id": {
+                "m_idBytes": [
+                  210,
+                  153,
+                  151,
+                  65,
+                  32,
+                  50,
+                  31,
+                  70,
+                  141,
+                  118,
+                  16,
+                  32,
+                  169,
+                  137,
+                  96,
+                  194
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 470.8825378417969,
+                "y": 239.5706024169922
+              },
+              "m_dataSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    147,
+                    216,
+                    74,
+                    93,
+                    45,
+                    64,
+                    200,
+                    79,
+                    137,
+                    247,
+                    176,
+                    78,
+                    47,
+                    11,
+                    177,
+                    174
+                  ]
+                },
+                "m_name": "Destination",
+                "m_dataID": {
+                  "m_idBytes": [
+                    7,
+                    97,
+                    39,
+                    210,
+                    240,
+                    52,
+                    236,
+                    66,
+                    168,
+                    18,
+                    212,
+                    183,
+                    187,
+                    56,
+                    105,
+                    213
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "rid": 560572217662111903,
+            "type": {
+              "class": "BindNode",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "Bind",
+              "m_id": {
+                "m_idBytes": [
+                  33,
+                  23,
+                  62,
+                  106,
+                  22,
+                  47,
+                  104,
+                  64,
+                  160,
+                  225,
+                  109,
+                  123,
+                  212,
+                  173,
+                  79,
+                  6
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 91.78340911865234,
+                "y": -7.536395072937012
+              },
+              "m_inputExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    79,
+                    111,
+                    17,
+                    222,
+                    87,
+                    104,
+                    157,
+                    79,
+                    130,
+                    116,
+                    252,
+                    27,
+                    252,
+                    179,
+                    71,
+                    181
+                  ]
+                },
+                "m_name": ""
+              },
+              "m_bindingBagDataInputSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    33,
+                    82,
+                    133,
+                    170,
+                    246,
+                    187,
+                    101,
+                    78,
+                    163,
+                    156,
+                    190,
+                    16,
+                    92,
+                    167,
+                    110,
+                    160
+                  ]
+                },
+                "m_name": "bag",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    213,
+                    75,
+                    157,
+                    61,
+                    219,
+                    95,
+                    221,
+                    78,
+                    187,
+                    65,
+                    121,
+                    28,
+                    216,
+                    36,
+                    202,
+                    101
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_componentDataInputSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    161,
+                    167,
+                    213,
+                    208,
+                    137,
+                    129,
+                    245,
+                    79,
+                    167,
+                    252,
+                    237,
+                    25,
+                    19,
+                    5,
+                    144,
+                    84
+                  ]
+                },
+                "m_name": "component",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    88,
+                    217,
+                    192,
+                    155,
+                    4,
+                    9,
+                    140,
+                    74,
+                    154,
+                    174,
+                    195,
+                    8,
+                    36,
+                    90,
+                    101,
+                    229
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dynamicDataInputSockets": [
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      186,
+                      110,
+                      15,
+                      171,
+                      32,
+                      248,
+                      67,
+                      67,
+                      184,
+                      60,
+                      141,
+                      236,
+                      21,
+                      195,
+                      156,
+                      41
+                    ]
+                  },
+                  "m_name": "args",
+                  "m_sourceID": {
+                    "m_idBytes": [
+                      210,
+                      146,
+                      99,
+                      27,
+                      123,
+                      227,
+                      113,
+                      66,
+                      188,
+                      208,
+                      249,
+                      65,
+                      55,
+                      9,
+                      107,
+                      161
+                    ]
+                  },
+                  "m_dataID": {
+                    "m_idBytes": [
+                      106,
+                      76,
+                      43,
+                      65,
+                      234,
+                      221,
+                      224,
+                      79,
+                      143,
+                      215,
+                      209,
+                      9,
+                      83,
+                      75,
+                      132,
+                      73
+                    ]
+                  },
+                  "m_defaultSocketValue": {
+                    "m_variant": 0,
+                    "m_serializedValue": ""
+                  },
+                  "m_mutable": 0
+                }
+              ],
+              "m_outputAsyncExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    18,
+                    8,
+                    140,
+                    28,
+                    248,
+                    59,
+                    222,
+                    68,
+                    134,
+                    101,
+                    139,
+                    45,
+                    119,
+                    114,
+                    215,
+                    157
+                  ]
+                },
+                "m_name": "Ready",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    141,
+                    134,
+                    71,
+                    179,
+                    111,
+                    41,
+                    186,
+                    65,
+                    153,
+                    119,
+                    227,
+                    95,
+                    223,
+                    117,
+                    236,
+                    254
+                  ]
+                },
+                "m_dataOutputSockets": [
+                  {
+                    "m_id": {
+                      "m_idBytes": [
+                        170,
+                        253,
+                        14,
+                        79,
+                        52,
+                        159,
+                        0,
+                        75,
+                        143,
+                        116,
+                        88,
+                        234,
+                        120,
+                        20,
+                        125,
+                        169
+                      ]
+                    },
+                    "m_name": "args",
+                    "m_dataID": {
+                      "m_idBytes": [
+                        106,
+                        76,
+                        43,
+                        65,
+                        234,
+                        221,
+                        224,
+                        79,
+                        143,
+                        215,
+                        209,
+                        9,
+                        83,
+                        75,
+                        132,
+                        73
+                      ]
+                    },
+                    "m_type": {
+                      "m_typeString": "SI.Core.StructList`1[[SI.Core.TypedValue, SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "rid": 3500246279185498264,
+            "type": {
+              "class": "TypedValueVisualFunctionLibrary_IntToTypedValue",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Create<int>",
+              "m_id": {
+                "m_idBytes": [
+                  24,
+                  132,
+                  154,
+                  252,
+                  164,
+                  159,
+                  189,
+                  68,
+                  158,
+                  42,
+                  91,
+                  191,
+                  158,
+                  147,
+                  148,
+                  167
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 463.1201477050781,
+                "y": 267.1212158203125
+              },
+              "m_dataInValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    231,
+                    239,
+                    71,
+                    64,
+                    94,
+                    83,
+                    91,
+                    67,
+                    143,
+                    191,
+                    254,
+                    92,
+                    71,
+                    48,
+                    109,
+                    55
+                  ]
+                },
+                "m_name": "value",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    35,
+                    24,
+                    30,
+                    119,
+                    208,
+                    23,
+                    211,
+                    74,
+                    168,
+                    202,
+                    31,
+                    217,
+                    57,
+                    87,
+                    69,
+                    227
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": 0
+                }
+              },
+              "m_dataOutTypedValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    231,
+                    189,
+                    83,
+                    52,
+                    64,
+                    249,
+                    243,
+                    74,
+                    174,
+                    120,
+                    31,
+                    25,
+                    38,
+                    170,
+                    230,
+                    179
+                  ]
+                },
+                "m_name": "TypedValue"
+              }
+            }
+          },
+          {
+            "rid": 7325470409126838585,
+            "type": {
+              "class": "BindableWidgetUtils_Sum_Bool_Args",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "SumBoolArgs",
+              "m_id": {
+                "m_idBytes": [
+                  1,
+                  249,
+                  21,
+                  134,
+                  144,
+                  182,
+                  131,
+                  73,
+                  146,
+                  102,
+                  6,
+                  248,
+                  50,
+                  70,
+                  240,
+                  9
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 256.4671936035156,
+                "y": 179.2556610107422
+              },
+              "m_execInExecInput": {
+                "m_id": {
+                  "m_idBytes": [
+                    141,
+                    134,
+                    71,
+                    179,
+                    111,
+                    41,
+                    186,
+                    65,
+                    153,
+                    119,
+                    227,
+                    95,
+                    223,
+                    117,
+                    236,
+                    254
+                  ]
+                },
+                "m_name": "Exec Input"
+              },
+              "m_execOutExecOutput": {
+                "m_id": {
+                  "m_idBytes": [
+                    115,
+                    212,
+                    26,
+                    43,
+                    7,
+                    52,
+                    109,
+                    68,
+                    140,
+                    252,
+                    141,
+                    144,
+                    207,
+                    160,
+                    41,
+                    248
+                  ]
+                },
+                "m_name": "Exec Output",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    198,
+                    177,
+                    148,
+                    86,
+                    247,
+                    37,
+                    225,
+                    73,
+                    179,
+                    19,
+                    254,
+                    35,
+                    12,
+                    67,
+                    105,
+                    34
+                  ]
+                }
+              },
+              "m_dataInValues": {
+                "m_id": {
+                  "m_idBytes": [
+                    221,
+                    147,
+                    2,
+                    142,
+                    198,
+                    70,
+                    176,
+                    77,
+                    135,
+                    6,
+                    72,
+                    75,
+                    34,
+                    139,
+                    40,
+                    253
+                  ]
+                },
+                "m_name": "values",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    170,
+                    253,
+                    14,
+                    79,
+                    52,
+                    159,
+                    0,
+                    75,
+                    143,
+                    116,
+                    88,
+                    234,
+                    120,
+                    20,
+                    125,
+                    169
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_count": 0
+                  }
+                }
+              },
+              "m_dataInArgs": {
+                "m_id": {
+                  "m_idBytes": [
+                    68,
+                    187,
+                    109,
+                    66,
+                    207,
+                    62,
+                    189,
+                    64,
+                    174,
+                    187,
+                    166,
+                    244,
+                    196,
+                    221,
+                    127,
+                    241
+                  ]
+                },
+                "m_name": "args",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    210,
+                    146,
+                    99,
+                    27,
+                    123,
+                    227,
+                    113,
+                    66,
+                    188,
+                    208,
+                    249,
+                    65,
+                    55,
+                    9,
+                    107,
+                    161
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_count": 0,
+                    "m_value0": {
+                      "m_path": ""
+                    },
+                    "m_value1": {
+                      "m_path": ""
+                    },
+                    "m_value2": {
+                      "m_path": ""
+                    },
+                    "m_value3": {
+                      "m_path": ""
+                    },
+                    "m_value4": {
+                      "m_path": ""
+                    },
+                    "m_value5": {
+                      "m_path": ""
+                    },
+                    "m_value6": {
+                      "m_path": ""
+                    },
+                    "m_value7": {
+                      "m_path": ""
+                    },
+                    "m_value8": {
+                      "m_path": ""
+                    },
+                    "m_value9": {
+                      "m_path": ""
+                    }
+                  }
+                }
+              },
+              "m_dataOutInt32": {
+                "m_id": {
+                  "m_idBytes": [
+                    35,
+                    24,
+                    30,
+                    119,
+                    208,
+                    23,
+                    211,
+                    74,
+                    168,
+                    202,
+                    31,
+                    217,
+                    57,
+                    87,
+                    69,
+                    227
+                  ]
+                },
+                "m_name": "Int32"
+              }
+            }
+          },
+          {
+            "rid": 8706297605596643331,
+            "type": {
+              "class": "EntryNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Entry",
+              "m_id": {
+                "m_idBytes": [
+                  203,
+                  137,
+                  172,
+                  209,
+                  111,
+                  44,
+                  99,
+                  65,
+                  144,
+                  14,
+                  182,
+                  49,
+                  31,
+                  106,
+                  227,
+                  72
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": -203.62344360351562,
+                "y": -7.6167097091674805
+              },
+              "m_dataSockets": [
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      213,
+                      75,
+                      157,
+                      61,
+                      219,
+                      95,
+                      221,
+                      78,
+                      187,
+                      65,
+                      121,
+                      28,
+                      216,
+                      36,
+                      202,
+                      101
+                    ]
+                  },
+                  "m_name": "BindingBag",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      31,
+                      152,
+                      200,
+                      12,
+                      91,
+                      112,
+                      121,
+                      67,
+                      183,
+                      41,
+                      37,
+                      92,
+                      81,
+                      198,
+                      136,
+                      156
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      88,
+                      217,
+                      192,
+                      155,
+                      4,
+                      9,
+                      140,
+                      74,
+                      154,
+                      174,
+                      195,
+                      8,
+                      36,
+                      90,
+                      101,
+                      229
+                    ]
+                  },
+                  "m_name": "Target",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      251,
+                      252,
+                      230,
+                      4,
+                      67,
+                      31,
+                      81,
+                      79,
+                      152,
+                      181,
+                      169,
+                      230,
+                      226,
+                      238,
+                      9,
+                      191
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      210,
+                      146,
+                      99,
+                      27,
+                      123,
+                      227,
+                      113,
+                      66,
+                      188,
+                      208,
+                      249,
+                      65,
+                      55,
+                      9,
+                      107,
+                      161
+                    ]
+                  },
+                  "m_name": "args",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      106,
+                      76,
+                      43,
+                      65,
+                      234,
+                      221,
+                      224,
+                      79,
+                      143,
+                      215,
+                      209,
+                      9,
+                      83,
+                      75,
+                      132,
+                      73
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      170,
+                      228,
+                      203,
+                      36,
+                      190,
+                      188,
+                      150,
+                      76,
+                      187,
+                      206,
+                      120,
+                      247,
+                      189,
+                      65,
+                      131,
+                      29
+                    ]
+                  },
+                  "m_name": "Destination",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      7,
+                      97,
+                      39,
+                      210,
+                      240,
+                      52,
+                      236,
+                      66,
+                      168,
+                      18,
+                      212,
+                      183,
+                      187,
+                      56,
+                      105,
+                      213
+                    ]
+                  }
+                }
+              ],
+              "m_outputExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    246,
+                    126,
+                    45,
+                    35,
+                    158,
+                    8,
+                    5,
+                    79,
+                    176,
+                    56,
+                    114,
+                    109,
+                    74,
+                    56,
+                    145,
+                    151
+                  ]
+                },
+                "m_name": "",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    79,
+                    111,
+                    17,
+                    222,
+                    87,
+                    104,
+                    157,
+                    79,
+                    130,
+                    116,
+                    252,
+                    27,
+                    252,
+                    179,
+                    71,
+                    181
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "info": {
+      "pid": 6543242224448985636,
+      "name": "BindMultipleIntArgsAsSumToDestination",
+      "inputs": [
+        [
+          "BindingBag",
+          "SI.Bindable.BindingBag"
+        ],
+        [
+          "Target",
+          "SI.Bindable.IBindingSetter"
+        ],
+        [
+          "args",
+          "SI.Core.StructList`1[[SI.Bindable.BindingPath"
+        ],
+        [
+          "Destination",
+          "SI.Bindable.BindingPath"
+        ]
+      ],
+      "nodes": [
+        "VisualFunctionLibrary_SetBinding",
+        "VisualDataGetterNode",
+        "VisualDataGetterNode",
+        "BindNode",
+        "BindableWidgetUtils_Sum_Int_Args",
+        "TypedValueVisualFunctionLibrary_IntToTypedValue",
+        "EntryNode"
+      ]
+    },
+    "tree": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -2918007912131347410
+      },
+      "m_Name": "BindMultipleIntArgsAsSumToDestination",
+      "m_name": "BindMultipleIntArgsAsSumToDestination",
+      "m_id": {
+        "m_idBytes": [
+          112,
+          41,
+          28,
+          228,
+          74,
+          14,
+          148,
+          74,
+          184,
+          244,
+          83,
+          150,
+          195,
+          6,
+          108,
+          65
+        ]
+      },
+      "m_description": "Returns the sum of the int args",
+      "m_isAsync": 0,
+      "m_inputs": [
+        {
+          "m_name": "BindingBag",
+          "m_id": {
+            "m_idBytes": [
+              31,
+              152,
+              200,
+              12,
+              91,
+              112,
+              121,
+              67,
+              183,
+              41,
+              37,
+              92,
+              81,
+              198,
+              136,
+              156
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.BindingBag, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "Target",
+          "m_id": {
+            "m_idBytes": [
+              251,
+              252,
+              230,
+              4,
+              67,
+              31,
+              81,
+              79,
+              152,
+              181,
+              169,
+              230,
+              226,
+              238,
+              9,
+              191
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.IBindingSetter, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "args",
+          "m_id": {
+            "m_idBytes": [
+              106,
+              76,
+              43,
+              65,
+              234,
+              221,
+              224,
+              79,
+              143,
+              215,
+              209,
+              9,
+              83,
+              75,
+              132,
+              73
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Core.StructList`1[[SI.Bindable.BindingPath, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        },
+        {
+          "m_name": "Destination",
+          "m_id": {
+            "m_idBytes": [
+              7,
+              97,
+              39,
+              210,
+              240,
+              52,
+              236,
+              66,
+              168,
+              18,
+              212,
+              183,
+              187,
+              56,
+              105,
+              213
+            ]
+          },
+          "m_parentID": {
+            "m_idBytes": [
+              112,
+              41,
+              28,
+              228,
+              74,
+              14,
+              148,
+              74,
+              184,
+              244,
+              83,
+              150,
+              195,
+              6,
+              108,
+              65
+            ]
+          },
+          "m_type": {
+            "m_typeString": "SI.Bindable.BindingPath, SI.Bindable, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+          }
+        }
+      ],
+      "m_outputs": [],
+      "m_variables": [],
+      "m_nodes": [
+        {
+          "rid": 8706297605596643331
+        },
+        {
+          "rid": 560572217662111903
+        },
+        {
+          "rid": 220077316214096483
+        },
+        {
+          "rid": 220077316214096486
+        },
+        {
+          "rid": 220077316214096487
+        },
+        {
+          "rid": 3500246279185498263
+        },
+        {
+          "rid": 3500246279185498264
+        }
+      ],
+      "references": {
+        "version": 2,
+        "RefIds": [
+          {
+            "rid": 220077316214096483,
+            "type": {
+              "class": "VisualFunctionLibrary_SetBinding",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "SetBinding",
+              "m_id": {
+                "m_idBytes": [
+                  22,
+                  239,
+                  53,
+                  14,
+                  103,
+                  4,
+                  208,
+                  68,
+                  179,
+                  81,
+                  84,
+                  121,
+                  221,
+                  83,
+                  177,
+                  76
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 629.616943359375,
+                "y": 181.84239196777344
+              },
+              "m_execInExecInput": {
+                "m_id": {
+                  "m_idBytes": [
+                    198,
+                    177,
+                    148,
+                    86,
+                    247,
+                    37,
+                    225,
+                    73,
+                    179,
+                    19,
+                    254,
+                    35,
+                    12,
+                    67,
+                    105,
+                    34
+                  ]
+                },
+                "m_name": "Exec Input"
+              },
+              "m_execOutExecOutput": {
+                "m_id": {
+                  "m_idBytes": [
+                    6,
+                    14,
+                    99,
+                    116,
+                    120,
+                    238,
+                    232,
+                    72,
+                    142,
+                    246,
+                    88,
+                    142,
+                    167,
+                    190,
+                    84,
+                    190
+                  ]
+                },
+                "m_name": "Exec Output",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              "m_dataInTarget": {
+                "m_id": {
+                  "m_idBytes": [
+                    216,
+                    20,
+                    4,
+                    95,
+                    26,
+                    9,
+                    4,
+                    73,
+                    130,
+                    82,
+                    206,
+                    17,
+                    176,
+                    155,
+                    129,
+                    6
+                  ]
+                },
+                "m_name": "target",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    126,
+                    243,
+                    71,
+                    205,
+                    244,
+                    73,
+                    111,
+                    66,
+                    131,
+                    32,
+                    143,
+                    46,
+                    219,
+                    218,
+                    110,
+                    119
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dataInDest": {
+                "m_id": {
+                  "m_idBytes": [
+                    96,
+                    67,
+                    166,
+                    207,
+                    253,
+                    78,
+                    43,
+                    68,
+                    136,
+                    76,
+                    23,
+                    141,
+                    102,
+                    188,
+                    86,
+                    196
+                  ]
+                },
+                "m_name": "dest",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    147,
+                    216,
+                    74,
+                    93,
+                    45,
+                    64,
+                    200,
+                    79,
+                    137,
+                    247,
+                    176,
+                    78,
+                    47,
+                    11,
+                    177,
+                    174
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_path": ""
+                  }
+                }
+              },
+              "m_dataInValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    185,
+                    41,
+                    142,
+                    53,
+                    228,
+                    186,
+                    121,
+                    78,
+                    154,
+                    240,
+                    137,
+                    207,
+                    106,
+                    217,
+                    101,
+                    207
+                  ]
+                },
+                "m_name": "value",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    231,
+                    189,
+                    83,
+                    52,
+                    64,
+                    249,
+                    243,
+                    74,
+                    174,
+                    120,
+                    31,
+                    25,
+                    38,
+                    170,
+                    230,
+                    179
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dataInForceUpdate": {
+                "m_id": {
+                  "m_idBytes": [
+                    168,
+                    137,
+                    211,
+                    61,
+                    132,
+                    28,
+                    120,
+                    70,
+                    178,
+                    246,
+                    243,
+                    252,
+                    39,
+                    33,
+                    190,
+                    152
+                  ]
+                },
+                "m_name": "force Update",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": 0
+                }
+              }
+            }
+          },
+          {
+            "rid": 220077316214096486,
+            "type": {
+              "class": "VisualDataGetterNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Get -",
+              "m_id": {
+                "m_idBytes": [
+                  124,
+                  162,
+                  92,
+                  69,
+                  137,
+                  247,
+                  125,
+                  64,
+                  170,
+                  9,
+                  113,
+                  98,
+                  65,
+                  162,
+                  155,
+                  64
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 508.4153137207031,
+                "y": 220.34620666503906
+              },
+              "m_dataSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    126,
+                    243,
+                    71,
+                    205,
+                    244,
+                    73,
+                    111,
+                    66,
+                    131,
+                    32,
+                    143,
+                    46,
+                    219,
+                    218,
+                    110,
+                    119
+                  ]
+                },
+                "m_name": "Target",
+                "m_dataID": {
+                  "m_idBytes": [
+                    251,
+                    252,
+                    230,
+                    4,
+                    67,
+                    31,
+                    81,
+                    79,
+                    152,
+                    181,
+                    169,
+                    230,
+                    226,
+                    238,
+                    9,
+                    191
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "rid": 220077316214096487,
+            "type": {
+              "class": "VisualDataGetterNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Get -",
+              "m_id": {
+                "m_idBytes": [
+                  210,
+                  153,
+                  151,
+                  65,
+                  32,
+                  50,
+                  31,
+                  70,
+                  141,
+                  118,
+                  16,
+                  32,
+                  169,
+                  137,
+                  96,
+                  194
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 470.8825378417969,
+                "y": 239.5706024169922
+              },
+              "m_dataSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    147,
+                    216,
+                    74,
+                    93,
+                    45,
+                    64,
+                    200,
+                    79,
+                    137,
+                    247,
+                    176,
+                    78,
+                    47,
+                    11,
+                    177,
+                    174
+                  ]
+                },
+                "m_name": "Destination",
+                "m_dataID": {
+                  "m_idBytes": [
+                    7,
+                    97,
+                    39,
+                    210,
+                    240,
+                    52,
+                    236,
+                    66,
+                    168,
+                    18,
+                    212,
+                    183,
+                    187,
+                    56,
+                    105,
+                    213
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "rid": 560572217662111903,
+            "type": {
+              "class": "BindNode",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "Bind",
+              "m_id": {
+                "m_idBytes": [
+                  33,
+                  23,
+                  62,
+                  106,
+                  22,
+                  47,
+                  104,
+                  64,
+                  160,
+                  225,
+                  109,
+                  123,
+                  212,
+                  173,
+                  79,
+                  6
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 91.78340911865234,
+                "y": -7.536395072937012
+              },
+              "m_inputExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    79,
+                    111,
+                    17,
+                    222,
+                    87,
+                    104,
+                    157,
+                    79,
+                    130,
+                    116,
+                    252,
+                    27,
+                    252,
+                    179,
+                    71,
+                    181
+                  ]
+                },
+                "m_name": ""
+              },
+              "m_bindingBagDataInputSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    33,
+                    82,
+                    133,
+                    170,
+                    246,
+                    187,
+                    101,
+                    78,
+                    163,
+                    156,
+                    190,
+                    16,
+                    92,
+                    167,
+                    110,
+                    160
+                  ]
+                },
+                "m_name": "bag",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    213,
+                    75,
+                    157,
+                    61,
+                    219,
+                    95,
+                    221,
+                    78,
+                    187,
+                    65,
+                    121,
+                    28,
+                    216,
+                    36,
+                    202,
+                    101
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_componentDataInputSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    161,
+                    167,
+                    213,
+                    208,
+                    137,
+                    129,
+                    245,
+                    79,
+                    167,
+                    252,
+                    237,
+                    25,
+                    19,
+                    5,
+                    144,
+                    84
+                  ]
+                },
+                "m_name": "component",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    88,
+                    217,
+                    192,
+                    155,
+                    4,
+                    9,
+                    140,
+                    74,
+                    154,
+                    174,
+                    195,
+                    8,
+                    36,
+                    90,
+                    101,
+                    229
+                  ]
+                },
+                "m_defaultSocketValue": {}
+              },
+              "m_dynamicDataInputSockets": [
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      186,
+                      110,
+                      15,
+                      171,
+                      32,
+                      248,
+                      67,
+                      67,
+                      184,
+                      60,
+                      141,
+                      236,
+                      21,
+                      195,
+                      156,
+                      41
+                    ]
+                  },
+                  "m_name": "args",
+                  "m_sourceID": {
+                    "m_idBytes": [
+                      210,
+                      146,
+                      99,
+                      27,
+                      123,
+                      227,
+                      113,
+                      66,
+                      188,
+                      208,
+                      249,
+                      65,
+                      55,
+                      9,
+                      107,
+                      161
+                    ]
+                  },
+                  "m_dataID": {
+                    "m_idBytes": [
+                      106,
+                      76,
+                      43,
+                      65,
+                      234,
+                      221,
+                      224,
+                      79,
+                      143,
+                      215,
+                      209,
+                      9,
+                      83,
+                      75,
+                      132,
+                      73
+                    ]
+                  },
+                  "m_defaultSocketValue": {
+                    "m_variant": 0,
+                    "m_serializedValue": ""
+                  },
+                  "m_mutable": 0
+                }
+              ],
+              "m_outputAsyncExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    18,
+                    8,
+                    140,
+                    28,
+                    248,
+                    59,
+                    222,
+                    68,
+                    134,
+                    101,
+                    139,
+                    45,
+                    119,
+                    114,
+                    215,
+                    157
+                  ]
+                },
+                "m_name": "Ready",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    61,
+                    117,
+                    116,
+                    221,
+                    130,
+                    243,
+                    169,
+                    64,
+                    175,
+                    92,
+                    16,
+                    174,
+                    5,
+                    229,
+                    104,
+                    141
+                  ]
+                },
+                "m_dataOutputSockets": [
+                  {
+                    "m_id": {
+                      "m_idBytes": [
+                        170,
+                        253,
+                        14,
+                        79,
+                        52,
+                        159,
+                        0,
+                        75,
+                        143,
+                        116,
+                        88,
+                        234,
+                        120,
+                        20,
+                        125,
+                        169
+                      ]
+                    },
+                    "m_name": "args",
+                    "m_dataID": {
+                      "m_idBytes": [
+                        106,
+                        76,
+                        43,
+                        65,
+                        234,
+                        221,
+                        224,
+                        79,
+                        143,
+                        215,
+                        209,
+                        9,
+                        83,
+                        75,
+                        132,
+                        73
+                      ]
+                    },
+                    "m_type": {
+                      "m_typeString": "SI.Core.StructList`1[[SI.Core.TypedValue, SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], SI.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "rid": 3500246279185498263,
+            "type": {
+              "class": "BindableWidgetUtils_Sum_Int_Args",
+              "ns": "SI.Bindable",
+              "asm": "SI.Bindable"
+            },
+            "data": {
+              "m_name": "SumIntArgs",
+              "m_id": {
+                "m_idBytes": [
+                  91,
+                  92,
+                  252,
+                  164,
+                  151,
+                  164,
+                  113,
+                  78,
+                  156,
+                  203,
+                  209,
+                  162,
+                  55,
+                  160,
+                  144,
+                  159
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 261.96746826171875,
+                "y": 181.9899139404297
+              },
+              "m_execInExecInput": {
+                "m_id": {
+                  "m_idBytes": [
+                    61,
+                    117,
+                    116,
+                    221,
+                    130,
+                    243,
+                    169,
+                    64,
+                    175,
+                    92,
+                    16,
+                    174,
+                    5,
+                    229,
+                    104,
+                    141
+                  ]
+                },
+                "m_name": "Exec Input"
+              },
+              "m_execOutExecOutput": {
+                "m_id": {
+                  "m_idBytes": [
+                    67,
+                    194,
+                    58,
+                    91,
+                    82,
+                    120,
+                    46,
+                    64,
+                    139,
+                    196,
+                    25,
+                    255,
+                    230,
+                    95,
+                    25,
+                    64
+                  ]
+                },
+                "m_name": "Exec Output",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    198,
+                    177,
+                    148,
+                    86,
+                    247,
+                    37,
+                    225,
+                    73,
+                    179,
+                    19,
+                    254,
+                    35,
+                    12,
+                    67,
+                    105,
+                    34
+                  ]
+                }
+              },
+              "m_dataInValues": {
+                "m_id": {
+                  "m_idBytes": [
+                    144,
+                    248,
+                    43,
+                    24,
+                    152,
+                    182,
+                    89,
+                    69,
+                    150,
+                    20,
+                    237,
+                    173,
+                    241,
+                    233,
+                    139,
+                    173
+                  ]
+                },
+                "m_name": "values",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    170,
+                    253,
+                    14,
+                    79,
+                    52,
+                    159,
+                    0,
+                    75,
+                    143,
+                    116,
+                    88,
+                    234,
+                    120,
+                    20,
+                    125,
+                    169
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_count": 0
+                  }
+                }
+              },
+              "m_dataInArgs": {
+                "m_id": {
+                  "m_idBytes": [
+                    175,
+                    88,
+                    174,
+                    20,
+                    57,
+                    196,
+                    211,
+                    75,
+                    174,
+                    227,
+                    163,
+                    52,
+                    176,
+                    127,
+                    214,
+                    120
+                  ]
+                },
+                "m_name": "args",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    210,
+                    146,
+                    99,
+                    27,
+                    123,
+                    227,
+                    113,
+                    66,
+                    188,
+                    208,
+                    249,
+                    65,
+                    55,
+                    9,
+                    107,
+                    161
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": {
+                    "m_count": 0,
+                    "m_value0": {
+                      "m_path": ""
+                    },
+                    "m_value1": {
+                      "m_path": ""
+                    },
+                    "m_value2": {
+                      "m_path": ""
+                    },
+                    "m_value3": {
+                      "m_path": ""
+                    },
+                    "m_value4": {
+                      "m_path": ""
+                    },
+                    "m_value5": {
+                      "m_path": ""
+                    },
+                    "m_value6": {
+                      "m_path": ""
+                    },
+                    "m_value7": {
+                      "m_path": ""
+                    },
+                    "m_value8": {
+                      "m_path": ""
+                    },
+                    "m_value9": {
+                      "m_path": ""
+                    }
+                  }
+                }
+              },
+              "m_dataOutInt32": {
+                "m_id": {
+                  "m_idBytes": [
+                    47,
+                    122,
+                    70,
+                    46,
+                    41,
+                    157,
+                    226,
+                    69,
+                    141,
+                    206,
+                    199,
+                    147,
+                    251,
+                    185,
+                    16,
+                    66
+                  ]
+                },
+                "m_name": "Int32"
+              }
+            }
+          },
+          {
+            "rid": 3500246279185498264,
+            "type": {
+              "class": "TypedValueVisualFunctionLibrary_IntToTypedValue",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Create<int>",
+              "m_id": {
+                "m_idBytes": [
+                  24,
+                  132,
+                  154,
+                  252,
+                  164,
+                  159,
+                  189,
+                  68,
+                  158,
+                  42,
+                  91,
+                  191,
+                  158,
+                  147,
+                  148,
+                  167
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": 463.1201477050781,
+                "y": 267.1212158203125
+              },
+              "m_dataInValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    231,
+                    239,
+                    71,
+                    64,
+                    94,
+                    83,
+                    91,
+                    67,
+                    143,
+                    191,
+                    254,
+                    92,
+                    71,
+                    48,
+                    109,
+                    55
+                  ]
+                },
+                "m_name": "value",
+                "m_sourceID": {
+                  "m_idBytes": [
+                    47,
+                    122,
+                    70,
+                    46,
+                    41,
+                    157,
+                    226,
+                    69,
+                    141,
+                    206,
+                    199,
+                    147,
+                    251,
+                    185,
+                    16,
+                    66
+                  ]
+                },
+                "m_defaultSocketValue": {
+                  "m_value": 0
+                }
+              },
+              "m_dataOutTypedValue": {
+                "m_id": {
+                  "m_idBytes": [
+                    231,
+                    189,
+                    83,
+                    52,
+                    64,
+                    249,
+                    243,
+                    74,
+                    174,
+                    120,
+                    31,
+                    25,
+                    38,
+                    170,
+                    230,
+                    179
+                  ]
+                },
+                "m_name": "TypedValue"
+              }
+            }
+          },
+          {
+            "rid": 8706297605596643331,
+            "type": {
+              "class": "EntryNode",
+              "ns": "SI.VisualScripting",
+              "asm": "SI.VisualScripting"
+            },
+            "data": {
+              "m_name": "Entry",
+              "m_id": {
+                "m_idBytes": [
+                  203,
+                  137,
+                  172,
+                  209,
+                  111,
+                  44,
+                  99,
+                  65,
+                  144,
+                  14,
+                  182,
+                  49,
+                  31,
+                  106,
+                  227,
+                  72
+                ]
+              },
+              "m_parentID": {
+                "m_idBytes": [
+                  112,
+                  41,
+                  28,
+                  228,
+                  74,
+                  14,
+                  148,
+                  74,
+                  184,
+                  244,
+                  83,
+                  150,
+                  195,
+                  6,
+                  108,
+                  65
+                ]
+              },
+              "m_position": {
+                "x": -203.62344360351562,
+                "y": -7.6167097091674805
+              },
+              "m_dataSockets": [
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      213,
+                      75,
+                      157,
+                      61,
+                      219,
+                      95,
+                      221,
+                      78,
+                      187,
+                      65,
+                      121,
+                      28,
+                      216,
+                      36,
+                      202,
+                      101
+                    ]
+                  },
+                  "m_name": "BindingBag",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      31,
+                      152,
+                      200,
+                      12,
+                      91,
+                      112,
+                      121,
+                      67,
+                      183,
+                      41,
+                      37,
+                      92,
+                      81,
+                      198,
+                      136,
+                      156
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      88,
+                      217,
+                      192,
+                      155,
+                      4,
+                      9,
+                      140,
+                      74,
+                      154,
+                      174,
+                      195,
+                      8,
+                      36,
+                      90,
+                      101,
+                      229
+                    ]
+                  },
+                  "m_name": "Target",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      251,
+                      252,
+                      230,
+                      4,
+                      67,
+                      31,
+                      81,
+                      79,
+                      152,
+                      181,
+                      169,
+                      230,
+                      226,
+                      238,
+                      9,
+                      191
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      210,
+                      146,
+                      99,
+                      27,
+                      123,
+                      227,
+                      113,
+                      66,
+                      188,
+                      208,
+                      249,
+                      65,
+                      55,
+                      9,
+                      107,
+                      161
+                    ]
+                  },
+                  "m_name": "args",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      106,
+                      76,
+                      43,
+                      65,
+                      234,
+                      221,
+                      224,
+                      79,
+                      143,
+                      215,
+                      209,
+                      9,
+                      83,
+                      75,
+                      132,
+                      73
+                    ]
+                  }
+                },
+                {
+                  "m_id": {
+                    "m_idBytes": [
+                      170,
+                      228,
+                      203,
+                      36,
+                      190,
+                      188,
+                      150,
+                      76,
+                      187,
+                      206,
+                      120,
+                      247,
+                      189,
+                      65,
+                      131,
+                      29
+                    ]
+                  },
+                  "m_name": "Destination",
+                  "m_dataID": {
+                    "m_idBytes": [
+                      7,
+                      97,
+                      39,
+                      210,
+                      240,
+                      52,
+                      236,
+                      66,
+                      168,
+                      18,
+                      212,
+                      183,
+                      187,
+                      56,
+                      105,
+                      213
+                    ]
+                  }
+                }
+              ],
+              "m_outputExecSocket": {
+                "m_id": {
+                  "m_idBytes": [
+                    246,
+                    126,
+                    45,
+                    35,
+                    158,
+                    8,
+                    5,
+                    79,
+                    176,
+                    56,
+                    114,
+                    109,
+                    74,
+                    56,
+                    145,
+                    151
+                  ]
+                },
+                "m_name": "",
+                "m_destinationID": {
+                  "m_idBytes": [
+                    79,
+                    111,
+                    17,
+                    222,
+                    87,
+                    104,
+                    157,
+                    79,
+                    130,
+                    116,
+                    252,
+                    27,
+                    252,
+                    179,
+                    71,
+                    181
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+]

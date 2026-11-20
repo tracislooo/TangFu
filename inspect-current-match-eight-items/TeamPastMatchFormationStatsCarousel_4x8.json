@@ -1,0 +1,774 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 11995
+  },
+  "m_Name": "TeamPastMatchFormationStatsCarousel_4x8",
+  "m_ImportedWithErrors": 0,
+  "m_HasEditorElements": 0,
+  "m_HasUpdatedUrls": 0,
+  "m_ImportedWithWarnings": 0,
+  "m_Usings": [],
+  "inlineSheet": {
+    "m_FileID": 0,
+    "m_PathID": -8772203604739774339
+  },
+  "m_VisualTree": {
+    "rid": 1000
+  },
+  "m_AssetEntries": [],
+  "m_Slots": [],
+  "m_ContentContainerId": 0,
+  "m_ContentHash": -674722142,
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": -2,
+        "type": {
+          "class": "",
+          "ns": "",
+          "asm": ""
+        }
+      },
+      {
+        "rid": 1000,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "UnityEngine.UIElements.UXML",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -857044510,
+          "m_Parent": {
+            "rid": -2
+          },
+          "m_Children": [
+            {
+              "rid": 1001
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": -2
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1001,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.BindingExpect",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": 1734466123,
+          "m_Parent": {
+            "rid": 1000
+          },
+          "m_Children": [
+            {
+              "rid": 1002
+            }
+          ],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": -1,
+          "m_Classes": [
+            "height-100-percent"
+          ],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1003
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1002,
+        "type": {
+          "class": "VisualElementAsset",
+          "ns": "UnityEngine.UIElements",
+          "asm": "UnityEngine.UIElementsModule"
+        },
+        "data": {
+          "m_FullTypeName": "SI.Bindable.ScalableBindableGridLayoutElement",
+          "m_XmlNamespace": {
+            "prefix": "",
+            "resolvedNamespace": ""
+          },
+          "m_Id": -1490124835,
+          "m_Parent": {
+            "rid": 1001
+          },
+          "m_Children": [],
+          "m_VisualTreeAsset": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_NamespaceDefinitions": [],
+          "m_Properties": [],
+          "m_RuleIndex": 0,
+          "m_Classes": [],
+          "m_StylesheetPaths": [],
+          "m_Stylesheets": [],
+          "m_SerializedData": {
+            "rid": 1004
+          },
+          "m_SkipClone": 0
+        }
+      },
+      {
+        "rid": 1003,
+        "type": {
+          "class": "BindingExpect/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": 1734466123,
+          "name": "TileBindingExpect",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 1,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 1,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 1,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "Parameters": [
+            {
+              "m_serialisedType": 0,
+              "name": "fixture",
+              "type": {
+                "id": 1718188148
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "team",
+              "type": {
+                "id": 1145176088
+              },
+              "isOptional": 0,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            },
+            {
+              "m_serialisedType": 0,
+              "name": "ishometeam",
+              "type": {
+                "id": 0
+              },
+              "isOptional": 1,
+              "defaultValue": {
+                "m_kind": 0,
+                "Path": {
+                  "m_path": ""
+                },
+                "m_scopeValue": {
+                  "m_serializedData": ""
+                }
+              }
+            }
+          ],
+          "Parameters_UxmlAttributeFlags": 1
+        }
+      },
+      {
+        "rid": 1004,
+        "type": {
+          "class": "ScalableBindableGridLayoutElement/UxmlSerializedData",
+          "ns": "SI.Bindable",
+          "asm": "SI.Bindable"
+        },
+        "data": {
+          "uxmlAssetId": -1490124835,
+          "name": "",
+          "bindings": [],
+          "tooltip": "",
+          "dataSourcePathString": "",
+          "dataSourceTypeString": "",
+          "dataSourceUnityObject": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "viewDataKey": "",
+          "pickingMode": 0,
+          "usageHints": 0,
+          "languageDirection": 0,
+          "tabIndex": 0,
+          "focusable": 0,
+          "enabledSelf": 0,
+          "name_UxmlAttributeFlags": 0,
+          "enabledSelf_UxmlAttributeFlags": 0,
+          "viewDataKey_UxmlAttributeFlags": 0,
+          "pickingMode_UxmlAttributeFlags": 0,
+          "tooltip_UxmlAttributeFlags": 0,
+          "usageHints_UxmlAttributeFlags": 0,
+          "tabIndex_UxmlAttributeFlags": 0,
+          "focusable_UxmlAttributeFlags": 0,
+          "languageDirection_UxmlAttributeFlags": 0,
+          "dataSourceUnityObject_UxmlAttributeFlags": 0,
+          "dataSourcePathString_UxmlAttributeFlags": 0,
+          "dataSourceTypeString_UxmlAttributeFlags": 0,
+          "bindings_UxmlAttributeFlags": 0,
+          "Flags": 0,
+          "Flags_UxmlAttributeFlags": 0,
+          "Bindings": {
+            "m_gridCompositionSet": {
+              "m_FileID": 2,
+              "m_PathID": 8791814353209835390
+            },
+            "m_nameBindings": [
+              {
+                "name": "match",
+                "path": {
+                  "m_path": "const.NullRef"
+                },
+                "method": 0
+              },
+              {
+                "name": "team",
+                "path": {
+                  "m_path": "team"
+                },
+                "method": 0
+              },
+              {
+                "name": "inpossession",
+                "path": {
+                  "m_path": "const.True"
+                },
+                "method": 0
+              },
+              {
+                "name": "fixture",
+                "path": {
+                  "m_path": "fixture"
+                },
+                "method": 0
+              },
+              {
+                "name": "isonmainscreen",
+                "path": {
+                  "m_path": "ishometeam"
+                },
+                "method": 0
+              },
+              {
+                "name": "ishometeam",
+                "path": {
+                  "m_path": "ishometeam"
+                },
+                "method": 0
+              }
+            ],
+            "m_gridElementBindingData": [
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationInPossession",
+                  "MappingName": "match",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationInPossession",
+                  "MappingName": "team",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationInPossession",
+                  "MappingName": "inpossession",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationInPossession",
+                  "MappingName": "fixture",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationOutOfPossession",
+                  "MappingName": "match",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationOutOfPossession",
+                  "MappingName": "team",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationOutOfPossession",
+                  "MappingName": "inpossession",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": "const.False"
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "TeamFormationOutOfPossession",
+                  "MappingName": "fixture",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "AllPlayerStatsHomeTeam",
+                  "MappingName": "isonmainscreen",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "AllPlayerStatsHomeTeam",
+                  "MappingName": "match",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "AllPlayerStatsHomeTeam",
+                  "MappingName": "ishometeam",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "AllPlayerStatsHomeTeam",
+                  "MappingName": "team",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              },
+              {
+                "DescriptionAndMapping": {
+                  "DescriptionName": "AllPlayerStatsHomeTeam",
+                  "MappingName": "fixture",
+                  "MappingReferenceID": 0
+                },
+                "BindingPath": {
+                  "m_path": ""
+                },
+                "IsDynamic": 0
+              }
+            ],
+            "m_gridElementVisiblityFunctions": [
+              {
+                "m_itemA": "TeamFormationInPossession",
+                "m_itemB": {
+                  "m_target": {
+                    "m_guid": ""
+                  },
+                  "m_inputs": {
+                    "m_variable": {
+                      "m_argumentBytes": []
+                    }
+                  },
+                  "m_outputs": {
+                    "m_variable": {
+                      "m_argumentBytes": []
+                    }
+                  }
+                }
+              },
+              {
+                "m_itemA": "TeamFormationOutOfPossession",
+                "m_itemB": {
+                  "m_target": {
+                    "m_guid": "c8aaff030e9921e4b896df04623e8a51"
+                  },
+                  "m_inputs": {
+                    "m_variable": {
+                      "m_argumentBytes": [
+                        3,
+                        104,
+                        0,
+                        0,
+                        0,
+                        62,
+                        83,
+                        73,
+                        46,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        83,
+                        99,
+                        114,
+                        105,
+                        112,
+                        116,
+                        105,
+                        110,
+                        103,
+                        46,
+                        71,
+                        101,
+                        110,
+                        101,
+                        114,
+                        105,
+                        99,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        65,
+                        114,
+                        103,
+                        96,
+                        49,
+                        91,
+                        83,
+                        73,
+                        46,
+                        66,
+                        105,
+                        110,
+                        100,
+                        97,
+                        98,
+                        108,
+                        101,
+                        46,
+                        66,
+                        105,
+                        110,
+                        100,
+                        105,
+                        110,
+                        103,
+                        80,
+                        97,
+                        116,
+                        104,
+                        93,
+                        1,
+                        39,
+                        102,
+                        105,
+                        120,
+                        116,
+                        117,
+                        114,
+                        101,
+                        46,
+                        80,
+                        97,
+                        115,
+                        116,
+                        77,
+                        97,
+                        116,
+                        99,
+                        104,
+                        79,
+                        79,
+                        80,
+                        80,
+                        108,
+                        97,
+                        121,
+                        101,
+                        114,
+                        68,
+                        97,
+                        116,
+                        97,
+                        65,
+                        118,
+                        97,
+                        105,
+                        108,
+                        97,
+                        98,
+                        108,
+                        101,
+                        37,
+                        0,
+                        0,
+                        0,
+                        35,
+                        83,
+                        73,
+                        46,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        83,
+                        99,
+                        114,
+                        105,
+                        112,
+                        116,
+                        105,
+                        110,
+                        103,
+                        46,
+                        66,
+                        111,
+                        111,
+                        108,
+                        101,
+                        97,
+                        110,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        65,
+                        114,
+                        103,
+                        0,
+                        65,
+                        0,
+                        0,
+                        0,
+                        34,
+                        83,
+                        73,
+                        46,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        83,
+                        99,
+                        114,
+                        105,
+                        112,
+                        116,
+                        105,
+                        110,
+                        103,
+                        46,
+                        83,
+                        116,
+                        114,
+                        105,
+                        110,
+                        103,
+                        86,
+                        105,
+                        115,
+                        117,
+                        97,
+                        108,
+                        65,
+                        114,
+                        103,
+                        1,
+                        28,
+                        84,
+                        101,
+                        97,
+                        109,
+                        70,
+                        111,
+                        114,
+                        109,
+                        97,
+                        116,
+                        105,
+                        111,
+                        110,
+                        79,
+                        117,
+                        116,
+                        79,
+                        102,
+                        80,
+                        111,
+                        115,
+                        115,
+                        101,
+                        115,
+                        115,
+                        105,
+                        111,
+                        110
+                      ]
+                    }
+                  },
+                  "m_outputs": {
+                    "m_variable": {
+                      "m_argumentBytes": []
+                    }
+                  }
+                }
+              },
+              {
+                "m_itemA": "AllPlayerStatsHomeTeam",
+                "m_itemB": {
+                  "m_target": {
+                    "m_guid": ""
+                  },
+                  "m_inputs": {
+                    "m_variable": {
+                      "m_argumentBytes": []
+                    }
+                  },
+                  "m_outputs": {
+                    "m_variable": {
+                      "m_argumentBytes": []
+                    }
+                  }
+                }
+              }
+            ],
+            "m_displayNameBindingMethods": []
+          },
+          "IsCustomisable": 0,
+          "MigrateGridLayoutBindings": "",
+          "IgnoreOuterPadding": 0,
+          "CentreContent": 0,
+          "Bindings_UxmlAttributeFlags": 1,
+          "IsCustomisable_UxmlAttributeFlags": 0,
+          "MigrateGridLayoutBindings_UxmlAttributeFlags": 0,
+          "IgnoreOuterPadding_UxmlAttributeFlags": 0,
+          "CentreContent_UxmlAttributeFlags": 0,
+          "DebugPreviewBreakpoint": 0,
+          "DebugPreview": 1,
+          "DebugPreviewBreakpoint_UxmlAttributeFlags": 0,
+          "DebugPreview_UxmlAttributeFlags": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 4923226484593632650
+  },
+  "m_Name": "ScoutReportTacticalEffectivenessTableFactory",
+  "m_parameters": [
+    {
+      "m_serialisedType": 0,
+      "name": "binding",
+      "type": {
+        "id": 1649561426
+      },
+      "isOptional": 0,
+      "defaultValue": {
+        "m_kind": 0,
+        "Path": {
+          "m_path": ""
+        },
+        "m_scopeValue": {
+          "m_serializedData": ""
+        }
+      }
+    },
+    {
+      "m_serialisedType": 0,
+      "name": "player",
+      "type": {
+        "id": 1145176065
+      },
+      "isOptional": 0,
+      "defaultValue": {
+        "m_kind": 0,
+        "Path": {
+          "m_path": ""
+        },
+        "m_scopeValue": {
+          "m_serializedData": ""
+        }
+      }
+    },
+    {
+      "m_serialisedType": 0,
+      "name": "team",
+      "type": {
+        "id": 1145176088
+      },
+      "isOptional": 0,
+      "defaultValue": {
+        "m_kind": 0,
+        "Path": {
+          "m_path": ""
+        },
+        "m_scopeValue": {
+          "m_serializedData": ""
+        }
+      }
+    }
+  ],
+  "m_emitIndexBinding": 0,
+  "m_contextMenuBindingPath": {
+    "m_path": ""
+  },
+  "m_rowData": [
+    {
+      "m_id": "ip",
+      "m_headerLabelBinding": {
+        "m_path": ""
+      },
+      "m_hintLabelBinding": {
+        "m_path": ""
+      },
+      "m_translationID": {
+        "GameID": 41571
+      },
+      "m_translationArgs": [],
+      "m_hintID": {
+        "GameID": 0
+      },
+      "m_hintArgs": [],
+      "m_sortBinding": {
+        "m_path": ""
+      },
+      "m_sortBindingPlugin": 0,
+      "m_sortAscending": 0,
+      "m_defaultWidth": 120.0,
+      "m_minimumWidth": -1.0,
+      "m_allowWidthAutoResizing": 1,
+      "m_autoSizeCellPadding": 0.0,
+      "m_cellClass": "",
+      "m_valueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": "binding.IpPositionAndRole"
+          },
+          "type": {
+            "id": 879048260
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": "player"
+          },
+          "type": {
+            "id": 1145176065
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "inpossession",
+          "to": {
+            "m_path": "const.True"
+          },
+          "type": {
+            "id": 0
+          }
+        }
+      ],
+      "m_headerValueBindings": [],
+      "m_enableFooter": 0,
+      "m_footerValueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 879048260
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 1145176065
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "inpossession",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 0
+          }
+        }
+      ],
+      "m_uxmlRef": {
+        "m_AssetGUID": "036398985f407de43bb2c998fb74232c",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_headerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_footerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_cellShortcuts": []
+    },
+    {
+      "m_id": "oop",
+      "m_headerLabelBinding": {
+        "m_path": ""
+      },
+      "m_hintLabelBinding": {
+        "m_path": ""
+      },
+      "m_translationID": {
+        "GameID": 41572
+      },
+      "m_translationArgs": [],
+      "m_hintID": {
+        "GameID": 0
+      },
+      "m_hintArgs": [],
+      "m_sortBinding": {
+        "m_path": ""
+      },
+      "m_sortBindingPlugin": 0,
+      "m_sortAscending": 0,
+      "m_defaultWidth": 120.0,
+      "m_minimumWidth": -1.0,
+      "m_allowWidthAutoResizing": 1,
+      "m_autoSizeCellPadding": 0.0,
+      "m_cellClass": "",
+      "m_valueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": "binding.OopPositionAndRole"
+          },
+          "type": {
+            "id": 879048260
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": "player"
+          },
+          "type": {
+            "id": 1145176065
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "inpossession",
+          "to": {
+            "m_path": "const.False"
+          },
+          "type": {
+            "id": 0
+          }
+        }
+      ],
+      "m_headerValueBindings": [],
+      "m_enableFooter": 0,
+      "m_footerValueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 879048260
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 1145176065
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "inpossession",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 0
+          }
+        }
+      ],
+      "m_uxmlRef": {
+        "m_AssetGUID": "036398985f407de43bb2c998fb74232c",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_headerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_footerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_cellShortcuts": []
+    },
+    {
+      "m_id": "effectiveness",
+      "m_headerLabelBinding": {
+        "m_path": ""
+      },
+      "m_hintLabelBinding": {
+        "m_path": ""
+      },
+      "m_translationID": {
+        "GameID": 41570
+      },
+      "m_translationArgs": [],
+      "m_hintID": {
+        "GameID": 0
+      },
+      "m_hintArgs": [],
+      "m_sortBinding": {
+        "m_path": "binding.TacticalEffectiveness.OverallEffectiveness.MaxValue"
+      },
+      "m_sortBindingPlugin": 0,
+      "m_sortAscending": 0,
+      "m_defaultWidth": 60.0,
+      "m_minimumWidth": 60.0,
+      "m_allowWidthAutoResizing": 1,
+      "m_autoSizeCellPadding": 0.0,
+      "m_cellClass": "",
+      "m_valueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": "binding.TacticalEffectiveness"
+          },
+          "type": {
+            "id": 842556533
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "ShowDescriptorText",
+          "to": {
+            "m_path": "const.False"
+          },
+          "type": {
+            "id": 0
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "EnableDebugText",
+          "to": {
+            "m_path": "const.False"
+          },
+          "type": {
+            "id": 0
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "tactic",
+          "to": {
+            "m_path": "const.NullRef"
+          },
+          "type": {
+            "id": 2003981122
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": "player"
+          },
+          "type": {
+            "id": 1145176065
+          }
+        }
+      ],
+      "m_headerValueBindings": [],
+      "m_enableFooter": 0,
+      "m_footerValueBindings": [
+        {
+          "m_serialisedType": 0,
+          "from": "binding",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 842556533
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "ShowDescriptorText",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 0
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "EnableDebugText",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 0
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "tactic",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 2003981122
+          }
+        },
+        {
+          "m_serialisedType": 0,
+          "from": "player",
+          "to": {
+            "m_path": ""
+          },
+          "type": {
+            "id": 1145176065
+          }
+        }
+      ],
+      "m_uxmlRef": {
+        "m_AssetGUID": "af4badeb114872040a6e79eecf4c6edb",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_headerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_footerUxmlRef": {
+        "m_AssetGUID": "",
+        "m_SubObjectName": "",
+        "m_SubObjectType": ""
+      },
+      "m_cellShortcuts": []
+    }
+  ],
+  "m_allowFooter": 0,
+  "m_footerParameters": []
+}

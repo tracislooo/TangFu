@@ -1,0 +1,1 @@
+侧栏专用俱乐部网格试修：仅替换ClubScreen FM网格控件，完整保留FM组合与数据绑定。沿用同页原生MultiGrid的互补显示条件，两分支均使用FM原数据。样式、主版、19侧栏入口及顶部隐藏保持。仅静态校验，实际高度待游戏验证。install.ps1安装，restore-this-fix.ps1撤销本次；full-sidebar/restore-non-sidebar.ps1回到本次主版基线，均有哈希保护。

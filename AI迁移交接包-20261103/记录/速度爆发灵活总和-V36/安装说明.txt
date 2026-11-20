@@ -1,0 +1,22 @@
+﻿速度、爆发力、灵活总和 V36
+
+基于已回退的V30。
+在报告头最右侧底部、Actions按钮左边显示一个实时整数。
+取数：
+person.AttributePace.PropertyValue
+person.AttributeAcceleration.PropertyValue
+person.AttributeAgility.PropertyValue
+
+调用原生 BindMultipleIntArgsAsSumToDestination，结果写入局部 Int 变量 ReportMovementSum。
+再用原生整数文本格式显示结果。没有把截图数字写死。
+截图球员为12+13+13，预期显示38。
+
+安装：退出游戏，替换同名global bundle至：
+F:/Steam/steamapps/common/Project Taco/fm_Data/StreamingAssets/aa/StandaloneWindows64/
+只需替换这一份bundle，不需要替换visualfunctions、catalog、backgrounds、gameworld。
+若通过Skin Builder导入JSON，包内两份JSON需一起导入，然后重新打包global。
+本次仅改report-max的树与内联样式；栏目185px、四项统计、头像卡面及Actions按钮原有样式保留。
+若要回退，使用V30的global bundle。
+
+已检查原生求和参数、整数显示格式、局部变量、父子结构和其余资源字节。
+游戏当前运行中，所以没有覆盖安装文件；实际显示仍待重启游戏验证。

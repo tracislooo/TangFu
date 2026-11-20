@@ -1,0 +1,21 @@
+{
+  "current_game_state": "Original pre-sidebar files restored",
+  "restored_files": 5,
+  "runtime_faults": [
+    {
+      "count": 180,
+      "message": "VisualTreeAsset 034703fc31fb58a49d3b06fa08ce4eae was not preloaded. Please add an appropriate Label:\r\n- GlobalVisualTreeAssetPreload: For VisualTreeAssets used across multiple scenes; these persist across scenes.\r\n- GameWorldVisualTreeAssetPreload: For VisualTreeAssets used in the GameWorld scene (but not init/intro); these persist across scenes.\r\n- InitVisualTreeAssetPreload: For VisualTreeAssets used exclusively in the init scene.\r\n- IntroVisualTreeAssetPreload: For VisualTreeAssets used exclusively in the intro scene.\r\n- MatchVisualTreeAssetPreload: For VisualTreeAssets used exclusively in the match scene.\r\n- DebugVisualTreeAssetPreload: For VisualTreeAssets used in Debug panels/builds."
+    },
+    {
+      "count": 180,
+      "message": "Supplied key doesn't have required object: bookmark-drag-key and couldn't be found in ancestor"
+    }
+  ],
+  "confirmed_omissions": [
+    "Custom bookmark row was not registered under an applicable preload label",
+    "Required bookmark-drag-key ancestor binding was omitted"
+  ],
+  "coverage_design_failure": "Per-page sidebar injection cannot remain persistent across all page-layer switches",
+  "resolution_config": "The original shared settings and default styles are restored; resolution menu behavior has not been rechecked in game",
+  "sidebar_work_complete": false
+}

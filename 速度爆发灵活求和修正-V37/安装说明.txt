@@ -1,0 +1,14 @@
+﻿速度、爆发力、灵活总和修正 V37（待游戏运行验证）
+V36原生SumIntArgs返回0，本版改为逐项读取、TryCastToInt转换、两次相加，再直接显示文本。
+取值成功且属性为12、13、13时应显示38；任何取值转换失败则显示--。
+数字位置和字号沿用V36，其他布局保持现状。
+原visualfunctions函数包保持原内容。
+
+本版独立函数放在global包内，新增catalog目录记录。因此安装需要两份文件：
+aa/catalog.bin -> 游戏 StreamingAssets/aa/catalog.bin
+aa/StandaloneWindows64/global bundle -> 游戏 aa/StandaloneWindows64/同名bundle
+退出游戏，运行安装.ps1可自动检查版本后安装。
+回退时退出游戏、运行回退.ps1。
+实际游戏显示尚未验证，不把结构校验等同于运行成功。
+
+本次已在当前电脑游戏目录安装并核对文件哈希，无需再次运行安装.ps1。

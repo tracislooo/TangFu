@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle').Hash.ToLower() -ne '32fb791871241e88c274068a643c1450d79bdd94e95e2f2a6a6008adc3f59a86') { throw 'Target changed since preparation.' }
+if ((Get-FileHash -LiteralPath 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle').Hash.ToLower() -ne '32fb791871241e88c274068a643c1450d79bdd94e95e2f2a6a6008adc3f59a86') { throw 'Target changed since preparation.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-selected-tabs-lake-blue-20261101-002119\output-game\ui-styles_assets_default.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-styles_assets_default.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\tactics-selected-tabs-lake-blue-20261101-002119\output-skin\ui-styles_assets_default.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-styles_assets_default.bundle' -Force

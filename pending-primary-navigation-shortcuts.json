@@ -1,0 +1,103 @@
+{
+  "prepared": true,
+  "installed": true,
+  "reason": "Rebuilt against current packages and installed successfully.",
+  "patch": "G:\\Doc\\ChatGPT\\New project\\primary-data-medical-fixture-order-20261101-112758",
+  "script": "G:\\Doc\\ChatGPT\\New project\\add-primary-data-medical-and-reorder-fixtures.py",
+  "install": "G:\\Doc\\ChatGPT\\New project\\primary-data-medical-fixture-order-20261101-112758\\install.ps1",
+  "restore": "G:\\Doc\\ChatGPT\\New project\\primary-data-medical-fixture-order-20261101-112758\\restore.ps1",
+  "order": [
+    "Messages",
+    "Competitions",
+    "Fixture Schedule",
+    "Data Hub",
+    "Medical Centre",
+    "Youth",
+    "Staff Recruitment"
+  ],
+  "routes": [
+    {
+      "title": "Data Hub",
+      "label_id": 35815,
+      "route": [
+        {
+          "name": "TacticalPlannerTool",
+          "guid": "a69d2d19d0ea8054b82d191ecfea01be",
+          "layer": "MenuBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            },
+            {
+              "name": "boolean",
+              "path": {
+                "m_path": "const.True"
+              },
+              "method": 0
+            },
+            {
+              "name": "tactic",
+              "path": {
+                "m_path": "human.team.Tactic"
+              },
+              "method": 2
+            },
+            {
+              "name": "speakto",
+              "path": {
+                "m_path": "human.team.Tactic.SpeakTo"
+              },
+              "method": 2
+            }
+          ]
+        },
+        {
+          "name": "Data Hub",
+          "guid": "18d422cf9dec91e4cbacb588c83d7a48",
+          "layer": "ReportBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Medical Centre",
+      "label_id": 35712,
+      "route": [
+        {
+          "name": "TrainingScreen",
+          "guid": "ceb0e5333c8c69c448f04279129fdb38",
+          "layer": "MenuBody",
+          "parameters": []
+        },
+        {
+          "name": "MedicalCentreCurrentInjuriesReport",
+          "guid": "441b97c2507a7674da333bd6ad56c0bd",
+          "layer": "ReportBody",
+          "parameters": [
+            {
+              "name": "team",
+              "path": {
+                "m_path": "human.team"
+              },
+              "method": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runtime_verified": false,
+  "font_ratio": 0.7
+}

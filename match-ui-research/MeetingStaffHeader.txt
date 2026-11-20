@@ -1,0 +1,72 @@
+global MeetingStaffHeader PathID=-2662825517810715547 Style=-8041751328396086171
+USINGS [{'alias': 'BodyLanguageCell', 'path': '266d5de7b54a2e940aaef6368d0033d0', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'PlayerPortraitCell', 'path': '38093889aa724f647b3e9b1f4b91954b', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'layout-divider-solid-vertical', 'path': 'e06a1ab43169d1c44bc53c2c069f44e1', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'thumbnails-alt-person-picture', 'path': 'd894b159c6d0cba49bd51def7f05e85c', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.Bindable.BindingExpect CLASS=['flex-grow-class'] {"Parameters": [{"m_serialisedType": 0, "name": "person", "type": {"id": 1145176065}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}, {"m_serialisedType": 0, "name": "npc", "type": {"id": 1297372723}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}, {"m_serialisedType": 0, "name": "speakto", "type": {"id": 1715888971}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}, {"m_serialisedType": 0, "name": "team", "type": {"id": 0}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}]}
+ STYLE []
+  1002 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'meetings-statement-bar', 'justify-content-space-between', 'flex-grow-class'] {"name": "Frame"}
+  STYLE []
+   1004 SI.Bindable.BindableSwitchElement CLASS=['flex-grow-class'] {"Preview": {"Mask": 3}, "FadeOptions": {"FadedOpacity": 0.0}, "Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "config.UseLowResolutionHeaders"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+   STYLE []
+    1006 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'flex-grow-class'] {"name": "StandardAndMaxResHeader"}
+    STYLE []
+     1009 thumbnails-alt-person-picture CLASS=['align-self-flex-end', 'width-100px', 'height-100-px'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "thumbnails-alt-person-picture"}
+     STYLE []
+     1010 UnityEngine.UIElements.VisualElement CLASS=['flex-grow-class'] {"name": "RightFrame"}
+     STYLE []
+      1015 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'margin-right-global-gap-none', 'align-items-center', 'justify-content-space-between', 'flex-no-shrink-class'] {"name": "TopFrame"}
+      STYLE []
+       1021 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'align-items-center', 'padding-top-global-padding-regular', 'align-self-flex-start'] {"name": "Frame"}
+       STYLE []
+        1029 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'margin-left-global-gap-regular', 'align-items-stretch', 'justify-content-center', 'align-self-flex-start'] {"name": "NameAndHierarhy"}
+        STYLE []
+         1038 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'align-items-start', 'margin-bottom-global-gap-extra-small'] {"name": "Frame"}
+         STYLE []
+          1054 SI.Bindable.SIText CLASS=['heading-md'] {"name": "text", "DebugDisplay": "Name", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Person.Name"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+          STYLE []
+         1039 layout-divider-solid-vertical CLASS=['margin-horizontal-global-gap-regular'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "layout-divider-solid-vertical"}
+         STYLE []
+         1040 SI.Bindable.SIText CLASS=['body-md', 'global-text-secondary'] {"name": "text", "DebugDisplay": "Job", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Person.JobString"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+       1022 SI.Bindable.BindingRemapper CLASS=['row-direction-normal', 'align-items-stretch', 'justify-content-space-evenly', 'align-self-flex-start', 'padding-top-global-padding-regular'] {"Mappings": [{"m_serialisedType": 0, "from": "binding", "to": {"m_path": "NPC.NpcBodyLanguage"}, "type": {"id": 1716738678}}]}
+       STYLE []
+        1031 SI.Bindable.SIVisible CLASS=['row-direction-normal'] {"Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "d52cf0b2ba55c764b9ecda52092aa257"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["_SI.VisualScripting.EnumVisualArg`1[SI.VisualScripting.GeneralVisualFunction+ComparisonOperator]", "!SI.VisualScripting.Int32VisualArg", "SI.Bindable.BindingKeyVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "$binding.InteractionBodyLanguageLevel"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+        STYLE []
+         1042 SI.Bindable.SIText CLASS=['body-md', 'margin-right-global-gap-regular', 'global-text-secondary', 'align-self-center-class'] {"name": "text", "DebugDisplay": "Body Language:", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]?n", "Body Language:"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+         1043 BodyLanguageCell CLASS=['height-20px', 'align-content-auto'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "BodyLanguageCell"}
+         STYLE []
+      1016 FM.UI.MessageActionsStreamedObjectList CLASS=['speakto-message--animation-in', 'speakto-message--animation-start', 'speakto-messages---processing', 'speakto-meeting-bubbles', 'force-height-auto'] {"name": "SpeechBubbleList", "PaginationTemplate": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "TruncateLabelTemplate": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "npc.SpeechBubbleHistory"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "ScrollToElementBinding": {"m_path": ""}, "SortBinding": {"m_path": ""}, "DynamicElements": 1, "PreviewItemBinding": {"m_path": ""}, "SelectedItemsBinding": {"m_path": ""}, "RowTemplate": {"m_AssetGUID": "06dde83ce289f684ab40d2e143043275", "m_SubObjectName": "", "m_SubObjectType": ""}, "RowParamName": "bubble", "SortBindingPath": {"m_path": ""}, "NumPreviewElements": 1, "MostRecentActionIndexBindingPath": {"m_path": "speakto.speaktomostrecentresponseindex"}}
+      STYLE []
+    1007 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'flex-grow-class'] {"name": "LowResHeader"}
+    STYLE []
+     1012 UnityEngine.UIElements.VisualElement CLASS=['flex-grow-class'] {"name": "RightFrame"}
+     STYLE []
+      1018 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'margin-right-global-gap-none', 'align-items-center', 'justify-content-space-between', 'flex-no-shrink-class'] {"name": "TopFrame"}
+      STYLE []
+       1025 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'align-items-center', 'padding-top-global-padding-regular', 'align-self-flex-start'] {"name": "Frame"}
+       STYLE []
+        1033 SI.Bindable.BindingRemapper CLASS=[] {"Mappings": [{"m_serialisedType": 0, "from": "binding", "to": {"m_path": "person"}, "type": {"id": 1145176065}}]}
+        STYLE []
+         1045 PlayerPortraitCell CLASS=['align-items-start', 'justify-content-space-evenly', 'align-content-auto'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "PlayerPortraitCell"}
+         STYLE []
+        1034 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'margin-left-global-gap-regular', 'align-items-stretch', 'justify-content-center', 'align-self-center-class'] {"name": "NameAndHierarhy"}
+        STYLE []
+         1047 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'align-items-start', 'margin-bottom-global-gap-extra-small'] {"name": "Frame"}
+         STYLE []
+          1061 SI.Bindable.SIText CLASS=['heading-md'] {"name": "text", "DebugDisplay": "Name", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Person.Name"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+          STYLE []
+         1048 layout-divider-solid-vertical CLASS=['margin-horizontal-global-gap-regular'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "layout-divider-solid-vertical"}
+         STYLE []
+         1049 SI.Bindable.SIText CLASS=['body-md', 'global-text-secondary'] {"name": "text", "DebugDisplay": "Job", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Person.JobString"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+       1026 SI.Bindable.BindingRemapper CLASS=['row-direction-normal', 'align-items-center', 'justify-content-space-evenly', 'align-self-center-class', 'padding-top-global-padding-regular'] {"Mappings": [{"m_serialisedType": 0, "from": "binding", "to": {"m_path": "NPC.NpcBodyLanguage"}, "type": {"id": 1716738678}}]}
+       STYLE []
+        1036 SI.Bindable.SIVisible CLASS=['row-direction-normal'] {"Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "d52cf0b2ba55c764b9ecda52092aa257"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["_SI.VisualScripting.EnumVisualArg`1[SI.VisualScripting.GeneralVisualFunction+ComparisonOperator]", "!SI.VisualScripting.Int32VisualArg", "SI.Bindable.BindingKeyVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "$binding.InteractionBodyLanguageLevel"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+        STYLE []
+         1051 SI.Bindable.SIText CLASS=['body-md', 'margin-right-global-gap-regular', 'global-text-secondary', 'align-self-center-class'] {"name": "text", "DebugDisplay": "Body Language:", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]?n", "Body Language:"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+         1052 BodyLanguageCell CLASS=['height-20px', 'align-content-auto'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "BodyLanguageCell"}
+         STYLE []
+      1019 FM.UI.MessageActionsStreamedObjectList CLASS=['speakto-message--animation-in', 'speakto-message--animation-start', 'speakto-messages---processing', 'speakto-meeting-bubbles', 'force-height-auto'] {"name": "SpeechBubbleList", "PaginationTemplate": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "TruncateLabelTemplate": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "npc.SpeechBubbleHistory"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "ScrollToElementBinding": {"m_path": ""}, "SortBinding": {"m_path": ""}, "DynamicElements": 1, "PreviewItemBinding": {"m_path": ""}, "SelectedItemsBinding": {"m_path": ""}, "RowTemplate": {"m_AssetGUID": "06dde83ce289f684ab40d2e143043275", "m_SubObjectName": "", "m_SubObjectType": ""}, "RowParamName": "bubble", "SortBindingPath": {"m_path": ""}, "NumPreviewElements": 1, "MostRecentActionIndexBindingPath": {"m_path": "speakto.speaktomostrecentresponseindex"}}
+      STYLE []

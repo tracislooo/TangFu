@@ -1,0 +1,1061 @@
+{
+  "bundle": "ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle",
+  "id": 7131180769333280006,
+  "name": "ManagerCreationFavouriteClubDropdown",
+  "nodes": [
+    {
+      "rid": 1000,
+      "type": "UnityEngine.UIElements.UXML",
+      "name": null,
+      "template": null,
+      "classes": [],
+      "style": [],
+      "data": {}
+    },
+    {
+      "rid": 1001,
+      "type": "SI.Bindable.BindingExpect",
+      "name": "",
+      "template": null,
+      "classes": [],
+      "style": [],
+      "data": {
+        "uxmlAssetId": 1582369929,
+        "name": "",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 0,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "Parameters": [],
+        "Parameters_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1002,
+      "type": "SI.Bindable.BindingSetter",
+      "name": "bind-setter",
+      "template": null,
+      "classes": [
+        "flex-grow-class",
+        "input-field-noborder",
+        "manager-creation-dropdown-secondary"
+      ],
+      "style": [],
+      "data": {
+        "uxmlAssetId": -1642221029,
+        "name": "bind-setter",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "ValueVariables": [],
+        "ReferenceVariables": [
+          {
+            "m_type": {
+              "id": 1513318467
+            },
+            "m_initToNull": 1,
+            "m_name": "selectedClub"
+          }
+        ],
+        "ValueVariables_UxmlAttributeFlags": 1,
+        "ReferenceVariables_UxmlAttributeFlags": 1,
+        "BindFunction": [],
+        "BindFunction_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1004,
+      "type": "SI.Bindable.SIDropdown",
+      "name": "favourite-club-dropdown",
+      "template": null,
+      "classes": [
+        "margin-bottom-global-gap-regular",
+        "tifo-dropdown-secondary"
+      ],
+      "style": [
+        {
+          "id": 131074,
+          "name": "",
+          "value": [
+            "stretch"
+          ]
+        },
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            1.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": -2092978986,
+        "name": "favourite-club-dropdown",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "HasInitialFocus": 0,
+        "HasInitialFocus_UxmlAttributeFlags": 0,
+        "RightClickEvents": {
+          "m_bytes": []
+        },
+        "LeftClickEvents": {
+          "m_bytes": []
+        },
+        "InputActionRef": {
+          "m_inputActionAsset": {
+            "m_AssetGUID": "",
+            "m_SubObjectName": "",
+            "m_SubObjectType": ""
+          },
+          "m_actionID": ""
+        },
+        "RowTemplate": {
+          "m_AssetGUID": "bc6b9fc730e9431488ec9a0f76587bf1",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        },
+        "SelectionEvents": {
+          "m_bytes": []
+        },
+        "BindChoicesFunction": {
+          "m_target": {
+            "m_guid": "0f43f251c886ffb43801e215c8be916a"
+          },
+          "m_inputs": {
+            "m_variable": {
+              "m_argumentBytes": [
+                2,
+                33,
+                0,
+                0,
+                0,
+                31,
+                83,
+                73,
+                46,
+                66,
+                105,
+                110,
+                100,
+                97,
+                98,
+                108,
+                101,
+                46,
+                66,
+                105,
+                110,
+                100,
+                105,
+                110,
+                103,
+                75,
+                101,
+                121,
+                86,
+                105,
+                115,
+                117,
+                97,
+                108,
+                65,
+                114,
+                103,
+                0,
+                92,
+                0,
+                0,
+                0,
+                62,
+                83,
+                73,
+                46,
+                86,
+                105,
+                115,
+                117,
+                97,
+                108,
+                83,
+                99,
+                114,
+                105,
+                112,
+                116,
+                105,
+                110,
+                103,
+                46,
+                71,
+                101,
+                110,
+                101,
+                114,
+                105,
+                99,
+                86,
+                105,
+                115,
+                117,
+                97,
+                108,
+                65,
+                114,
+                103,
+                96,
+                49,
+                91,
+                83,
+                73,
+                46,
+                66,
+                105,
+                110,
+                100,
+                97,
+                98,
+                108,
+                101,
+                46,
+                66,
+                105,
+                110,
+                100,
+                105,
+                110,
+                103,
+                80,
+                97,
+                116,
+                104,
+                93,
+                1,
+                27,
+                83,
+                101,
+                116,
+                117,
+                112,
+                71,
+                97,
+                109,
+                101,
+                46,
+                70,
+                97,
+                118,
+                111,
+                117,
+                114,
+                105,
+                116,
+                101,
+                67,
+                108,
+                117,
+                98,
+                77,
+                101,
+                110,
+                117
+              ]
+            }
+          },
+          "m_outputs": {
+            "m_variable": {
+              "m_argumentBytes": []
+            }
+          }
+        },
+        "ShortcutIconPlacement": 0,
+        "HideOnFocusLoss": 0,
+        "DynamicElements": 0,
+        "AddSelectedHistoryOnSelectionChange": 0,
+        "HideOnSelectionChange": 0,
+        "TriggerSelectionEventOnInit": 0,
+        "AllowsQuickChangeShortcut": 0,
+        "ShouldHideIfNoItems": 0,
+        "ShowSearchResults": 0,
+        "ForceRefreshOnNewChoices": 1,
+        "PreviewVisibilityToggle": 0,
+        "AlwaysUpdateInternalSelection": 0,
+        "AlternateRows": 0,
+        "ShouldLazyBindChoices": 0,
+        "UseRowTemplateToShowSelectedValue": 0,
+        "SelectionValueBinding": {
+          "m_path": "selectedClub"
+        },
+        "HoverDelayMs": 0,
+        "DropdownControl": 1,
+        "SearchValueBinding": {
+          "m_path": ""
+        },
+        "CanSelectNextBinding": {
+          "m_path": ""
+        },
+        "CanSelectPreviousBinding": {
+          "m_path": ""
+        },
+        "SetSelectedValueToSearch": 0,
+        "SelectingSameItemDeselects": 0,
+        "SelectedHistoryGroupNameBinding": {
+          "m_path": ""
+        },
+        "ShouldHighlightOnShowBinding": {
+          "m_path": ""
+        },
+        "ShouldAllowShortcutsWhenOpen": 0,
+        "ShowSelectedTick": 0,
+        "MigrateSelectionEvent": "",
+        "Anchor": 2,
+        "AnchorStyle": 0,
+        "VerticalFlipThreshold": 250.0,
+        "AnchorParentName": "",
+        "RowParamName": "row",
+        "PopupClass": "",
+        "DropdownArrowUSSClass": "",
+        "ChildDropdownArrowDirection": 2,
+        "UsePersistentSelection": 0,
+        "RightClickEvents_UxmlAttributeFlags": 0,
+        "LeftClickEvents_UxmlAttributeFlags": 0,
+        "InputActionRef_UxmlAttributeFlags": 0,
+        "RowTemplate_UxmlAttributeFlags": 1,
+        "SelectionEvents_UxmlAttributeFlags": 0,
+        "BindChoicesFunction_UxmlAttributeFlags": 1,
+        "ShortcutIconPlacement_UxmlAttributeFlags": 0,
+        "HideOnFocusLoss_UxmlAttributeFlags": 0,
+        "DynamicElements_UxmlAttributeFlags": 0,
+        "AddSelectedHistoryOnSelectionChange_UxmlAttributeFlags": 0,
+        "HideOnSelectionChange_UxmlAttributeFlags": 0,
+        "TriggerSelectionEventOnInit_UxmlAttributeFlags": 0,
+        "AllowsQuickChangeShortcut_UxmlAttributeFlags": 0,
+        "ShouldHideIfNoItems_UxmlAttributeFlags": 1,
+        "ShowSearchResults_UxmlAttributeFlags": 0,
+        "ForceRefreshOnNewChoices_UxmlAttributeFlags": 1,
+        "PreviewVisibilityToggle_UxmlAttributeFlags": 0,
+        "AlwaysUpdateInternalSelection_UxmlAttributeFlags": 0,
+        "AlternateRows_UxmlAttributeFlags": 0,
+        "ShouldLazyBindChoices_UxmlAttributeFlags": 0,
+        "UseRowTemplateToShowSelectedValue_UxmlAttributeFlags": 1,
+        "SelectionValueBinding_UxmlAttributeFlags": 1,
+        "HoverDelayMs_UxmlAttributeFlags": 0,
+        "DropdownControl_UxmlAttributeFlags": 1,
+        "SearchValueBinding_UxmlAttributeFlags": 0,
+        "CanSelectNextBinding_UxmlAttributeFlags": 0,
+        "CanSelectPreviousBinding_UxmlAttributeFlags": 0,
+        "SetSelectedValueToSearch_UxmlAttributeFlags": 0,
+        "SelectingSameItemDeselects_UxmlAttributeFlags": 0,
+        "SelectedHistoryGroupNameBinding_UxmlAttributeFlags": 0,
+        "ShouldHighlightOnShowBinding_UxmlAttributeFlags": 0,
+        "ShouldAllowShortcutsWhenOpen_UxmlAttributeFlags": 0,
+        "ShowSelectedTick_UxmlAttributeFlags": 0,
+        "MigrateSelectionEvent_UxmlAttributeFlags": 0,
+        "Anchor_UxmlAttributeFlags": 1,
+        "AnchorStyle_UxmlAttributeFlags": 0,
+        "VerticalFlipThreshold_UxmlAttributeFlags": 1,
+        "AnchorParentName_UxmlAttributeFlags": 0,
+        "RowParamName_UxmlAttributeFlags": 1,
+        "PopupClass_UxmlAttributeFlags": 0,
+        "DropdownArrowUSSClass_UxmlAttributeFlags": 0,
+        "ChildDropdownArrowDirection_UxmlAttributeFlags": 1,
+        "UsePersistentSelection_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1006,
+      "type": "UnityEngine.UIElements.VisualElement",
+      "name": "content_fm",
+      "template": null,
+      "classes": [
+        "row-direction-normal",
+        "align-items-center",
+        "justify-content-space-between"
+      ],
+      "style": [
+        {
+          "id": 131074,
+          "name": "",
+          "value": [
+            "stretch"
+          ]
+        },
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            1.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": 230096058,
+        "name": "content_fm",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 1,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 1,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1008,
+      "type": "UnityEngine.UIElements.VisualElement",
+      "name": "favourite-club-content_fm",
+      "template": null,
+      "classes": [
+        "row-direction-normal"
+      ],
+      "style": [
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            1.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": 1032036807,
+        "name": "favourite-club-content_fm",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 1,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 1,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1009,
+      "type": "UnityEngine.UIElements.VisualElement",
+      "name": "arrow-down",
+      "template": null,
+      "classes": [
+        "ui-concepts-chevron-down_small",
+        "margin-left-8"
+      ],
+      "style": [
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            0.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": -757533077,
+        "name": "arrow-down",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 1,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 1,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1011,
+      "type": "SI.Bindable.BindableSwitchElement",
+      "name": "BindableSwitchElement",
+      "template": null,
+      "classes": [
+        "flex-grow-class"
+      ],
+      "style": [],
+      "data": {
+        "uxmlAssetId": 312843261,
+        "name": "BindableSwitchElement",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 1,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 1,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "AlwaysInstantiate": 0,
+        "AlwaysInstantiate_UxmlAttributeFlags": 0,
+        "Preview": {
+          "Mask": 0
+        },
+        "FadeOptions": {
+          "FadedOpacity": 0.0
+        },
+        "VisibilityType": 0,
+        "Preview_UxmlAttributeFlags": 0,
+        "FadeOptions_UxmlAttributeFlags": 0,
+        "VisibilityType_UxmlAttributeFlags": 0,
+        "BindDirectAsMask": 0,
+        "InvertDirectBinding": 0,
+        "Binding": {
+          "m_kind": 2,
+          "m_direct": {
+            "Path": {
+              "m_path": ""
+            },
+            "Nullable": 0
+          },
+          "m_visualFunction": {
+            "m_target": {
+              "m_guid": "59f948d7bacdec44db3bb4d7cb416e04"
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": [
+                  1,
+                  77,
+                  0,
+                  0,
+                  0,
+                  62,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  71,
+                  101,
+                  110,
+                  101,
+                  114,
+                  105,
+                  99,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  96,
+                  49,
+                  91,
+                  83,
+                  73,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  97,
+                  98,
+                  108,
+                  101,
+                  46,
+                  66,
+                  105,
+                  110,
+                  100,
+                  105,
+                  110,
+                  103,
+                  80,
+                  97,
+                  116,
+                  104,
+                  93,
+                  1,
+                  12,
+                  115,
+                  101,
+                  108,
+                  101,
+                  99,
+                  116,
+                  101,
+                  100,
+                  67,
+                  108,
+                  117,
+                  98
+                ]
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          }
+        },
+        "BindDirectAsMask_UxmlAttributeFlags": 0,
+        "InvertDirectBinding_UxmlAttributeFlags": 0,
+        "Binding_UxmlAttributeFlags": 1
+      }
+    },
+    {
+      "rid": 1014,
+      "type": "SI.Bindable.SIText",
+      "name": "club-set",
+      "template": null,
+      "classes": [
+        "content-no-wrap",
+        "content-ellipsis",
+        "global-text-primary",
+        "ios-font-14",
+        "sitext-hover-cursor",
+        "body-regular-14px-regular"
+      ],
+      "style": [
+        {
+          "id": 196609,
+          "name": "",
+          "value": [
+            "ellipsis"
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": -1927484580,
+        "name": "club-set",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "bindingPath": "",
+        "bindingPath_UxmlAttributeFlags": 0,
+        "text": "",
+        "text_UxmlAttributeFlags": 0,
+        "enableRichText": 0,
+        "enableRichText_UxmlAttributeFlags": 0,
+        "emojiFallbackSupport": 0,
+        "emojiFallbackSupport_UxmlAttributeFlags": 0,
+        "parseEscapeSequences": 0,
+        "parseEscapeSequences_UxmlAttributeFlags": 0,
+        "isSelectable": 0,
+        "isSelectable_UxmlAttributeFlags": 0,
+        "doubleClickSelectsWord": 0,
+        "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+        "tripleClickSelectsLine": 0,
+        "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+        "displayTooltipWhenElided": 0,
+        "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+        "TextCase": 0,
+        "DebugDisplay": "",
+        "TextBinding": {
+          "m_kind": 1,
+          "m_direct": {
+            "Path": {
+              "m_path": "selectedClub.DisplayValue"
+            },
+            "Nullable": 0
+          },
+          "m_visualFunction": {
+            "m_target": {
+              "m_guid": ""
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          }
+        },
+        "IgnoreEmbeddedDataStyling": 0,
+        "EnableEmbeddedLinks": 0,
+        "DisableLinkStyling": 0,
+        "DisplayTooltipWhenElided": 0,
+        "DisableContextMenu": 0,
+        "TextCase_UxmlAttributeFlags": 0,
+        "DebugDisplay_UxmlAttributeFlags": 0,
+        "TextBinding_UxmlAttributeFlags": 1,
+        "IgnoreEmbeddedDataStyling_UxmlAttributeFlags": 0,
+        "EnableEmbeddedLinks_UxmlAttributeFlags": 1,
+        "DisableLinkStyling_UxmlAttributeFlags": 0,
+        "DisplayTooltipWhenElided_UxmlAttributeFlags": 0,
+        "DisableContextMenu_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1015,
+      "type": "SI.Bindable.SIText",
+      "name": "club-not-set",
+      "template": null,
+      "classes": [
+        "global-text-secondary",
+        "sitext-hover-cursor",
+        "ios-font-14",
+        "body-regular-14px-regular"
+      ],
+      "style": [],
+      "data": {
+        "uxmlAssetId": 846348421,
+        "name": "club-not-set",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "bindingPath": "",
+        "bindingPath_UxmlAttributeFlags": 0,
+        "text": "",
+        "text_UxmlAttributeFlags": 0,
+        "enableRichText": 0,
+        "enableRichText_UxmlAttributeFlags": 0,
+        "emojiFallbackSupport": 0,
+        "emojiFallbackSupport_UxmlAttributeFlags": 0,
+        "parseEscapeSequences": 0,
+        "parseEscapeSequences_UxmlAttributeFlags": 0,
+        "isSelectable": 0,
+        "isSelectable_UxmlAttributeFlags": 0,
+        "doubleClickSelectsWord": 0,
+        "doubleClickSelectsWord_UxmlAttributeFlags": 0,
+        "tripleClickSelectsLine": 0,
+        "tripleClickSelectsLine_UxmlAttributeFlags": 0,
+        "displayTooltipWhenElided": 0,
+        "displayTooltipWhenElided_UxmlAttributeFlags": 0,
+        "TextCase": 0,
+        "DebugDisplay": "Not set",
+        "TextBinding": {
+          "m_kind": 2,
+          "m_direct": {
+            "Path": {
+              "m_path": ""
+            },
+            "Nullable": 0
+          },
+          "m_visualFunction": {
+            "m_target": {
+              "m_guid": "eae2be944eee9e2449baef416111a087"
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": [
+                  1,
+                  74,
+                  0,
+                  0,
+                  0,
+                  67,
+                  83,
+                  73,
+                  46,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  83,
+                  99,
+                  114,
+                  105,
+                  112,
+                  116,
+                  105,
+                  110,
+                  103,
+                  46,
+                  71,
+                  101,
+                  110,
+                  101,
+                  114,
+                  105,
+                  99,
+                  86,
+                  105,
+                  115,
+                  117,
+                  97,
+                  108,
+                  65,
+                  114,
+                  103,
+                  96,
+                  49,
+                  91,
+                  83,
+                  73,
+                  46,
+                  84,
+                  114,
+                  97,
+                  110,
+                  115,
+                  108,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  46,
+                  84,
+                  114,
+                  97,
+                  110,
+                  115,
+                  108,
+                  97,
+                  116,
+                  105,
+                  111,
+                  110,
+                  73,
+                  68,
+                  93,
+                  1,
+                  161,
+                  0,
+                  0,
+                  1,
+                  0
+                ]
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          }
+        },
+        "IgnoreEmbeddedDataStyling": 0,
+        "EnableEmbeddedLinks": 0,
+        "DisableLinkStyling": 0,
+        "DisplayTooltipWhenElided": 0,
+        "DisableContextMenu": 0,
+        "TextCase_UxmlAttributeFlags": 0,
+        "DebugDisplay_UxmlAttributeFlags": 1,
+        "TextBinding_UxmlAttributeFlags": 1,
+        "IgnoreEmbeddedDataStyling_UxmlAttributeFlags": 0,
+        "EnableEmbeddedLinks_UxmlAttributeFlags": 0,
+        "DisableLinkStyling_UxmlAttributeFlags": 0,
+        "DisplayTooltipWhenElided_UxmlAttributeFlags": 0,
+        "DisableContextMenu_UxmlAttributeFlags": 0
+      }
+    }
+  ],
+  "usings": []
+}

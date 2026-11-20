@@ -1,0 +1,40 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "column_id": "tactics-fatigue-value",
+  "header_translation": 3251,
+  "binding": [
+    {
+      "m_serialisedType": 0,
+      "from": "binding",
+      "to": {
+        "m_path": "binding.Player.fatigue"
+      },
+      "type": {
+        "id": 0
+      }
+    }
+  ],
+  "sort": {
+    "m_path": "binding.Player.fatigue"
+  },
+  "sort_plugin": 11000000,
+  "format": "native direct numeric label; raw fatigue including negative values; no percent or scaling",
+  "width": 56,
+  "position": "immediately after condition/sharpness combined column",
+  "views": [
+    "TacticTeamSelectionTableViewBothSelectionInfo",
+    "TacticTeamSelectionTableViewPossessionSelectionInfo",
+    "TacticTeamSelectionTableViewOverviewFitness",
+    "TacticTeamSelectionTableViewOverviewSelectionInfoCollapsed",
+    "TacticTeamSelectionTableViewOverviewSelectionInfo",
+    "TacticTeamSelectionTableViewPossessionSelectionInfoCollapsed"
+  ],
+  "existing_columns_preserved": true,
+  "world_bundle_and_catalog_unchanged": true,
+  "after_sha256": {
+    "ui-tablefactories_assets_all.bundle": "18f37ec6e534a05aa99bc4bf36b6dbecc6290dfcc5547b5147ba10754eb4d2e2",
+    "ui-tableviews_assets_all.bundle": "d34688c1750bba2b5572e3085bf8cd17ce3d5b108645ba55774bcc6d4516ac63"
+  },
+  "installed_verified": true
+}

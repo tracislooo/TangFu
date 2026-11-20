@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib
+R=Path.cwd();out=R/'ui-surfaces-greyblue-opaque-20261102-224054';m=json.loads((out/'manifest.json').read_text('utf8'));tx=json.loads((out/'transaction.json').read_text('utf8'));sha=lambda b:hashlib.sha256(b).hexdigest() if b is not None else None
+rule='\n\n# 界面底色统一维护入口（2026-11-02）\n\n- 用户要求：普通页面 Card-frame（招募、一线队、赛程安排等）及此前黑色卡片模块统一深灰蓝 #263445、不透明度100%；Card-frame保留容器/ID/布局/内容，去除背景图片和图片绑定，使用纯色填充。球员页专用不透明深灰蓝外壳保持。此规则取代这些模块此前60%和普通外壳透明方案。\n- 这一步由界面配色聊天维护，唯一更新脚本 apply-page-surfaces-theme.py，状态索引 current-ui-surface-theme.json。图片维护聊天只处理图片资源、纹理及其目录，不重复修改这些 Card-frame 或模块底色；更新后先完成图片资源步骤，再在这里运行界面配色步骤。既有专用图片面板等用户指定图片关联不在普通 Card-frame 规则范围内。\n- 对游戏和独立主皮肤分别基于最新资源增量应用；保留侧栏/非侧栏各自状态及并行BUG修复。禁止使用旧底色补丁或旧整包覆盖新版本；已符合要求的对象跳过。顶部Touchbar此前单独要求的60%不透明度保留。\n'
+guide='\n\n2026-11-02 最终覆盖规则：此前黑色卡片模块与普通页面Card-frame统一 #263445 alpha1.0，Card-frame不使用图片；取代模块60%和普通页面背景透明方案。球员专用外壳保持100%，顶部Touchbar单独60%保持。用户将此步骤指定由本界面配色聊天集中维护，图片聊天仅维护图片资源，避免重复处理。唯一增量入口 apply-page-surfaces-theme.py，状态 current-ui-surface-theme.json，安装备份 '+out.name+'。原名称/ID/布局/事件/文字保留，现行游戏与独立主皮肤分别增量处理，重复运行跳过已符合对象；更新后不得重跑旧图片脚本覆盖这些底色。文件验证和实际游戏显示分别记录。\n'
+state={'date':'2026-11-02','scope':'General page Card-frame and formerly black UI module backgrounds','color':'#263445','opacity':1.0,'card_frame_images':False,'script':str(R/'apply-page-surfaces-theme.py'),'maintenance_owner':'UI palette chat; image maintenance handles image assets only','install_record':str(out/'manifest.json'),'touchbar_opacity':0.6,'runtime_verified':False}
+files={R/'AGENTS.md':(R/'AGENTS.md').read_text('utf8')+rule,R/'FM27界面配色维护说明-更新后重做.md':(R/'FM27界面配色维护说明-更新后重做.md').read_text('utf8')+guide,R/'current-ui-surface-theme.json':json.dumps(state,ensure_ascii=False,indent=2)}
+for p,t in files.items():
+ old=p.read_bytes() if p.exists() else None;dest=out/'workspace'/p.name;dest.parent.mkdir(exist_ok=True);dest.write_text(t,'utf8');backup=out/'backup-workspace'/p.name;backup.parent.mkdir(exist_ok=True)
+ if old is not None:backup.write_bytes(old)
+ tx['sources'][str(p)]=str(dest);tx['before'][str(p)]=str(backup) if old is not None else None;m['before_sha256'][str(p)]=sha(old);m['after_sha256'][str(p)]=sha(dest.read_bytes());m['protected_sha256'].pop(str(p),None)
+(out/'manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2),'utf8');(out/'transaction.json').write_text(json.dumps(tx,ensure_ascii=False,indent=2),'utf8');print('Prepared resource and maintenance-rule transaction',len(tx['sources']))

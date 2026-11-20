@@ -1,0 +1,81 @@
+{
+  "metadata_position": "between team names in fixed stats header",
+  "fields": {
+    "temperature": "match.Weather.WeatherDescriptionString",
+    "referee": "match.MatchReferee.Name"
+  },
+  "font_px_matches_team_names": 12.0,
+  "text_color_class": "global-text-secondary",
+  "weather_wind_and_referee_nationality_not_added": true,
+  "native_referee_visibility_preserved": true,
+  "new_separator": 3522,
+  "separator_border_px": 1,
+  "all_comparison_line_color_variable": "--layout-modules-block-border-colour",
+  "vertical_line_nodes": [
+    3436,
+    3438,
+    3440
+  ],
+  "defaults": [
+    {
+      "x": 0,
+      "selected": "PlayerStatsHomeTeam",
+      "size": {
+        "x": 5,
+        "y": 4
+      }
+    },
+    {
+      "x": 15,
+      "selected": "PlayerStatsAwayTeam",
+      "size": {
+        "x": 5,
+        "y": 4
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "name": "MatchExperienceHumanGridComposition-Large",
+      "defaults": {
+        "0": "PlayerStatsHomeTeam",
+        "15": "PlayerStatsAwayTeam"
+      }
+    },
+    {
+      "name": "MatchExperienceHumanGridComposition-Large-NoLeague",
+      "defaults": {
+        "0": "PlayerStatsHomeTeam",
+        "15": "PlayerStatsAwayTeam"
+      }
+    },
+    {
+      "name": "MatchExperienceGridComposition-Large",
+      "defaults": {
+        "0": "PlayerStatsHomeTeam",
+        "15": "PlayerStatsAwayTeam"
+      }
+    },
+    {
+      "name": "MatchExperienceGridComposition-Large-NoLeague",
+      "defaults": {
+        "0": "PlayerStatsHomeTeam",
+        "15": "PlayerStatsAwayTeam"
+      }
+    }
+  ],
+  "cache_previews": [
+    {
+      "name": "MatchExperienceHumanGridComposition-Large",
+      "defaults": {
+        "0": "PlayerStatsHomeTeam",
+        "15": "PlayerStatsAwayTeam"
+      }
+    }
+  ],
+  "all_data_bindings_and_existing_widgets_unchanged": true,
+  "selector_switching_preserved": true,
+  "serialization_roundtrip": true,
+  "unrelated_objects_unchanged": true,
+  "runtime_verified": false
+}

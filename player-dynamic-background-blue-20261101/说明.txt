@@ -1,0 +1,7 @@
+﻿定位：GameWorldBackground，GUID 550fc2c85c4c6af4c81e62ee766f64d5，Path ID -716828569427839901。
+原背景存在game.BackgroundImage.Use3DBackground分支：普通分支加载静态图片，3D分支SIRenderTextureImage通过BackgroundRenderTexture动态生成背景，因此仅替换静态纹理不能覆盖该分支。
+本补丁将3D显示子节点替换为背景图VisualElement，直接引用TF skin V1（-910000000000149），使用scale-and-crop铺满；分支选择和原静态图片绑定不变。
+原节点m_Id及uxmlAssetId、树结构和其他节点全部保留。gameworld内只修改GameWorldBackground文档、其inlineStyle以及必要的预加载记录。现有catalog已包含该GUID模板/样式所需的背景包依赖，校验通过，无需修改catalog或catalog.hash。
+不修改蓝色图像本身，不启用侧栏，不改变球员卡面、数据、模板控件ID、评分公式或其他页面布局。
+当前游戏仍运行，待退出后执行安装.ps1，同步游戏和皮肤目录，再启动游戏复测球员页面及此前发黑的页面。
+此诊断基于现有资源和截图，静态校验已通过，尚未确认游戏运行时效果。回退.ps1可恢复安装前文件。

@@ -1,0 +1,3 @@
+exec(open('fix-overview-position-title-role-fit.py',encoding='utf-8-sig').read().split('newassets=[]')[0].replace('overview-position-headings-role-fit-','inspect-grid-gap-values-'))
+doc=objs[W][7857044477279960178].read_typetree();rr=refs(doc);s=rr[rr[1010]['data']['m_SerializedData']['rid']]['data'];print({k:v for k,v in s.items() if k not in ['Bindings'] and not k.endswith('UxmlAttributeFlags')});print('grid node',rr[1010]['data'])
+e=UnityPy.load(str(GAME/'ui-tileslayouts_assets_all.bundle'));oo={o.path_id:o for o in e.objects};d=oo[3901662990989568885].read_typetree();print({k:v for k,v in d.items() if not isinstance(v,list)})

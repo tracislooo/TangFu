@@ -1,0 +1,20 @@
+﻿独立小数选图75 v35（游戏内待验证）
+
+本版新增独立的小数比较函数，沿用原生卡面的互斥 Switch 分支。
+数值先 TryCastToFloat，再按表中小数边界比较；每项选一张图。
+四项图文整体缩放75%，删除所有 i 检测标记。
+没有修改 ui-visualfunctions_assets_all.bundle，继续使用 v34 恢复后的版本。
+头像、卡面、左边信息、Actions及栏目185px高度保持现状。
+
+安装：
+1. 退出游戏。
+2. 运行 安装.ps1；或者把 aa 文件夹里的两份文件按目录覆盖到：
+   F:/Steam/steamapps/common/Project Taco/fm_Data/StreamingAssets/aa/
+   catalog.bin 放在 aa 目录；global bundle 放在 aa/StandaloneWindows64 目录。
+3. 两份文件必须一起安装，仅导入 JSON 或只替换 bundle 无法注册新函数。
+4. 重启游戏查看同一名球员。截图中的0.02、0.07、62.36、0.96，
+   应分别显示 level001、level003、level010、level004。
+
+需要回退时：退出游戏，运行 回退.ps1，会恢复本次打包时的global和catalog。
+游戏更新后不要覆盖旧catalog；需要针对更新后的目录重新生成此条函数记录。
+已校验所有原目录记录、原有其他资源、函数序列化和分档边界；实际运行仍待验证。

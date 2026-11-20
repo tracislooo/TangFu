@@ -1,0 +1,33 @@
+﻿头部加高50px、BlueLight 40%不透明度 v14
+
+使用方法：备份后，替换本包中的 global、gameworld 两个同名 bundle，重启游戏。
+继续使用原有 ui-backgrounds_assets_common.bundle；本次未修改纹理文件。
+本包基于上一版 v13（蓝光200%、国旗队徽间距80px、头像完整显示）。
+
+高度值（桌面版）：
+1. PlayerReportHeader 的 report-player-full-header-max：
+   修改前无内联 height，使用官方共享样式 height:148px。
+   本次内联 height:198px（+50px），同时同步底层装饰副本。
+2. report-player-banner-max（report-max）：
+   官方共享样式 height:92px；当前修改版已有 min-height:260px。
+   本次只把 min-height 改为310px（+50px），底层装饰模板同步。
+   92px 是官方默认 height，不是当前修改版的最小高度。
+
+BlueLight 节点单独增加 opacity:0.4：图片显示强度为40%，即额外60%透明。
+该设置会与图片本身的透明通道相乘，不改变PNG/DXT5数据。
+缩放仍为200%，国旗与队徽间距仍为80px；CA000 115%、头像内部75%保持不变。
+其他节点、位置、绑定和资源字节已核对保持不变。
+
+恢复方法：
+最方便的方法是使用同目录交付的“还原高度透明度到v13.zip”，替换其中两个同名bundle。
+如果手动恢复：
+- gameworld / PlayerReportHeader / inlineStyle -1940069326759809061：
+  将原头部及其装饰副本的新增 height:198px 属性删除，恢复共享148px。
+- global / report-player-banner-max / inlineStyle 8045407476604796436：
+  将根节点 min-height:310px 改回260px。
+- gameworld / ReportIconsBelowPlayerTopBackground / inlineStyle -910000000000202：
+  将根节点 min-height:310px 改回260px；删除BlueLight节点新增 opacity:0.4，恢复默认1.0。
+修改记录.json 包含具体 rid、属性编号和样式规则索引。
+
+已验证成品可重新读取、目标参数正确、层级和无关资源未改变；游戏内效果尚需确认。
+源 packages、官方游戏文件及 v13 成品没有覆盖。

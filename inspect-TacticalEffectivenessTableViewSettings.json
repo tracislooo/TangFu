@@ -1,0 +1,260 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -4547854135319439084
+  },
+  "m_Name": "TacticalEffectivenessTableViewSettings",
+  "m_tableView": {
+    "m_viewName": {
+      "GameID": 0
+    },
+    "m_requirements": [],
+    "m_optionalConditions": [],
+    "m_optionalConfigConditions": [],
+    "m_bindingExpect": [
+      {
+        "m_serialisedType": 0,
+        "name": "show-tactical-areas",
+        "type": {
+          "id": 0
+        },
+        "isOptional": 1,
+        "defaultValue": {
+          "m_kind": 0,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": "Bool|0|"
+          }
+        }
+      },
+      {
+        "m_serialisedType": 0,
+        "name": "show-tactical-comprehension",
+        "type": {
+          "id": 0
+        },
+        "isOptional": 1,
+        "defaultValue": {
+          "m_kind": 0,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": "Bool|0|"
+          }
+        }
+      },
+      {
+        "m_serialisedType": 0,
+        "name": "show-player-ability",
+        "type": {
+          "id": 0
+        },
+        "isOptional": 1,
+        "defaultValue": {
+          "m_kind": 0,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": "Bool|0|"
+          }
+        }
+      },
+      {
+        "m_serialisedType": 0,
+        "name": "show-player-buy-in",
+        "type": {
+          "id": 0
+        },
+        "isOptional": 1,
+        "defaultValue": {
+          "m_kind": 0,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": "Bool|0|"
+          }
+        }
+      },
+      {
+        "m_serialisedType": 0,
+        "name": "show-next-match-info",
+        "type": {
+          "id": 0
+        },
+        "isOptional": 1,
+        "defaultValue": {
+          "m_kind": 0,
+          "Path": {
+            "m_path": ""
+          },
+          "m_scopeValue": {
+            "m_serializedData": "Bool|0|"
+          }
+        }
+      }
+    ],
+    "m_expectRemaps": [],
+    "m_tableConfig": [
+      {
+        "m_columnID": "picked",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [],
+          "m_priority": 0
+        }
+      },
+      {
+        "m_columnID": "name",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [],
+          "m_priority": 0
+        }
+      },
+      {
+        "m_columnID": "tactical-areas",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [
+            {
+              "m_path": {
+                "m_path": "show-tactical-areas"
+              },
+              "m_inverseCheck": 0
+            }
+          ],
+          "m_priority": 1
+        }
+      },
+      {
+        "m_columnID": "tactical-comprehension",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [
+            {
+              "m_path": {
+                "m_path": "show-tactical-comprehension"
+              },
+              "m_inverseCheck": 0
+            }
+          ],
+          "m_priority": 2
+        }
+      },
+      {
+        "m_columnID": "player-ability",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [
+            {
+              "m_path": {
+                "m_path": "show-player-ability"
+              },
+              "m_inverseCheck": 0
+            }
+          ],
+          "m_priority": 3
+        }
+      },
+      {
+        "m_columnID": "player-buy-in",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [
+            {
+              "m_path": {
+                "m_path": "show-player-buy-in"
+              },
+              "m_inverseCheck": 0
+            }
+          ],
+          "m_priority": 4
+        }
+      },
+      {
+        "m_columnID": "next-match-info",
+        "m_columnMetadata": {
+          "m_required": 0,
+          "m_sortingDisabled": 0,
+          "m_widthOverride": 0.0,
+          "m_minWidthOverride": 0.0,
+          "m_titleTranslationIdOverride": {
+            "GameID": 0
+          },
+          "m_applicableBreakpoints": -1,
+          "m_optionalConfigConditions": [],
+          "m_optionalConditions": [
+            {
+              "m_path": {
+                "m_path": "show-next-match-info"
+              },
+              "m_inverseCheck": 0
+            }
+          ],
+          "m_priority": 5
+        }
+      }
+    ],
+    "m_overwriteFooterSettings": 0,
+    "m_footerParameters": [],
+    "m_footerColumns": []
+  }
+}

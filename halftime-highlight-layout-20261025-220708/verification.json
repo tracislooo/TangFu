@@ -1,0 +1,320 @@
+{
+  "columns": [
+    5,
+    10,
+    5
+  ],
+  "sides_upper_lower": [
+    4,
+    4
+  ],
+  "header": [
+    20,
+    2
+  ],
+  "body": [
+    20,
+    8
+  ],
+  "layouts": [
+    {
+      "name": "HalfTimeTeamReportHumanGridComposition-Large",
+      "slots": [
+        {
+          "m_elementID": "MatchResult",
+          "m_location": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 2
+          }
+        },
+        {
+          "m_elementID": "AwayTeamFormationAdaptive",
+          "m_location": {
+            "x": 15,
+            "y": 2,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "PlayerStatsHomeTeam",
+          "m_location": {
+            "x": 0,
+            "y": 6,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "MatchViewer",
+          "m_location": {
+            "x": 5,
+            "y": 2,
+            "width": 10,
+            "height": 8
+          }
+        },
+        {
+          "m_elementID": "HomeTeamFormationAdaptive",
+          "m_location": {
+            "x": 0,
+            "y": 2,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "PlayerStatsAwayTeam",
+          "m_location": {
+            "x": 15,
+            "y": 6,
+            "width": 5,
+            "height": 4
+          }
+        }
+      ],
+      "score_header_exactly_preserved": true
+    },
+    {
+      "name": "HalfTimeTeamReportGridComposition-Large",
+      "slots": [
+        {
+          "m_elementID": "MatchResult",
+          "m_location": {
+            "x": 0,
+            "y": 0,
+            "width": 20,
+            "height": 2
+          }
+        },
+        {
+          "m_elementID": "AwayTeamFormationAdaptive",
+          "m_location": {
+            "x": 15,
+            "y": 2,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "PlayerStatsHomeTeam",
+          "m_location": {
+            "x": 0,
+            "y": 6,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "MatchViewer",
+          "m_location": {
+            "x": 5,
+            "y": 2,
+            "width": 10,
+            "height": 8
+          }
+        },
+        {
+          "m_elementID": "HomeTeamFormationAdaptive",
+          "m_location": {
+            "x": 0,
+            "y": 2,
+            "width": 5,
+            "height": 4
+          }
+        },
+        {
+          "m_elementID": "PlayerStatsAwayTeam",
+          "m_location": {
+            "x": 15,
+            "y": 6,
+            "width": 5,
+            "height": 4
+          }
+        }
+      ],
+      "score_header_exactly_preserved": true
+    }
+  ],
+  "added_size_configs": [
+    {
+      "name": "AllPlayerStatsAwayTeamTileDescription",
+      "new_size": [
+        5,
+        4
+      ],
+      "asset_unchanged": "1fc967d3d41ed9146a8e383f9849c6ea"
+    },
+    {
+      "name": "AllPlayerStatsHomeTeamTileDescription",
+      "new_size": [
+        5,
+        4
+      ],
+      "asset_unchanged": "1fc967d3d41ed9146a8e383f9849c6ea"
+    },
+    {
+      "name": "AllPlayerStatsOppositionTeamTileDescription",
+      "new_size": [
+        5,
+        4
+      ],
+      "asset_unchanged": "1fc967d3d41ed9146a8e383f9849c6ea"
+    },
+    {
+      "name": "LiveTableTileDescription",
+      "new_size": [
+        5,
+        4
+      ],
+      "asset_unchanged": "c38af786a0ce00c40a23511259e88e19"
+    },
+    {
+      "name": "AllPlayerStatsHumanTeamTileDescription",
+      "new_size": [
+        5,
+        4
+      ],
+      "asset_unchanged": "1fc967d3d41ed9146a8e383f9849c6ea"
+    }
+  ],
+  "element_sets": [
+    {
+      "name": "HalfTimeTeamReportHumanGridElementSet",
+      "added_descriptors": [
+        1730867061287688386,
+        -2842495133054264931
+      ],
+      "existing_choices_preserved": true
+    },
+    {
+      "name": "HalfTimeTeamReportGridElementSet",
+      "added_descriptors": [
+        1730867061287688386,
+        -2842495133054264931
+      ],
+      "existing_choices_preserved": true
+    }
+  ],
+  "halftime_stats_bindings": [
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsHomeTeam",
+        "MappingName": "isonmainscreen",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsHomeTeam",
+        "MappingName": "match",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsHomeTeam",
+        "MappingName": "ishometeam",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": "const.True"
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsHomeTeam",
+        "MappingName": "team",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": "match.HomeTeam"
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsHomeTeam",
+        "MappingName": "fixture",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsAwayTeam",
+        "MappingName": "isonmainscreen",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsAwayTeam",
+        "MappingName": "match",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsAwayTeam",
+        "MappingName": "ishometeam",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": "const.False"
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsAwayTeam",
+        "MappingName": "team",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": "match.AwayTeam"
+      },
+      "IsDynamic": 0
+    },
+    {
+      "DescriptionAndMapping": {
+        "DescriptionName": "PlayerStatsAwayTeam",
+        "MappingName": "fixture",
+        "MappingReferenceID": 0
+      },
+      "BindingPath": {
+        "m_path": ""
+      },
+      "IsDynamic": 0
+    }
+  ],
+  "all_current_global_templates_unchanged": true,
+  "highlight_layouts_and_cache_unchanged": true,
+  "original_selector_choices_retained": true,
+  "cache_previews": [],
+  "serialization_roundtrip": true,
+  "unrelated_objects_unchanged": true,
+  "runtime_verified": false
+}

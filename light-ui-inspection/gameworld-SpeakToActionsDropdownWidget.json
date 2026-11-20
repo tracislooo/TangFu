@@ -1,0 +1,288 @@
+{
+  "bundle": "ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+  "id": -7361176764557861332,
+  "name": "SpeakToActionsDropdownWidget",
+  "nodes": [
+    {
+      "rid": 1000,
+      "type": "UnityEngine.UIElements.UXML",
+      "name": null,
+      "template": null,
+      "classes": [],
+      "style": [],
+      "data": {}
+    },
+    {
+      "rid": 1001,
+      "type": "SI.Bindable.BindingExpect",
+      "name": "",
+      "template": null,
+      "classes": [],
+      "style": [],
+      "data": {
+        "uxmlAssetId": 1653793827,
+        "name": "",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 0,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "Parameters": [
+          {
+            "m_serialisedType": 0,
+            "name": "speakto",
+            "type": {
+              "id": 1715888971
+            },
+            "isOptional": 0,
+            "defaultValue": {
+              "m_kind": 0,
+              "Path": {
+                "m_path": ""
+              },
+              "m_scopeValue": {
+                "m_serializedData": ""
+              }
+            }
+          }
+        ],
+        "Parameters_UxmlAttributeFlags": 1
+      }
+    },
+    {
+      "rid": 1002,
+      "type": "SI.Bindable.BindingVariables",
+      "name": "DropdownMode",
+      "template": null,
+      "classes": [],
+      "style": [
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            1.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": -1570797131,
+        "name": "DropdownMode",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "ValueVariables": [],
+        "ReferenceVariables": [
+          {
+            "m_type": {
+              "id": 1919246692
+            },
+            "m_initToNull": 0,
+            "m_name": "selectedaction"
+          }
+        ],
+        "ValueVariables_UxmlAttributeFlags": 0,
+        "ReferenceVariables_UxmlAttributeFlags": 1
+      }
+    },
+    {
+      "rid": 1004,
+      "type": "SI.Bindable.SIVisible",
+      "name": "",
+      "template": null,
+      "classes": [],
+      "style": [],
+      "data": {
+        "uxmlAssetId": -2021555088,
+        "name": "",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 0,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 0,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 0,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "AlwaysInstantiate": 0,
+        "AlwaysInstantiate_UxmlAttributeFlags": 0,
+        "InvertDirectBinding": 0,
+        "AcceptNumbers": 0,
+        "Binding": {
+          "m_kind": 1,
+          "m_direct": {
+            "Path": {
+              "m_path": "SpeakTo.HasActions"
+            },
+            "Nullable": 0
+          },
+          "m_visualFunction": {
+            "m_target": {
+              "m_guid": ""
+            },
+            "m_inputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            },
+            "m_outputs": {
+              "m_variable": {
+                "m_argumentBytes": []
+              }
+            }
+          }
+        },
+        "PreviewVisibilityToggle": 0,
+        "VisibilityType": 0,
+        "FadedOpacityValue": 0.0,
+        "AlwaysBindChildren": 0,
+        "StyleClassToApplyOnVisible": "",
+        "StyleClassBindingToApplyOnVisible": {
+          "m_path": ""
+        },
+        "InvertDirectBinding_UxmlAttributeFlags": 1,
+        "AcceptNumbers_UxmlAttributeFlags": 0,
+        "Binding_UxmlAttributeFlags": 1,
+        "PreviewVisibilityToggle_UxmlAttributeFlags": 0,
+        "VisibilityType_UxmlAttributeFlags": 0,
+        "FadedOpacityValue_UxmlAttributeFlags": 0,
+        "AlwaysBindChildren_UxmlAttributeFlags": 0,
+        "StyleClassToApplyOnVisible_UxmlAttributeFlags": 0,
+        "StyleClassBindingToApplyOnVisible_UxmlAttributeFlags": 0
+      }
+    },
+    {
+      "rid": 1006,
+      "type": "",
+      "name": "dropdown-base-regular-leading-icon-trailing-icon-label-0",
+      "template": "dropdown-base-regular-leading-icon-trailing-icon-label",
+      "classes": [],
+      "style": [
+        {
+          "id": 131084,
+          "name": "",
+          "value": [
+            0.0
+          ]
+        }
+      ],
+      "data": {
+        "uxmlAssetId": 301519956,
+        "name": "dropdown-base-regular-leading-icon-trailing-icon-label-0",
+        "bindings": [],
+        "tooltip": "",
+        "dataSourcePathString": "",
+        "dataSourceTypeString": "",
+        "dataSourceUnityObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "viewDataKey": "",
+        "pickingMode": 1,
+        "usageHints": 0,
+        "languageDirection": 0,
+        "tabIndex": 0,
+        "focusable": 0,
+        "enabledSelf": 0,
+        "name_UxmlAttributeFlags": 1,
+        "enabledSelf_UxmlAttributeFlags": 0,
+        "viewDataKey_UxmlAttributeFlags": 0,
+        "pickingMode_UxmlAttributeFlags": 1,
+        "tooltip_UxmlAttributeFlags": 0,
+        "usageHints_UxmlAttributeFlags": 0,
+        "tabIndex_UxmlAttributeFlags": 0,
+        "focusable_UxmlAttributeFlags": 0,
+        "languageDirection_UxmlAttributeFlags": 0,
+        "dataSourceUnityObject_UxmlAttributeFlags": 0,
+        "dataSourcePathString_UxmlAttributeFlags": 0,
+        "dataSourceTypeString_UxmlAttributeFlags": 0,
+        "bindings_UxmlAttributeFlags": 0,
+        "bindingPath": "",
+        "bindingPath_UxmlAttributeFlags": 0,
+        "template": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "template_UxmlAttributeFlags": 0,
+        "templateId": "dropdown-base-regular-leading-icon-trailing-icon-label",
+        "templateId_UxmlAttributeFlags": 1
+      }
+    }
+  ],
+  "usings": [
+    {
+      "alias": "dropdown-base-regular-leading-icon-trailing-icon-label",
+      "path": "8a035ebd45efa2a4696ff010536643ba",
+      "asset": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      }
+    }
+  ]
+}

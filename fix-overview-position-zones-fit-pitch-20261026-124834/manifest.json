@@ -1,0 +1,34 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "fixed_versions": [
+    2,
+    3,
+    4
+  ],
+  "first_version_unchanged": true,
+  "fix": "move position grid inside the exact native aspect-ratio fitter that contains the pitch image",
+  "selectors": [
+    {
+      "selector": "-940000000008000",
+      "old_parent": 1010,
+      "new_parent": 2012,
+      "parent_type": "SI.Bindable.SIAspectRatioFitter",
+      "pitch_and_grid_use_same_bounds": true
+    },
+    {
+      "selector": "-940000000010020",
+      "old_parent": 1010,
+      "new_parent": 2014,
+      "parent_type": "SI.Bindable.SIAspectRatioFitter",
+      "pitch_and_grid_use_same_bounds": true
+    }
+  ],
+  "bindings_numbers_colours_geometry_and_clicks_unchanged": true,
+  "only_modified_objects": [
+    "-940000000008000",
+    "-940000000010020"
+  ],
+  "after_sha256": "15508ae0bc7ad54379a9adc2058b62bbbd811143e720311746808fdca7a23100",
+  "installed_verified": true
+}

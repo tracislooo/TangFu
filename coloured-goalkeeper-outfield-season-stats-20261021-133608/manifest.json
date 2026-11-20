@@ -1,0 +1,197 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "palette": {
+    "attack": [
+      255,
+      95,
+      95
+    ],
+    "passing": [
+      80,
+      180,
+      255
+    ],
+    "defence": [
+      100,
+      215,
+      125
+    ],
+    "other": [
+      255,
+      215,
+      80
+    ]
+  },
+  "outfielder_order": [
+    [
+      "GamesWonAndPlayed",
+      "获胜/场次",
+      "MatchesWonText",
+      "other"
+    ],
+    [
+      "PlayerOfTheMatchAwards",
+      "当场最佳",
+      "PotMAwText",
+      "other"
+    ],
+    [
+      "Goals",
+      "进球",
+      "OutfielderStatsGoalsText",
+      "attack"
+    ],
+    [
+      "ExpectedGoalsPer90",
+      "预期进球/90分钟",
+      "ExpectedGoalsPer90Text",
+      "attack"
+    ],
+    [
+      "ShotsOnTargetPer90",
+      "射正/90分钟",
+      "ShotsOnTargetPer90Text",
+      "attack"
+    ],
+    [
+      "ChancesCreated",
+      "创造机会",
+      "ChancesCreatedText",
+      "passing"
+    ],
+    [
+      "ExpectedAssistsPer90",
+      "预期助攻/90分钟",
+      "ExpectedAssistsPer90Text",
+      "passing"
+    ],
+    [
+      "KeyPasses",
+      "关键传球",
+      "KeyPassesText",
+      "passing"
+    ],
+    [
+      "PassCompletedPer90",
+      "传球成功/90分钟",
+      "PassCompletedPer90Text",
+      "passing"
+    ],
+    [
+      "KeyTackles",
+      "关键抢断",
+      "KeyTacklesText",
+      "defence"
+    ],
+    [
+      "TacklesCompletedPer90",
+      "场均抢断成功次数",
+      "TacklesCompletedPer90Text",
+      "defence"
+    ],
+    [
+      "KeyHeadersPer90",
+      "关键头球/90分钟",
+      "KeyHeadersPer90Text",
+      "defence"
+    ]
+  ],
+  "goalkeeper_order": [
+    [
+      "GamesWonAndPlayed",
+      "获胜/场次",
+      "MatchesWonText",
+      "other"
+    ],
+    [
+      "PlayerOfTheMatchAwards",
+      "当场最佳",
+      "PotMAwText",
+      "other"
+    ],
+    [
+      "Clearances",
+      "解围",
+      "ClearancesText",
+      "defence"
+    ],
+    [
+      "ExpectedGoalsPreventedPer90",
+      "预期阻止进球/90分钟",
+      "ExpectedGoalsPreventedPer90Text",
+      "defence"
+    ],
+    [
+      "TotalSavesPer90",
+      "扑救/90分钟",
+      "TotalSavesPer90Text",
+      "defence"
+    ],
+    [
+      "ConcededPer90",
+      "失球/90分钟",
+      "ConcededPer90Text",
+      "defence"
+    ],
+    [
+      "PossessionWonPer90",
+      "赢得球权/90分钟",
+      "PossessionWonPer90Text",
+      "defence"
+    ],
+    [
+      "PossessionLostPer90",
+      "丢失球权/90分钟",
+      "PossessionLostPer90Text",
+      "other"
+    ],
+    [
+      "PassCompletedPer90",
+      "传球成功/90分钟",
+      "PassCompletedPer90Text",
+      "passing"
+    ],
+    [
+      "PenaltiesFaced",
+      "点球失球/面对次数",
+      "PenaltiesFacedText",
+      "defence"
+    ],
+    [
+      "MinutesPerGoalConceded",
+      "失球间隔(分钟)",
+      "MinutesPerGoalConcededText",
+      "defence"
+    ],
+    [
+      "GoalMistakes",
+      "致命失误",
+      "GoalMistakesText",
+      "other"
+    ]
+  ],
+  "shared_fields_same_slots": true,
+  "goalkeeper_selector": "native person.IsGoalkeeper false=outfield true=goalkeeper",
+  "native_league_context_unchanged": true,
+  "native_formatters_preserved": true,
+  "conceded_interval_unit": "native minutes; not divided by 90",
+  "widgets": [
+    {
+      "widget": -940000000007000,
+      "switch": 1599,
+      "outfield": 1601,
+      "goalkeeper": 1603,
+      "compact": false
+    },
+    {
+      "widget": -940000000007002,
+      "switch": 1599,
+      "outfield": 1601,
+      "goalkeeper": 1603,
+      "compact": true
+    }
+  ],
+  "after_sha256": "37d410dfd519f9bafae444b7e3d4b2f196cf52fe85c5fc7f6f0c1ee1fea29ab3",
+  "installed_verified": true
+}

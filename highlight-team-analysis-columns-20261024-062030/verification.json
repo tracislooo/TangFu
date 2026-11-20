@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "template": "MatchViewer_12x4",
+  "private_inline_cards": [
+    {
+      "side": "Home",
+      "kind": "Heat",
+      "card": 2155,
+      "scope": 2161,
+      "setter": 2167,
+      "plot": 2179,
+      "fit": 2177,
+      "rotation_degrees": 90,
+      "source_template": "HeatMapsMatch_4x4",
+      "data_path": "heatmap.SubjectTeamPlayerData",
+      "team_binding": "match.HomeTeam",
+      "native_empty_state_preserved": true
+    },
+    {
+      "side": "Home",
+      "kind": "Pass",
+      "card": 2181,
+      "scope": 2187,
+      "setter": 2191,
+      "plot": 2203,
+      "fit": 2201,
+      "rotation_degrees": 90,
+      "source_template": "TeamPassMap_4x4",
+      "data_path": "PassMap.SubjectTeamPlayerData",
+      "team_binding": "match.HomeTeam",
+      "native_empty_state_preserved": true
+    },
+    {
+      "side": "Away",
+      "kind": "Heat",
+      "card": 2205,
+      "scope": 2211,
+      "setter": 2217,
+      "plot": 2229,
+      "fit": 2227,
+      "rotation_degrees": -90,
+      "source_template": "HeatMapsMatch_4x4",
+      "data_path": "heatmap.SubjectTeamPlayerData",
+      "team_binding": "match.AwayTeam",
+      "native_empty_state_preserved": true
+    },
+    {
+      "side": "Away",
+      "kind": "Pass",
+      "card": 2231,
+      "scope": 2237,
+      "setter": 2241,
+      "plot": 2253,
+      "fit": 2251,
+      "rotation_degrees": -90,
+      "source_template": "TeamPassMap_4x4",
+      "data_path": "PassMap.SubjectTeamPlayerData",
+      "team_binding": "match.AwayTeam",
+      "native_empty_state_preserved": true
+    }
+  ],
+  "columns_percent": [
+    25,
+    50,
+    25
+  ],
+  "upper_lower_percent": [
+    50,
+    50
+  ],
+  "geometry_checks": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "analysis_card_body": [
+        264.4,
+        158.0
+      ],
+      "contained_landscape_pitch": [
+        237.0,
+        158.0
+      ],
+      "columns_percent": [
+        25,
+        50,
+        25
+      ],
+      "side_card_heights_percent": [
+        50,
+        50
+      ],
+      "asymmetric_direction_and_bounds_checks_passed": true
+    },
+    {
+      "viewport": [
+        2526,
+        1379
+      ],
+      "analysis_card_body": [
+        355.3,
+        232.75
+      ],
+      "contained_landscape_pitch": [
+        349.12,
+        232.75
+      ],
+      "columns_percent": [
+        25,
+        50,
+        25
+      ],
+      "side_card_heights_percent": [
+        50,
+        50
+      ],
+      "asymmetric_direction_and_bounds_checks_passed": true
+    }
+  ],
+  "native_stats_only_page_and_initial_selection_unchanged": true,
+  "selector_record_and_original_style_unchanged": true,
+  "all_existing_styles_unchanged": true,
+  "outer_grids_and_custom_saved_layout_unchanged": true,
+  "native_donor_modules_unchanged": true,
+  "catalog_unchanged": true,
+  "unrelated_objects_unchanged": true,
+  "serialization_roundtrip": true,
+  "runtime_verified": false
+}

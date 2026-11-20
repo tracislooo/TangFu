@@ -1,0 +1,20 @@
+﻿根据Player.PlayerCurrentAbility自动切换卡面 v28
+
+替换本包global bundle后重启游戏。gameworld与v27相同，随包提供以便保持版本一致。
+本次只修改中间卡面：
+0–119：CA000，-910000000000003
+120–139：CA120，-910000000000004
+140–159：CA140，-910000000000005
+160–179：CA160，-910000000000006
+180–200：CA180，-910000000000007
+
+使用游戏原生BindingRemapper和BindableSwitchElement，原生函数BindIntComparisonToSwitch。
+将当前person映射为卡面局部的Player，然后监听Player.PlayerCurrentAbility。
+按>119、>139、>159、>179依次选择；只显示对应的一张卡面。
+五张图片同步自packages/ui-backgrounds_assets_common.bundle，内嵌global，引用ID不变。
+将来替换backgrounds里的图片，仍需同步global内嵌副本。
+
+卡面98%缩放、总共上移10px；头像最终70%、栏目185px、其他层级与布局保持原值。
+已重读验证层级、引用、五张纹理、预加载和0–200全部区间边界。
+PersonPicture资源及无关资源字节已核对保持不变；游戏内绑定效果待确认。
+源packages及旧版成品未覆盖。恢复可替换v27的global文件。

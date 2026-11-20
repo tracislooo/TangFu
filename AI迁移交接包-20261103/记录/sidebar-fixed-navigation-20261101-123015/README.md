@@ -1,0 +1,1 @@
+14项固定导航按指定顺序位于原生可编辑书签上方，宽100px、每项高30px。标题直接显示中文文字，通过原生MenuBody根页面及ReportBody目标页面事件跳转。下方保留原生书签与编辑入口，书签列表高160px并可滚动。仅修改TFReferenceBookmarkSidebar及其内联样式，其他资源对象保持字节一致。游戏内显示与点击尚未验证。restore-fixed-navigation.ps1撤销本次固定导航。

@@ -1,0 +1,18 @@
+match AwaySubPlayersListRow PathID=3066127884311710256 Style=-8056581158789133776
+USINGS [{'alias': 'PersonPicture', 'path': 'a3126e03e5bea6348ba86f23b5c5d7de', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.Bindable.BindingExpect CLASS=['row-direction-normal'] {"Parameters": [{"m_serialisedType": 0, "name": "player", "type": {"id": 1668771188}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}]}
+ STYLE [[131085, [0.0]], [131087, [{"unit": 1, "value": 18.0}]], [131073, ["center"]], [131088, ["flex-start"]], [458757, [{"unit": 2, "value": 100.0}, {"unit": 1, "value": 18.0}]]]
+  1011 SI.Bindable.BindingRemapper CLASS=[] {"name": "PrematchPlayerPortraitBinding", "pickingMode": 1, "Mappings": [{"m_serialisedType": 0, "from": "person", "to": {"m_path": "Player.Player"}, "type": {"id": 1145176065}}]}
+  STYLE [[131105, [{"unit": 1, "value": 20.0}]], [131087, [{"unit": 1, "value": 20.0}]], [131097, [{"unit": 1, "value": 20.0}]], [131096, [{"unit": 1, "value": 20.0}]], [131095, [{"unit": 1, "value": 20.0}]], [131094, [{"unit": 1, "value": 20.0}]], [131084, [0.0]], [131085, [0.0]], [131090, [{"unit": 1, "value": 5.0}]], [131093, [{"unit": 1, "value": 5.0}]]]
+   1013 PersonPicture CLASS=[] {"name": "PrematchPlayerPortrait", "pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "PersonPicture"}
+   STYLE [[131105, [{"unit": 2, "value": 100.0}]], [131087, [{"unit": 2, "value": 100.0}]], [131097, [{"unit": 1, "value": 0.0}]], [131096, [{"unit": 1, "value": 0.0}]], [131084, [1.0]], [131085, [1.0]]]
+  1002 UnityEngine.UIElements.VisualElement CLASS=['margin-right-global-gap-regular'] {}
+  STYLE [[131084, [0.0]], [131105, [{"unit": 1, "value": 24.0}]], [131087, [{"unit": 1, "value": 18.0}]], [131085, [0.0]], [131088, ["center"]], [131073, ["center"]], [65546, ["middle-center"]]]
+   1005 SI.Bindable.SIText CLASS=['sitext', 'text-neutral-black', 'body-md-strong'] {"name": "person_number", "DebugDisplay": "1", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Player.SquadNumber"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "IgnoreEmbeddedDataStyling": 1}
+   STYLE []
+  1003 SI.Bindable.BindingRemapper CLASS=[] {"Mappings": [{"m_serialisedType": 0, "from": "person", "to": {"m_path": "Player.Player"}, "type": {"id": 1145176065}}]}
+  STYLE []
+   1007 SI.Bindable.SIText CLASS=['sitext', 'body-md', 'text-neutral-black'] {"name": "person_name", "DebugDisplay": "Player Name", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "Person.Name"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "IgnoreEmbeddedDataStyling": 1}
+   STYLE []

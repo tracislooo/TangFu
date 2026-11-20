@@ -1,0 +1,10 @@
+﻿V49：纠正CA图片引用来源。
+五张CA图片仅保留在ui-backgrounds_assets_common.bundle中；该背景包的图片内容和文件字节保持V48。
+已移除gameworld中五张CA图片副本，将8处样式的40个纹理引用直接指向backgrounds的CAB（FileID 7）。
+gameworld仅保留界面结构、样式及跨包引用；图像数据从backgrounds加载。
+补全跨包外部引用、AssetBundle依赖、13个资源预加载范围与catalog中gameworld资源的backgrounds依赖。
+原卡面节点、能力切换、数值绑定及布局资源原始字节均保持不变。
+已在同时加载两个bundle且gameworld不含CA副本的条件下验证：全部跨包图片指针解析到backgrounds的同名纹理。
+安装更新游戏和皮肤工程的gameworld，以及游戏catalog；无需再次替换backgrounds。
+退出游戏后运行安装.ps1；回退.ps1恢复V48。游戏内实际显示待验证。
+本次已直接安装，游戏/皮肤工程gameworld与游戏catalog校验通过，backgrounds原文件保持不变。

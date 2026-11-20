@@ -1,0 +1,4 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit game first' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\four-overviews-attributes-height425-20261031-113330\backup-game\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\four-overviews-attributes-height425-20261031-113330\backup-skin\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force

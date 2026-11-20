@@ -1,0 +1,17 @@
+TF 球场图片路径修复（Windows）
+
+1. 先安装含球场照片功能的 TF 皮肤，再放好完整的球场图片包：
+   Windows「文档」\Sports Interactive\Football Manager 27\graphics\Stadiums\stadium_backgrounds
+   这个文件夹下应有 config.xml 和 images。盘符和「文档」实际位置不受限制。
+2. 正常退出 FM27，双击 TF-Stadium-Path-Fixer.exe，不需要安装 Python。
+3. 核对两个路径。工具会自动填写「文档」下的球场包路径，并尝试找 Steam 游戏。
+   如果识别不到，手动选含 fm.exe 的目录；如果更改过 FM 用户数据目录，手动选球场图片包。
+4. 点「修复球场照片路径」。看到成功后，再自行启动游戏。
+
+工具只重写已登记的 TF 球场照片路径，并同步 catalog.hash。不安装皮肤、不复制球场包、
+不改球队映射、不改存档，也不修复其他资源包 CRC 不匹配的问题。
+缺少登记中的照片会提示缺失并停止，不会写入半套配置。
+以后换球场包路径、重新安装或升级皮肤后，如白块再次出现，可以重新运行。
+
+回退：退出游戏，将成功提示中的 TF-stadium-backup-* 文件夹内 catalog.bin、
+catalog.hash 两个文件成套复制回其上级 aa 目录。只在未再更新游戏或皮肤时使用此备份。

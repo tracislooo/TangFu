@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+if ((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle').Hash.ToLower() -ne 'bdf26d221e1f249b7ef2dccfd96bf9a45df48002a34ecf98a3573b42fcc806f3') { throw 'Target changed since preparation.' }
+if ((Get-FileHash -LiteralPath 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle').Hash.ToLower() -ne 'addda8678aece51facf5c33c6714d059a539394e44774c293a91233195df9a27') { throw 'Target changed since preparation.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\match-scoreboard-left-20261102-131002\output-game\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\match-scoreboard-left-20261102-131002\output-skin\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Force

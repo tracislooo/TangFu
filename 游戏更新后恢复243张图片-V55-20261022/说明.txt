@@ -1,0 +1,9 @@
+﻿V55（2026-10-22）：以本次游戏更新后的backgrounds原包为基础，恢复V54备份中的243张自定义纹理。
+原图名称、Path ID、格式、尺寸、Alpha、mipmap和纹理设置完整保留，未对图片重新编码或压缩；包体使用LZ4重新封装。
+所有243张纹理原始字节与V54来源完全一致，全部已成功解码。
+新版65个原生资源的原始字节和原生.resS数据完整保留；原生目录、预加载和CAB不变，仅扩展自定义图片的资源目录与预加载。
+补齐PlayerTopBackground此前缺少的命名资源记录。
+范围包括101张FitnessPercentRing、25张CA、20张PA、10张HIDEstats、CAPAbg、四张90stats、70张属性徽章、10张等级图及两张PlayerTop图片。
+本次仅恢复backgrounds图片，不恢复旧版卡面、进度条、隐藏属性、体能环的界面关联；不修改gameworld、global、visualfunctions或catalog。
+游戏关闭后运行安装.ps1。回退.ps1恢复本次游戏更新后的原始背景包，不会恢复旧版整包。
+资源名、ID和格式请查看243张图片资源ID对照.txt。

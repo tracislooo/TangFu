@@ -1,0 +1,69 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "header": "体能 / 比赛状态",
+  "column_width": 100,
+  "condition": {
+    "binding": "player.Condition",
+    "ring": 22,
+    "text": "left"
+  },
+  "sharpness": {
+    "binding": "player.Sharpness",
+    "ring": 14,
+    "text": "right"
+  },
+  "formula": "direct UI 0..100 => 0..100%; no subtract-50 or multiply-2",
+  "colour": "0% red,50% yellow,100% green; label matches ring",
+  "missing": "-- and grey ring",
+  "independent_metric_cases": 308,
+  "swapped_and_missing_pairs": 6,
+  "leaf_count": 204,
+  "changed_views": [
+    "TacticTeamSelectionTableViewBothSelectionInfo",
+    "TacticTeamSelectionTableViewPossessionSelectionInfo",
+    "TacticTeamSelectionTableViewOverviewFitness",
+    "TacticTeamSelectionTableViewOverviewSelectionInfoCollapsed",
+    "TacticTeamSelectionTableViewOverviewSelectionInfo",
+    "TacticTeamSelectionTableViewPossessionSelectionInfoCollapsed"
+  ],
+  "sort_binding": {
+    "m_path": "binding.Player.Condition"
+  },
+  "sort_plugin": 11000000,
+  "header_guid": "b0d67d2c80565f64b439904509dce41f",
+  "textures_reused": true,
+  "avatar_120_percent_preserved": true,
+  "changed_objects": {
+    "ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": [
+      -970000000001000,
+      -970000000001001,
+      -970000000002000,
+      -970000000002001,
+      1
+    ],
+    "ui-tablefactories_assets_all.bundle": [
+      -7014073910555419620
+    ],
+    "ui-tableviews_assets_all.bundle": [
+      -7083952672534314139,
+      -5674792891649765512,
+      -4958880041380425397,
+      -4377572694926284365,
+      -3039883126107372778,
+      1857028660800494922
+    ]
+  },
+  "after_sha256": {
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "5d7ba7dbe1959f9ddb8839268865e8548681f9ab2fd9cbddc4a3b25d1d3486a1",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-tablefactories_assets_all.bundle": "3a563c9c5ecba638c805f439b6899048dfa04bd9536dd6c6b429b790cbf8eb0a",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-tableviews_assets_all.bundle": "c942e5ea25e06c4d12f7e6842da1c919681559cb1624f7240006775e2edba864",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "5d7ba7dbe1959f9ddb8839268865e8548681f9ab2fd9cbddc4a3b25d1d3486a1",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-tablefactories_assets_all.bundle": "3a563c9c5ecba638c805f439b6899048dfa04bd9536dd6c6b429b790cbf8eb0a",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-tableviews_assets_all.bundle": "c942e5ea25e06c4d12f7e6842da1c919681559cb1624f7240006775e2edba864",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.bin": "4cc5df9804249d47950f9309ccff8633f7e20d9e71d4d0eb19511fe686aa6689",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.hash": "d9db8370b7f775470d111fb730ef4a9a07f37562157db1ca5ae41c7d09c3fa73",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\catalog.bin": "4cc5df9804249d47950f9309ccff8633f7e20d9e71d4d0eb19511fe686aa6689"
+  },
+  "installed_verified": true
+}

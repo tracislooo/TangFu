@@ -1,0 +1,26 @@
+match TunnelInterviewPanel PathID=-2041262117121709923 Style=8734024708942047389
+USINGS [{'alias': 'FigmaBaseMeetingTemplate', 'path': '6496487512db5eb1a8818641b4789414', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'RibbonWithContinueButtonTemplate', 'path': 'b427e957e0851fc42be26369ae97a158', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'TopBarMatchFlow', 'path': '63d268d6666f1764bbba34a3ff60ef9c', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'dashboard-hud-continue_button-default', 'path': '11b8dde7d3a30f74aaa9f5375a68f04e', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.Bindable.BindingRoot CLASS=['base-template-grow'] {"name": "BindingRoot_TunnelInterview", "Parameters": [{"m_serialisedType": 0, "name": "match", "type": {"id": 1835103331}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}, {"m_serialisedType": 0, "name": "fullscreencardtitle", "type": {"id": 0}, "isOptional": 1, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}], "ValueProperties": [{"m_name": "speaktoisontheright", "m_scopeValue": {"m_serializedData": "Bool|0|"}}]}
+ STYLE []
+  1002 SI.Bindable.SIStyleSetter CLASS=[] {"BindFunction": {"m_target": {"m_guid": "d47d9f6bfe419344692270d5af16c5ef"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "app.GridBreakpointIsSmall%", "\"SI.VisualScripting.StringVisualArg", "\"SI.VisualScripting.StringVisualArg", "&fullscreen-meeting-with-larger-speakto%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+  STYLE [[131084, [1.0]]]
+   1004 SI.UI.ComponentElement CLASS=['height-100-percent'] {"m_components": [{"rid": 1025}, {"rid": 1026}]}
+   STYLE [[131084, [1.0]]]
+    1006 SI.Bindable.BindingVariablesComponent CLASS=None {}
+    STYLE []
+    1007 SI.Bindable.BindingRemapperComponent CLASS=None {}
+    STYLE []
+    1008 SI.Bindable.SIVisible CLASS=['midnight-background-colour'] {"name": "SIVisible_NotShowPhonePanels", "InvertDirectBinding": 1, "Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "config.ShowPhonePanels"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+    STYLE []
+     1012 UnityEngine.UIElements.VisualElement CLASS=['row-direction-inverted', 'margin-horizontal-global-gap-large'] {"name": "Header"}
+     STYLE [[131093, [{"unit": 1, "value": 6.0}]], [131090, [{"unit": 1, "value": 6.0}]], [131088, ["space-between"]]]
+      1027 dashboard-hud-continue_button-default CLASS=[] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "dashboard-hud-continue_button-default"}
+      STYLE []
+      1028 TopBarMatchFlow CLASS=[] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "TopBarMatchFlow"}
+      STYLE []
+    1009 RibbonWithContinueButtonTemplate CLASS=[] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "RibbonWithContinueButtonTemplate"}
+    STYLE []
+    1010 FigmaBaseMeetingTemplate CLASS=['flex-grow-class'] {"pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "FigmaBaseMeetingTemplate"}
+    STYLE []

@@ -1,0 +1,81 @@
+from pathlib import Path
+import sys,json,hashlib,ast,importlib.util,re
+from collections import Counter
+R=Path.cwd();sys.path.insert(0,str(R/'.codex-deps'));import UnityPy
+GAME=Path('F:/Steam/steamapps/common/Project Taco/fm_Data/StreamingAssets/aa/StandaloneWindows64')
+OUT=next(p for p in sorted(R.glob('updated-game-last-skin-migration-*'),reverse=True) if (p/'manifest.json').exists())
+m=json.loads((OUT/'manifest.json').read_text('utf8'));names=list(m['after_sha256']);env={n:UnityPy.load(str(OUT/n)) for n in names}
+bg='ui-backgrounds_assets_common.bundle';env[bg]=UnityPy.load(str(GAME/bg));afs={a.name.lower():a for e in env.values() for a in e.assets};objects={n:{o.path_id:o for o in e.objects} for n,e in env.items()}
+poolmap={2:'floats',3:'dimensions',4:'colors',5:'strings',6:'assets',7:'strings',8:'strings'}
+src=ast.parse((R/'add-card-six-ratings.py').read_text('utf8'));exec(compile(ast.Module(body=[n for n in src.body if isinstance(n,ast.FunctionDef) and n.name=='validate_ui'],type_ignores=[]),'validator','exec'))
+checks=[];pointers_checked=0
+for n in names:
+ before=UnityPy.load(str(OUT/'backup-game'/n));bm=next(o.read_typetree() for o in before.objects if o.type.name=='AssetBundle');am=next(o.read_typetree() for o in env[n].objects if o.type.name=='AssetBundle')
+ pairs=lambda meta:Counter((k,v['asset']['m_FileID'],v['asset']['m_PathID']) for k,v in meta['m_Container'])
+ assert not (pairs(bm)-pairs(am)),('native container entries lost',n,pairs(bm)-pairs(am))
+for item in m['stage_assets']:
+ if item['source_id'] in [-6400646727147995419,-3862538512510687317,168226888031714516,5938222404796150770,7199728689344018492,5775949770471550939,-4194025542157271532]:assert item['replaces_native'],item
+for item in m['stage_assets']:
+ n=item['bundle'];o=objects[n][item['id']];d=o.read_typetree()
+ def walk(v):
+  global pointers_checked
+  if isinstance(v,dict):
+   if set(v)=={'m_FileID','m_PathID'} and v['m_PathID']:
+    fid=v['m_FileID'];cab=(o.assets_file.name if not fid else o.assets_file.externals[fid-1].name).lower()
+    if cab in afs:assert v['m_PathID'] in afs[cab].objects,(d.get('m_Name'),cab,v)
+    pointers_checked+=1
+   for x in v.values():walk(x)
+  elif isinstance(v,list):
+   for x in v:walk(x)
+ walk(d)
+ if 'm_VisualTree' in d:
+  p=d['inlineSheet'];a=o.assets_file if not p['m_FileID'] else afs[o.assets_file.externals[p['m_FileID']-1].name.lower()]
+  validate_ui(d,a.objects[p['m_PathID']].read_typetree())
+  checks.append(d['m_Name'])
+W=next(n for n in names if 'gameworld' in n)
+for pid in [-930000000001001,-930000000001003]:
+ d=objects[W][pid].read_typetree();rs={r['rid']:r for r in d['references']['RefIds']};s=objects[W][d['inlineSheet']['m_PathID']].read_typetree()
+ columns=[]
+ for i in [1,2,3]:
+  node=next(r for r in rs.values() if rs.get(r.get('data',{}).get('m_SerializedData',{}).get('rid'),{}).get('data',{}).get('name')=='RightHiddenAttributesColumn'+str(i))
+  p=next(p for p in s['m_Rules'][node['data']['m_RuleIndex']]['m_Properties'] if p['m_Id']==131105)['m_Values'][0]
+  assert abs(s['dimensions'][p['valueIndex']]['value']-100/3)<.001
+  columns.append(len(node['data']['m_Children']))
+ assert columns==[5,4,4]
+ sd=rs[rs[1002]['data']['m_SerializedData']['rid']]['data'];assert [sd['Settings']['m_settings'][i]['PredefinedSize'] for i in [0,2,4]]==[380,860,295]
+spec=importlib.util.spec_from_file_location('cat',R/'catalog-binary-v35.py');cm=importlib.util.module_from_spec(spec);spec.loader.exec_module(cm);cat=cm.Catalog((OUT/'catalog.bin').read_bytes());old=cm.Catalog((OUT/'backup-game/catalog.bin').read_bytes());assert set(dict(old.keys()))<=set(dict(cat.keys()))
+locations={}
+for k,ls in cat.keys():
+ for (loc,) in cat.array(ls,'I'):locations[loc]=cat.location(loc)
+seen=set();active=set()
+def visit(loc):
+ if loc in seen:return
+ assert loc not in active,('catalog dependency cycle',cat.location(loc)['internal']);active.add(loc)
+ for dep in cat.location(loc)['dependencies']:visit(dep)
+ active.remove(loc);seen.add(loc)
+for loc in locations:visit(loc)
+for guid in m['registered_custom_guids']:assert len(cat.locations(guid))==1
+keys=set(dict(cat.keys()))
+def guids(v):
+ if isinstance(v,dict):
+  if v.get('m_AssetGUID'):yield v['m_AssetGUID']
+  if v.get('m_target',{}).get('m_guid'):yield v['m_target']['m_guid']
+  for u in v.get('m_Usings',[]):
+   if u.get('path'):yield u['path']
+  for x in v.values():yield from guids(x)
+ elif isinstance(v,list):
+  for x in v:yield from guids(x)
+for item in m['stage_assets']:
+ d=objects[item['bundle']][item['id']].read_typetree()
+ for guid in guids(d):assert guid in keys,('missing asset GUID',d.get('m_Name'),guid)
+exec(compile(ast.Module(body=[n for n in src.body if isinstance(n,ast.FunctionDef) and n.name in ['gid','check_graph','graph_runner']],type_ignores=[]),'graph validator','exec'))
+G=next(n for n in names if 'globalvisual' in n)
+oldglobal={o.path_id:o for o in UnityPy.load(str(OUT/'backup-skin'/G)).objects}
+for pid in list(range(-940000000000105,-940000000000099))+list(range(-940000000000204,-940000000000199)):
+ d=objects[G][pid].read_typetree();check_graph(d);run=graph_runner(d)
+ oldrun=graph_runner(oldglobal[pid].read_typetree());count=len(d['m_inputs'])-2
+ for value in [1,10,20,None]:
+  inputs=[value]*count;assert run(inputs)==oldrun(inputs),(pid,'weighted rating changed',value)
+assert hashlib.sha256((GAME/bg).read_bytes()).hexdigest()==m['background_bundle_unchanged_sha256']
+audit={'valid_visual_trees':checks,'valid_tree_count':len(checks),'checked_object_pointers':pointers_checked,'right_hidden_columns':[5,4,4],'column_width_percent':100/3,'region_sizes':[380,860,295],'catalog_dependency_cycles':False,'original_catalog_keys_preserved':True,'all_original_container_entries_preserved':True,'native_ui_overrides_mapped_correctly':True,'weighted_rating_functions_match_previous':True}
+(OUT/'verification.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2),'utf8');print(json.dumps({'output':str(OUT),**audit},ensure_ascii=True))

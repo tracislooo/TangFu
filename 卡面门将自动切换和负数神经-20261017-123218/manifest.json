@@ -1,0 +1,175 @@
+{
+  "installed": true,
+  "runtime_verified": false,
+  "condition": "person.IsGoalkeeper",
+  "goalkeeper_titles": [
+    "扑救",
+    "站位",
+    "出球",
+    "反应",
+    "神经",
+    "速度"
+  ],
+  "outfield_titles_preserved": [
+    "速度",
+    "射门",
+    "传球",
+    "盘带",
+    "防守",
+    "身体"
+  ],
+  "goalkeeper_formulas": [
+    {
+      "title": "扑救",
+      "code": "GKSaving",
+      "weights": [
+        [
+          "AerialReach",
+          30
+        ],
+        [
+          "Reflexes",
+          30
+        ],
+        [
+          "Bravery",
+          10
+        ],
+        [
+          "Agility",
+          10
+        ],
+        [
+          "JumpingReach",
+          10
+        ],
+        [
+          "Positioning",
+          10
+        ]
+      ],
+      "path_id": -940000000000200,
+      "guid": "6c125d3a23dc51e9b8ce37f8054648bb",
+      "paths": [
+        "person.attributeaerialreach.AttributeMinValue",
+        "person.attributereflexes.AttributeMinValue",
+        "person.attributebravery.AttributeMinValue",
+        "person.attributeagility.AttributeMinValue",
+        "person.attributejumpingreach.AttributeMinValue",
+        "person.attributepositioning.AttributeMinValue"
+      ]
+    },
+    {
+      "title": "站位",
+      "code": "GKPositioning",
+      "weights": [
+        [
+          "Positioning",
+          70
+        ],
+        [
+          "CommandOfArea",
+          30
+        ]
+      ],
+      "path_id": -940000000000201,
+      "guid": "146a8029466c5de89956cfb382ba74d8",
+      "paths": [
+        "person.attributepositioning.AttributeMinValue",
+        "person.attributecommandofarea.AttributeMinValue"
+      ]
+    },
+    {
+      "title": "出球",
+      "code": "GKDistribution",
+      "weights": [
+        [
+          "Passing",
+          55
+        ],
+        [
+          "Kicking",
+          45
+        ]
+      ],
+      "path_id": -940000000000202,
+      "guid": "d748ab02340e5624b6e659c804546fb5",
+      "paths": [
+        "person.attributepassing.AttributeMinValue",
+        "person.attributekicking.AttributeMinValue"
+      ]
+    },
+    {
+      "title": "反应",
+      "code": "GKReflexes",
+      "weights": [
+        [
+          "Reflexes",
+          70
+        ],
+        [
+          "Agility",
+          10
+        ],
+        [
+          "Anticipation",
+          10
+        ],
+        [
+          "WorkRate",
+          10
+        ]
+      ],
+      "path_id": -940000000000203,
+      "guid": "360feb306d035e31981fd2c0c0b861e9",
+      "paths": [
+        "person.attributereflexes.AttributeMinValue",
+        "person.attributeagility.AttributeMinValue",
+        "person.attributeanticipation.AttributeMinValue",
+        "person.attributeworkrate.AttributeMinValue"
+      ]
+    },
+    {
+      "title": "神经",
+      "code": "GKNerves",
+      "weights": [
+        [
+          "Eccentricity",
+          90
+        ],
+        [
+          "Composure",
+          10
+        ]
+      ],
+      "path_id": -940000000000204,
+      "guid": "60f0b52a741150e49f1a7c1547bae1f8",
+      "paths": [
+        "person.attributeeccentricity.AttributeMinValue",
+        "person.attributecomposure.AttributeMinValue"
+      ]
+    }
+  ],
+  "goalkeeper_speed_reuses_outfield_speed_function": true,
+  "nerves_negative": true,
+  "rounding": "final half-up, negative ties away from zero",
+  "tests_passed": 4489,
+  "new_function_count": 5,
+  "negative_value_width": 34,
+  "second_version_and_outfield_functions_preserved": true,
+  "portrait_card_textures_and_layout_preserved": true,
+  "unchanged_global_objects_verified": 4009,
+  "unchanged_world_objects_verified": 10314,
+  "before_sha256": {
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle": "2ad7bb01559710186552c59568b2f2549c750db863e9835fb12c30e1a72eaadf",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "615953195877f0f16c6eaca8f7bbc745c90e613204e41b3b7f54338b983636a6",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle": "2ad7bb01559710186552c59568b2f2549c750db863e9835fb12c30e1a72eaadf",
+    "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "615953195877f0f16c6eaca8f7bbc745c90e613204e41b3b7f54338b983636a6",
+    "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.bin": "60d1ec958ea9ef79e5683b2c8ba807de77c71c414315fa36d6680bf37d876d8b"
+  },
+  "after_sha256": {
+    "ui-visualtreeassets_assets_globalvisualtreeassetpreload.bundle": "3140576adb3d1699164a76aed449b155cd76d774ccec4bcdb5154df0166d6358",
+    "ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle": "2da4e563dc64bffb01fe6c2853d5a5cf8824f69860a63c46abbec8978807de83"
+  },
+  "after_catalog_sha256": "3564c26b40b39c217854c46ec6938d6d7812a1637fbf4ecc267b7b5eab6b66c6"
+}

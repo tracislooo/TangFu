@@ -1,0 +1,4 @@
+﻿$ErrorActionPreference = "Stop"
+if (Get-Process -Name fm -ErrorAction SilentlyContinue) { throw 'Exit Football Manager first.' }
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\match-scoreboard-left-20261102-131002\backup-game\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath 'G:\Doc\ChatGPT\New project\match-scoreboard-left-20261102-131002\backup-skin\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_matchvisualtreeassetpreload.bundle' -Force

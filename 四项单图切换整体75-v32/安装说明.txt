@@ -1,0 +1,18 @@
+﻿四项联赛统计：每项单图切换、图文整体75% v32
+
+退出游戏，把本包两份bundle一起替换到之前的游戏资源目录，再重新启动。
+必须一起替换global和ui-visualfunctions_assets_all.bundle。
+
+每项现在只有一个SIRenderTextureImage控件。按实际数值选择level001–level010，
+直接替换这个控件的Texture2D，不再叠放十个图片或依赖隐藏层。
+沿用新表的四组区间，数值与标题沿用已成功显示的联赛统计绑定。
+图、数值、标题整体统一缩放为v31的75%，四个等宽槽位与间距保持原位。
+栏目仍185px，统计行仍80px，Actions及其余布局不变。
+
+视觉函数SetSIRenderTextureImage增加数字输入分支，使用TryCastToFloat再比较小数。
+原有Texture2D输入继续走原始贴图分支；其余函数与资源字节均已核对不变。
+十张纹理在函数bundle内本地引用，不需要修改Addressables catalog。
+
+已重读检查单图结构、缩放、函数图连接、数值分档、纹理及无关资源字节。
+游戏内实际显示与刷新仍需运行游戏确认。
+源packages和游戏安装文件未覆盖。恢复请使用v31的global与原visualfunctions文件。

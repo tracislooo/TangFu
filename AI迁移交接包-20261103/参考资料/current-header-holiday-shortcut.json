@@ -1,0 +1,173 @@
+{
+  "record_date": "2026-10-31",
+  "feature": "FM27 right header holiday shortcut",
+  "maintenance_guide": "G:\\Doc\\ChatGPT\\New project\\FM27-右上角度假快捷区-最新版维护说明.md",
+  "final_patch_chain": [
+    "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202",
+    "G:\\Doc\\ChatGPT\\New project\\header-holiday-default-next-match-20261029-115146",
+    "G:\\Doc\\ChatGPT\\New project\\menu-messages-holiday-width140-20261031-112655",
+    "G:\\Doc\\ChatGPT\\New project\\primary-messages-panel-navigation-fix-20261031-114018",
+    "G:\\Doc\\ChatGPT\\New project\\primary-competitions-youth-staff-20261031-120056",
+    "G:\\Doc\\ChatGPT\\New project\\primary-shortcuts-language-layout-fix-20261031-201911",
+    "G:\\Doc\\ChatGPT\\New project\\primary-shortcuts-no-hover-20261031-203924",
+    "G:\\Doc\\ChatGPT\\New project\\primary-staff-recruitment-database-20261031-213236",
+    "G:\\Doc\\ChatGPT\\New project\\primary-fixture-schedule-20261101-095427",
+    "G:\\Doc\\ChatGPT\\New project\\primary-nav-compact-fixture-badge-20261101-103219",
+    "G:\\Doc\\ChatGPT\\New project\\primary-nav-font70-20261101-112732",
+    "G:\\Doc\\ChatGPT\\New project\\primary-data-medical-fixture-order-20261101-112758",
+    "G:\\Doc\\ChatGPT\\New project\\primary-nav-font85-dividers-20261102-094731",
+    "G:\\Doc\\ChatGPT\\New project\\primary-nav-tight-spacing-half-dropdown-20261102-095715",
+    "G:\\Doc\\ChatGPT\\New project\\secondary-tabbar-match-sidebar-20261102-102031"
+  ],
+  "rejected_crashing_patch": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-113617",
+  "default": {
+    "label": "Next match",
+    "zero_based_index_for_this_build": 2,
+    "initializer_guid": "50902af85e1d1534cabaecf7660bda36",
+    "recheck_option_order_after_update": true
+  },
+  "layout": {
+    "placement": "between clock and original continue button",
+    "width_logical_units": 140,
+    "rows": [
+      "return date dropdown",
+      "confirm holiday"
+    ],
+    "height_token": "--interaction-global-height-lg",
+    "height_token_location": "regular AlwaysAppliedStyleSheet only"
+  },
+  "native_can_confirm_binding": "holiday.CanConfirm",
+  "confirmation_order": [
+    "set holiday.ReturnDateType from holiday.ReturnDateDropdownSelectedOption.PropertyValue",
+    "native GoOnHoliday event"
+  ],
+  "crash_prevention": {
+    "no_new_inline_variable_or_function_handles": true,
+    "forbidden_inline_handle_types": [
+      8,
+      10
+    ]
+  },
+  "rebuild_script": "G:\\Doc\\ChatGPT\\New project\\add-header-holiday-shortcut.py",
+  "default_only_script": "G:\\Doc\\ChatGPT\\New project\\set-header-holiday-default-next-match.py",
+  "installed_files_verified": [
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "d2994f57a4bfc03f4d940d77541e64aa1c4e6642cbb511afec11cb4f5178516a",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-default-next-match-20261029-115146\\game\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "reference_payload_sha256": "d2994f57a4bfc03f4d940d77541e64aa1c4e6642cbb511afec11cb4f5178516a"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "d2994f57a4bfc03f4d940d77541e64aa1c4e6642cbb511afec11cb4f5178516a",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-default-next-match-20261029-115146\\skin\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "reference_payload_sha256": "d2994f57a4bfc03f4d940d77541e64aa1c4e6642cbb511afec11cb4f5178516a"
+    },
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-styles_assets_default.bundle",
+      "sha256": "3851ba360bfe3ab62e63db77585694f3f9861523ba8c4f7eb4ed540a326a2f59",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\game\\ui-styles_assets_default.bundle",
+      "reference_payload_sha256": "3851ba360bfe3ab62e63db77585694f3f9861523ba8c4f7eb4ed540a326a2f59"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-styles_assets_default.bundle",
+      "sha256": "3851ba360bfe3ab62e63db77585694f3f9861523ba8c4f7eb4ed540a326a2f59",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\skin\\ui-styles_assets_default.bundle",
+      "reference_payload_sha256": "3851ba360bfe3ab62e63db77585694f3f9861523ba8c4f7eb4ed540a326a2f59"
+    },
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.bin",
+      "sha256": "b3b34aac59a071cffeb1bd68b21d401b5e112c0a37db21e2c7ba57afaeb22bf9",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\game\\catalog.bin",
+      "reference_payload_sha256": "b3b34aac59a071cffeb1bd68b21d401b5e112c0a37db21e2c7ba57afaeb22bf9"
+    },
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Project Taco\\fm_Data\\StreamingAssets\\aa\\catalog.hash",
+      "sha256": "bdcbb16195e72546952aebbaff618e3d770feaaa767d6f86685470b3be9e0708",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\game\\catalog.hash",
+      "reference_payload_sha256": "bdcbb16195e72546952aebbaff618e3d770feaaa767d6f86685470b3be9e0708"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\catalog.bin",
+      "sha256": "b3b34aac59a071cffeb1bd68b21d401b5e112c0a37db21e2c7ba57afaeb22bf9",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\skin\\catalog.bin",
+      "reference_payload_sha256": "b3b34aac59a071cffeb1bd68b21d401b5e112c0a37db21e2c7ba57afaeb22bf9"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\catalog.hash",
+      "sha256": "bdcbb16195e72546952aebbaff618e3d770feaaa767d6f86685470b3be9e0708",
+      "reference_payload": "G:\\Doc\\ChatGPT\\New project\\header-holiday-shortcut-20261029-114202\\skin\\catalog.hash",
+      "reference_payload_sha256": "bdcbb16195e72546952aebbaff618e3d770feaaa767d6f86685470b3be9e0708"
+    }
+  ],
+  "game_update_policy": "Rebuild on updated native bundles and catalog; never copy these old complete bundles over an updated game.",
+  "verification": {
+    "crash_fixed_build_loaded_save_successfully": true,
+    "native_dropdown_order_observed": true,
+    "final_index2_patch_static_and_install_verified": true,
+    "final_index2_runtime_display_verified": false,
+    "actual_holiday_return_flow_verified": false
+  },
+  "user_preference": "Do not operate mouse, windows or game or launch the game for tests without new explicit authorization.",
+  "current_game_location": {
+    "confirmed_on": "2026-10-30",
+    "applies_to": "Pinned chats 1-14 and subsequent game modifications",
+    "game_root": "F:/Steam/steamapps/common/Football Manager 27",
+    "aa_root": "F:/Steam/steamapps/common/Football Manager 27/fm_Data/StreamingAssets/aa",
+    "bundle_root": "F:/Steam/steamapps/common/Football Manager 27/fm_Data/StreamingAssets/aa/StandaloneWindows64",
+    "obsolete_game_root": "F:/Steam/steamapps/common/Project Taco",
+    "skin_packages": "G:/Doc/FM Skin Builder/skins/tf27-01/packages",
+    "policy": "Use current paths before running old scripts; preserve historical backups and transaction records."
+  },
+  "historical_path_notice": "installed_files_verified和reference_payload为历史记录，实际后续目标以current_game_location为准。",
+  "latest_patch": "G:\\Doc\\ChatGPT\\New project\\secondary-tabbar-match-sidebar-20261102-102031",
+  "latest_patch_installed_files_verified": [
+    {
+      "target": "F:\\Steam\\steamapps\\common\\Football Manager 27\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "dd76e56e95851ce9a31a8076adf1e5ff878be6fd0d7b427890b433259edb709a"
+    },
+    {
+      "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+      "sha256": "322baa720b2f26df1f3e3bea97392b6bc8e105836a5e74a224a348d539137dbb"
+    }
+  ],
+  "primary_messages_shortcut": {
+    "placement": "after CLUB, outside its ButtonGroup",
+    "style_source": "native Club navigation button classes",
+    "label_binding_source": "PhoneDashboardHeaderMessages.Messages SIText.TextBinding",
+    "event_source": "PortalSubtabs native Overview and Messages panel-open definitions",
+    "target": "PortalScreen then PortalMessagesTool",
+    "target_binding": "human.HumanPortalCurrentMessageToOpen",
+    "translation_function_guid": "eae2be944eee9e2449baef416111a087",
+    "runtime_verified": false,
+    "target_panel_guid": "b557c0aee6f6fcb4eb20a1212a26b388",
+    "parameters": {
+      "portalsourceid": "const.One",
+      "team": "human.Team",
+      "newsitem": "human.HumanPortalCurrentMessageToOpen"
+    },
+    "previous_shortcut_event_rejected_by_runtime_feedback": true
+  },
+  "latest_patch_script": "G:\\Doc\\ChatGPT\\New project\\add-menu-messages-and-narrow-holiday.py",
+  "navigation_fix_script": "G:\\Doc\\ChatGPT\\New project\\fix-primary-messages-panel-navigation.py",
+  "additional_shortcuts_index": "G:\\Doc\\ChatGPT\\New project\\current-primary-navigation-shortcuts.json",
+  "secondary_navigation_style": {
+    "installed": true,
+    "patch": "G:\\Doc\\ChatGPT\\New project\\secondary-tabbar-match-sidebar-20261102-102031",
+    "script": "G:\\Doc\\ChatGPT\\New project\\match-secondary-tabbar-to-sidebar.py",
+    "color": "#263445",
+    "alpha": 1,
+    "source": "installed game sidebar container background",
+    "runtime_verified": false,
+    "installed_files": [
+      {
+        "target": "F:\\Steam\\steamapps\\common\\Football Manager 27\\fm_Data\\StreamingAssets\\aa\\StandaloneWindows64\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+        "sha256": "dd76e56e95851ce9a31a8076adf1e5ff878be6fd0d7b427890b433259edb709a"
+      },
+      {
+        "target": "G:\\Doc\\FM Skin Builder\\skins\\tf27-01\\packages\\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle",
+        "sha256": "322baa720b2f26df1f3e3bea97392b6bc8e105836a5e74a224a348d539137dbb"
+      }
+    ]
+  }
+}

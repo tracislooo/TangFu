@@ -1,0 +1,117 @@
+
+ ClubScreen usings []
+ 1000 UXML  [] {} {}
+  1001 ComponentElement  ['flex-grow-class'] {} {}
+   1002 BindingRootComponent  None {} {}
+   1003 EventTriggerComponent  None {} {}
+   1004 BindingRemapper TeamAndPersonRemapper ['flex-grow-class'] {} {'Mappings': [{'m_serialisedType': 0, 'from': 'person', 'to': {'m_path': 'human'}, 'type': {'id': 0}}, {'m_serialisedType': 0, 'from': 'team', 'to': {'m_path': 'human.Club.MainTeam'}, 'type': {'id': 0}}, {'m_serialisedType': 0, 'from': 'club', 'to': {'m_path': 'human.Club'}, 'type': {'id': 1145176067}}]}
+    1006 SIImage Card-frame ['siimage', 'padding-horizontal-global-padding-none', 'justify-content-space-between', 'flex-grow-class', 'align-self-stretch-class'] {131101: [0.0], 131098: [0.0], 458753: [{'m_ValueType': 1, 'valueIndex': 6}], 196610: [{'r': 0.7058823704719543, 'g': 0.7058823704719543, 'b': 0.7058823704719543, 'a': 1.0}], 131105: [{'m_ValueType': 1, 'valueIndex': 2}], 131087: [{'m_ValueType': 1, 'valueIndex': 2}]} {}
+     1010 ComponentElement  ['flex-grow-class'] {} {}
+      1012 BindingSetterComponent  None {} {}
+      1013 BindingVariablesComponent  None {} {}
+      1014 SISafeAreaElement Overview ['flex-grow-class'] {} {}
+       1016 VisualElement Content ['base-layer-content', 'flex-grow-class'] {} {}
+        1021 BindableSwitchElement IsFMC ['flex-grow-class'] {} {}
+         1025 ScalableBindableGridLayoutElement FM ['flex-grow-class'] {} {'Bindings': {'m_gridCompositionSet': {'m_FileID': 2, 'm_PathID': -2129391554513288874}, 'm_nameBindings': [{'name': 'isonmainscreen', 'path': {'m_path': 'isonmainscreen'}, 'method': 0}, {'name': 'club', 'path': {'m_path': 'club'}, 'method': 0}, {'name': 'team', 'path': {'m_path': 'team'}, 'method': 0}, {'name': 'teamcontainer', 'path': {'m_path': 'teamcontainer'}, 'method': 0}, {'name': 'ActionsSection', 'path': {'m_path': 'ActionsSection'}, 'method': 0}]}}
+         1026 MultiGridLayoutElement FMC ['flex-grow-class'] {} {}
+       1017 SIVisible  [] {131102: ['absolute'], 131103: [0.0]} {}
+        1023 VisualElement Debug ['row-direction-normal'] {131084: [0.0], 131103: [{'m_ValueType': 1, 'valueIndex': 2}], 131102: ['relative']} {}
+         1028 SIButton DebugClub ['align-items-stretch'] {131102: ['relative'], 131103: [{'m_ValueType': 1, 'valueIndex': 2}]} {}
+
+ ClubSite usings [{'alias': 'FigmaBaseSiteTemplate', 'path': 'c6c3d02f9ce11f94dba34bfc175248dd', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'QuickActionMenuButtons', 'path': 'dc24eadfcea81c74aadad3ac0e612d83', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'buttons-button-secondary-default', 'path': '686b70f4abfb585478570a37ebf49646', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+ 1000 UXML  [] {} {}
+  1001 BindingRoot BindingRoot ['flex-grow-class'] {} {}
+   1002 BindingVariables  ['flex-grow-class'] {} {}
+    1004 FigmaBaseSiteTemplate  ['flex-grow-class'] {} {}
+    1005 ComponentElement  [] {} {}
+     1026 BindingRemapperComponent  None {} {}
+     1027 BindingSetterComponent  None {} {}
+     1028 QuickActionMenuButtons  ['quick-action-buttons-template-layout', 'quick-action-with-action'] {} {}
+    1006 SIVisible  [] {131102: ['absolute'], 131089: [0.0], 131103: [{'unit': 1, 'value': 50.0}], 131080: [{'m_ValueType': 1, 'valueIndex': 2}]} {}
+     1030 SIScrollView  [] {} {}
+      1044 VisualElement Debug ['row-direction-normal'] {131084: [0.0], 131103: [{'m_ValueType': 1, 'valueIndex': 2}], 131102: ['relative'], 131074: ['flex-end']} {}
+       1046 buttons-button-secondary-default DebugClub ['padding-right-global-padding-regular'] {} {}
+       1047 buttons-button-secondary-default Actions ['padding-right-global-padding-regular'] {} {}
+
+ ClubSiteBlock usings [{'alias': 'DropdownWithArrowsRightAligned', 'path': '9c80d5ebe591c2e4ea21898f555c9d23', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'HideTiles', 'path': '64bfe0dd59ca83a40913cf19bda2221a', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'NewsTileStatic_4x4', 'path': '4a6b79ae24daec54284a9c3cc63eb824', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'NoNewsSiteBlock', 'path': 'acb31878cc8833443a45165a46e0a99d', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'ShowTiles', 'path': 'e998ff337fcff4f44bb9273d6919ba58', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'dropdown-base-regular-label', 'path': 'c73287088edb0ba4889b643cb7de7e87', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'layout-divider-solid-horizontal', 'path': '54ffead3e652b1541aab0ebadd074df1', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'layout-divider-solid-vertical', 'path': 'e06a1ab43169d1c44bc53c2c069f44e1', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'title-link', 'path': '6c9cd961ed7b4ab40b72bdd597a2703c', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+ 1000 UXML  [] {} {}
+  1001 ComponentElement  ['flex-grow-class'] {} {}
+   1002 BindingExpectComponent  None {} {}
+   1003 BindingVariablesComponent  None {} {}
+   1004 VisualElement  ['flex-grow-class', 'siblock-border'] {} {}
+    1007 BindingRemapper  ['flex-grow-class', 'row-direction-normal', 'padding-horizontal-global-padding-extra-large', 'padding-top-global-padding-extra-large', 'padding-bottom-global-padding-extra-large'] {} {'Mappings': [{'m_serialisedType': 0, 'from': 'team', 'to': {'m_path': 'club.MainTeam'}, 'type': {'id': 1145176088}}, {'m_serialisedType': 0, 'from': 'Filter', 'to': {'m_path': 'team.SquadFilter'}, 'type': {'id': 1718185076}}, {'m_serialisedType': 0, 'from': 'tactic', 'to': {'m_path': 'team.Tactic'}, 'type': {'id': 2003981122}}, {'m_serialisedType': 0, 'from': 'reportcontextteam', 'to': {'m_path': 'team'}, 'type': {'id': 1145176088}}, {'m_serialisedType': 0, 'from': 'NewsContextTeam', 'to': {'m_path': 'club.MainTeam'}, 'type': {'id': 1145176088}}]}
+     1014 VisualElement FirstTeam [] {131105: [{'unit': 2, 'value': 27.0}]} {}
+      1025 title-link  ['margin-bottom-16'] {} {}
+      1026 StreamedTable  [] {} {}
+     1015 layout-divider-solid-vertical Divider1 ['margin-horizontal-global-gap-large'] {} {}
+     1016 VisualElement About [] {131105: [{'unit': 2, 'value': 25.0}]} {}
+      1029 title-link  ['margin-bottom-16'] {} {}
+      1030 SIScrollView  ['flex-grow-class', 'align-self-stretch'] {} {}
+       1050 SIText ClubInfoText ['body-md', 'white', 'margin-bottom-12'] {} {}
+       1051 SIVisible InactiveClubCheck [] {} {}
+        1073 VisualElement LeagueHistory ['align-items-start', 'greyed-out-background-colour', 'sitiles-padding', 'report-states-card-states-save-load-generic', 'margin-bottom-12'] {131087: [{'unit': 1, 'value': 188.0}]} {}
+         1093 VisualElement  ['row-direction-normal', 'margin-bottom-8'] {} {}
+          1118 SIText LeagueHistoryText ['heading-xsmall-14px'] {} {}
+         1094 BindingSetter  ['width-100-percent', 'flex-grow-class'] {} {}
+          1120 FMLineChart  ['fm-league-history-chart', 'padding-left-global-padding-regular', 'margin-bottom-8'] {} {}
+       1052 VisualElement ClubHonours ['align-items-start', 'greyed-out-background-colour', 'sitiles-padding', 'report-states-card-states-save-load-generic', 'margin-bottom-8'] {} {}
+        1075 VisualElement  ['row-direction-normal', 'margin-bottom-8'] {} {}
+         1096 SIText ClubHistoryText ['heading-xsmall-14px'] {} {}
+        1076 BindableSwitchElement  ['flex-grow-class', 'align-self-stretch'] {} {}
+         1098 SIText NoHistoryText ['base-template-grow', 'align-self-stretch', 'global-text-secondary', 'body-md-regular'] {65546: ['middle-center']} {}
+         1099 StreamedObjectList  ['flex-grow-class', 'align-self-stretch'] {} {}
+     1017 layout-divider-solid-vertical Divider2 ['margin-horizontal-global-gap-large'] {} {}
+     1018 VisualElement TransferHistory [] {131105: [{'unit': 2, 'value': 27.0}]} {}
+      1033 title-link  ['margin-bottom-16'] {} {}
+      1034 ComponentElement  ['base-template-grow', 'flex-grow-class'] {} {}
+       1057 BindingVariablesComponent  None {} {}
+       1058 BindingRemapperComponent  None {} {}
+       1059 BindingSetterComponent  None {} {}
+       1060 VisualElement  ['row-direction-normal', 'align-items-center', 'flex-no-shrink-class', 'margin-bottom-global-gap-regular'] {} {}
+        1078 ContextShortcutsElement  [] {} {}
+         1101 ComponentElement season-dropdoun ['margin-right-global-gap-regular'] {} {}
+          1125 BindingRemapperComponent  None {} {}
+          1126 DropdownWithArrowsRightAligned  [] {} {}
+        1079 dropdown-base-regular-label dropdown-base-regular-label-1 [] {131105: [{'m_ValueType': 1, 'valueIndex': 2}]} {}
+       1061 VisualElement Container ['flex-grow-class'] {} {}
+        1081 layout-divider-solid-horizontal Divider5 ['layout-divider-solid-horizontal', 'margin-vertical-global-gap-large'] {} {}
+        1082 VisualElement In [] {131087: [{'unit': 2, 'value': 50.0}]} {}
+         1107 VisualElement TransfersIn ['row-direction-normal', 'flex-no-shrink-class'] {} {}
+          1128 VisualElement game-concepts-transfer-in_large ['game-concepts-transfer-in_large', 'margin-right-global-gap-regular', 'align-self-centre'] {} {}
+          1129 VisualElement  [] {131084: [1.0]} {}
+           1158 SIText InMainText ['body-md-strong'] {} {}
+           1159 SIText InCash ['sitext-hover-cursor', 'global-text-secondary', 'body-md-regular'] {} {}
+          1130 SIText descriptionText ['global-text-secondary', 'body-small-12px-regular'] {131074: ['flex-start']} {}
+         1108 BindableSwitchElement InSwitch ['base-template-grow'] {} {}
+          1132 SIText no-transfers-text ['base-template-grow', 'align-self-stretch', 'global-text-secondary', 'body-md-regular'] {65546: ['middle-center']} {}
+          1133 StreamedTable table ['figma-table'] {131084: [1.0], 131087: [{'unit': 2, 'value': 100.0}]} {}
+        1083 VisualElement Out ['margin-top-global-gap-regular'] {131087: [{'unit': 2, 'value': 50.0}]} {}
+         1110 VisualElement TransfersOut ['row-direction-normal', 'flex-no-shrink-class'] {} {}
+          1135 VisualElement game-concepts-transfer-out_large ['game-concepts-transfer-out_large', 'margin-right-global-gap-regular', 'align-self-centre'] {} {}
+          1136 VisualElement  [] {131084: [1.0]} {}
+           1165 SIText OutMainText ['body-md-strong'] {} {}
+           1166 SIText OutCash ['sitext-hover-cursor', 'body-md-regular', 'global-text-secondary'] {} {}
+         1111 BindableSwitchElement OutSwitch ['base-template-grow'] {} {}
+          1138 SIText no-transfers-text ['base-template-grow', 'align-self-stretch', 'global-text-secondary', 'body-md-regular'] {65546: ['middle-center']} {}
+          1139 StreamedTable table ['figma-table'] {131087: [{'unit': 2, 'value': 100.0}]} {}
+     1019 layout-divider-solid-vertical Divider3 ['margin-horizontal-global-gap-large'] {} {}
+     1020 VisualElement News [] {131105: [{'unit': 2, 'value': 20.0}]} {}
+      1037 title-link  ['margin-bottom-16'] {} {}
+      1038 BindingRemapper  ['flex-grow-class'] {} {'Mappings': [{'m_serialisedType': 0, 'from': 'number', 'to': {'m_path': 'const.Ten'}, 'type': {'id': 0}}]}
+       1066 BindableSwitchElement BindableSwitchElement ['flex-grow-class'] {} {}
+        1088 NoNewsSiteBlock NoNewsSiteBlock ['flex-grow-class', 'justify-content-center'] {} {}
+        1089 VisualElement HasNews ['flex-grow-class'] {} {}
+         1114 BindingRemapper  ['flex-no-shrink-class'] {} {'Mappings': [{'m_serialisedType': 0, 'from': 'number', 'to': {'m_path': 'const.Zero'}, 'type': {'id': 0}}, {'m_serialisedType': 0, 'from': 'newsItem', 'to': {'m_path': 'Human.HumanTeamNewsHeadline'}, 'type': {'id': 1852404845}}]}
+          1141 NewsTileStatic_4x4 TemplateContainer ['news-tile-size_large'] {131105: [{'m_ValueType': 1, 'valueIndex': 2}]} {}
+         1115 SIText TransferNewsMoreStoriesText ['heading-md', 'global-text-secondary', 'margin-top-8', 'flex-no-shrink-class'] {} {}
+         1116 BindableSwitchElement  ['align-self-stretch', 'flex-grow-class'] {} {}
+          1144 SIText NoDataText ['global-text-secondary', 'margin-top-8', 'flex-no-shrink-class', 'body-md'] {} {}
+          1145 StreamedObjectList StoriesList ['flex-grow-class', 'structure-tier-list'] {} {}
+    1008 NavigationFocusser BottomBarExpandCollapseSwitch_focusser ['flex-no-shrink-class'] {} {}
+     1022 BindableSwitchElement BottomBarExpandCollapseSwitch ['flex-no-shrink-class'] {} {}
+      1040 SIButton ShowTilesButton ['recruitment-player-search-foldout-bar'] {} {}
+       1068 ShowTiles  [] {131084: [1.0]} {}
+      1041 SIButton HideTilesButton ['recruitment-player-search-foldout-bar'] {} {}
+       1070 HideTiles  [] {131084: [1.0]} {}
+   1005 SIVisible BottomBarGridVisible [] {} {}
+    1010 ScalableBindableGridLayoutElement BottomTiles [] {131093: [{'unit': 1, 'value': 16.0}]} {'Bindings': {'m_gridCompositionSet': {'m_FileID': 2, 'm_PathID': -6284820137920748223}, 'm_nameBindings': [{'name': 'isonmainscreen', 'path': {'m_path': 'const.False'}, 'method': 0}, {'name': 'team', 'path': {'m_path': 'club.MainTeam'}, 'method': 0}, {'name': 'comp', 'path': {'m_path': 'club.MainTeam.Division'}, 'method': 0}, {'name': 'match', 'path': {'m_path': 'const.NullRef'}, 'method': 0}, {'name': 'Competition', 'path': {'m_path': 'null'}, 'method': 0}, {'name': 'club', 'path': {'m_path': 'club'}, 'method': 0}, {'name': 'teamcontainer', 'path': {'m_path': 'club'}, 'method': 0}]}}

@@ -1,0 +1,15 @@
+TF 球场照片｜免工具版
+
+前提：使用已取消旧绝对路径登记、支持原生 fmetstadium 读取的新版 TF 皮肤。
+球场图片由玩家自己的球场包提供，本包不附带照片。
+
+1. 正常退出 FM27。
+2. 把本包的 config.xml 放进球场包的 images 文件夹，与 5114336.jpg 等照片同级。
+   路径示例：文档\Sports Interactive\Football Manager 27\graphics\stadiums\stadium_backgrounds\images\config.xml
+   盘符和上层目录名不限，只要球场包位于 FM27 实际使用的 graphics 目录下。
+3. 保留球场包上一级原来的 config.xml。若之前用过 TF 混合版，请先恢复原文件，
+   并把其他含 fmetstadium 的测试目录移出 graphics，避免重复登记。
+4. 自行启动游戏。
+
+此配置的 from 是图片的 ID 文件名，不含 images/ 前缀。不用运行工具，也不改游戏文件。
+适用于已收录的球场 ID、同层 ID 命名图片；缺图、改名或不兼容格式不是此配置能补齐的。

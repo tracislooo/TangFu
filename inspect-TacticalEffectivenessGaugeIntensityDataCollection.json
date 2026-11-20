@@ -1,0 +1,94 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": -8938174736395648265
+  },
+  "m_Name": "TacticalEffectivenessGaugeIntensityDataCollection",
+  "m_columns": [
+    {
+      "rid": 7197565185449264121
+    },
+    {
+      "rid": 7197565185449264122
+    },
+    {
+      "rid": 7197565185449264123
+    }
+  ],
+  "m_keyColumn": {
+    "rid": 7197565185449264121
+  },
+  "references": {
+    "version": 2,
+    "RefIds": [
+      {
+        "rid": 7197565185449264121,
+        "type": {
+          "class": "IntDataSet",
+          "ns": "SI.Core",
+          "asm": "SI.Core"
+        },
+        "data": {
+          "m_name": "Key",
+          "m_description": "The inclusive maximum value for which we should display the associated data",
+          "m_rows": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "rid": 7197565185449264122,
+        "type": {
+          "class": "StringDataSet",
+          "ns": "SI.Core",
+          "asm": "SI.Core"
+        },
+        "data": {
+          "m_name": "StyleClassRadial",
+          "m_description": "",
+          "m_rows": [
+            "tactical-effectiveness-radial-1",
+            "tactical-effectiveness-radial-2",
+            "tactical-effectiveness-radial-3",
+            "tactical-effectiveness-radial-5",
+            "tactical-effectiveness-radial-7",
+            "tactical-effectiveness-radial-9",
+            "tactical-effectiveness-radial-10"
+          ]
+        }
+      },
+      {
+        "rid": 7197565185449264123,
+        "type": {
+          "class": "StringDataSet",
+          "ns": "SI.Core",
+          "asm": "SI.Core"
+        },
+        "data": {
+          "m_name": "StyleClassRadialReversed",
+          "m_description": "",
+          "m_rows": [
+            "tactical-effectiveness-radial-10",
+            "tactical-effectiveness-radial-9",
+            "tactical-effectiveness-radial-7",
+            "tactical-effectiveness-radial-5",
+            "tactical-effectiveness-radial-3",
+            "tactical-effectiveness-radial-2",
+            "tactical-effectiveness-radial-1"
+          ]
+        }
+      }
+    ]
+  }
+}

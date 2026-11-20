@@ -1,0 +1,5443 @@
+{
+  "passed": true,
+  "rows": 3,
+  "columns": 5,
+  "data_order": [
+    [
+      "Possession",
+      "ClearCutChances",
+      "Fouls",
+      "Shots",
+      "Corners"
+    ],
+    [
+      "YellowCards",
+      "ShotsOnTarget",
+      "ProgressivePasses",
+      "RedCards",
+      "xG"
+    ],
+    [
+      "PassesCompleted",
+      "DistanceCovered",
+      "OPPDA",
+      "CrossesCompleted",
+      "AvgRating"
+    ]
+  ],
+  "scale_relative_to_original": 0.55,
+  "row_gaps_px": [
+    3,
+    3
+  ],
+  "data_height": "content",
+  "button": "top-center-before-team-header",
+  "header_badges_button_behavior_and_size_preserved": true,
+  "existing_data_text_bindings_events_tooltips_and_colors_preserved": true,
+  "modules": [
+    {
+      "module": "Momentum",
+      "template": "MatchMomentum_4x2",
+      "cell": 3123,
+      "root": 3127,
+      "scope": 3125,
+      "plot": 3148
+    },
+    {
+      "module": "ActionZones",
+      "template": "TeamActionZonesMapTile_4x4",
+      "cell": 3169,
+      "root": 3175,
+      "scope": 3173,
+      "plot": 3221
+    },
+    {
+      "module": "XG",
+      "template": "xGStoryTile_4x2",
+      "cell": 3261,
+      "root": 3265,
+      "scope": 3263,
+      "plot": 3285
+    }
+  ],
+  "native_clone_audits": [
+    {
+      "template": "MatchMomentum_4x2",
+      "records": 42,
+      "serialized_records": 22,
+      "native_bindings_text_events_and_components_identical": true
+    },
+    {
+      "template": "TeamActionZonesMapTile_4x4",
+      "records": 86,
+      "serialized_records": 44,
+      "native_bindings_text_events_and_components_identical": true
+    },
+    {
+      "template": "xGStoryTile_4x2",
+      "records": 55,
+      "serialized_records": 29,
+      "native_bindings_text_events_and_components_identical": true
+    }
+  ],
+  "activity_data_path": "match.ActionZonesVisualisation",
+  "module_sizes": "equal width and height; all remaining lower-area space",
+  "scaled_metrics": [
+    {
+      "node": 2469,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2471,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2471,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2473,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2473,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2475,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2475,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2479,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2481,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2483,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2485,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2485,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2485,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2487,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2493,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2493,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2499,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2499,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2501,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2501,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2505,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2507,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2509,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2511,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2511,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2513,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2513,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2515,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2515,
+      "property": 262151,
+      "original": [
+        0.0
+      ],
+      "at_55_percent": [
+        0.0
+      ]
+    },
+    {
+      "node": 2519,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2521,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2523,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2525,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2525,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2525,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2527,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2533,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2533,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2539,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2539,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2541,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2541,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2545,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2547,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2549,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2551,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2551,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2553,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2553,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2555,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2555,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2559,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2561,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2563,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2565,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2565,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2565,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2567,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2573,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2573,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2579,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2579,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2581,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2581,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2585,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2587,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2589,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2591,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2591,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2593,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2593,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2595,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2595,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2599,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2601,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2603,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2605,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2605,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2605,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2607,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2613,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2613,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2619,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2619,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2621,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2621,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2625,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2627,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2629,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2631,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2631,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2633,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2633,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2635,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2635,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2639,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2641,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2643,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2645,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2645,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2645,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2647,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2653,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2653,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2659,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2659,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2661,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2661,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2665,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2667,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2671,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2673,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2673,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2675,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2675,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2677,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2677,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2681,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2683,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2685,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2687,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2687,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2687,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2689,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2695,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2695,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2701,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2701,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2703,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2703,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2707,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2709,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2711,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2713,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2713,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2715,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2715,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2717,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2717,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2721,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2723,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2725,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2727,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2727,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2727,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2729,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2735,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2735,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2741,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2741,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2743,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2743,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2747,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2749,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2751,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2753,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2753,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2755,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2755,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2757,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2757,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2761,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2763,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2765,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2767,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2767,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2767,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2769,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2775,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2775,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2781,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2781,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2783,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2783,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2787,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2789,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2791,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2793,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2793,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2795,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2795,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2797,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2797,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2801,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2803,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2805,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2807,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2807,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2807,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2809,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2815,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2815,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2821,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2821,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2823,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2823,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2827,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2829,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2831,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2833,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2833,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2835,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2835,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2837,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2837,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2841,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2843,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2845,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2847,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2847,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2847,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2849,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2855,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2855,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2861,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2861,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2863,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2863,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2867,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2869,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2873,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2875,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2875,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2877,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2877,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2879,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2879,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2883,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2885,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2887,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2889,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2889,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2889,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2891,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2897,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2897,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2903,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2903,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2905,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2905,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2909,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2911,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2913,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2915,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2915,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2917,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2917,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2919,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2919,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2923,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2925,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2927,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2929,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2929,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2929,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2931,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2937,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2937,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2943,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2943,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2945,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2945,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2949,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2951,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2953,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2955,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2955,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2957,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2957,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2959,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2959,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2963,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2965,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2967,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2969,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2969,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2969,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2971,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2977,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2977,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2983,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2983,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 2985,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2985,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2989,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2991,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 2993,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 2995,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 2995,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2997,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 2997,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 2999,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 2999,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3003,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3005,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3007,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3009,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3009,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3009,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3011,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3017,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3017,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3023,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3023,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3025,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 3025,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3029,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3031,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3035,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 12.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 6.599999904632568
+        }
+      ]
+    },
+    {
+      "node": 3035,
+      "property": 131090,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3037,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 288.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 158.39999389648438
+        }
+      ]
+    },
+    {
+      "node": 3037,
+      "property": 131093,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3039,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 3039,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3043,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3045,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3047,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3049,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3049,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3049,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3051,
+      "property": 131087,
+      "original": [
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3057,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3057,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3063,
+      "property": 262147,
+      "original": [
+        {
+          "unit": 1,
+          "value": 2.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 1.100000023841858
+        }
+      ]
+    },
+    {
+      "node": 3063,
+      "property": 262148,
+      "original": [
+        {
+          "unit": 1,
+          "value": 1.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 0.550000011920929
+        }
+      ]
+    },
+    {
+      "node": 3065,
+      "property": 131105,
+      "original": [
+        {
+          "unit": 1,
+          "value": 44.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 24.200000762939453
+        }
+      ]
+    },
+    {
+      "node": 3065,
+      "property": 262151,
+      "original": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 8.0
+        }
+      ],
+      "at_55_percent": [
+        0.0,
+        {
+          "unit": 1,
+          "value": 4.400000095367432
+        }
+      ]
+    },
+    {
+      "node": 3069,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    },
+    {
+      "node": 3071,
+      "property": 65537,
+      "original": [
+        {
+          "unit": 1,
+          "value": 14.0
+        }
+      ],
+      "at_55_percent": [
+        {
+          "unit": 1,
+          "value": 7.699999809265137
+        }
+      ]
+    }
+  ],
+  "geometry_checks": [
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "comparison_cell_width": 180.8,
+      "comparison_width": 158.39999389648438,
+      "assumed_maximum_data_row_height": 32,
+      "exact_row_gaps": [
+        3,
+        3
+      ],
+      "native_header_and_button_budget": 100,
+      "remaining_native_chart_height": 236.90000000000003,
+      "each_module_width": 301.3333333333333,
+      "static_budget_only": true
+    },
+    {
+      "viewport": [
+        2526,
+        1379
+      ],
+      "comparison_cell_width": 241.4,
+      "comparison_width": 158.39999389648438,
+      "assumed_maximum_data_row_height": 32,
+      "exact_row_gaps": [
+        3,
+        3
+      ],
+      "native_header_and_button_budget": 100,
+      "remaining_native_chart_height": 401.35,
+      "each_module_width": 402.3333333333333,
+      "static_budget_only": true
+    }
+  ],
+  "outer_5_10_5_middle_45_55_separator_upper_charts_unchanged": true,
+  "shared_donors_catalog_cache_and_unrelated_objects_unchanged": true,
+  "serialization_roundtrip": true,
+  "runtime_verified": false
+}

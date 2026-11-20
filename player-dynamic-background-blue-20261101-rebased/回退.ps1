@@ -1,0 +1,6 @@
+﻿$ErrorActionPreference='Stop'
+if(Get-Process -Name fm -ErrorAction SilentlyContinue){throw 'Exit Football Manager first.'}
+if((Get-FileHash -LiteralPath 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Algorithm SHA256).Hash.ToLower() -ne '1a2788b13384b513080f74e9a690b19df00f9db6124be53c01fe540e16001e04'){throw 'Version mismatch.'}
+if((Get-FileHash -LiteralPath 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Algorithm SHA256).Hash.ToLower() -ne '1a2788b13384b513080f74e9a690b19df00f9db6124be53c01fe540e16001e04'){throw 'Version mismatch.'}
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'backup/game/ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle') -Destination 'F:\Steam\steamapps\common\Football Manager 27\fm_Data\StreamingAssets\aa\StandaloneWindows64\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'backup/skin/ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle') -Destination 'G:\Doc\FM Skin Builder\skins\tf27-01\packages\ui-visualtreeassets_assets_gameworldvisualtreeassetpreload.bundle' -Force

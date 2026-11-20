@@ -1,0 +1,34 @@
+本文件夹包含六个修改后的 JSON，原始桌面文件未覆盖。
+
+请使用原来的资源编辑工具，将六个 JSON 分别导入对应资源对象：
+
+1. CAB-db5c0b8ab967d8aedf4e50ce6cea36d7
+   report-player-banner-max，PathID -4194025542157271532
+   inlineStyle，PathID 8045407476604796436
+   PersonPicture，PathID -4696340654933359536
+   PersonPicture 对应 inlineStyle，PathID 3569960969388672080
+
+2. CAB-1ab8e16d7264cd64aba00192bdf91ea2
+   PlayerReportHeader，PathID 5775949770471550939
+   inlineStyle，PathID -1940069326759809061
+
+三个 inlineStyle 属于不同资源对象，需按完整文件名对应导入。六个文件一起使用。
+
+修改结果：
+大版横幅：球员原有信息 → 俱乐部信息 → 头像 → 国家队信息 → 身价与合同 → 球探信息。
+沿用原 PersonPicture 模板、头像样式和 team/localteam 数据映射。
+头像容器固定宽度 220，两侧各留 16 间距。
+头像模块不做 95% 缩放。PersonPicture 内四个 SIImage 图片分支改为 scale-to-fit，保留图片比例并适配完整图片；只在这四个实际图片节点上设置 X/Y 均为 0.95 的缩放。
+同步明确设置 Image/SIImage 的 ScaleMode 为 ScaleToFit。头像外框、比例适配器、图片绑定和右键菜单不随图片缩放。
+PersonPicture 是共享模板，其他使用该模板的地方也会采用完整图片显示和 95% 图片缩放。
+PlayerReportHeader 至 banner-max 的容器铺满整个 Header 宽度，并清除横向偏移。
+头像两侧的容器等宽，因此头像位于整个 PlayerReportHeader 的水平中央，垂直居中。
+两侧信息列允许收缩，并限制绘制范围，防止内容覆盖头像；空间不足时信息可能被裁切，需要在游戏中检查。
+原有信息和分隔线的相对顺序保留。
+按最新要求，原左侧 PersonPictureFrame 的 width、min-width、max-width、margin 和 padding 均设为 0，并隐藏溢出内容。
+原左侧头像在各版布局中不再占据宽度；新中间头像位于 banner-max 内。
+
+已检查 JSON 读写一致性、节点与序列化 ID 唯一性、父子关系、样式引用与索引，以及原 banner 信息节点的保留情况。
+这是修订后的完整修改包，请导入六个 JSON。如之前四个布局文件已导入当前修订版，仅需追加导入 PersonPicture 及其 inlineStyle 两个新文件。
+已核对四个图片分支的适配模式与 X/Y 95% 缩放、样式索引、JSON 读写一致性及非图片节点保持不变。
+尚未在游戏中验证视觉效果；导入后请查看大版球员报告，确认头像完整显示及信息列显示。

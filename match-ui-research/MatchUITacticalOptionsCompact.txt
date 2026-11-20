@@ -1,0 +1,108 @@
+match MatchUITacticalOptionsCompact PathID=1039296864497395559 Style=-5319475631298549913
+USINGS [{'alias': 'MatchMentalityCompactDropdownRow', 'path': 'c90e4e38b0add9b47a17d79eabde771a', 'asset': {'m_FileID': 0, 'm_PathID': 0}}, {'alias': 'layout-divider-solid-horizontal', 'path': '54ffead3e652b1541aab0ebadd074df1', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.UI.ComponentElement CLASS=[] {"m_components": [{"rid": 1009}, {"rid": 1010}, {"rid": 1011}]}
+ STYLE []
+  1002 SI.Bindable.BindingExpectComponent CLASS=None {}
+  STYLE []
+  1003 SI.Bindable.BindingRemapperComponent CLASS=None {}
+  STYLE []
+  1004 SI.Bindable.BindingVariablesComponent CLASS=None {}
+  STYLE []
+  1005 SI.Bindable.SIVisible CLASS=[] {"name": "IsTacticsOpened", "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "bcf70dc2705d6de43a88694f2487c9f9"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["SI.Bindable.BindingKeyVisualArg", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "match.Tactic.NeedsConfirmation"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+  STYLE []
+   1007 SI.Bindable.SIVisible CLASS=[] {"Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "d52cf0b2ba55c764b9ecda52092aa257"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["_SI.VisualScripting.EnumVisualArg`1[SI.VisualScripting.GeneralVisualFunction+ComparisonOperator]", "!SI.VisualScripting.Int32VisualArg", "SI.Bindable.BindingKeyVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "match.MatchStatePeriod"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+   STYLE []
+    1012 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal'] {"name": "Left-part", "pickingMode": 1}
+    STYLE [[131084, [0.0]], [131073, ["flex-start"]], [131085, [0.0]]]
+     1014 SI.Bindable.SIButton CLASS=['buttons-me-menu-controls-base--position-leading', 'row-direction-normal', 'margin-horizontal-global-gap-none', 'padding-left-global-padding-none', 'margin-vertical-global-gap-none'] {"name": "tactic", "tabIndex": -1, "focusable": 1, "iconImageReference": {"m_FileID": 0, "m_PathID": 0}, "BindTextFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "RightClickEvents": {"m_bytes": []}, "Events": {"m_bytes": [" 0beec598d9263c5468727a625d0f9241", "match.Tactic.CanRevert", "const.True"]}, "InputActionRef": {"m_inputActionAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": ""}, "AuditComponentBinding": {"m_path": ""}, "HoverBinding": {"m_path": ""}}
+     STYLE [[131097, [{"unit": 1, "value": 110.0}]], [131096, [{"unit": 1, "value": 32.0}]], [131086, ["wrap"]]]
+      1020 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-training-tactics_small', 'margin-right-global-gap-regular', 'margin-left-global-gap-extra-large'] {"pickingMode": 1}
+      STYLE [[131084, [1.0]], [131097, [{"unit": 1, "value": 16.0}]], [131095, [{"unit": 1, "value": 16.0}]]]
+      1021 SI.Bindable.SIText CLASS=['sitext-hover-cursor'] {"DebugDisplay": "Tactics", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "IgnoreEmbeddedDataStyling": 1}
+      STYLE [[131097, [{"unit": 1, "value": 50.0}]]]
+     1015 SI.Bindable.SIButton CLASS=['buttons-me-menu-controls-base--position-middle', 'margin-horizontal-global-gap-none', 'global-text-primary', 'margin-vertical-global-gap-none'] {"name": "instructions", "tabIndex": -1, "focusable": 1, "iconImageReference": {"m_FileID": 0, "m_PathID": 0}, "BindTextFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "RightClickEvents": {"m_bytes": []}, "Events": {"m_bytes": [" b823f64374b468d44adbb8bd6337818e", "tactic", "match.Tactic", "team", "team"]}, "InputActionRef": {"m_inputActionAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": ""}, "AuditComponentBinding": {"m_path": ""}, "HoverBinding": {"m_path": ""}}
+     STYLE [[131084, [0.0]], [131085, [1.0]], [458752, [{"r": 0.13725490868091583, "g": 0.15294118225574493, "b": 0.2078431397676468, "a": 1.0}]]]
+      1023 SI.Bindable.SIStyleSetter CLASS=[] {"name": "mentality-pending-state", "pickingMode": 1, "BindFunction": {"m_target": {"m_guid": "0d46100aa6e3a9e4397a29e6783cdc70"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "\"match.tactic.TacticPendingTweakOpsC", "\"SI.VisualScripting.StringVisualArg", "team-instruction-tile--pending%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+      STYLE []
+      1024 SI.Bindable.SIStyleSetter CLASS=['height-100-percent', 'flex-grow-class', 'row-direction-normal', 'align-self-stretch', 'align-items-centre'] {"name": "mentality-tweaked-state", "pickingMode": 1, "BindFunction": {"m_target": {"m_guid": "fb3543ff4ef58ca48bc1d50db7be529c"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "match.tactic.TacticActiveTweaksC", "\"SI.VisualScripting.StringVisualArg", "team-instruction-tile--tweaked%", "#SI.VisualScripting.BooleanVisualArg", "#SI.VisualScripting.BooleanVisualArg"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "PrimaryColorDataLink": {"m_path": ""}, "SecondaryColorDataLink": {"m_path": ""}}
+      STYLE []
+       1039 UnityEngine.UIElements.VisualElement CLASS=[] {"pickingMode": 1}
+       STYLE []
+        1056 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-tactical-tweak', 'team-instruction-tile__tweak-icon', 'margin-right-4', 'ignore-for-analyzer'] {"name": "tweak-corner-icon"}
+        STYLE []
+        1057 SI.Bindable.Tooltip CLASS=[] {"name": "TweaksTooltip", "pickingMode": 1}
+        STYLE [[65552, ["normal"]], [131074, ["stretch"]]]
+         1075 SI.Bindable.SIText CLASS=['sitext-hover-cursor'] {"name": "TweaksTooltipText", "DebugDisplay": "Active Tactical Tweak in place. Changing this will cancel all relevant instructions", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "SActive Tactical Tweak in place. Changing this will cancel all relevant instructions"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE [[131095, [{"unit": 1, "value": 250.0}]]]
+      1025 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-match-preperation_small'] {"name": "VisualElement", "pickingMode": 1}
+      STYLE [[131084, [1.0]]]
+     1016 SI.Bindable.SIDropdown CLASS=['si-dropdown-no-border', 'buttons-me-menu-controls-base--position-middle'] {"name": "mentality-dropdown", "RightClickEvents": {"m_bytes": []}, "LeftClickEvents": {"m_bytes": []}, "InputActionRef": {"m_inputActionAsset": {"m_AssetGUID": "efcbfd779a1a45642b5326f323136c1e", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": "646c5a5c-7e36-46e7-a5bf-0c8320894477"}, "RowTemplate": {"m_AssetGUID": "c68821ae70d393f4f9ebef24153aec10", "m_SubObjectName": "", "m_SubObjectType": ""}, "SelectionEvents": {"m_bytes": []}, "BindChoicesFunction": {"m_target": {"m_guid": "0f43f251c886ffb43801e215c8be916a"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["SI.Bindable.BindingKeyVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "%match.Tactic.MentalityDropdownOptions"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}, "ShortcutIconPlacement": 1, "SelectionValueBinding": {"m_path": "match.tactic.mentalitydropdown"}, "SearchValueBinding": {"m_path": ""}, "CanSelectNextBinding": {"m_path": ""}, "CanSelectPreviousBinding": {"m_path": ""}, "SelectedHistoryGroupNameBinding": {"m_path": ""}, "ShouldHighlightOnShowBinding": {"m_path": ""}, "RowParamName": "option"}
+     STYLE []
+      1027 MatchMentalityCompactDropdownRow CLASS=['align-self-center-class'] {"name": "TemplateContainer", "pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "MatchMentalityCompactDropdownRow"}
+      STYLE [[131081, ["flex"]]]
+      1028 UnityEngine.UIElements.VisualElement CLASS=['ui-concepts-chevron-down_small', 'margin-right-global-gap-small', 'align-self-center-class'] {"name": "ui-concepts-chevron-down_small", "pickingMode": 1}
+      STYLE []
+     1017 SI.Bindable.BindableSwitchElement CLASS=['row-direction-normal'] {"name": "shouts-pending-switch", "pickingMode": 1, "Preview": {"Mask": 3}, "FadeOptions": {"FadedOpacity": 0.0}, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "ae7991d57b61ad645a99ded7fd2695ac"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "&match.tactic.HavePendingTouchlineShout"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+     STYLE []
+      1030 SI.Bindable.SIEnabled CLASS=['row-direction-normal'] {"name": "shouts-cooldown-disable", "OnEnabledEvents": {"m_bytes": []}, "OnDisabledEvents": {"m_bytes": []}, "Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "match.Tactic.TouchlineShoutsEnabled"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+      STYLE []
+       1047 SI.Bindable.SIFloatingPopupWidget CLASS=['buttons-me-menu-controls-base--position-middle'] {"ContentTemplate": {"m_AssetGUID": "39145ea78b154f19b1327c2ac4e04c95", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_inputAction": {"m_inputActionAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": ""}, "Anchor": 1, "OverrideLayer": {"Name": ""}}
+       STYLE []
+        1059 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-team-talks_small', 'margin-right-global-gap-regular'] {"pickingMode": 1}
+        STYLE []
+        1060 SI.Bindable.SIVisible CLASS=[] {"pickingMode": 1, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "4325c9bd54b1e8841a204e08660a6c60"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["8SI.VisualScripting.EnumVisualArg`1[SI.UI.GridBreakpoint]", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "app.GridBreakpoint"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+        STYLE []
+         1078 SI.Bindable.SIText CLASS=['flex-grow-class', 'body-small-12px-regular', 'sitext-hover-cursor'] {"name": "shouts-label", "DebugDisplay": "Shouts", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "Shouts"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE [[65537, [{"unit": 1, "value": 14.0}]]]
+        1061 UnityEngine.UIElements.VisualElement CLASS=['ui-concepts-chevron-down_small', 'margin-left-4'] {"pickingMode": 1}
+        STYLE []
+      1031 SI.UI.NavigatableVisualElement CLASS=['buttons-me-menu-controls-base--position-middle'] {"pickingMode": 1, "focusable": 1}
+      STYLE []
+       1049 UnityEngine.UIElements.VisualElement CLASS=['tactical-tweaks-badge', 'row-direction-normal', 'align-items-centre'] {}
+       STYLE []
+        1063 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-team-talks_small'] {"pickingMode": 1}
+        STYLE []
+        1064 SI.Bindable.SIText CLASS=['flex-grow-class', 'sitext-hover-cursor', 'body-sm', 'margin-left-global-gap-small', 'content-ellipsis', 'centre-avoid-collapsible'] {"name": "shouts-label", "DebugDisplay": "Shouting", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "Shouting"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+        STYLE [[65543, ["normal"]], [65537, [{"unit": 1, "value": 14.0}]]]
+       1050 SI.Bindable.Tooltip CLASS=['team-instruction-option__tweak-tooltip', 'flex-no-shrink-class'] {}
+       STYLE []
+        1066 UnityEngine.UIElements.VisualElement CLASS=[] {}
+        STYLE []
+         1083 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'flex-no-shrink-class'] {}
+         STYLE []
+          1097 SI.Bindable.SIText CLASS=['body-small-12px-regular', 'sitext-hover-cursor', 'margin-right-4'] {"name": "recent-shout-static-text", "DebugDisplay": "Recent Shout:", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "Recent Shout:"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+          STYLE []
+          1098 SI.Bindable.SIText CLASS=['flex-grow-class', 'body-small-12px-regular', 'sitext-hover-cursor'] {"name": "recent-shout-name", "DebugDisplay": "SHOUT NAME", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "e26cdc1747d265942aa381f3c67beade"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["SI.Bindable.BindingKeyVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", ",match.tactic.PendingTeamTouchlineShout.Title"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+          STYLE []
+         1084 layout-divider-solid-horizontal CLASS=['margin-bottom-4', 'margin-top-4', 'flex-no-shrink-class'] {"template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "layout-divider-solid-horizontal"}
+         STYLE []
+         1085 SI.Bindable.SIText CLASS=['body-small-12px-regular', 'sitext-hover-cursor', 'flex-no-shrink-class'] {"name": "recent-shout-description", "DebugDisplay": "Waiting for a suitable moment to communicate message.", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "f97abdf5a74842647ba921d183f4a3eb"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "FWaiting for a suitable moment to communicate [%person#1-your] message.S", "DSI.VisualScripting.StructListVisualArg`1[SI.Bindable.TranslationArg]", "human"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+     1018 SI.Bindable.SIFloatingPopupWidget CLASS=['buttons-me-menu-controls-base--position-trailing'] {"name": "tweaks-button", "ContentTemplate": {"m_AssetGUID": "f2113488e2c04feda59e4cf3e60d1042", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_inputAction": {"m_inputActionAsset": {"m_AssetGUID": "", "m_SubObjectName": "", "m_SubObjectType": ""}, "m_actionID": ""}, "Anchor": 9, "FloatingElementStyle": "tactical-tweaks-floating-element", "OverrideLayer": {"Name": ""}}
+     STYLE []
+      1033 SI.Bindable.BindableSwitchElement CLASS=['row-direction-normal'] {"name": "HasPendingTweaksSwitch", "pickingMode": 1, "Preview": {"Mask": 3}, "FadeOptions": {"FadedOpacity": 0.0}, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "a4dffe7b331c90949b43d2d4e3155117"}, "m_inputs": {"m_variable": {"m_argumentBytes": [">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "\"match.Tactic.TacticPendingTweakOps"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+      STYLE []
+       1052 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal'] {"name": "noPendingTweaks", "pickingMode": 1}
+       STYLE []
+        1068 SI.Bindable.BindableSwitchElement CLASS=['row-direction-normal', 'margin-right-4'] {"name": "tweakscountSwitch", "pickingMode": 1, "Preview": {"Mask": 3}, "FadeOptions": {"FadedOpacity": 0.0}, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "f6f314e9db56227459137669d87c44e9"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["_SI.VisualScripting.EnumVisualArg`1[SI.VisualScripting.GeneralVisualFunction+ComparisonOperator]", "!SI.VisualScripting.Int32VisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "\"match.Tactic.ActiveTotalTweakCount"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+        STYLE []
+         1087 SI.Bindable.SIText CLASS=['sitext-hover-cursor', 'pending-tweaks-badge'] {"name": "tweaks-count", "DebugDisplay": "0", "TextBinding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "match.Tactic.ActiveTotalTweakCount"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+         1088 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-gets-crowd-going_small'] {"pickingMode": 1}
+         STYLE []
+        1069 SI.Bindable.SIVisible CLASS=[] {"name": "notSmallResSwitch", "pickingMode": 1, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "4325c9bd54b1e8841a204e08660a6c60"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["8SI.VisualScripting.EnumVisualArg`1[SI.UI.GridBreakpoint]", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "app.GridBreakpoint"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+        STYLE []
+         1090 SI.Bindable.SIText CLASS=['sitext', 'sitext-hover-cursor'] {"name": "tweaks-label", "DebugDisplay": "Tweaks", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "Tweaks"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+       1053 UnityEngine.UIElements.VisualElement CLASS=['row-direction-normal', 'pending-tweaks-badge'] {"name": "hasPendingTweaks", "pickingMode": 1}
+       STYLE []
+        1071 UnityEngine.UIElements.VisualElement CLASS=['game-concepts-gets-crowd-going_small'] {"pickingMode": 1}
+        STYLE []
+        1072 SI.Bindable.SIVisible CLASS=[] {"name": "notSmallResSwitch", "pickingMode": 1, "Binding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "4325c9bd54b1e8841a204e08660a6c60"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["8SI.VisualScripting.EnumVisualArg`1[SI.UI.GridBreakpoint]", "#SI.VisualScripting.BooleanVisualArg", ">SI.VisualScripting.GenericVisualArg`1[SI.Bindable.BindingPath]", "app.GridBreakpoint"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+        STYLE []
+         1093 SI.Bindable.SIText CLASS=['sitext', 'sitext-hover-cursor', 'margin-left-4', 'content-ellipsis'] {"name": "tweaks-label", "DebugDisplay": "Instructing", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]", "Instructing"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+         STYLE []
+      1034 UnityEngine.UIElements.VisualElement CLASS=['ui-concepts-chevron-down_small', 'margin-left-4'] {"pickingMode": 1}
+      STYLE []

@@ -1,0 +1,1 @@
+& 'C:\Users\traci\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'G:\Doc\ChatGPT\New project\preferences-dy-bb-horizontal-20261101-120156\installer.py' 'G:\Doc\ChatGPT\New project\preferences-dy-bb-horizontal-20261101-120156'

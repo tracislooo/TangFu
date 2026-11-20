@@ -1,0 +1,18 @@
+global interaction-hub-body-message_sender-primary PathID=5461416178439525447 Style=7629408163601814599
+USINGS [{'alias': 'PersonPicture', 'path': 'a3126e03e5bea6348ba86f23b5c5d7de', 'asset': {'m_FileID': 0, 'm_PathID': 0}}]
+1000 UnityEngine.UIElements.UXML CLASS=[] {}
+STYLE []
+ 1001 SI.Bindable.BindingExpect CLASS=[] {"Parameters": [{"m_serialisedType": 0, "name": "person", "type": {"id": 1145176065}, "isOptional": 0, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}, {"m_serialisedType": 0, "name": "team", "type": {"id": 1145176088}, "isOptional": 1, "defaultValue": {"m_kind": 0, "Path": {"m_path": ""}, "m_scopeValue": {"m_serializedData": ""}}}]}
+ STYLE []
+  1002 UnityEngine.UIElements.VisualElement CLASS=['interaction-hub-body-message_sender-primary'] {"name": "interaction-hub-body-message_sender-primary"}
+  STYLE []
+   1004 PersonPicture CLASS=['margin-right-global-gap-regular'] {"name": "PersonPicture", "pickingMode": 1, "template": {"m_FileID": 0, "m_PathID": 0}, "templateId": "PersonPicture"}
+   STYLE [[131105, [{"unit": 1, "value": 32.0}]], [131087, [{"unit": 1, "value": 32.0}]], [131085, [0.0]]]
+   1005 UnityEngine.UIElements.VisualElement CLASS=['align-items-start'] {}
+   STYLE [[131083, ["column"]], [262149, [1.0, 0.0, 0.0]]]
+    1008 SI.Bindable.SIVisible CLASS=[] {"Binding": {"m_kind": 1, "m_direct": {"Path": {"m_path": "person"}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}, "StyleClassBindingToApplyOnVisible": {"m_path": ""}}
+    STYLE []
+     1010 SI.Bindable.SIText CLASS=['content-no-wrap', 'content-ellipsis', 'fm-universe-small-16px-no-wrap'] {"name": "Name", "DebugDisplay": "Name Lastname", "TextBinding": {"m_kind": 0, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": ""}, "m_inputs": {"m_variable": {"m_argumentBytes": []}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+     STYLE []
+     1011 SI.Bindable.SIText CLASS=['content-no-wrap', 'secondary-text-colour', 'body-sm', 'global-text-secondary', 'content-ellipsis'] {"name": "Job", "DebugDisplay": "Job title", "TextBinding": {"m_kind": 2, "m_direct": {"Path": {"m_path": ""}, "Nullable": 0}, "m_visualFunction": {"m_target": {"m_guid": "eae2be944eee9e2449baef416111a087"}, "m_inputs": {"m_variable": {"m_argumentBytes": ["CSI.VisualScripting.GenericVisualArg`1[SI.Translation.TranslationID]{b", "Job title"]}}, "m_outputs": {"m_variable": {"m_argumentBytes": []}}}}}
+     STYLE []
